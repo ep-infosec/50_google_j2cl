@@ -1,0 +1,70 @@
+// Generated from "inferreturn/InferReturn.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package inferreturn
+
+import javaemul.lang.*
+import inferreturn.InferReturn
+import kotlin.Any
+import kotlin.Array
+import kotlin.OptIn
+import kotlin.String
+import kotlin.arrayOfNulls
+import kotlin.collections.ArrayList
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.jvm.JvmStatic
+import kotlin.native.ObjCName
+
+@ObjCName("InferreturnInferReturn", exact = true)
+open class InferReturn<T> {
+ companion object {
+  @JvmStatic
+  fun <T_1> inferGeneric(
+   @ObjCName("withId", exact = false) foo: T_1
+  ): InferReturn<T_1>? {
+   return InferReturn<T_1>()
+  }
+
+  @JvmStatic
+  fun tightenType(
+   @ObjCName("withInferreturnInferReturn", exact = false) foo: InferReturn<String?>?
+  ): InferReturn<InferReturn<String?>?>? {
+   if (foo != null) {
+    return InferReturn.inferGeneric<InferReturn<String?>?>(foo)
+   }
+   return null
+  }
+
+  @JvmStatic
+  fun main() {
+   val list: ArrayList<Any?>? = InferReturn.newArrayList<Any?>("foo")
+   InferReturn.acceptsArrayListOfObject(list)
+   val array: Array<Any?>? = InferReturn.newArray<String?>("foo") as Array<Any?>?
+   InferReturn.acceptsArrayOfObject(array)
+  }
+
+  @JvmStatic
+  fun <V> newArrayList(
+   @ObjCName("withId", exact = false) foo: V
+  ): ArrayList<V>? {
+   return ArrayList<V>()
+  }
+
+  @JvmStatic
+  fun <V> newArray(
+   @ObjCName("withId", exact = false) foo: V
+  ): Array<V>? {
+   return arrayOfNulls<Any>(0) as Array<V>?
+  }
+
+  @JvmStatic
+  fun acceptsArrayListOfObject(
+   @ObjCName("withJavaUtilArrayList", exact = false) foo: ArrayList<Any?>?
+  ) {}
+
+  @JvmStatic
+  fun acceptsArrayOfObject(
+   @ObjCName("withNSObjectArray", exact = false) foo: Array<Any?>?
+  ) {}
+ }
+}

@@ -1,0 +1,90 @@
+// Generated from "classliteral/ClassLiteral.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package classliteral
+
+import javaemul.lang.*
+import classliteral.ClassLiteral
+import kotlin.Any
+import kotlin.Array
+import kotlin.Boolean
+import kotlin.BooleanArray
+import kotlin.Byte
+import kotlin.ByteArray
+import kotlin.Char
+import kotlin.CharArray
+import kotlin.Double
+import kotlin.DoubleArray
+import kotlin.Float
+import kotlin.FloatArray
+import kotlin.Int
+import kotlin.IntArray
+import kotlin.Long
+import kotlin.LongArray
+import kotlin.OptIn
+import kotlin.Short
+import kotlin.ShortArray
+import kotlin.Unit
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.jvm.javaObjectType
+import kotlin.jvm.javaPrimitiveType
+import kotlin.native.ObjCName
+
+@ObjCName("ClassliteralClassLiteral", exact = true)
+open class ClassLiteral {
+ open fun main() {
+  var o: Any? = null
+  o = Unit::class.javaPrimitiveType!!
+  o = Boolean::class.javaPrimitiveType!!
+  o = BooleanArray::class.javaObjectType
+  o = Array::class.javaObjectType
+  o = Boolean::class.javaObjectType
+  o = Array::class.javaObjectType
+  o = Array::class.javaObjectType
+  o = Char::class.javaPrimitiveType!!
+  o = CharArray::class.javaObjectType
+  o = Array::class.javaObjectType
+  o = Char::class.javaObjectType
+  o = Array::class.javaObjectType
+  o = Array::class.javaObjectType
+  o = Byte::class.javaPrimitiveType!!
+  o = ByteArray::class.javaObjectType
+  o = Array::class.javaObjectType
+  o = Byte::class.javaObjectType
+  o = Array::class.javaObjectType
+  o = Array::class.javaObjectType
+  o = Short::class.javaPrimitiveType!!
+  o = ShortArray::class.javaObjectType
+  o = Array::class.javaObjectType
+  o = Short::class.javaObjectType
+  o = Array::class.javaObjectType
+  o = Array::class.javaObjectType
+  o = Int::class.javaPrimitiveType!!
+  o = IntArray::class.javaObjectType
+  o = Array::class.javaObjectType
+  o = Int::class.javaObjectType
+  o = Array::class.javaObjectType
+  o = Array::class.javaObjectType
+  o = Long::class.javaPrimitiveType!!
+  o = LongArray::class.javaObjectType
+  o = Array::class.javaObjectType
+  o = Long::class.javaObjectType
+  o = Array::class.javaObjectType
+  o = Array::class.javaObjectType
+  o = Float::class.javaPrimitiveType!!
+  o = FloatArray::class.javaObjectType
+  o = Array::class.javaObjectType
+  o = Float::class.javaObjectType
+  o = Array::class.javaObjectType
+  o = Array::class.javaObjectType
+  o = Double::class.javaPrimitiveType!!
+  o = DoubleArray::class.javaObjectType
+  o = Array::class.javaObjectType
+  o = Double::class.javaObjectType
+  o = Array::class.javaObjectType
+  o = Array::class.javaObjectType
+  o = ClassLiteral::class.javaObjectType
+  o = Array::class.javaObjectType
+  o = Array::class.javaObjectType
+ }
+}

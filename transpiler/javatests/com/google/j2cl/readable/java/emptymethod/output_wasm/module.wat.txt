@@ -1,0 +1,126 @@
+;;; Code for emptymethod.EmptyMethod [static fields]
+(global $f_$initialized__emptymethod_EmptyMethod (mut i32) (i32.const 0))
+
+;;; Code for emptymethod.EmptyMethod [vtable.init]
+(global $emptymethod.EmptyMethod.vtable (ref $emptymethod.EmptyMethod.vtable) 
+ (struct.new $emptymethod.EmptyMethod.vtable
+  (ref.func $m_equals__java_lang_Object__boolean@java.lang.Object)
+  (ref.func $m_hashCode__int@java.lang.Object)
+  (ref.func $m_toString__java_lang_String@java.lang.Object)
+  (ref.func $m_getClass__java_lang_Class@emptymethod.EmptyMethod)
+ )
+)
+
+;;; Code for emptymethod.EmptyMethod [itable.init]
+(global $emptymethod.EmptyMethod.itable (ref $emptymethod.EmptyMethod.itable) (struct.new $emptymethod.EmptyMethod.itable 
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+ ))
+
+;;; Code for emptymethod.EmptyMethod [CLASS]
+(type $emptymethod.EmptyMethod (struct_subtype 
+ (field $vtable (ref $emptymethod.EmptyMethod.vtable)) 
+ (field $itable (ref $emptymethod.EmptyMethod.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+  $java.lang.Object)
+)
+(type $emptymethod.EmptyMethod.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+  $java.lang.Object.vtable)
+)
+(type $emptymethod.EmptyMethod.itable (struct_subtype 
+(field $slot0 (ref null struct))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $java.lang.Object.itable))
+
+;;; EmptyMethod EmptyMethod.$create()
+(func $$create__@emptymethod.EmptyMethod
+ (result (ref null $emptymethod.EmptyMethod))
+ ;;@ emptymethod/EmptyMethod.java:18:13
+ (local $$instance (ref null $emptymethod.EmptyMethod))
+ (block
+  ;; EmptyMethod $instance = new EmptyMethod.<init>(0);
+  ;;@ emptymethod/EmptyMethod.java:18:13
+  (local.set $$instance (struct.new $emptymethod.EmptyMethod (ref.as_non_null (global.get $emptymethod.EmptyMethod.vtable)) (ref.as_non_null (global.get $emptymethod.EmptyMethod.itable)) (i32.const 0)))
+  ;; $instance.$ctor();
+  ;;@ emptymethod/EmptyMethod.java:18:13
+  (call $$ctor__void_$p_emptymethod_EmptyMethod@emptymethod.EmptyMethod (ref.as_non_null (local.get $$instance)))
+  ;; return $instance;
+  ;;@ emptymethod/EmptyMethod.java:18:13
+  (return (local.get $$instance))
+ )
+)
+
+;;; void EmptyMethod.$ctor()
+(func $$ctor__void_$p_emptymethod_EmptyMethod@emptymethod.EmptyMethod
+ (param $this (ref null $emptymethod.EmptyMethod))
+ ;;@ emptymethod/EmptyMethod.java:18:13
+ (block
+  ;; emptymethod.EmptyMethod.$clinit();
+  ;;@ emptymethod/EmptyMethod.java:18:13
+  (call $$clinit__void@emptymethod.EmptyMethod )
+  ;; Object.this.$ctor();
+  ;;@ emptymethod/EmptyMethod.java:18:13
+  (call $$ctor__void_$p_java_lang_Object@java.lang.Object (ref.as_non_null (local.get $this)))
+ )
+)
+
+;;; void EmptyMethod.main(String[] args)
+(func $m_main__arrayOf_java_lang_String__void@emptymethod.EmptyMethod (export "main")
+ (param $args (ref null $javaemul.internal.WasmArray.OfObject))
+ ;;@ emptymethod/EmptyMethod.java:19:21
+ (block
+  ;; emptymethod.EmptyMethod.$clinit();
+  ;;@ emptymethod/EmptyMethod.java:19:41
+  (call $$clinit__void@emptymethod.EmptyMethod )
+ )
+)
+
+;;; void EmptyMethod.$clinit()
+(func $$clinit__void@emptymethod.EmptyMethod
+ ;;@ emptymethod/EmptyMethod.java:18:13
+ (block
+  ;; if (emptymethod.EmptyMethod.$initialized) return;
+  ;;@ emptymethod/EmptyMethod.java:18:13
+  (if (global.get $f_$initialized__emptymethod_EmptyMethod)
+   (then
+    ;; return;
+    ;;@ emptymethod/EmptyMethod.java:18:13
+    (return )
+   )
+  )
+  ;; (emptymethod.EmptyMethod.$initialized = true);
+  ;;@ emptymethod/EmptyMethod.java:18:13
+  (global.set $f_$initialized__emptymethod_EmptyMethod (i32.const 1))
+  ;; java.lang.Object.$clinit();
+  ;;@ emptymethod/EmptyMethod.java:18:13
+  (call $$clinit__void@java.lang.Object )
+ )
+)
+
+;;; Class<?> EmptyMethod.getClass()
+(func $m_getClass__java_lang_Class@emptymethod.EmptyMethod
+ (type $function.m_getClass__java_lang_Class)
+ (param $this.untyped (ref $java.lang.Object))
+ (result (ref null $java.lang.Class))
+ (local $this (ref null $emptymethod.EmptyMethod))
+ (local.set $this (ref.cast_static $emptymethod.EmptyMethod (local.get $this.untyped)))
+ (block
+  ;; return javaemul.internal.ClassLiteralPool.$getEmptymethod.EmptyMethod();
+  (return (call $function.no.side.effects.$getEmptymethod.EmptyMethod__java_lang_Class (ref.func $$getEmptymethod.EmptyMethod__java_lang_Class@javaemul.internal.ClassLiteralPool) ))
+ )
+)
+(elem declare func $m_getClass__java_lang_Class@emptymethod.EmptyMethod)

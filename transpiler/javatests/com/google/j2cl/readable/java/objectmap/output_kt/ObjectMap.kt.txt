@@ -1,0 +1,27 @@
+// Generated from "objectmap/ObjectMap.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package objectmap
+
+import javaemul.lang.*
+import kotlin.OptIn
+import kotlin.String
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.jvm.JvmStatic
+import kotlin.native.ObjCName
+import objectmap.ObjectMap
+
+@ObjCName("ObjectmapObjectMap", exact = true)
+open class ObjectMap<T> {
+ companion object {
+  @JvmStatic
+  fun <T_1> create_pp_objectmap(): ObjectMap<T_1>? {
+   return null
+  }
+
+  @JvmStatic
+  fun createForString_pp_objectmap(): ObjectMap<String?>? {
+   return null
+  }
+ }
+}

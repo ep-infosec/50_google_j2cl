@@ -1,0 +1,44 @@
+// Generated from "rawtype/RawType.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package rawtype
+
+import javaemul.lang.*
+import kotlin.Any
+import kotlin.OptIn
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.jvm.JvmField
+import kotlin.native.ObjCName
+import rawtype.RawType
+
+open class RawType {
+ @JvmField var rawUnbound_pp_rawtype: RawType.Unbound<Any?>? = RawType.Unbound<Any?>()
+
+ @JvmField var rawBound_pp_rawtype: RawType.Bound<RawType?>? = RawType.Bound<RawType?>()
+
+ @JvmField var rawBoundRecursively_pp_rawtype: RawType.BoundRecursively<*>? = RawType.BoundRecursively()
+
+ @JvmField var rawBoundDependentDirect_pp_rawtype: RawType.BoundDependentDirect<Any?, Any>? = RawType.BoundDependentDirect<Any?, Any>()
+
+ @JvmField var rawBoundDependentIndirect_pp_rawtype: RawType.BoundDependentIndirect<Any?, RawType.Unbound<Any?>?>? = RawType.BoundDependentIndirect<Any?, RawType.Unbound<Any?>?>()
+
+ open class Unbound<T> {}
+
+ open class Bound<T: RawType?> {}
+
+ open class BoundRecursively<T: RawType.BoundRecursively<T>?> {}
+
+ open class BoundDependentDirect<A, B: A> {}
+
+ open class BoundDependentIndirect<A, B: RawType.Unbound<A>?> {}
+
+ interface GenericSuperclass<T: RawType?> {
+  fun f(
+   @ObjCName("withRawtypeRawType", exact = false) t: T
+  ) {}
+ }
+
+ open class RawSubclass: RawType.GenericSuperclass<RawType?> {
+  open override fun f(t: RawType?) {}
+ }
+}

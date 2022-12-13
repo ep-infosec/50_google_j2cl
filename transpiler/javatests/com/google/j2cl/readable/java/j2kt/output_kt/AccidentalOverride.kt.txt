@@ -1,0 +1,55 @@
+// Generated from "j2kt/AccidentalOverride.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package j2kt
+
+import javaemul.lang.*
+import j2kt.AccidentalOverride
+import kotlin.OptIn
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.native.ObjCName
+
+@ObjCName("J2ktAccidentalOverride", exact = true)
+open class AccidentalOverride {
+ abstract inner class SuperClass {
+  open fun accidentalOverride() {}
+ }
+
+ interface Interface {
+  fun accidentalOverride() {}
+
+  fun abstractAccidentalOverride() {}
+ }
+
+ open inner class TestImplicitOverride: AccidentalOverride.SuperClass(), AccidentalOverride.Interface {
+  open override fun accidentalOverride() {
+   super<AccidentalOverride.SuperClass>.accidentalOverride()
+  }
+ }
+
+ open inner class TestExplicitOverride: AccidentalOverride.SuperClass(), AccidentalOverride.Interface {
+  open override fun accidentalOverride() {
+   super<AccidentalOverride.SuperClass>.accidentalOverride()
+  }
+ }
+
+ abstract inner class SubClass: AccidentalOverride.SuperClass() {
+  abstract fun abstractAccidentalOverride()
+ }
+
+ abstract inner class TestImplicitOverrideInAbstractClass: AccidentalOverride.SubClass(), AccidentalOverride.Interface {
+  abstract override fun abstractAccidentalOverride()
+
+  open override fun accidentalOverride() {
+   super<AccidentalOverride.SubClass>.accidentalOverride()
+  }
+ }
+
+ abstract inner class TestExplicitOverrideInAbstractClass: AccidentalOverride.SubClass(), AccidentalOverride.Interface {
+  open override fun accidentalOverride() {
+   super<AccidentalOverride.SubClass>.accidentalOverride()
+  }
+
+  abstract override fun abstractAccidentalOverride()
+ }
+}

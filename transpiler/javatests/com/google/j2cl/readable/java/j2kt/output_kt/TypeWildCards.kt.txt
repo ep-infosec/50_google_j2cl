@@ -1,0 +1,27 @@
+// Generated from "j2kt/TypeWildCards.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package j2kt
+
+import javaemul.lang.*
+import j2kt.TypeWildCards
+import kotlin.OptIn
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.jvm.JvmStatic
+
+open class TypeWildCards {
+ companion object {
+  @JvmStatic
+  fun testSupplierWithUpperAndLowerBounds_pp_j2kt(supplier: TypeWildCards.SupplierWithUpperBound<in TypeWildCards.Child?>?) {
+   val parent: TypeWildCards.Parent? = supplier!!.get() as TypeWildCards.Parent?
+  }
+ }
+
+ open class Parent {}
+
+ open class Child: TypeWildCards.Parent() {}
+
+ fun interface SupplierWithUpperBound<T: TypeWildCards.Parent?> {
+  fun get(): T
+ }
+}

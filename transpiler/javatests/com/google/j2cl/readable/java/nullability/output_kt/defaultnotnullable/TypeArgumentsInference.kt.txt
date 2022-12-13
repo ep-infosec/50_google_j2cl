@@ -1,0 +1,37 @@
+// Generated from "nullability/defaultnotnullable/TypeArgumentsInference.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package nullability.defaultnotnullable
+
+import javaemul.lang.*
+import kotlin.Any
+import kotlin.OptIn
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.jvm.JvmStatic
+import kotlin.native.ObjCName
+import nullability.defaultnotnullable.TypeArgumentsInference
+
+@ObjCName("NullabilityDefaultnotnullableTypeArgumentsInference", exact = true)
+open class TypeArgumentsInference {
+ companion object {
+  @JvmStatic
+  fun <K> wildcardPair(): TypeArgumentsInference.Pair<K, *> {
+   return TypeArgumentsInference.Pair<K, Any>()
+  }
+
+  @JvmStatic
+  fun <K, V> pairIdentity(
+   @ObjCName("withNullabilityDefaultnotnullableTypeArgumentsInference_Pair", exact = false) pair: TypeArgumentsInference.Pair<K, V>
+  ): TypeArgumentsInference.Pair<K, V> {
+   return pair
+  }
+
+  @JvmStatic
+  fun <K> wildcardPairAndIdentity(): TypeArgumentsInference.Pair<K, *> {
+   return TypeArgumentsInference.pairIdentity<K, Any>(TypeArgumentsInference.wildcardPair<K>() as TypeArgumentsInference.Pair<K, Any>)
+  }
+ }
+
+ @ObjCName("NullabilityDefaultnotnullableTypeArgumentsInference_Pair", exact = true)
+ class Pair<K, V> {}
+}

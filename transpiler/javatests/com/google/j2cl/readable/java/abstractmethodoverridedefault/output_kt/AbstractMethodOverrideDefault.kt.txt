@@ -1,0 +1,47 @@
+// Generated from "abstractmethodoverridedefault/AbstractMethodOverrideDefault.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package abstractmethodoverridedefault
+
+import javaemul.lang.*
+import abstractmethodoverridedefault.AbstractMethodOverrideDefault
+import kotlin.OptIn
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.native.ObjCName
+
+@ObjCName("AbstractmethodoverridedefaultAbstractMethodOverrideDefault", exact = true)
+open class AbstractMethodOverrideDefault {
+ fun interface I {
+  fun foo()
+
+  fun bar() {}
+ }
+
+ fun interface J {
+  fun foo() {}
+
+  fun bar()
+ }
+
+ abstract class A: AbstractMethodOverrideDefault.I {
+  abstract override fun foo()
+ }
+
+ abstract class B: AbstractMethodOverrideDefault.A(), AbstractMethodOverrideDefault.J {
+  open override fun bar() {
+   if (false) {
+    this.bar()
+   }
+  }
+
+  abstract override fun foo()
+ }
+
+ open class C: AbstractMethodOverrideDefault.A() {
+  open override fun foo() {}
+
+  open override fun bar() {
+   super<AbstractMethodOverrideDefault.A>.bar()
+  }
+ }
+}

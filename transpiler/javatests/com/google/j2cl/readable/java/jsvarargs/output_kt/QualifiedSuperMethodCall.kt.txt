@@ -1,0 +1,29 @@
+// Generated from "jsvarargs/QualifiedSuperMethodCall.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package jsvarargs
+
+import javaemul.lang.*
+import jsvarargs.Main
+import kotlin.IntArray
+import kotlin.OptIn
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.intArrayOf
+import kotlin.native.ObjCName
+
+@ObjCName("JsvarargsQualifiedSuperMethodCall", exact = true)
+open class QualifiedSuperMethodCall: Main {
+ constructor(): super(0)
+
+ @ObjCName("JsvarargsQualifiedSuperMethodCall_InnerClass", exact = true)
+ open inner class InnerClass {
+  open fun test() {
+   super<Main>@QualifiedSuperMethodCall.f3(1, 1, 2)
+   super<Main>@QualifiedSuperMethodCall.f3(1)
+   super<Main>@QualifiedSuperMethodCall.f3(1, 1, 2)
+   super<Main>@QualifiedSuperMethodCall.f3(1)
+   val ints: IntArray? = intArrayOf(1, 2)
+   super<Main>@QualifiedSuperMethodCall.f3(1, *(ints)!!)
+  }
+ }
+}

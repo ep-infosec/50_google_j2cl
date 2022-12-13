@@ -1,0 +1,144 @@
+;;; Code for continuestatement.ContinueStatement [static fields]
+(global $f_$initialized__continuestatement_ContinueStatement (mut i32) (i32.const 0))
+
+;;; Code for continuestatement.ContinueStatement [vtable.init]
+(global $continuestatement.ContinueStatement.vtable (ref $continuestatement.ContinueStatement.vtable) 
+ (struct.new $continuestatement.ContinueStatement.vtable
+  (ref.func $m_equals__java_lang_Object__boolean@java.lang.Object)
+  (ref.func $m_hashCode__int@java.lang.Object)
+  (ref.func $m_toString__java_lang_String@java.lang.Object)
+  (ref.func $m_getClass__java_lang_Class@continuestatement.ContinueStatement)
+  (ref.func $m_test__void@continuestatement.ContinueStatement)
+ )
+)
+
+;;; Code for continuestatement.ContinueStatement [itable.init]
+(global $continuestatement.ContinueStatement.itable (ref $continuestatement.ContinueStatement.itable) (struct.new $continuestatement.ContinueStatement.itable 
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+ ))
+
+;;; Code for continuestatement.ContinueStatement [CLASS]
+(type $continuestatement.ContinueStatement (struct_subtype 
+ (field $vtable (ref $continuestatement.ContinueStatement.vtable)) 
+ (field $itable (ref $continuestatement.ContinueStatement.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+  $java.lang.Object)
+)
+(type $continuestatement.ContinueStatement.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+ (field $m_test__void (ref $function.m_test__void))
+  $java.lang.Object.vtable)
+)
+(type $continuestatement.ContinueStatement.itable (struct_subtype 
+(field $slot0 (ref null struct))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $java.lang.Object.itable))
+
+;;; ContinueStatement ContinueStatement.$create()
+(func $$create__@continuestatement.ContinueStatement
+ (result (ref null $continuestatement.ContinueStatement))
+ ;;@ continuestatement/ContinueStatement.java:18:13
+ (local $$instance (ref null $continuestatement.ContinueStatement))
+ (block
+  ;; ContinueStatement $instance = new ContinueStatement.<init>(0);
+  ;;@ continuestatement/ContinueStatement.java:18:13
+  (local.set $$instance (struct.new $continuestatement.ContinueStatement (ref.as_non_null (global.get $continuestatement.ContinueStatement.vtable)) (ref.as_non_null (global.get $continuestatement.ContinueStatement.itable)) (i32.const 0)))
+  ;; $instance.$ctor();
+  ;;@ continuestatement/ContinueStatement.java:18:13
+  (call $$ctor__void_$p_continuestatement_ContinueStatement@continuestatement.ContinueStatement (ref.as_non_null (local.get $$instance)))
+  ;; return $instance;
+  ;;@ continuestatement/ContinueStatement.java:18:13
+  (return (local.get $$instance))
+ )
+)
+
+;;; void ContinueStatement.$ctor()
+(func $$ctor__void_$p_continuestatement_ContinueStatement@continuestatement.ContinueStatement
+ (param $this (ref null $continuestatement.ContinueStatement))
+ ;;@ continuestatement/ContinueStatement.java:18:13
+ (block
+  ;; continuestatement.ContinueStatement.$clinit();
+  ;;@ continuestatement/ContinueStatement.java:18:13
+  (call $$clinit__void@continuestatement.ContinueStatement )
+  ;; Object.this.$ctor();
+  ;;@ continuestatement/ContinueStatement.java:18:13
+  (call $$ctor__void_$p_java_lang_Object@java.lang.Object (ref.as_non_null (local.get $this)))
+ )
+)
+
+;;; void ContinueStatement.test()
+(func $m_test__void@continuestatement.ContinueStatement
+ (type $function.m_test__void)
+ (param $this.untyped (ref $java.lang.Object))
+ ;;@ continuestatement/ContinueStatement.java:19:14
+ (local $this (ref null $continuestatement.ContinueStatement))
+ (local.set $this (ref.cast_static $continuestatement.ContinueStatement (local.get $this.untyped)))
+ (block
+  ;; LOOP: for (;true;) {
+  ;;@ continuestatement/ContinueStatement.java:20:4
+  (block $LOOP.BREAK
+   (loop
+    (block $LOOP.CONTINUE
+     (block
+      ;; continue LOOP;
+      ;;@ continuestatement/ContinueStatement.java:21:6
+      (br $LOOP.CONTINUE)
+     )
+    )
+    (br 0)
+    
+   )
+  )
+ )
+)
+(elem declare func $m_test__void@continuestatement.ContinueStatement)
+
+;;; void ContinueStatement.$clinit()
+(func $$clinit__void@continuestatement.ContinueStatement
+ ;;@ continuestatement/ContinueStatement.java:18:13
+ (block
+  ;; if (continuestatement.ContinueStatement.$initialized) return;
+  ;;@ continuestatement/ContinueStatement.java:18:13
+  (if (global.get $f_$initialized__continuestatement_ContinueStatement)
+   (then
+    ;; return;
+    ;;@ continuestatement/ContinueStatement.java:18:13
+    (return )
+   )
+  )
+  ;; (continuestatement.ContinueStatement.$initialized = true);
+  ;;@ continuestatement/ContinueStatement.java:18:13
+  (global.set $f_$initialized__continuestatement_ContinueStatement (i32.const 1))
+  ;; java.lang.Object.$clinit();
+  ;;@ continuestatement/ContinueStatement.java:18:13
+  (call $$clinit__void@java.lang.Object )
+ )
+)
+
+;;; Class<?> ContinueStatement.getClass()
+(func $m_getClass__java_lang_Class@continuestatement.ContinueStatement
+ (type $function.m_getClass__java_lang_Class)
+ (param $this.untyped (ref $java.lang.Object))
+ (result (ref null $java.lang.Class))
+ (local $this (ref null $continuestatement.ContinueStatement))
+ (local.set $this (ref.cast_static $continuestatement.ContinueStatement (local.get $this.untyped)))
+ (block
+  ;; return javaemul.internal.ClassLiteralPool.$getContinuestatement.ContinueStatement();
+  (return (call $function.no.side.effects.$getContinuestatement.ContinueStatement__java_lang_Class (ref.func $$getContinuestatement.ContinueStatement__java_lang_Class@javaemul.internal.ClassLiteralPool) ))
+ )
+)
+(elem declare func $m_getClass__java_lang_Class@continuestatement.ContinueStatement)

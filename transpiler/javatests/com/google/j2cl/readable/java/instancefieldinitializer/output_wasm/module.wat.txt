@@ -1,0 +1,131 @@
+;;; Code for instancefieldinitializer.InstanceFieldInitializer [static fields]
+(global $f_$initialized__instancefieldinitializer_InstanceFieldInitializer (mut i32) (i32.const 0))
+
+;;; Code for instancefieldinitializer.InstanceFieldInitializer [vtable.init]
+(global $instancefieldinitializer.InstanceFieldInitializer.vtable (ref $instancefieldinitializer.InstanceFieldInitializer.vtable) 
+ (struct.new $instancefieldinitializer.InstanceFieldInitializer.vtable
+  (ref.func $m_equals__java_lang_Object__boolean@java.lang.Object)
+  (ref.func $m_hashCode__int@java.lang.Object)
+  (ref.func $m_toString__java_lang_String@java.lang.Object)
+  (ref.func $m_getClass__java_lang_Class@instancefieldinitializer.InstanceFieldInitializer)
+ )
+)
+
+;;; Code for instancefieldinitializer.InstanceFieldInitializer [itable.init]
+(global $instancefieldinitializer.InstanceFieldInitializer.itable (ref $instancefieldinitializer.InstanceFieldInitializer.itable) (struct.new $instancefieldinitializer.InstanceFieldInitializer.itable 
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+ ))
+
+;;; Code for instancefieldinitializer.InstanceFieldInitializer [CLASS]
+(type $instancefieldinitializer.InstanceFieldInitializer (struct_subtype 
+ (field $vtable (ref $instancefieldinitializer.InstanceFieldInitializer.vtable)) 
+ (field $itable (ref $instancefieldinitializer.InstanceFieldInitializer.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+ (field $f_a__instancefieldinitializer_InstanceFieldInitializer i32)
+ (field $f_b__instancefieldinitializer_InstanceFieldInitializer (mut i32))
+  $java.lang.Object)
+)
+(type $instancefieldinitializer.InstanceFieldInitializer.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+  $java.lang.Object.vtable)
+)
+(type $instancefieldinitializer.InstanceFieldInitializer.itable (struct_subtype 
+(field $slot0 (ref null struct))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $java.lang.Object.itable))
+
+;;; InstanceFieldInitializer InstanceFieldInitializer.$create()
+(func $$create__@instancefieldinitializer.InstanceFieldInitializer
+ (result (ref null $instancefieldinitializer.InstanceFieldInitializer))
+ ;;@ instancefieldinitializer/InstanceFieldInitializer.java:18:13
+ (local $$instance (ref null $instancefieldinitializer.InstanceFieldInitializer))
+ (block
+  ;; InstanceFieldInitializer $instance = new InstanceFieldInitializer.<init>(0,1,0);
+  ;;@ instancefieldinitializer/InstanceFieldInitializer.java:18:13
+  (local.set $$instance (struct.new $instancefieldinitializer.InstanceFieldInitializer (ref.as_non_null (global.get $instancefieldinitializer.InstanceFieldInitializer.vtable)) (ref.as_non_null (global.get $instancefieldinitializer.InstanceFieldInitializer.itable)) (i32.const 0) (i32.const 1) (i32.const 0)))
+  ;; $instance.$ctor();
+  ;;@ instancefieldinitializer/InstanceFieldInitializer.java:18:13
+  (call $$ctor__void_$p_instancefieldinitializer_InstanceFieldInitializer@instancefieldinitializer.InstanceFieldInitializer (ref.as_non_null (local.get $$instance)))
+  ;; return $instance;
+  ;;@ instancefieldinitializer/InstanceFieldInitializer.java:18:13
+  (return (local.get $$instance))
+ )
+)
+
+;;; void InstanceFieldInitializer.$ctor()
+(func $$ctor__void_$p_instancefieldinitializer_InstanceFieldInitializer@instancefieldinitializer.InstanceFieldInitializer
+ (param $this (ref null $instancefieldinitializer.InstanceFieldInitializer))
+ ;;@ instancefieldinitializer/InstanceFieldInitializer.java:18:13
+ (block
+  ;; instancefieldinitializer.InstanceFieldInitializer.$clinit();
+  ;;@ instancefieldinitializer/InstanceFieldInitializer.java:18:13
+  (call $$clinit__void@instancefieldinitializer.InstanceFieldInitializer )
+  ;; Object.this.$ctor();
+  ;;@ instancefieldinitializer/InstanceFieldInitializer.java:18:13
+  (call $$ctor__void_$p_java_lang_Object@java.lang.Object (ref.as_non_null (local.get $this)))
+  ;; InstanceFieldInitializer.this.$init();
+  ;;@ instancefieldinitializer/InstanceFieldInitializer.java:18:13
+  (call $$init__void_$p_instancefieldinitializer_InstanceFieldInitializer@instancefieldinitializer.InstanceFieldInitializer (ref.as_non_null (local.get $this)))
+ )
+)
+
+;;; void InstanceFieldInitializer.$init()
+(func $$init__void_$p_instancefieldinitializer_InstanceFieldInitializer@instancefieldinitializer.InstanceFieldInitializer
+ (param $this (ref null $instancefieldinitializer.InstanceFieldInitializer))
+ ;;@ instancefieldinitializer/InstanceFieldInitializer.java:18:13
+ (block
+  ;; (InstanceFieldInitializer.this.b = (InstanceFieldInitializer.this.a * 2));
+  ;;@ instancefieldinitializer/InstanceFieldInitializer.java:20:2
+  (struct.set $instancefieldinitializer.InstanceFieldInitializer $f_b__instancefieldinitializer_InstanceFieldInitializer(local.get $this) (i32.mul (struct.get $instancefieldinitializer.InstanceFieldInitializer $f_a__instancefieldinitializer_InstanceFieldInitializer(local.get $this)) (i32.const 2)))
+ )
+)
+
+;;; void InstanceFieldInitializer.$clinit()
+(func $$clinit__void@instancefieldinitializer.InstanceFieldInitializer
+ ;;@ instancefieldinitializer/InstanceFieldInitializer.java:18:13
+ (block
+  ;; if (instancefieldinitializer.InstanceFieldInitializer.$initialized) return;
+  ;;@ instancefieldinitializer/InstanceFieldInitializer.java:18:13
+  (if (global.get $f_$initialized__instancefieldinitializer_InstanceFieldInitializer)
+   (then
+    ;; return;
+    ;;@ instancefieldinitializer/InstanceFieldInitializer.java:18:13
+    (return )
+   )
+  )
+  ;; (instancefieldinitializer.InstanceFieldInitializer.$initialized = true);
+  ;;@ instancefieldinitializer/InstanceFieldInitializer.java:18:13
+  (global.set $f_$initialized__instancefieldinitializer_InstanceFieldInitializer (i32.const 1))
+  ;; java.lang.Object.$clinit();
+  ;;@ instancefieldinitializer/InstanceFieldInitializer.java:18:13
+  (call $$clinit__void@java.lang.Object )
+ )
+)
+
+;;; Class<?> InstanceFieldInitializer.getClass()
+(func $m_getClass__java_lang_Class@instancefieldinitializer.InstanceFieldInitializer
+ (type $function.m_getClass__java_lang_Class)
+ (param $this.untyped (ref $java.lang.Object))
+ (result (ref null $java.lang.Class))
+ (local $this (ref null $instancefieldinitializer.InstanceFieldInitializer))
+ (local.set $this (ref.cast_static $instancefieldinitializer.InstanceFieldInitializer (local.get $this.untyped)))
+ (block
+  ;; return javaemul.internal.ClassLiteralPool.$getInstancefieldinitializer.InstanceFieldInitializer();
+  (return (call $function.no.side.effects.$getInstancefieldinitializer.InstanceFieldInitializer__java_lang_Class (ref.func $$getInstancefieldinitializer.InstanceFieldInitializer__java_lang_Class@javaemul.internal.ClassLiteralPool) ))
+ )
+)
+(elem declare func $m_getClass__java_lang_Class@instancefieldinitializer.InstanceFieldInitializer)

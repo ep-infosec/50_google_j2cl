@@ -1,0 +1,25 @@
+// Generated from "newinstance/NewInstanceExpr.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package newinstance
+
+import javaemul.lang.*
+import kotlin.Array
+import kotlin.OptIn
+import kotlin.String
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.jvm.JvmStatic
+import kotlin.native.ObjCName
+import newinstance.NewInstanceExpr
+
+@ObjCName("NewinstanceNewInstanceExpr", exact = true)
+open class NewInstanceExpr {
+ companion object {
+  @JvmStatic
+  fun main(
+   @ObjCName("withNSStringArray", exact = false) args: Array<String?>?
+  ) {
+   val a: NewInstanceExpr? = NewInstanceExpr()
+  }
+ }
+}

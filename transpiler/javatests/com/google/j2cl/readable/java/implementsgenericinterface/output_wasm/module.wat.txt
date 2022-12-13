@@ -1,0 +1,287 @@
+;;; Code for implementsgenericinterface.GenericInterface [static fields]
+(global $f_$initialized__implementsgenericinterface_GenericInterface (mut i32) (i32.const 0))
+
+;;; Code for implementsgenericinterface.GenericSubInterface [static fields]
+(global $f_$initialized__implementsgenericinterface_GenericSubInterface (mut i32) (i32.const 0))
+
+;;; Code for implementsgenericinterface.GenericInterfaceGenericImpl [static fields]
+(global $f_$initialized__implementsgenericinterface_GenericInterfaceGenericImpl (mut i32) (i32.const 0))
+
+;;; Code for implementsgenericinterface.GenericInterfaceImpl [static fields]
+(global $f_$initialized__implementsgenericinterface_GenericInterfaceImpl (mut i32) (i32.const 0))
+
+;;; Code for implementsgenericinterface.GenericInterfaceGenericImpl [vtable.init]
+(global $implementsgenericinterface.GenericInterfaceGenericImpl.vtable (ref $implementsgenericinterface.GenericInterfaceGenericImpl.vtable) 
+ (struct.new $implementsgenericinterface.GenericInterfaceGenericImpl.vtable
+  (ref.func $m_equals__java_lang_Object__boolean@java.lang.Object)
+  (ref.func $m_hashCode__int@java.lang.Object)
+  (ref.func $m_toString__java_lang_String@java.lang.Object)
+  (ref.func $m_getClass__java_lang_Class@implementsgenericinterface.GenericInterfaceGenericImpl)
+ )
+)
+
+;;; Code for implementsgenericinterface.GenericInterfaceGenericImpl [itable.init]
+(global $implementsgenericinterface.GenericInterfaceGenericImpl.itable (ref $implementsgenericinterface.GenericInterfaceGenericImpl.itable) (struct.new $implementsgenericinterface.GenericInterfaceGenericImpl.itable 
+ (struct.new $implementsgenericinterface.GenericInterface.vtable
+ )
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+ ))
+
+;;; Code for implementsgenericinterface.GenericInterfaceImpl [vtable.init]
+(global $implementsgenericinterface.GenericInterfaceImpl.vtable (ref $implementsgenericinterface.GenericInterfaceImpl.vtable) 
+ (struct.new $implementsgenericinterface.GenericInterfaceImpl.vtable
+  (ref.func $m_equals__java_lang_Object__boolean@java.lang.Object)
+  (ref.func $m_hashCode__int@java.lang.Object)
+  (ref.func $m_toString__java_lang_String@java.lang.Object)
+  (ref.func $m_getClass__java_lang_Class@implementsgenericinterface.GenericInterfaceImpl)
+ )
+)
+
+;;; Code for implementsgenericinterface.GenericInterfaceImpl [itable.init]
+(global $implementsgenericinterface.GenericInterfaceImpl.itable (ref $implementsgenericinterface.GenericInterfaceImpl.itable) (struct.new $implementsgenericinterface.GenericInterfaceImpl.itable 
+ (struct.new $implementsgenericinterface.GenericInterface.vtable
+ )
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+ ))
+
+;;; Code for implementsgenericinterface.GenericInterface [INTERFACE]
+(type $implementsgenericinterface.GenericInterface.vtable (struct 
+ )
+)
+
+;;; void GenericInterface.$clinit()
+(func $$clinit__void@implementsgenericinterface.GenericInterface
+ ;;@ implementsgenericinterface/GenericInterfaceImpl.java:18:10
+ (block
+  ;; if (implementsgenericinterface.GenericInterface.$initialized) return;
+  ;;@ implementsgenericinterface/GenericInterfaceImpl.java:18:10
+  (if (global.get $f_$initialized__implementsgenericinterface_GenericInterface)
+   (then
+    ;; return;
+    ;;@ implementsgenericinterface/GenericInterfaceImpl.java:18:10
+    (return )
+   )
+  )
+  ;; (implementsgenericinterface.GenericInterface.$initialized = true);
+  ;;@ implementsgenericinterface/GenericInterfaceImpl.java:18:10
+  (global.set $f_$initialized__implementsgenericinterface_GenericInterface (i32.const 1))
+ )
+)
+
+;;; Code for implementsgenericinterface.GenericSubInterface [INTERFACE]
+(type $implementsgenericinterface.GenericSubInterface.vtable (struct 
+ )
+)
+
+;;; void GenericSubInterface.$clinit()
+(func $$clinit__void@implementsgenericinterface.GenericSubInterface
+ ;;@ implementsgenericinterface/GenericInterfaceImpl.java:20:10
+ (block
+  ;; if (implementsgenericinterface.GenericSubInterface.$initialized) return;
+  ;;@ implementsgenericinterface/GenericInterfaceImpl.java:20:10
+  (if (global.get $f_$initialized__implementsgenericinterface_GenericSubInterface)
+   (then
+    ;; return;
+    ;;@ implementsgenericinterface/GenericInterfaceImpl.java:20:10
+    (return )
+   )
+  )
+  ;; (implementsgenericinterface.GenericSubInterface.$initialized = true);
+  ;;@ implementsgenericinterface/GenericInterfaceImpl.java:20:10
+  (global.set $f_$initialized__implementsgenericinterface_GenericSubInterface (i32.const 1))
+ )
+)
+
+;;; Code for implementsgenericinterface.GenericInterfaceGenericImpl [CLASS]
+(type $implementsgenericinterface.GenericInterfaceGenericImpl (struct_subtype 
+ (field $vtable (ref $implementsgenericinterface.GenericInterfaceGenericImpl.vtable)) 
+ (field $itable (ref $implementsgenericinterface.GenericInterfaceGenericImpl.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+  $java.lang.Object)
+)
+(type $implementsgenericinterface.GenericInterfaceGenericImpl.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+  $java.lang.Object.vtable)
+)
+(type $implementsgenericinterface.GenericInterfaceGenericImpl.itable (struct_subtype 
+(field $slot0 (ref $implementsgenericinterface.GenericInterface.vtable))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $java.lang.Object.itable))
+
+;;; GenericInterfaceGenericImpl<T> GenericInterfaceGenericImpl.$create()
+(func $$create__@implementsgenericinterface.GenericInterfaceGenericImpl
+ (result (ref null $implementsgenericinterface.GenericInterfaceGenericImpl))
+ ;;@ implementsgenericinterface/GenericInterfaceImpl.java:22:6
+ (local $$instance (ref null $implementsgenericinterface.GenericInterfaceGenericImpl))
+ (block
+  ;; GenericInterfaceGenericImpl<T> $instance = new GenericInterfaceGenericImpl.<init>(0);
+  ;;@ implementsgenericinterface/GenericInterfaceImpl.java:22:6
+  (local.set $$instance (struct.new $implementsgenericinterface.GenericInterfaceGenericImpl (ref.as_non_null (global.get $implementsgenericinterface.GenericInterfaceGenericImpl.vtable)) (ref.as_non_null (global.get $implementsgenericinterface.GenericInterfaceGenericImpl.itable)) (i32.const 0)))
+  ;; $instance.$ctor();
+  ;;@ implementsgenericinterface/GenericInterfaceImpl.java:22:6
+  (call $$ctor__void_$p_implementsgenericinterface_GenericInterfaceGenericImpl@implementsgenericinterface.GenericInterfaceGenericImpl (ref.as_non_null (local.get $$instance)))
+  ;; return $instance;
+  ;;@ implementsgenericinterface/GenericInterfaceImpl.java:22:6
+  (return (local.get $$instance))
+ )
+)
+
+;;; void GenericInterfaceGenericImpl.$ctor()
+(func $$ctor__void_$p_implementsgenericinterface_GenericInterfaceGenericImpl@implementsgenericinterface.GenericInterfaceGenericImpl
+ (param $this (ref null $implementsgenericinterface.GenericInterfaceGenericImpl))
+ ;;@ implementsgenericinterface/GenericInterfaceImpl.java:22:6
+ (block
+  ;; implementsgenericinterface.GenericInterfaceGenericImpl.$clinit();
+  ;;@ implementsgenericinterface/GenericInterfaceImpl.java:22:6
+  (call $$clinit__void@implementsgenericinterface.GenericInterfaceGenericImpl )
+  ;; Object.this.$ctor();
+  ;;@ implementsgenericinterface/GenericInterfaceImpl.java:22:6
+  (call $$ctor__void_$p_java_lang_Object@java.lang.Object (ref.as_non_null (local.get $this)))
+ )
+)
+
+;;; void GenericInterfaceGenericImpl.$clinit()
+(func $$clinit__void@implementsgenericinterface.GenericInterfaceGenericImpl
+ ;;@ implementsgenericinterface/GenericInterfaceImpl.java:22:6
+ (block
+  ;; if (implementsgenericinterface.GenericInterfaceGenericImpl.$initialized) return;
+  ;;@ implementsgenericinterface/GenericInterfaceImpl.java:22:6
+  (if (global.get $f_$initialized__implementsgenericinterface_GenericInterfaceGenericImpl)
+   (then
+    ;; return;
+    ;;@ implementsgenericinterface/GenericInterfaceImpl.java:22:6
+    (return )
+   )
+  )
+  ;; (implementsgenericinterface.GenericInterfaceGenericImpl.$initialized = true);
+  ;;@ implementsgenericinterface/GenericInterfaceImpl.java:22:6
+  (global.set $f_$initialized__implementsgenericinterface_GenericInterfaceGenericImpl (i32.const 1))
+  ;; java.lang.Object.$clinit();
+  ;;@ implementsgenericinterface/GenericInterfaceImpl.java:22:6
+  (call $$clinit__void@java.lang.Object )
+ )
+)
+
+;;; Class<?> GenericInterfaceGenericImpl.getClass()
+(func $m_getClass__java_lang_Class@implementsgenericinterface.GenericInterfaceGenericImpl
+ (type $function.m_getClass__java_lang_Class)
+ (param $this.untyped (ref $java.lang.Object))
+ (result (ref null $java.lang.Class))
+ (local $this (ref null $implementsgenericinterface.GenericInterfaceGenericImpl))
+ (local.set $this (ref.cast_static $implementsgenericinterface.GenericInterfaceGenericImpl (local.get $this.untyped)))
+ (block
+  ;; return javaemul.internal.ClassLiteralPool.$getImplementsgenericinterface.GenericInterfaceGenericImpl();
+  (return (call $function.no.side.effects.$getImplementsgenericinterface.GenericInterfaceGenericImpl__java_lang_Class (ref.func $$getImplementsgenericinterface.GenericInterfaceGenericImpl__java_lang_Class@javaemul.internal.ClassLiteralPool) ))
+ )
+)
+(elem declare func $m_getClass__java_lang_Class@implementsgenericinterface.GenericInterfaceGenericImpl)
+
+;;; Code for implementsgenericinterface.GenericInterfaceImpl [CLASS]
+(type $implementsgenericinterface.GenericInterfaceImpl (struct_subtype 
+ (field $vtable (ref $implementsgenericinterface.GenericInterfaceImpl.vtable)) 
+ (field $itable (ref $implementsgenericinterface.GenericInterfaceImpl.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+  $java.lang.Object)
+)
+(type $implementsgenericinterface.GenericInterfaceImpl.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+  $java.lang.Object.vtable)
+)
+(type $implementsgenericinterface.GenericInterfaceImpl.itable (struct_subtype 
+(field $slot0 (ref $implementsgenericinterface.GenericInterface.vtable))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $java.lang.Object.itable))
+
+;;; GenericInterfaceImpl GenericInterfaceImpl.$create()
+(func $$create__@implementsgenericinterface.GenericInterfaceImpl
+ (result (ref null $implementsgenericinterface.GenericInterfaceImpl))
+ ;;@ implementsgenericinterface/GenericInterfaceImpl.java:24:13
+ (local $$instance (ref null $implementsgenericinterface.GenericInterfaceImpl))
+ (block
+  ;; GenericInterfaceImpl $instance = new GenericInterfaceImpl.<init>(0);
+  ;;@ implementsgenericinterface/GenericInterfaceImpl.java:24:13
+  (local.set $$instance (struct.new $implementsgenericinterface.GenericInterfaceImpl (ref.as_non_null (global.get $implementsgenericinterface.GenericInterfaceImpl.vtable)) (ref.as_non_null (global.get $implementsgenericinterface.GenericInterfaceImpl.itable)) (i32.const 0)))
+  ;; $instance.$ctor();
+  ;;@ implementsgenericinterface/GenericInterfaceImpl.java:24:13
+  (call $$ctor__void_$p_implementsgenericinterface_GenericInterfaceImpl@implementsgenericinterface.GenericInterfaceImpl (ref.as_non_null (local.get $$instance)))
+  ;; return $instance;
+  ;;@ implementsgenericinterface/GenericInterfaceImpl.java:24:13
+  (return (local.get $$instance))
+ )
+)
+
+;;; void GenericInterfaceImpl.$ctor()
+(func $$ctor__void_$p_implementsgenericinterface_GenericInterfaceImpl@implementsgenericinterface.GenericInterfaceImpl
+ (param $this (ref null $implementsgenericinterface.GenericInterfaceImpl))
+ ;;@ implementsgenericinterface/GenericInterfaceImpl.java:24:13
+ (block
+  ;; implementsgenericinterface.GenericInterfaceImpl.$clinit();
+  ;;@ implementsgenericinterface/GenericInterfaceImpl.java:24:13
+  (call $$clinit__void@implementsgenericinterface.GenericInterfaceImpl )
+  ;; Object.this.$ctor();
+  ;;@ implementsgenericinterface/GenericInterfaceImpl.java:24:13
+  (call $$ctor__void_$p_java_lang_Object@java.lang.Object (ref.as_non_null (local.get $this)))
+ )
+)
+
+;;; void GenericInterfaceImpl.$clinit()
+(func $$clinit__void@implementsgenericinterface.GenericInterfaceImpl
+ ;;@ implementsgenericinterface/GenericInterfaceImpl.java:24:13
+ (block
+  ;; if (implementsgenericinterface.GenericInterfaceImpl.$initialized) return;
+  ;;@ implementsgenericinterface/GenericInterfaceImpl.java:24:13
+  (if (global.get $f_$initialized__implementsgenericinterface_GenericInterfaceImpl)
+   (then
+    ;; return;
+    ;;@ implementsgenericinterface/GenericInterfaceImpl.java:24:13
+    (return )
+   )
+  )
+  ;; (implementsgenericinterface.GenericInterfaceImpl.$initialized = true);
+  ;;@ implementsgenericinterface/GenericInterfaceImpl.java:24:13
+  (global.set $f_$initialized__implementsgenericinterface_GenericInterfaceImpl (i32.const 1))
+  ;; java.lang.Object.$clinit();
+  ;;@ implementsgenericinterface/GenericInterfaceImpl.java:24:13
+  (call $$clinit__void@java.lang.Object )
+ )
+)
+
+;;; Class<?> GenericInterfaceImpl.getClass()
+(func $m_getClass__java_lang_Class@implementsgenericinterface.GenericInterfaceImpl
+ (type $function.m_getClass__java_lang_Class)
+ (param $this.untyped (ref $java.lang.Object))
+ (result (ref null $java.lang.Class))
+ (local $this (ref null $implementsgenericinterface.GenericInterfaceImpl))
+ (local.set $this (ref.cast_static $implementsgenericinterface.GenericInterfaceImpl (local.get $this.untyped)))
+ (block
+  ;; return javaemul.internal.ClassLiteralPool.$getImplementsgenericinterface.GenericInterfaceImpl();
+  (return (call $function.no.side.effects.$getImplementsgenericinterface.GenericInterfaceImpl__java_lang_Class (ref.func $$getImplementsgenericinterface.GenericInterfaceImpl__java_lang_Class@javaemul.internal.ClassLiteralPool) ))
+ )
+)
+(elem declare func $m_getClass__java_lang_Class@implementsgenericinterface.GenericInterfaceImpl)

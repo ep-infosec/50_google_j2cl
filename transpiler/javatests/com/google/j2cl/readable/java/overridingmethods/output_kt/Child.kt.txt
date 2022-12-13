@@ -1,0 +1,26 @@
+// Generated from "overridingmethods/Child.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package overridingmethods
+
+import javaemul.lang.*
+import kotlin.OptIn
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.native.ObjCName
+import overridingmethods.Parent
+import overridingmethods.SomeInterface
+
+fun interface SomeInterface {
+ fun bar()
+}
+
+open class Parent {
+ open fun `fun`() {}
+}
+
+@ObjCName("OverridingmethodsChild", exact = true)
+open class Child: Parent(), SomeInterface {
+ open override fun `fun`() {}
+
+ open override fun bar() {}
+}

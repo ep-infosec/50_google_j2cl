@@ -1,0 +1,17 @@
+// Generated from "longparametersignature/LongParameterSignature.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package longparametersignature
+
+import javaemul.lang.*
+import kotlin.Long
+import kotlin.OptIn
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.native.ObjCName
+
+@ObjCName("LongparametersignatureLongParameterSignature", exact = true)
+open class LongParameterSignature {
+ open fun main(
+  @ObjCName("withLong", exact = false) foo: Long
+ ) {}
+}

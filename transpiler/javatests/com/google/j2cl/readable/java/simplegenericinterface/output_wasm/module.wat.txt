@@ -1,0 +1,27 @@
+;;; Code for simplegenericinterface.SimpleGenericInterface [static fields]
+(global $f_$initialized__simplegenericinterface_SimpleGenericInterface (mut i32) (i32.const 0))
+
+;;; Code for simplegenericinterface.SimpleGenericInterface [INTERFACE]
+(type $simplegenericinterface.SimpleGenericInterface.vtable (struct 
+ (field $m_fun__java_lang_Object__java_lang_Object (ref $function.m_fun__java_lang_Object__java_lang_Object))
+ )
+)
+
+;;; void SimpleGenericInterface.$clinit()
+(func $$clinit__void@simplegenericinterface.SimpleGenericInterface
+ ;;@ simplegenericinterface/SimpleGenericInterface.java:18:17
+ (block
+  ;; if (simplegenericinterface.SimpleGenericInterface.$initialized) return;
+  ;;@ simplegenericinterface/SimpleGenericInterface.java:18:17
+  (if (global.get $f_$initialized__simplegenericinterface_SimpleGenericInterface)
+   (then
+    ;; return;
+    ;;@ simplegenericinterface/SimpleGenericInterface.java:18:17
+    (return )
+   )
+  )
+  ;; (simplegenericinterface.SimpleGenericInterface.$initialized = true);
+  ;;@ simplegenericinterface/SimpleGenericInterface.java:18:17
+  (global.set $f_$initialized__simplegenericinterface_SimpleGenericInterface (i32.const 1))
+ )
+)

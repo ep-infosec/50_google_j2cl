@@ -1,0 +1,62 @@
+// Generated from "mixednestings/MixedNestings.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package mixednestings
+
+import javaemul.lang.*
+import kotlin.Int
+import kotlin.OptIn
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.native.ObjCName
+import mixednestings.MyInterface
+
+fun interface MyInterface {
+ fun `fun`(
+  @ObjCName("withInt", exact = false) a: Int
+ ): Int
+}
+
+@ObjCName("MixednestingsMixedNestings", exact = true)
+open class MixedNestings {
+ open fun mm() {}
+
+ open fun test() {
+  A().a()
+ }
+
+ open inner class A {
+  open fun aa() {}
+
+  open fun a() {
+   open class ___1B {
+    open fun bb() {}
+
+    open fun b(): Int {
+     val i: MyInterface? = object : MyInterface {
+      open override fun `fun`(a: Int): Int {
+       val ii: MyInterface? = MyInterface { n: Int ->
+        this@MixedNestings.mm()
+        this@A.aa()
+        this@___1B.bb()
+        val iii: MyInterface? = MyInterface { m: Int ->
+         this@MixedNestings.mm()
+         this@A.aa()
+         this@___1B.bb()
+         return@MyInterface object : MyInterface {
+          open override fun `fun`(b: Int): Int {
+           return b
+          }
+         }.`fun`(100)
+        }
+        return@MyInterface iii!!.`fun`(200)
+       }
+       return ii!!.`fun`(300)
+      }
+     }
+     return i!!.`fun`(400)
+    }
+   }
+   ___1B().b()
+  }
+ }
+}

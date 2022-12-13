@@ -1,0 +1,16 @@
+// Generated from "equalsandhashcodeininterface/ViaJsMethodInInterface.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package equalsandhashcodeininterface
+
+import javaemul.lang.*
+import kotlin.OptIn
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.native.ObjCName
+
+@ObjCName("EqualsandhashcodeininterfaceViaJsMethodInInterface", exact = true)
+interface ViaJsMethodInInterface {
+ fun notEquals()
+
+ fun notHashCode()
+}

@@ -1,0 +1,48 @@
+goog.module('jsoptional.Main.TemplatedSubtype$impl');
+
+const j_l_Object = goog.require('java.lang.Object$impl');
+const I = goog.require('jsoptional.Main.I$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+/**
+ * @template T
+ * @implements {I<T>}
+ */
+class TemplatedSubtype extends j_l_Object {
+ /** @protected @nodts */
+ constructor() {
+  super();
+ }
+ /** @nodts @template T @return {!TemplatedSubtype<T>} */
+ static $create__() {
+  TemplatedSubtype.$clinit();
+  let $instance = new TemplatedSubtype();
+  $instance.$ctor__jsoptional_Main_TemplatedSubtype__void();
+  return $instance;
+ }
+ /** @nodts */
+ $ctor__jsoptional_Main_TemplatedSubtype__void() {
+  this.$ctor__java_lang_Object__void();
+ }
+ /** @override */
+ m(/** T */ t, /** *= */ o) {}
+ /** @nodts */
+ static $clinit() {
+  TemplatedSubtype.$clinit = () =>{};
+  TemplatedSubtype.$loadModules();
+  j_l_Object.$clinit();
+ }
+ /** @nodts @return {boolean} */
+ static $isInstance(/** ? */ instance) {
+  return instance instanceof TemplatedSubtype;
+ }
+ 
+ /** @nodts */
+ static $loadModules() {}
+}
+I.$markImplementor(TemplatedSubtype);
+$Util.$setClassMetadata(TemplatedSubtype, 'jsoptional.Main$TemplatedSubtype');
+
+exports = TemplatedSubtype;
+
+//# sourceMappingURL=Main$TemplatedSubtype.js.map

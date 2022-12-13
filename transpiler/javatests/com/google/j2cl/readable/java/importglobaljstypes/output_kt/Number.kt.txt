@@ -1,0 +1,59 @@
+// Generated from "importglobaljstypes/Number.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package importglobaljstypes
+
+import javaemul.lang.*
+import importglobaljstypes.Number
+import kotlin.Any
+import kotlin.Boolean
+import kotlin.Double
+import kotlin.IntArray
+import kotlin.OptIn
+import kotlin.String
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.jvm.JvmStatic
+import kotlin.native.ObjCName
+
+@ObjCName("ImportglobaljstypesNumber", exact = true)
+open class Number {
+ open fun testJsDocForLiteralType(
+  @ObjCName("withImportglobaljstypesNumber_MyLiteralType", exact = false) a: Number.MyLiteralType?
+ ): Number.MyLiteralType? {
+  return a
+ }
+
+ companion object {
+  @JvmStatic
+  external fun `fun`(
+   @ObjCName("withDouble", exact = false) x: Double
+  ): Boolean
+
+  @JvmStatic
+  fun test(
+   @ObjCName("withDouble", exact = false) x: Double
+  ): Boolean {
+   return Number.`fun`(x)
+  }
+
+  @JvmStatic
+  external fun getFromCharCodeFunction_private_2(): Number.NativeFunction<String?>?
+
+  @JvmStatic
+  fun fromCharCode(
+   @ObjCName("withIntArray", exact = false) array: IntArray?
+  ): String? {
+   return Number.getFromCharCodeFunction_private_2()!!.apply(null, array)
+  }
+ }
+
+ fun interface NativeFunction<T> {
+  fun apply(
+   @ObjCName("withId", exact = false) thisContext: Any?,
+   @ObjCName("withIntArray", exact = false) argsArray: IntArray?
+  ): T
+ }
+
+ @ObjCName("ImportglobaljstypesNumber_MyLiteralType", exact = true)
+ interface MyLiteralType {}
+}

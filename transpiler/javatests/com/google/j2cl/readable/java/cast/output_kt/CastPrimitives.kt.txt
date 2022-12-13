@@ -1,0 +1,205 @@
+// Generated from "cast/CastPrimitives.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package cast
+
+import javaemul.lang.*
+import cast.CastPrimitives
+import kotlin.Any
+import kotlin.Boolean
+import kotlin.Byte
+import kotlin.ByteArray
+import kotlin.Char
+import kotlin.Double
+import kotlin.Float
+import kotlin.Int
+import kotlin.Long
+import kotlin.OptIn
+import kotlin.Short
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.jvm.JvmStatic
+import kotlin.native.ObjCName
+
+@ObjCName("CastCastPrimitives", exact = true)
+open class CastPrimitives {
+ open fun testPrimitiveCasts() {
+  var b: Byte = (1).toByte()
+  var c: Char = '\u0001'
+  var s: Short = (1).toShort()
+  var i: Int = 1
+  var l: Long = 1L
+  var f: Float = 1.1f
+  var d: Double = 1.1
+  b = b
+  c = b.toInt().toChar()
+  s = b.toShort()
+  i = b.toInt()
+  l = b.toLong()
+  f = b.toFloat()
+  d = b.toDouble()
+  b = c.code.toByte()
+  c = c
+  s = c.code.toShort()
+  i = c.code
+  l = c.code.toLong()
+  f = c.code.toFloat()
+  d = c.code.toDouble()
+  b = s.toByte()
+  c = s.toInt().toChar()
+  s = s
+  i = s.toInt()
+  l = s.toLong()
+  f = s.toFloat()
+  d = s.toDouble()
+  b = i.toByte()
+  c = i.toChar()
+  s = i.toShort()
+  i = i
+  l = i.toLong()
+  f = i.toFloat()
+  d = i.toDouble()
+  b = l.toByte()
+  c = l.toInt().toChar()
+  s = l.toShort()
+  i = l.toInt()
+  l = l
+  f = l.toFloat()
+  d = l.toDouble()
+  b = f.toInt().toByte()
+  c = f.toInt().toChar()
+  s = f.toInt().toShort()
+  i = f.toInt()
+  l = f.toLong()
+  f = f
+  d = f.toDouble()
+  b = d.toInt().toByte()
+  c = d.toInt().toChar()
+  s = d.toInt().toShort()
+  i = d.toInt()
+  l = d.toLong()
+  f = d.toFloat()
+  d = d
+ }
+
+ open fun testReferenceToPrimitive() {
+  val o: Any? = Any()
+  val bool: Boolean = o as Boolean
+  val b: Byte = o as Byte
+  val c: Char = o as Char
+  val s: Short = o as Short
+  val i: Int = o as Int
+  val l: Long = o as Long
+  val f: Float = o as Float
+  val d: Double = o as Double
+ }
+
+ open fun testUnboxAndWiden() {
+  val boxedByte: Byte? = Byte.valueOf(0.toByte())
+  val s: Short = boxedByte!!.toByte().toShort()
+  val i: Int = boxedByte!!.toByte().toInt()
+  val l: Long = boxedByte!!.toByte().toLong()
+  val f: Float = boxedByte!!.toByte().toFloat()
+  val d: Double = boxedByte!!.toByte().toDouble()
+ }
+
+ open fun testImplicitArgumentCasts() {
+  val b: Byte = (127).toByte()
+  val c: Char = '\uFFFF'
+  val s: Short = (32767).toShort()
+  val i: Int = 2147483647
+  val l: Long = 9223372036854775807L
+  val f: Float = 3.4028235E38f
+  val d: Double = 1.7976931348623157E308
+  CastPrimitives.getShort_private_2(b.toShort())
+  CastPrimitives.getInt_private_2(b.toInt())
+  CastPrimitives.getLong_private_2(b.toLong())
+  CastPrimitives.getFloat_private_2(b.toFloat())
+  CastPrimitives.getDouble_private_2(b.toDouble())
+  CastPrimitives.getFloat_private_2(l.toFloat())
+  CastPrimitives.getDouble_private_2(l.toDouble())
+  CastPrimitives.getDouble_private_2(f.toDouble())
+  CastPrimitives.IntValueHolder(b.toInt())
+  CastPrimitives.IntValueHolder(c.code)
+  CastPrimitives.IntValueHolder(s.toInt())
+  CastPrimitives.LongValueHolder(b.toLong())
+  CastPrimitives.LongValueHolder(c.code.toLong())
+  CastPrimitives.LongValueHolder(i.toLong())
+ }
+
+ open fun testImplicitArrayIndexCasts(
+  @ObjCName("withByteArray", exact = false) array: ByteArray?
+ ) {
+  val b: Byte = (127).toByte()
+  val c: Char = '\uFFFF'
+  val s: Short = (32767).toShort()
+  val i: Int = 2147483647
+  var result: Byte = (0).toByte()
+  result = array!![b.toInt()]
+  result = array!![c.code]
+  result = array!![s.toInt()]
+  result = array!![i]
+  result = array!![1]
+  result = array!![97]
+ }
+
+ open fun testImplicitLongAssignmentCasts() {
+  val fbyte: Byte = (11).toByte()
+  val fchar: Char = '\u000C'
+  val fshort: Short = (13).toShort()
+  val fint: Int = 14
+  val flong: Long = 15L
+  val ffloat: Float = 16.0f
+  val fdouble: Double = 17.0
+  var tlong: Long = 0L
+  tlong = fbyte.toLong()
+  tlong = flong
+  tlong = fint.toLong()
+  tlong = tlong + fint.toLong()
+  tlong = tlong.shl(fint)
+  tlong = tlong + fchar.code.toLong()
+  tlong = tlong + flong
+  tlong = (tlong.toFloat() + ffloat).toLong()
+  tlong = flong * fint.toLong()
+  tlong = flong.shr(fint)
+  tlong = flong + fshort.toLong()
+  tlong = flong + flong
+  tlong = flong.shl(tlong.toInt())
+  tlong = tlong.shl(flong.toInt())
+  tlong = (0 + 1).toLong() + 2L
+ }
+
+ companion object {
+  @JvmStatic
+  fun getShort_private_2(value: Short): Short {
+   return value
+  }
+
+  @JvmStatic
+  fun getInt_private_2(value: Int): Int {
+   return value
+  }
+
+  @JvmStatic
+  fun getLong_private_2(value: Long): Long {
+   return value
+  }
+
+  @JvmStatic
+  fun getFloat_private_2(value: Float): Float {
+   return value
+  }
+
+  @JvmStatic
+  fun getDouble_private_2(value: Double): Double {
+   return value
+  }
+ }
+
+ open class IntValueHolder {
+  constructor(value: Int)
+ }
+
+ open class LongValueHolder {
+  constructor(value: Long)
+ }
+}

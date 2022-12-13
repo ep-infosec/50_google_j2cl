@@ -1,0 +1,155 @@
+;;; Code for cascadingconstructor.CascadingConstructor [static fields]
+(global $f_$initialized__cascadingconstructor_CascadingConstructor (mut i32) (i32.const 0))
+
+;;; Code for cascadingconstructor.CascadingConstructor [vtable.init]
+(global $cascadingconstructor.CascadingConstructor.vtable (ref $cascadingconstructor.CascadingConstructor.vtable) 
+ (struct.new $cascadingconstructor.CascadingConstructor.vtable
+  (ref.func $m_equals__java_lang_Object__boolean@java.lang.Object)
+  (ref.func $m_hashCode__int@java.lang.Object)
+  (ref.func $m_toString__java_lang_String@java.lang.Object)
+  (ref.func $m_getClass__java_lang_Class@cascadingconstructor.CascadingConstructor)
+ )
+)
+
+;;; Code for cascadingconstructor.CascadingConstructor [itable.init]
+(global $cascadingconstructor.CascadingConstructor.itable (ref $cascadingconstructor.CascadingConstructor.itable) (struct.new $cascadingconstructor.CascadingConstructor.itable 
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+ ))
+
+;;; Code for cascadingconstructor.CascadingConstructor [CLASS]
+(type $cascadingconstructor.CascadingConstructor (struct_subtype 
+ (field $vtable (ref $cascadingconstructor.CascadingConstructor.vtable)) 
+ (field $itable (ref $cascadingconstructor.CascadingConstructor.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+ (field $f_a__cascadingconstructor_CascadingConstructor_ i32)
+ (field $f_b__cascadingconstructor_CascadingConstructor_ (mut i32))
+  $java.lang.Object)
+)
+(type $cascadingconstructor.CascadingConstructor.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+  $java.lang.Object.vtable)
+)
+(type $cascadingconstructor.CascadingConstructor.itable (struct_subtype 
+(field $slot0 (ref null struct))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $java.lang.Object.itable))
+
+;;; CascadingConstructor CascadingConstructor.$create(int a, int b)
+(func $$create__int__int@cascadingconstructor.CascadingConstructor
+ (param $a i32)
+ (param $b i32)
+ (result (ref null $cascadingconstructor.CascadingConstructor))
+ ;;@ cascadingconstructor/CascadingConstructor.java:22:10
+ (local $$instance (ref null $cascadingconstructor.CascadingConstructor))
+ (block
+  ;; CascadingConstructor $instance = new CascadingConstructor.<init>(0,a,0);
+  ;;@ cascadingconstructor/CascadingConstructor.java:22:10
+  (local.set $$instance (struct.new $cascadingconstructor.CascadingConstructor (ref.as_non_null (global.get $cascadingconstructor.CascadingConstructor.vtable)) (ref.as_non_null (global.get $cascadingconstructor.CascadingConstructor.itable)) (i32.const 0) (local.get $a) (i32.const 0)))
+  ;; $instance.$ctor(a,b);
+  ;;@ cascadingconstructor/CascadingConstructor.java:22:10
+  (call $$ctor__int__int__void_$p_cascadingconstructor_CascadingConstructor@cascadingconstructor.CascadingConstructor (ref.as_non_null (local.get $$instance))(local.get $a)(local.get $b))
+  ;; return $instance;
+  ;;@ cascadingconstructor/CascadingConstructor.java:22:10
+  (return (local.get $$instance))
+ )
+)
+
+;;; void CascadingConstructor.$ctor(int a, int b)
+(func $$ctor__int__int__void_$p_cascadingconstructor_CascadingConstructor@cascadingconstructor.CascadingConstructor
+ (param $this (ref null $cascadingconstructor.CascadingConstructor))
+ (param $a i32)
+ (param $b i32)
+ ;;@ cascadingconstructor/CascadingConstructor.java:22:10
+ (block
+  ;; Object.this.$ctor();
+  ;;@ cascadingconstructor/CascadingConstructor.java:22:45
+  (call $$ctor__void_$p_java_lang_Object@java.lang.Object (ref.as_non_null (local.get $this)))
+  ;; (CascadingConstructor.this.b = b);
+  ;;@ cascadingconstructor/CascadingConstructor.java:24:4
+  (struct.set $cascadingconstructor.CascadingConstructor $f_b__cascadingconstructor_CascadingConstructor_(local.get $this) (local.get $b))
+ )
+)
+
+;;; CascadingConstructor CascadingConstructor.$create(int a)
+(func $$create__int@cascadingconstructor.CascadingConstructor
+ (param $a i32)
+ (result (ref null $cascadingconstructor.CascadingConstructor))
+ ;;@ cascadingconstructor/CascadingConstructor.java:27:9
+ (local $$instance (ref null $cascadingconstructor.CascadingConstructor))
+ (block
+  ;; CascadingConstructor $instance = new CascadingConstructor.<init>(0,a,0);
+  ;;@ cascadingconstructor/CascadingConstructor.java:27:9
+  (local.set $$instance (struct.new $cascadingconstructor.CascadingConstructor (ref.as_non_null (global.get $cascadingconstructor.CascadingConstructor.vtable)) (ref.as_non_null (global.get $cascadingconstructor.CascadingConstructor.itable)) (i32.const 0) (local.get $a) (i32.const 0)))
+  ;; $instance.$ctor(a);
+  ;;@ cascadingconstructor/CascadingConstructor.java:27:9
+  (call $$ctor__int__void_$p_cascadingconstructor_CascadingConstructor@cascadingconstructor.CascadingConstructor (ref.as_non_null (local.get $$instance))(local.get $a))
+  ;; return $instance;
+  ;;@ cascadingconstructor/CascadingConstructor.java:27:9
+  (return (local.get $$instance))
+ )
+)
+
+;;; void CascadingConstructor.$ctor(int a)
+(func $$ctor__int__void_$p_cascadingconstructor_CascadingConstructor@cascadingconstructor.CascadingConstructor
+ (param $this (ref null $cascadingconstructor.CascadingConstructor))
+ (param $a i32)
+ ;;@ cascadingconstructor/CascadingConstructor.java:27:9
+ (block
+  ;; cascadingconstructor.CascadingConstructor.$clinit();
+  ;;@ cascadingconstructor/CascadingConstructor.java:27:37
+  (call $$clinit__void@cascadingconstructor.CascadingConstructor )
+  ;; CascadingConstructor.this.$ctor(a,(a * 2));
+  ;;@ cascadingconstructor/CascadingConstructor.java:28:4
+  (call $$ctor__int__int__void_$p_cascadingconstructor_CascadingConstructor@cascadingconstructor.CascadingConstructor (ref.as_non_null (local.get $this))(local.get $a)(i32.mul (local.get $a) (i32.const 2)))
+ )
+)
+
+;;; void CascadingConstructor.$clinit()
+(func $$clinit__void@cascadingconstructor.CascadingConstructor
+ ;;@ cascadingconstructor/CascadingConstructor.java:18:13
+ (block
+  ;; if (cascadingconstructor.CascadingConstructor.$initialized) return;
+  ;;@ cascadingconstructor/CascadingConstructor.java:18:13
+  (if (global.get $f_$initialized__cascadingconstructor_CascadingConstructor)
+   (then
+    ;; return;
+    ;;@ cascadingconstructor/CascadingConstructor.java:18:13
+    (return )
+   )
+  )
+  ;; (cascadingconstructor.CascadingConstructor.$initialized = true);
+  ;;@ cascadingconstructor/CascadingConstructor.java:18:13
+  (global.set $f_$initialized__cascadingconstructor_CascadingConstructor (i32.const 1))
+  ;; java.lang.Object.$clinit();
+  ;;@ cascadingconstructor/CascadingConstructor.java:18:13
+  (call $$clinit__void@java.lang.Object )
+ )
+)
+
+;;; Class<?> CascadingConstructor.getClass()
+(func $m_getClass__java_lang_Class@cascadingconstructor.CascadingConstructor
+ (type $function.m_getClass__java_lang_Class)
+ (param $this.untyped (ref $java.lang.Object))
+ (result (ref null $java.lang.Class))
+ (local $this (ref null $cascadingconstructor.CascadingConstructor))
+ (local.set $this (ref.cast_static $cascadingconstructor.CascadingConstructor (local.get $this.untyped)))
+ (block
+  ;; return javaemul.internal.ClassLiteralPool.$getCascadingconstructor.CascadingConstructor();
+  (return (call $function.no.side.effects.$getCascadingconstructor.CascadingConstructor__java_lang_Class (ref.func $$getCascadingconstructor.CascadingConstructor__java_lang_Class@javaemul.internal.ClassLiteralPool) ))
+ )
+)
+(elem declare func $m_getClass__java_lang_Class@cascadingconstructor.CascadingConstructor)

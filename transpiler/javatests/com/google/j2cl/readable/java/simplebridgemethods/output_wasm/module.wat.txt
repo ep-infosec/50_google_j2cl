@@ -1,0 +1,825 @@
+;;; Code for simplebridgemethods.Superclass [static fields]
+(global $f_$initialized__simplebridgemethods_Superclass (mut i32) (i32.const 0))
+
+;;; Code for simplebridgemethods.Subclass [static fields]
+(global $f_$initialized__simplebridgemethods_Subclass (mut i32) (i32.const 0))
+
+;;; Code for simplebridgemethods.AnotherSubclass [static fields]
+(global $f_$initialized__simplebridgemethods_AnotherSubclass (mut i32) (i32.const 0))
+
+;;; Code for simplebridgemethods.Callable [static fields]
+(global $f_$initialized__simplebridgemethods_Callable (mut i32) (i32.const 0))
+
+;;; Code for simplebridgemethods.Task [static fields]
+(global $f_$initialized__simplebridgemethods_Task (mut i32) (i32.const 0))
+
+;;; Code for simplebridgemethods.AnotherTask [static fields]
+(global $f_$initialized__simplebridgemethods_AnotherTask (mut i32) (i32.const 0))
+
+;;; Code for simplebridgemethods.SimpleBridgeMethods [static fields]
+(global $f_$initialized__simplebridgemethods_SimpleBridgeMethods (mut i32) (i32.const 0))
+
+;;; Code for simplebridgemethods.Superclass [vtable.init]
+(global $simplebridgemethods.Superclass.vtable (ref $simplebridgemethods.Superclass.vtable) 
+ (struct.new $simplebridgemethods.Superclass.vtable
+  (ref.func $m_equals__java_lang_Object__boolean@java.lang.Object)
+  (ref.func $m_hashCode__int@java.lang.Object)
+  (ref.func $m_toString__java_lang_String@java.lang.Object)
+  (ref.func $m_getClass__java_lang_Class@simplebridgemethods.Superclass)
+  (ref.func $m_m1__java_lang_Error__void@simplebridgemethods.Superclass)
+ )
+)
+
+;;; Code for simplebridgemethods.Superclass [itable.init]
+(global $simplebridgemethods.Superclass.itable (ref $simplebridgemethods.Superclass.itable) (struct.new $simplebridgemethods.Superclass.itable 
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+ ))
+
+;;; Code for simplebridgemethods.Subclass [vtable.init]
+(global $simplebridgemethods.Subclass.vtable (ref $simplebridgemethods.Subclass.vtable) 
+ (struct.new $simplebridgemethods.Subclass.vtable
+  (ref.func $m_equals__java_lang_Object__boolean@java.lang.Object)
+  (ref.func $m_hashCode__int@java.lang.Object)
+  (ref.func $m_toString__java_lang_String@java.lang.Object)
+  (ref.func $m_getClass__java_lang_Class@simplebridgemethods.Subclass)
+  (ref.func $m_m1__java_lang_Error__void@simplebridgemethods.Subclass)
+  (ref.func $m_m1__java_lang_AssertionError__void@simplebridgemethods.Subclass)
+ )
+)
+
+;;; Code for simplebridgemethods.Subclass [itable.init]
+(global $simplebridgemethods.Subclass.itable (ref $simplebridgemethods.Subclass.itable) (struct.new $simplebridgemethods.Subclass.itable 
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+ ))
+
+;;; Code for simplebridgemethods.AnotherSubclass [vtable.init]
+(global $simplebridgemethods.AnotherSubclass.vtable (ref $simplebridgemethods.AnotherSubclass.vtable) 
+ (struct.new $simplebridgemethods.AnotherSubclass.vtable
+  (ref.func $m_equals__java_lang_Object__boolean@java.lang.Object)
+  (ref.func $m_hashCode__int@java.lang.Object)
+  (ref.func $m_toString__java_lang_String@java.lang.Object)
+  (ref.func $m_getClass__java_lang_Class@simplebridgemethods.AnotherSubclass)
+  (ref.func $m_m1__java_lang_Error__void@simplebridgemethods.Superclass)
+ )
+)
+
+;;; Code for simplebridgemethods.AnotherSubclass [itable.init]
+(global $simplebridgemethods.AnotherSubclass.itable (ref $simplebridgemethods.AnotherSubclass.itable) (struct.new $simplebridgemethods.AnotherSubclass.itable 
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+ ))
+
+;;; Code for simplebridgemethods.Task [vtable.init]
+(global $simplebridgemethods.Task.vtable (ref $simplebridgemethods.Task.vtable) 
+ (struct.new $simplebridgemethods.Task.vtable
+  (ref.func $m_equals__java_lang_Object__boolean@java.lang.Object)
+  (ref.func $m_hashCode__int@java.lang.Object)
+  (ref.func $m_toString__java_lang_String@java.lang.Object)
+  (ref.func $m_getClass__java_lang_Class@simplebridgemethods.Task)
+  (ref.func $m_call__java_lang_Object__void@simplebridgemethods.Task)
+ )
+)
+
+;;; Code for simplebridgemethods.Task [itable.init]
+(global $simplebridgemethods.Task.itable (ref $simplebridgemethods.Task.itable) (struct.new $simplebridgemethods.Task.itable 
+ (struct.new $simplebridgemethods.Callable.vtable
+  (ref.func $m_call__java_lang_Object__void@simplebridgemethods.Task)
+ )
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+ ))
+
+;;; Code for simplebridgemethods.AnotherTask [vtable.init]
+(global $simplebridgemethods.AnotherTask.vtable (ref $simplebridgemethods.AnotherTask.vtable) 
+ (struct.new $simplebridgemethods.AnotherTask.vtable
+  (ref.func $m_equals__java_lang_Object__boolean@java.lang.Object)
+  (ref.func $m_hashCode__int@java.lang.Object)
+  (ref.func $m_toString__java_lang_String@java.lang.Object)
+  (ref.func $m_getClass__java_lang_Class@simplebridgemethods.AnotherTask)
+  (ref.func $m_call__simplebridgemethods_Superclass__void@simplebridgemethods.AnotherTask)
+  (ref.func $m_call__java_lang_Object__void@simplebridgemethods.AnotherTask)
+ )
+)
+
+;;; Code for simplebridgemethods.AnotherTask [itable.init]
+(global $simplebridgemethods.AnotherTask.itable (ref $simplebridgemethods.AnotherTask.itable) (struct.new $simplebridgemethods.AnotherTask.itable 
+ (struct.new $simplebridgemethods.Callable.vtable
+  (ref.func $m_call__java_lang_Object__void@simplebridgemethods.AnotherTask)
+ )
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+ ))
+
+;;; Code for simplebridgemethods.SimpleBridgeMethods [vtable.init]
+(global $simplebridgemethods.SimpleBridgeMethods.vtable (ref $simplebridgemethods.SimpleBridgeMethods.vtable) 
+ (struct.new $simplebridgemethods.SimpleBridgeMethods.vtable
+  (ref.func $m_equals__java_lang_Object__boolean@java.lang.Object)
+  (ref.func $m_hashCode__int@java.lang.Object)
+  (ref.func $m_toString__java_lang_String@java.lang.Object)
+  (ref.func $m_getClass__java_lang_Class@simplebridgemethods.SimpleBridgeMethods)
+ )
+)
+
+;;; Code for simplebridgemethods.SimpleBridgeMethods [itable.init]
+(global $simplebridgemethods.SimpleBridgeMethods.itable (ref $simplebridgemethods.SimpleBridgeMethods.itable) (struct.new $simplebridgemethods.SimpleBridgeMethods.itable 
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+ ))
+
+;;; Code for simplebridgemethods.Superclass [CLASS]
+(type $simplebridgemethods.Superclass (struct_subtype 
+ (field $vtable (ref $simplebridgemethods.Superclass.vtable)) 
+ (field $itable (ref $simplebridgemethods.Superclass.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+  $java.lang.Object)
+)
+(type $simplebridgemethods.Superclass.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+ (field $m_m1__java_lang_Error__void (ref $function.m_m1__java_lang_Error__void))
+  $java.lang.Object.vtable)
+)
+(type $simplebridgemethods.Superclass.itable (struct_subtype 
+(field $slot0 (ref null struct))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $java.lang.Object.itable))
+
+;;; Superclass<T> Superclass.$create()
+(func $$create__@simplebridgemethods.Superclass
+ (result (ref null $simplebridgemethods.Superclass))
+ ;;@ simplebridgemethods/SimpleBridgeMethods.java:18:6
+ (local $$instance (ref null $simplebridgemethods.Superclass))
+ (block
+  ;; Superclass<T> $instance = new Superclass.<init>(0);
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:18:6
+  (local.set $$instance (struct.new $simplebridgemethods.Superclass (ref.as_non_null (global.get $simplebridgemethods.Superclass.vtable)) (ref.as_non_null (global.get $simplebridgemethods.Superclass.itable)) (i32.const 0)))
+  ;; $instance.$ctor();
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:18:6
+  (call $$ctor__void_$p_simplebridgemethods_Superclass@simplebridgemethods.Superclass (ref.as_non_null (local.get $$instance)))
+  ;; return $instance;
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:18:6
+  (return (local.get $$instance))
+ )
+)
+
+;;; void Superclass.$ctor()
+(func $$ctor__void_$p_simplebridgemethods_Superclass@simplebridgemethods.Superclass
+ (param $this (ref null $simplebridgemethods.Superclass))
+ ;;@ simplebridgemethods/SimpleBridgeMethods.java:18:6
+ (block
+  ;; simplebridgemethods.Superclass.$clinit();
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:18:6
+  (call $$clinit__void@simplebridgemethods.Superclass )
+  ;; Object.this.$ctor();
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:18:6
+  (call $$ctor__void_$p_java_lang_Object@java.lang.Object (ref.as_non_null (local.get $this)))
+ )
+)
+
+;;; void Superclass.m1(T t)
+(func $m_m1__java_lang_Error__void@simplebridgemethods.Superclass
+ (type $function.m_m1__java_lang_Error__void)
+ (param $this.untyped (ref $java.lang.Object))
+ (param $t (ref null $java.lang.Error))
+ ;;@ simplebridgemethods/SimpleBridgeMethods.java:19:14
+ (local $this (ref null $simplebridgemethods.Superclass))
+ (local.set $this (ref.cast_static $simplebridgemethods.Superclass (local.get $this.untyped)))
+ (block
+ )
+)
+(elem declare func $m_m1__java_lang_Error__void@simplebridgemethods.Superclass)
+
+;;; void Superclass.$clinit()
+(func $$clinit__void@simplebridgemethods.Superclass
+ ;;@ simplebridgemethods/SimpleBridgeMethods.java:18:6
+ (block
+  ;; if (simplebridgemethods.Superclass.$initialized) return;
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:18:6
+  (if (global.get $f_$initialized__simplebridgemethods_Superclass)
+   (then
+    ;; return;
+    ;;@ simplebridgemethods/SimpleBridgeMethods.java:18:6
+    (return )
+   )
+  )
+  ;; (simplebridgemethods.Superclass.$initialized = true);
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:18:6
+  (global.set $f_$initialized__simplebridgemethods_Superclass (i32.const 1))
+  ;; java.lang.Object.$clinit();
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:18:6
+  (call $$clinit__void@java.lang.Object )
+ )
+)
+
+;;; Class<?> Superclass.getClass()
+(func $m_getClass__java_lang_Class@simplebridgemethods.Superclass
+ (type $function.m_getClass__java_lang_Class)
+ (param $this.untyped (ref $java.lang.Object))
+ (result (ref null $java.lang.Class))
+ (local $this (ref null $simplebridgemethods.Superclass))
+ (local.set $this (ref.cast_static $simplebridgemethods.Superclass (local.get $this.untyped)))
+ (block
+  ;; return javaemul.internal.ClassLiteralPool.$getSimplebridgemethods.Superclass();
+  (return (call $function.no.side.effects.$getSimplebridgemethods.Superclass__java_lang_Class (ref.func $$getSimplebridgemethods.Superclass__java_lang_Class@javaemul.internal.ClassLiteralPool) ))
+ )
+)
+(elem declare func $m_getClass__java_lang_Class@simplebridgemethods.Superclass)
+
+;;; Code for simplebridgemethods.Subclass [CLASS]
+(type $simplebridgemethods.Subclass (struct_subtype 
+ (field $vtable (ref $simplebridgemethods.Subclass.vtable)) 
+ (field $itable (ref $simplebridgemethods.Subclass.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+  $simplebridgemethods.Superclass)
+)
+(type $simplebridgemethods.Subclass.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+ (field $m_m1__java_lang_Error__void (ref $function.m_m1__java_lang_Error__void))
+ (field $m_m1__java_lang_AssertionError__void (ref $function.m_m1__java_lang_AssertionError__void))
+  $simplebridgemethods.Superclass.vtable)
+)
+(type $simplebridgemethods.Subclass.itable (struct_subtype 
+(field $slot0 (ref null struct))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $simplebridgemethods.Superclass.itable))
+
+;;; Subclass Subclass.$create()
+(func $$create__@simplebridgemethods.Subclass
+ (result (ref null $simplebridgemethods.Subclass))
+ ;;@ simplebridgemethods/SimpleBridgeMethods.java:23:6
+ (local $$instance (ref null $simplebridgemethods.Subclass))
+ (block
+  ;; Subclass $instance = new Subclass.<init>(0);
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:23:6
+  (local.set $$instance (struct.new $simplebridgemethods.Subclass (ref.as_non_null (global.get $simplebridgemethods.Subclass.vtable)) (ref.as_non_null (global.get $simplebridgemethods.Subclass.itable)) (i32.const 0)))
+  ;; $instance.$ctor();
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:23:6
+  (call $$ctor__void_$p_simplebridgemethods_Subclass@simplebridgemethods.Subclass (ref.as_non_null (local.get $$instance)))
+  ;; return $instance;
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:23:6
+  (return (local.get $$instance))
+ )
+)
+
+;;; void Subclass.$ctor()
+(func $$ctor__void_$p_simplebridgemethods_Subclass@simplebridgemethods.Subclass
+ (param $this (ref null $simplebridgemethods.Subclass))
+ ;;@ simplebridgemethods/SimpleBridgeMethods.java:23:6
+ (block
+  ;; simplebridgemethods.Subclass.$clinit();
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:23:6
+  (call $$clinit__void@simplebridgemethods.Subclass )
+  ;; Superclass.this.$ctor();
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:23:6
+  (call $$ctor__void_$p_simplebridgemethods_Superclass@simplebridgemethods.Superclass (ref.as_non_null (local.get $this)))
+ )
+)
+
+;;; void Subclass.m1(AssertionError a)
+(func $m_m1__java_lang_AssertionError__void@simplebridgemethods.Subclass
+ (type $function.m_m1__java_lang_AssertionError__void)
+ (param $this.untyped (ref $java.lang.Object))
+ (param $a (ref null $java.lang.AssertionError))
+ ;;@ simplebridgemethods/SimpleBridgeMethods.java:26:14
+ (local $this (ref null $simplebridgemethods.Subclass))
+ (local.set $this (ref.cast_static $simplebridgemethods.Subclass (local.get $this.untyped)))
+ (block
+ )
+)
+(elem declare func $m_m1__java_lang_AssertionError__void@simplebridgemethods.Subclass)
+
+;;; void Subclass.m1(Error arg0)
+(func $m_m1__java_lang_Error__void@simplebridgemethods.Subclass
+ (type $function.m_m1__java_lang_Error__void)
+ (param $this.untyped (ref $java.lang.Object))
+ (param $arg0 (ref null $java.lang.Error))
+ ;;@ simplebridgemethods/SimpleBridgeMethods.java:23:6
+ (local $this (ref null $simplebridgemethods.Subclass))
+ (local.set $this (ref.cast_static $simplebridgemethods.Subclass (local.get $this.untyped)))
+ (block
+  ;; Subclass.this.m1(((AssertionError) arg0));
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:23:6
+  (call_ref $function.m_m1__java_lang_AssertionError__void (ref.as_non_null (local.get $this))(ref.cast_static $java.lang.AssertionError (local.get $arg0))(struct.get $simplebridgemethods.Subclass.vtable $m_m1__java_lang_AssertionError__void (struct.get $simplebridgemethods.Subclass $vtable(local.get $this))))
+ )
+)
+(elem declare func $m_m1__java_lang_Error__void@simplebridgemethods.Subclass)
+
+;;; void Subclass.$clinit()
+(func $$clinit__void@simplebridgemethods.Subclass
+ ;;@ simplebridgemethods/SimpleBridgeMethods.java:23:6
+ (block
+  ;; if (simplebridgemethods.Subclass.$initialized) return;
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:23:6
+  (if (global.get $f_$initialized__simplebridgemethods_Subclass)
+   (then
+    ;; return;
+    ;;@ simplebridgemethods/SimpleBridgeMethods.java:23:6
+    (return )
+   )
+  )
+  ;; (simplebridgemethods.Subclass.$initialized = true);
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:23:6
+  (global.set $f_$initialized__simplebridgemethods_Subclass (i32.const 1))
+  ;; simplebridgemethods.Superclass.$clinit();
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:23:6
+  (call $$clinit__void@simplebridgemethods.Superclass )
+ )
+)
+
+;;; Class<?> Subclass.getClass()
+(func $m_getClass__java_lang_Class@simplebridgemethods.Subclass
+ (type $function.m_getClass__java_lang_Class)
+ (param $this.untyped (ref $java.lang.Object))
+ (result (ref null $java.lang.Class))
+ (local $this (ref null $simplebridgemethods.Subclass))
+ (local.set $this (ref.cast_static $simplebridgemethods.Subclass (local.get $this.untyped)))
+ (block
+  ;; return javaemul.internal.ClassLiteralPool.$getSimplebridgemethods.Subclass();
+  (return (call $function.no.side.effects.$getSimplebridgemethods.Subclass__java_lang_Class (ref.func $$getSimplebridgemethods.Subclass__java_lang_Class@javaemul.internal.ClassLiteralPool) ))
+ )
+)
+(elem declare func $m_getClass__java_lang_Class@simplebridgemethods.Subclass)
+
+;;; Code for simplebridgemethods.AnotherSubclass [CLASS]
+(type $simplebridgemethods.AnotherSubclass (struct_subtype 
+ (field $vtable (ref $simplebridgemethods.AnotherSubclass.vtable)) 
+ (field $itable (ref $simplebridgemethods.AnotherSubclass.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+  $simplebridgemethods.Superclass)
+)
+(type $simplebridgemethods.AnotherSubclass.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+ (field $m_m1__java_lang_Error__void (ref $function.m_m1__java_lang_Error__void))
+  $simplebridgemethods.Superclass.vtable)
+)
+(type $simplebridgemethods.AnotherSubclass.itable (struct_subtype 
+(field $slot0 (ref null struct))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $simplebridgemethods.Superclass.itable))
+
+;;; AnotherSubclass AnotherSubclass.$create()
+(func $$create__@simplebridgemethods.AnotherSubclass
+ (result (ref null $simplebridgemethods.AnotherSubclass))
+ ;;@ simplebridgemethods/SimpleBridgeMethods.java:30:6
+ (local $$instance (ref null $simplebridgemethods.AnotherSubclass))
+ (block
+  ;; AnotherSubclass $instance = new AnotherSubclass.<init>(0);
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:30:6
+  (local.set $$instance (struct.new $simplebridgemethods.AnotherSubclass (ref.as_non_null (global.get $simplebridgemethods.AnotherSubclass.vtable)) (ref.as_non_null (global.get $simplebridgemethods.AnotherSubclass.itable)) (i32.const 0)))
+  ;; $instance.$ctor();
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:30:6
+  (call $$ctor__void_$p_simplebridgemethods_AnotherSubclass@simplebridgemethods.AnotherSubclass (ref.as_non_null (local.get $$instance)))
+  ;; return $instance;
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:30:6
+  (return (local.get $$instance))
+ )
+)
+
+;;; void AnotherSubclass.$ctor()
+(func $$ctor__void_$p_simplebridgemethods_AnotherSubclass@simplebridgemethods.AnotherSubclass
+ (param $this (ref null $simplebridgemethods.AnotherSubclass))
+ ;;@ simplebridgemethods/SimpleBridgeMethods.java:30:6
+ (block
+  ;; simplebridgemethods.AnotherSubclass.$clinit();
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:30:6
+  (call $$clinit__void@simplebridgemethods.AnotherSubclass )
+  ;; Superclass.this.$ctor();
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:30:6
+  (call $$ctor__void_$p_simplebridgemethods_Superclass@simplebridgemethods.Superclass (ref.as_non_null (local.get $this)))
+ )
+)
+
+;;; void AnotherSubclass.$clinit()
+(func $$clinit__void@simplebridgemethods.AnotherSubclass
+ ;;@ simplebridgemethods/SimpleBridgeMethods.java:30:6
+ (block
+  ;; if (simplebridgemethods.AnotherSubclass.$initialized) return;
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:30:6
+  (if (global.get $f_$initialized__simplebridgemethods_AnotherSubclass)
+   (then
+    ;; return;
+    ;;@ simplebridgemethods/SimpleBridgeMethods.java:30:6
+    (return )
+   )
+  )
+  ;; (simplebridgemethods.AnotherSubclass.$initialized = true);
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:30:6
+  (global.set $f_$initialized__simplebridgemethods_AnotherSubclass (i32.const 1))
+  ;; simplebridgemethods.Superclass.$clinit();
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:30:6
+  (call $$clinit__void@simplebridgemethods.Superclass )
+ )
+)
+
+;;; Class<?> AnotherSubclass.getClass()
+(func $m_getClass__java_lang_Class@simplebridgemethods.AnotherSubclass
+ (type $function.m_getClass__java_lang_Class)
+ (param $this.untyped (ref $java.lang.Object))
+ (result (ref null $java.lang.Class))
+ (local $this (ref null $simplebridgemethods.AnotherSubclass))
+ (local.set $this (ref.cast_static $simplebridgemethods.AnotherSubclass (local.get $this.untyped)))
+ (block
+  ;; return javaemul.internal.ClassLiteralPool.$getSimplebridgemethods.AnotherSubclass();
+  (return (call $function.no.side.effects.$getSimplebridgemethods.AnotherSubclass__java_lang_Class (ref.func $$getSimplebridgemethods.AnotherSubclass__java_lang_Class@javaemul.internal.ClassLiteralPool) ))
+ )
+)
+(elem declare func $m_getClass__java_lang_Class@simplebridgemethods.AnotherSubclass)
+
+;;; Code for simplebridgemethods.Callable [INTERFACE]
+(type $simplebridgemethods.Callable.vtable (struct 
+ (field $m_call__java_lang_Object__void (ref $function.m_call__java_lang_Object__void))
+ )
+)
+
+;;; void Callable.$clinit()
+(func $$clinit__void@simplebridgemethods.Callable
+ ;;@ simplebridgemethods/SimpleBridgeMethods.java:34:10
+ (block
+  ;; if (simplebridgemethods.Callable.$initialized) return;
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:34:10
+  (if (global.get $f_$initialized__simplebridgemethods_Callable)
+   (then
+    ;; return;
+    ;;@ simplebridgemethods/SimpleBridgeMethods.java:34:10
+    (return )
+   )
+  )
+  ;; (simplebridgemethods.Callable.$initialized = true);
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:34:10
+  (global.set $f_$initialized__simplebridgemethods_Callable (i32.const 1))
+ )
+)
+
+;;; Code for simplebridgemethods.Task [CLASS]
+(type $simplebridgemethods.Task (struct_subtype 
+ (field $vtable (ref $simplebridgemethods.Task.vtable)) 
+ (field $itable (ref $simplebridgemethods.Task.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+  $java.lang.Object)
+)
+(type $simplebridgemethods.Task.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+ (field $m_call__java_lang_Object__void (ref $function.m_call__java_lang_Object__void))
+  $java.lang.Object.vtable)
+)
+(type $simplebridgemethods.Task.itable (struct_subtype 
+(field $slot0 (ref $simplebridgemethods.Callable.vtable))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $java.lang.Object.itable))
+
+;;; Task<T> Task.$create()
+(func $$create__@simplebridgemethods.Task
+ (result (ref null $simplebridgemethods.Task))
+ ;;@ simplebridgemethods/SimpleBridgeMethods.java:39:6
+ (local $$instance (ref null $simplebridgemethods.Task))
+ (block
+  ;; Task<T> $instance = new Task.<init>(0);
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:39:6
+  (local.set $$instance (struct.new $simplebridgemethods.Task (ref.as_non_null (global.get $simplebridgemethods.Task.vtable)) (ref.as_non_null (global.get $simplebridgemethods.Task.itable)) (i32.const 0)))
+  ;; $instance.$ctor();
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:39:6
+  (call $$ctor__void_$p_simplebridgemethods_Task@simplebridgemethods.Task (ref.as_non_null (local.get $$instance)))
+  ;; return $instance;
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:39:6
+  (return (local.get $$instance))
+ )
+)
+
+;;; void Task.$ctor()
+(func $$ctor__void_$p_simplebridgemethods_Task@simplebridgemethods.Task
+ (param $this (ref null $simplebridgemethods.Task))
+ ;;@ simplebridgemethods/SimpleBridgeMethods.java:39:6
+ (block
+  ;; simplebridgemethods.Task.$clinit();
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:39:6
+  (call $$clinit__void@simplebridgemethods.Task )
+  ;; Object.this.$ctor();
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:39:6
+  (call $$ctor__void_$p_java_lang_Object@java.lang.Object (ref.as_non_null (local.get $this)))
+ )
+)
+
+;;; void Task.call(T t)
+(func $m_call__java_lang_Object__void@simplebridgemethods.Task
+ (type $function.m_call__java_lang_Object__void)
+ (param $this.untyped (ref $java.lang.Object))
+ (param $t (ref null $java.lang.Object))
+ ;;@ simplebridgemethods/SimpleBridgeMethods.java:42:14
+ (local $this (ref null $simplebridgemethods.Task))
+ (local.set $this (ref.cast_static $simplebridgemethods.Task (local.get $this.untyped)))
+ (block
+ )
+)
+(elem declare func $m_call__java_lang_Object__void@simplebridgemethods.Task)
+
+;;; void Task.$clinit()
+(func $$clinit__void@simplebridgemethods.Task
+ ;;@ simplebridgemethods/SimpleBridgeMethods.java:39:6
+ (block
+  ;; if (simplebridgemethods.Task.$initialized) return;
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:39:6
+  (if (global.get $f_$initialized__simplebridgemethods_Task)
+   (then
+    ;; return;
+    ;;@ simplebridgemethods/SimpleBridgeMethods.java:39:6
+    (return )
+   )
+  )
+  ;; (simplebridgemethods.Task.$initialized = true);
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:39:6
+  (global.set $f_$initialized__simplebridgemethods_Task (i32.const 1))
+  ;; java.lang.Object.$clinit();
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:39:6
+  (call $$clinit__void@java.lang.Object )
+ )
+)
+
+;;; Class<?> Task.getClass()
+(func $m_getClass__java_lang_Class@simplebridgemethods.Task
+ (type $function.m_getClass__java_lang_Class)
+ (param $this.untyped (ref $java.lang.Object))
+ (result (ref null $java.lang.Class))
+ (local $this (ref null $simplebridgemethods.Task))
+ (local.set $this (ref.cast_static $simplebridgemethods.Task (local.get $this.untyped)))
+ (block
+  ;; return javaemul.internal.ClassLiteralPool.$getSimplebridgemethods.Task();
+  (return (call $function.no.side.effects.$getSimplebridgemethods.Task__java_lang_Class (ref.func $$getSimplebridgemethods.Task__java_lang_Class@javaemul.internal.ClassLiteralPool) ))
+ )
+)
+(elem declare func $m_getClass__java_lang_Class@simplebridgemethods.Task)
+
+;;; Code for simplebridgemethods.AnotherTask [CLASS]
+(type $simplebridgemethods.AnotherTask (struct_subtype 
+ (field $vtable (ref $simplebridgemethods.AnotherTask.vtable)) 
+ (field $itable (ref $simplebridgemethods.AnotherTask.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+  $java.lang.Object)
+)
+(type $simplebridgemethods.AnotherTask.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+ (field $m_call__simplebridgemethods_Superclass__void (ref $function.m_call__simplebridgemethods_Superclass__void))
+ (field $m_call__java_lang_Object__void (ref $function.m_call__java_lang_Object__void))
+  $java.lang.Object.vtable)
+)
+(type $simplebridgemethods.AnotherTask.itable (struct_subtype 
+(field $slot0 (ref $simplebridgemethods.Callable.vtable))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $java.lang.Object.itable))
+
+;;; AnotherTask<T> AnotherTask.$create()
+(func $$create__@simplebridgemethods.AnotherTask
+ (result (ref null $simplebridgemethods.AnotherTask))
+ ;;@ simplebridgemethods/SimpleBridgeMethods.java:46:6
+ (local $$instance (ref null $simplebridgemethods.AnotherTask))
+ (block
+  ;; AnotherTask<T> $instance = new AnotherTask.<init>(0);
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:46:6
+  (local.set $$instance (struct.new $simplebridgemethods.AnotherTask (ref.as_non_null (global.get $simplebridgemethods.AnotherTask.vtable)) (ref.as_non_null (global.get $simplebridgemethods.AnotherTask.itable)) (i32.const 0)))
+  ;; $instance.$ctor();
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:46:6
+  (call $$ctor__void_$p_simplebridgemethods_AnotherTask@simplebridgemethods.AnotherTask (ref.as_non_null (local.get $$instance)))
+  ;; return $instance;
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:46:6
+  (return (local.get $$instance))
+ )
+)
+
+;;; void AnotherTask.$ctor()
+(func $$ctor__void_$p_simplebridgemethods_AnotherTask@simplebridgemethods.AnotherTask
+ (param $this (ref null $simplebridgemethods.AnotherTask))
+ ;;@ simplebridgemethods/SimpleBridgeMethods.java:46:6
+ (block
+  ;; simplebridgemethods.AnotherTask.$clinit();
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:46:6
+  (call $$clinit__void@simplebridgemethods.AnotherTask )
+  ;; Object.this.$ctor();
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:46:6
+  (call $$ctor__void_$p_java_lang_Object@java.lang.Object (ref.as_non_null (local.get $this)))
+ )
+)
+
+;;; void AnotherTask.call(Superclass<T> t)
+(func $m_call__simplebridgemethods_Superclass__void@simplebridgemethods.AnotherTask
+ (type $function.m_call__simplebridgemethods_Superclass__void)
+ (param $this.untyped (ref $java.lang.Object))
+ (param $t (ref null $simplebridgemethods.Superclass))
+ ;;@ simplebridgemethods/SimpleBridgeMethods.java:50:14
+ (local $this (ref null $simplebridgemethods.AnotherTask))
+ (local.set $this (ref.cast_static $simplebridgemethods.AnotherTask (local.get $this.untyped)))
+ (block
+ )
+)
+(elem declare func $m_call__simplebridgemethods_Superclass__void@simplebridgemethods.AnotherTask)
+
+;;; void AnotherTask.call(Object arg0)
+(func $m_call__java_lang_Object__void@simplebridgemethods.AnotherTask
+ (type $function.m_call__java_lang_Object__void)
+ (param $this.untyped (ref $java.lang.Object))
+ (param $arg0 (ref null $java.lang.Object))
+ ;;@ simplebridgemethods/SimpleBridgeMethods.java:46:6
+ (local $this (ref null $simplebridgemethods.AnotherTask))
+ (local.set $this (ref.cast_static $simplebridgemethods.AnotherTask (local.get $this.untyped)))
+ (block
+  ;; AnotherTask.this.call(((Superclass<T>) arg0));
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:46:6
+  (call_ref $function.m_call__simplebridgemethods_Superclass__void (ref.as_non_null (local.get $this))(ref.cast_static $simplebridgemethods.Superclass (local.get $arg0))(struct.get $simplebridgemethods.AnotherTask.vtable $m_call__simplebridgemethods_Superclass__void (struct.get $simplebridgemethods.AnotherTask $vtable(local.get $this))))
+ )
+)
+(elem declare func $m_call__java_lang_Object__void@simplebridgemethods.AnotherTask)
+
+;;; void AnotherTask.$clinit()
+(func $$clinit__void@simplebridgemethods.AnotherTask
+ ;;@ simplebridgemethods/SimpleBridgeMethods.java:46:6
+ (block
+  ;; if (simplebridgemethods.AnotherTask.$initialized) return;
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:46:6
+  (if (global.get $f_$initialized__simplebridgemethods_AnotherTask)
+   (then
+    ;; return;
+    ;;@ simplebridgemethods/SimpleBridgeMethods.java:46:6
+    (return )
+   )
+  )
+  ;; (simplebridgemethods.AnotherTask.$initialized = true);
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:46:6
+  (global.set $f_$initialized__simplebridgemethods_AnotherTask (i32.const 1))
+  ;; java.lang.Object.$clinit();
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:46:6
+  (call $$clinit__void@java.lang.Object )
+ )
+)
+
+;;; Class<?> AnotherTask.getClass()
+(func $m_getClass__java_lang_Class@simplebridgemethods.AnotherTask
+ (type $function.m_getClass__java_lang_Class)
+ (param $this.untyped (ref $java.lang.Object))
+ (result (ref null $java.lang.Class))
+ (local $this (ref null $simplebridgemethods.AnotherTask))
+ (local.set $this (ref.cast_static $simplebridgemethods.AnotherTask (local.get $this.untyped)))
+ (block
+  ;; return javaemul.internal.ClassLiteralPool.$getSimplebridgemethods.AnotherTask();
+  (return (call $function.no.side.effects.$getSimplebridgemethods.AnotherTask__java_lang_Class (ref.func $$getSimplebridgemethods.AnotherTask__java_lang_Class@javaemul.internal.ClassLiteralPool) ))
+ )
+)
+(elem declare func $m_getClass__java_lang_Class@simplebridgemethods.AnotherTask)
+
+;;; Code for simplebridgemethods.SimpleBridgeMethods [CLASS]
+(type $simplebridgemethods.SimpleBridgeMethods (struct_subtype 
+ (field $vtable (ref $simplebridgemethods.SimpleBridgeMethods.vtable)) 
+ (field $itable (ref $simplebridgemethods.SimpleBridgeMethods.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+  $java.lang.Object)
+)
+(type $simplebridgemethods.SimpleBridgeMethods.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+  $java.lang.Object.vtable)
+)
+(type $simplebridgemethods.SimpleBridgeMethods.itable (struct_subtype 
+(field $slot0 (ref null struct))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $java.lang.Object.itable))
+
+;;; SimpleBridgeMethods SimpleBridgeMethods.$create()
+(func $$create__@simplebridgemethods.SimpleBridgeMethods
+ (result (ref null $simplebridgemethods.SimpleBridgeMethods))
+ ;;@ simplebridgemethods/SimpleBridgeMethods.java:53:13
+ (local $$instance (ref null $simplebridgemethods.SimpleBridgeMethods))
+ (block
+  ;; SimpleBridgeMethods $instance = new SimpleBridgeMethods.<init>(0);
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:53:13
+  (local.set $$instance (struct.new $simplebridgemethods.SimpleBridgeMethods (ref.as_non_null (global.get $simplebridgemethods.SimpleBridgeMethods.vtable)) (ref.as_non_null (global.get $simplebridgemethods.SimpleBridgeMethods.itable)) (i32.const 0)))
+  ;; $instance.$ctor();
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:53:13
+  (call $$ctor__void_$p_simplebridgemethods_SimpleBridgeMethods@simplebridgemethods.SimpleBridgeMethods (ref.as_non_null (local.get $$instance)))
+  ;; return $instance;
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:53:13
+  (return (local.get $$instance))
+ )
+)
+
+;;; void SimpleBridgeMethods.$ctor()
+(func $$ctor__void_$p_simplebridgemethods_SimpleBridgeMethods@simplebridgemethods.SimpleBridgeMethods
+ (param $this (ref null $simplebridgemethods.SimpleBridgeMethods))
+ ;;@ simplebridgemethods/SimpleBridgeMethods.java:53:13
+ (block
+  ;; simplebridgemethods.SimpleBridgeMethods.$clinit();
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:53:13
+  (call $$clinit__void@simplebridgemethods.SimpleBridgeMethods )
+  ;; Object.this.$ctor();
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:53:13
+  (call $$ctor__void_$p_java_lang_Object@java.lang.Object (ref.as_non_null (local.get $this)))
+ )
+)
+
+;;; void SimpleBridgeMethods.$clinit()
+(func $$clinit__void@simplebridgemethods.SimpleBridgeMethods
+ ;;@ simplebridgemethods/SimpleBridgeMethods.java:53:13
+ (block
+  ;; if (simplebridgemethods.SimpleBridgeMethods.$initialized) return;
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:53:13
+  (if (global.get $f_$initialized__simplebridgemethods_SimpleBridgeMethods)
+   (then
+    ;; return;
+    ;;@ simplebridgemethods/SimpleBridgeMethods.java:53:13
+    (return )
+   )
+  )
+  ;; (simplebridgemethods.SimpleBridgeMethods.$initialized = true);
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:53:13
+  (global.set $f_$initialized__simplebridgemethods_SimpleBridgeMethods (i32.const 1))
+  ;; java.lang.Object.$clinit();
+  ;;@ simplebridgemethods/SimpleBridgeMethods.java:53:13
+  (call $$clinit__void@java.lang.Object )
+ )
+)
+
+;;; Class<?> SimpleBridgeMethods.getClass()
+(func $m_getClass__java_lang_Class@simplebridgemethods.SimpleBridgeMethods
+ (type $function.m_getClass__java_lang_Class)
+ (param $this.untyped (ref $java.lang.Object))
+ (result (ref null $java.lang.Class))
+ (local $this (ref null $simplebridgemethods.SimpleBridgeMethods))
+ (local.set $this (ref.cast_static $simplebridgemethods.SimpleBridgeMethods (local.get $this.untyped)))
+ (block
+  ;; return javaemul.internal.ClassLiteralPool.$getSimplebridgemethods.SimpleBridgeMethods();
+  (return (call $function.no.side.effects.$getSimplebridgemethods.SimpleBridgeMethods__java_lang_Class (ref.func $$getSimplebridgemethods.SimpleBridgeMethods__java_lang_Class@javaemul.internal.ClassLiteralPool) ))
+ )
+)
+(elem declare func $m_getClass__java_lang_Class@simplebridgemethods.SimpleBridgeMethods)

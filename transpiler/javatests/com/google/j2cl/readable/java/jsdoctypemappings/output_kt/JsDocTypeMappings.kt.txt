@@ -1,0 +1,179 @@
+// Generated from "jsdoctypemappings/JsDocTypeMappings.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package jsdoctypemappings
+
+import javaemul.lang.*
+import jsdoctypemappings.JsDocTypeMappings
+import kotlin.Any
+import kotlin.Boolean
+import kotlin.Byte
+import kotlin.Char
+import kotlin.Comparable
+import kotlin.Comparator
+import kotlin.Double
+import kotlin.Float
+import kotlin.Int
+import kotlin.Long
+import kotlin.OptIn
+import kotlin.Short
+import kotlin.String
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.native.ObjCName
+
+@ObjCName("JsdoctypemappingsJsDocTypeMappings", exact = true)
+open class JsDocTypeMappings {
+ open fun returnComparatorWildcard_pp_jsdoctypemappings(): Comparator<*>? {
+  return null
+ }
+
+ open fun returnComparable_pp_jsdoctypemappings(): Comparable<Any>? {
+  return null as Comparable<Any>?
+ }
+
+ open fun returnJavaLangString_pp_jsdoctypemappings(): String? {
+  return null
+ }
+
+ open fun returnJavaLangObject_pp_jsdoctypemappings(): Any? {
+  return null
+ }
+
+ open fun returnJavaLangByte_pp_jsdoctypemappings(): Byte? {
+  return null
+ }
+
+ open fun returnJavaLangShort_pp_jsdoctypemappings(): Short? {
+  return null
+ }
+
+ open fun returnJavaLangInteger_pp_jsdoctypemappings(): Int? {
+  return null
+ }
+
+ open fun returnJavaLangLong_pp_jsdoctypemappings(): Long? {
+  return null
+ }
+
+ open fun returnJavaLangFloat_pp_jsdoctypemappings(): Float? {
+  return null
+ }
+
+ open fun returnJavaLangDouble_pp_jsdoctypemappings(): Double? {
+  return null
+ }
+
+ open fun returnJavaLangCharacter_pp_jsdoctypemappings(): Char? {
+  return null
+ }
+
+ open fun returnJavaLangBoolean_pp_jsdoctypemappings(): Boolean? {
+  return null
+ }
+
+ open fun returnByte_pp_jsdoctypemappings(): Byte {
+  return (0).toByte()
+ }
+
+ open fun returnShort_pp_jsdoctypemappings(): Short {
+  return (0).toShort()
+ }
+
+ open fun returnInt_pp_jsdoctypemappings(): Int {
+  return 0
+ }
+
+ open fun returnLong_pp_jsdoctypemappings(): Long {
+  return 0L
+ }
+
+ open fun returnFloat_pp_jsdoctypemappings(): Float {
+  return 0.0f
+ }
+
+ open fun returnDouble_pp_jsdoctypemappings(): Double {
+  return 0.0
+ }
+
+ open fun returnChar_pp_jsdoctypemappings(): Char {
+  return '\u0000'
+ }
+
+ open fun returnBoolean_pp_jsdoctypemappings(): Boolean {
+  return false
+ }
+
+ open fun returnVoid_pp_jsdoctypemappings() {}
+
+ open fun returnNativeFunction_pp_jsdoctypemappings(): JsDocTypeMappings.NativeFunction? {
+  return null
+ }
+
+ open fun returnNativeType_pp_jsdoctypemappings(): JsDocTypeMappings.NativeType? {
+  return null
+ }
+
+ open fun returnExportedType_pp_jsdoctypemappings(): JsDocTypeMappings.ExportedType? {
+  return null
+ }
+
+ open fun <MethodTypeParameter> returnMethodTypeParameter_pp_jsdoctypemappings(): MethodTypeParameter {
+  return null as MethodTypeParameter
+ }
+
+ open fun returnNativeNumber_pp_jsdoctypemappings(): JsDocTypeMappings.NativeNumber? {
+  return null
+ }
+
+ open fun returnNativeBoolean_pp_jsdoctypemappings(): JsDocTypeMappings.NativeBoolean? {
+  return null
+ }
+
+ open fun returnNativeString_pp_jsdoctypemappings(): JsDocTypeMappings.NativeString? {
+  return null
+ }
+
+ open fun returnNativeNull_pp_jsdoctypemappings(): JsDocTypeMappings.NativeNull? {
+  return null
+ }
+
+ open fun returnNativeUndefined_pp_jsdoctypemappings(): JsDocTypeMappings.NativeUndefined? {
+  return null
+ }
+
+ open fun returnNativeVoid_pp_jsdoctypemappings(): JsDocTypeMappings.NativeVoid? {
+  return null
+ }
+
+ open fun returnStar_pp_jsdoctypemappings(): JsDocTypeMappings.NativeStar? {
+  return null
+ }
+
+ open fun returnNativeWildcard_pp_jsdoctypemappings(): JsDocTypeMappings.NativeWildcard? {
+  return null
+ }
+
+ fun interface NativeFunction {
+  fun f()
+ }
+
+ open class NativeType {}
+
+ open inner class ExportedType {}
+
+ interface NativeNumber {}
+
+ interface NativeBoolean {}
+
+ interface NativeString {}
+
+ interface NativeNull {}
+
+ interface NativeUndefined {}
+
+ interface NativeVoid {}
+
+ interface NativeStar {}
+
+ interface NativeWildcard {}
+}

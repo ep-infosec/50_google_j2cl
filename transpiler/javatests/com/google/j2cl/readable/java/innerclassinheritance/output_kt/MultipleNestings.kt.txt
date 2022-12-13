@@ -1,0 +1,41 @@
+// Generated from "innerclassinheritance/MultipleNestings.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package innerclassinheritance
+
+import javaemul.lang.*
+import innerclassinheritance.MultipleNestings
+import kotlin.OptIn
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.native.ObjCName
+
+@ObjCName("InnerclassinheritanceMultipleNestings", exact = true)
+open class MultipleNestings {
+ open fun funInM() {}
+
+ @ObjCName("InnerclassinheritanceMultipleNestings_Parent", exact = true)
+ open inner class Parent {
+  open fun `fun`() {}
+ }
+
+ @ObjCName("InnerclassinheritanceMultipleNestings_InnerClass1", exact = true)
+ open inner class InnerClass1: MultipleNestings.Parent() {
+  open fun funInI1() {}
+
+  @ObjCName("InnerclassinheritanceMultipleNestings_InnerClass1_InnerClass2", exact = true)
+  open inner class InnerClass2: MultipleNestings.Parent() {
+   open fun funInI2() {}
+
+   open fun test() {
+    this.`fun`()
+    this.`fun`()
+    this@InnerClass1.`fun`()
+    this@MultipleNestings.funInM()
+    this@MultipleNestings.funInM()
+    this@InnerClass1.funInI1()
+    this@InnerClass1.funInI1()
+    this.funInI2()
+   }
+  }
+ }
+}

@@ -1,0 +1,241 @@
+// Generated from "jsvarargs/Main.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package jsvarargs
+
+import javaemul.lang.*
+import jsvarargs.Main
+import kotlin.Any
+import kotlin.Array
+import kotlin.Int
+import kotlin.IntArray
+import kotlin.OptIn
+import kotlin.arrayOf
+import kotlin.collections.MutableList
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.intArrayOf
+import kotlin.jvm.JvmField
+import kotlin.jvm.JvmStatic
+import kotlin.native.ObjCName
+
+@ObjCName("JsvarargsMain", exact = true)
+open class Main {
+ @JvmField var field_pp_jsvarargs: Int = 0
+
+ constructor(
+  @ObjCName("Int", exact = false) f: Int
+ ) {
+  this.field_pp_jsvarargs = f
+ }
+
+ open fun f3(
+  @ObjCName("withInt", exact = false) m: Int,
+  vararg @ObjCName("withIntArray", exact = false) numbers: Int
+ ): Int {
+  return this.field_pp_jsvarargs + m + numbers!![1]
+ }
+
+ open fun f4(
+  vararg @ObjCName("withIntArray", exact = false) numbers: Int
+ ): Int {
+  return this.field_pp_jsvarargs + numbers!![1]
+ }
+
+ open fun testStaticMethodNotFirst() {
+  Main.f1(1, 1, 2)
+  Main.f1(1, 1, 2)
+  Main.f1(1)
+  Main.f1(1)
+  Main.f1(1, 1, 2)
+  Main.f1(1, 1, 2)
+  Main.f1(1)
+  Main.f1(1)
+  val ints: IntArray? = intArrayOf(1, 2)
+  Main.f1(1, *(ints)!!)
+  Main.f1(1, *(ints)!!)
+  Main.f1(1, *(null)!!)
+ }
+
+ open fun testStaticMethodFirst() {
+  Main.f2(1, 2)
+  Main.generics<Int?>(Int.valueOf(1), Int.valueOf(2))
+  Main.f2(1, 2)
+  Main.generics<Int?>(Int.valueOf(1), Int.valueOf(2))
+  Main.f2()
+  Main.generics<Any?>()
+  Main.f2()
+  Main.generics<Any?>()
+  Main.generics<Int?>()
+  Main.f2(1, 2)
+  Main.f2(1, 2)
+  Main.generics<IntArray?>(intArrayOf(1, 2))
+  Main.generics<Int?>(Int.valueOf(1), Int.valueOf(2))
+  Main.f2()
+  Main.f2()
+  Main.generics<IntArray?>(intArrayOf())
+  val ints: IntArray? = intArrayOf(1, 2)
+  val integers: Array<Int?>? = arrayOf<Int?>(Int.valueOf(1), Int.valueOf(2))
+  Main.f2(*(ints)!!)
+  Main.f2(*(ints)!!)
+  Main.generics<Int?>(*(integers)!!)
+ }
+
+ open fun testInstanceMethodNotFirst() {
+  val m: Main? = Main(1)
+  m!!.f3(1, 1, 2)
+  m!!.f3(1)
+  m!!.f3(1, 1, 2)
+  m!!.f3(1)
+  val ints: IntArray? = intArrayOf(1, 2)
+  m!!.f3(1, *(ints)!!)
+ }
+
+ open fun testInstanceMethodFirst() {
+  val m: Main? = Main(1)
+  m!!.f4(1, 2)
+  m!!.f4()
+  m!!.f4(1, 2)
+  m!!.f4()
+  val ints: IntArray? = intArrayOf(1, 2)
+  m!!.f4(*(ints)!!)
+ }
+
+ open fun testJsFunction() {
+  val a: Main.AFunction? = Main.AFunction()
+  val o1: Any? = Any()
+  val o2: Any? = Any()
+  a!!.f1(0, o1, o2)
+  a!!.f1(0)
+  a!!.f1(0, o1, o2)
+  a!!.f1(0)
+  val os: Array<Any?>? = arrayOf<Any?>(o1, o2)
+  a!!.f1(0, *(os)!!)
+ }
+
+ open fun testSideEffect() {
+  val ints: IntArray? = intArrayOf(1, 2)
+  Main(1).f3(1, *(ints)!!)
+ }
+
+ open fun testNullJsVarargs() {
+  val ints: IntArray? = null
+  Main.f2(*(ints)!!)
+ }
+
+ open fun <U> testGenericJsFunctionWithVarags() {
+  val function: Main.GenericFunction<U>? = Main.GenericFunction<U> { n: U, param: Array<out U>? ->
+   val param_1: Array<U>? = param as Array<U>?
+   return@GenericFunction param_1
+  }
+ }
+
+ companion object {
+  @JvmStatic
+  fun f1(
+   @ObjCName("withInt", exact = false) multiplier: Int,
+   vararg @ObjCName("withIntArray", exact = false) numbers: Int
+  ): Int {
+   return numbers!!.size + numbers!![0] + multiplier
+  }
+
+  @JvmStatic
+  fun f2(
+   vararg @ObjCName("withIntArray", exact = false) numbers: Int
+  ): Int {
+   return numbers!!.size + numbers!![0]
+  }
+
+  @JvmStatic
+  fun <T> generics(
+   vararg @ObjCName("withNSObjectArray", exact = false) elements: T
+  ): T {
+   val elements_1: Array<T>? = elements as Array<T>?
+   return elements_1!![0]
+  }
+
+  @JvmStatic
+  fun parameterizedType(
+   vararg @ObjCName("withJavaUtilListArray", exact = false) elements: MutableList<Main?>?
+  ): Main? {
+   val elements_1: Array<MutableList<Main?>?>? = elements as Array<MutableList<Main?>?>?
+   return elements_1!![0]!!.get(0)
+  }
+
+  @JvmStatic
+  fun <T> parameterizedByT(
+   vararg @ObjCName("withJavaUtilListArray", exact = false) elements: MutableList<T>?
+  ): T {
+   val elements_1: Array<MutableList<T>?>? = elements as Array<MutableList<T>?>?
+   return elements_1!![0]!!.get(0)
+  }
+ }
+
+ open class NativeObject {
+  constructor(
+   vararg @ObjCName("NSObjectArray", exact = false) pars: Any?
+  ) {
+   val pars_1: Array<Any?>? = pars as Array<Any?>?
+  }
+ }
+
+ open class SubVarargsConstructorClass: Main.NativeObject {
+  constructor(
+   @ObjCName("Int", exact = false) i: Int,
+   vararg @ObjCName("withNSObjectArray", exact = false) args: Any?
+  ): super(*(args as Array<Any?>?)!!) {
+   val args_1: Array<Any?>? = args as Array<Any?>?
+  }
+ }
+
+ fun interface Function {
+  fun f1(
+   @ObjCName("withInt", exact = false) i: Int,
+   vararg @ObjCName("withNSObjectArray", exact = false) args: Any?
+  ): Any?
+ }
+
+ @ObjCName("JsvarargsMain_AbstractMethodWithVarargs", exact = true)
+ abstract class AbstractMethodWithVarargs {
+  abstract fun abstractMethod(
+   vararg @ObjCName("withIntArray", exact = false) args: Int
+  )
+ }
+
+ @ObjCName("JsvarargsMain_StaticInterfaceMethodWithVarargs", exact = true)
+ interface StaticInterfaceMethodWithVarargs {
+  companion object {
+   @JvmStatic
+   fun staticMethod(
+    vararg @ObjCName("withIntArray", exact = false) args: Int
+   ) {}
+  }
+ }
+
+ class AFunction: Main.Function {
+  open override fun f1(i: Int, vararg args: Any?): Any? {
+   val args_1: Array<Any?>? = args as Array<Any?>?
+   return args_1!![i]
+  }
+ }
+
+ open class SubMain: Main {
+  constructor(): super(10)
+
+  open override fun f3(m: Int, vararg numbers: Int): Int {
+   var a: Int = super<Main>.f3(1, 1, 2)
+   a = a + super<Main>.f3(1)
+   a = a + super<Main>.f3(1, 1, 2)
+   a = a + super<Main>.f3(1)
+   val ints: IntArray? = intArrayOf(1, 2)
+   a = a + super<Main>.f3(1, *(ints)!!)
+   return a
+  }
+ }
+
+ fun interface GenericFunction<T> {
+  fun m(
+   @ObjCName("withId", exact = false) i: T,
+   vararg @ObjCName("withNSObjectArray", exact = false) args: T
+  ): Any?
+ }
+}

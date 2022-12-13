@@ -1,0 +1,26 @@
+// Generated from "j2kt/Overrides.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package j2kt
+
+import javaemul.lang.*
+import j2kt.Overrides
+import kotlin.OptIn
+import kotlin.String
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.native.ObjCName
+
+@ObjCName("J2ktOverrides", exact = true)
+open class Overrides {
+ @ObjCName("J2ktOverrides_Parent", exact = true)
+ interface Parent<T> {
+  fun <E: T> foo(
+   @ObjCName("withId", exact = false) e: E
+  )
+ }
+
+ @ObjCName("J2ktOverrides_Child", exact = true)
+ interface Child: Overrides.Parent<String?> {
+  override fun <E: String?> foo(e: E)
+ }
+}

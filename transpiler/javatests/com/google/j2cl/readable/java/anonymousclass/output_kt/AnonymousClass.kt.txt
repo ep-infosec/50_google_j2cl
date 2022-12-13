@@ -1,0 +1,69 @@
+// Generated from "anonymousclass/AnonymousClass.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package anonymousclass
+
+import javaemul.lang.*
+import anonymousclass.SomeClass
+import anonymousclass.SomeClassWithStaticMembers
+import kotlin.Any
+import kotlin.Int
+import kotlin.OptIn
+import kotlin.String
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.jvm.JvmField
+import kotlin.jvm.JvmStatic
+import kotlin.native.ObjCName
+
+abstract class SomeClass {
+ abstract fun foo(): String?
+
+ constructor(i: Int)
+}
+
+abstract class SomeClassWithStaticMembers {
+ abstract fun foo(): String?
+
+ constructor(i: Int)
+
+ companion object {
+  @JvmStatic
+  fun staticMethod_pp_anonymousclass() {}
+ }
+}
+
+@ObjCName("AnonymousclassAnonymousClass", exact = true)
+open class AnonymousClass {
+ @JvmField var i_pp_anonymousclass: Int = 0
+
+ open fun main() {
+  val instance: SomeClass? = object : SomeClass(this@AnonymousClass.i_pp_anonymousclass) {
+   @JvmField var object_pp_anonymousclass: Any? = this
+
+   @JvmField var outer_pp_anonymousclass: Any? = this@AnonymousClass
+
+   open override fun foo(): String? {
+    return "a"
+   }
+  }
+  val instanceWithStaticMembers: SomeClassWithStaticMembers? = object : SomeClassWithStaticMembers(this@AnonymousClass.i_pp_anonymousclass) {
+   @JvmField var object_pp_anonymousclass: Any? = this
+
+   @JvmField var outer_pp_anonymousclass: Any? = this@AnonymousClass
+
+   open override fun foo(): String? {
+    return "a"
+   }
+  }
+ }
+}
+
+interface SomeInterface {
+ companion object {
+  @JvmField val implicitlyStatic: SomeClass? = object : SomeClass(1) {
+   open override fun foo(): String? {
+    return "a"
+   }
+  }
+ }
+}

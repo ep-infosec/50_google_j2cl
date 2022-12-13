@@ -1,0 +1,44 @@
+// Generated from "systemgetproperty/Main.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package systemgetproperty
+
+import javaemul.lang.*
+import java.lang.System
+import kotlin.Array
+import kotlin.Boolean
+import kotlin.OptIn
+import kotlin.String
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.jvm.JvmField
+import kotlin.jvm.JvmStatic
+import kotlin.native.ObjCName
+import systemgetproperty.Main
+
+@ObjCName("SystemgetpropertyMain", exact = true)
+open class Main {
+ companion object {
+  @JvmField val property_private_2: String? = System.getProperty("jre.classMetadata")
+
+  @JvmField val propertyWithDefault_private_2: String? = System.getProperty("jre.classMetadata", "default")
+
+  @JvmStatic
+  fun main(
+   @ObjCName("withNSStringArray", exact = false) args: Array<String?>?
+  ) {
+   var x: Boolean = false
+   x = Main.property_private_2 === "SIMPLE"
+   x = Main.property_private_2!!.equals("SIMPLE")
+   x = Main.property_private_2!!.equalsIgnoreCase("SIMPLE")
+   x = Main.property_private_2 === "NOTSIMPLE"
+   x = Main.propertyWithDefault_private_2!!.equals("SIMPLE")
+   x = System.getProperty("jre.bar", "bar")!!.equals("bar")
+   x = System.getProperty("jre.classMetadata", Main.mightHaveSideEffects_private_2())!!.equals("SIMPLE")
+  }
+
+  @JvmStatic
+  fun mightHaveSideEffects_private_2(): String? {
+   return "Foo"
+  }
+ }
+}

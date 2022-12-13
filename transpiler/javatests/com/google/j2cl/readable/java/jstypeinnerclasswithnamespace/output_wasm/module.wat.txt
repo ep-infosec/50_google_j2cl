@@ -1,0 +1,231 @@
+;;; Code for jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace [static fields]
+(global $f_$initialized__jstypeinnerclasswithnamespace_JsTypeInnerClassWithNamespace (mut i32) (i32.const 0))
+
+;;; Code for jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.InnerClass [static fields]
+(global $f_$initialized__jstypeinnerclasswithnamespace_JsTypeInnerClassWithNamespace_InnerClass (mut i32) (i32.const 0))
+
+;;; Code for jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace [vtable.init]
+(global $jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.vtable (ref $jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.vtable) 
+ (struct.new $jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.vtable
+  (ref.func $m_equals__java_lang_Object__boolean@java.lang.Object)
+  (ref.func $m_hashCode__int@java.lang.Object)
+  (ref.func $m_toString__java_lang_String@java.lang.Object)
+  (ref.func $m_getClass__java_lang_Class@jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace)
+ )
+)
+
+;;; Code for jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace [itable.init]
+(global $jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.itable (ref $jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.itable) (struct.new $jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.itable 
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+ ))
+
+;;; Code for jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.InnerClass [vtable.init]
+(global $jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.InnerClass.vtable (ref $jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.InnerClass.vtable) 
+ (struct.new $jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.InnerClass.vtable
+  (ref.func $m_equals__java_lang_Object__boolean@java.lang.Object)
+  (ref.func $m_hashCode__int@java.lang.Object)
+  (ref.func $m_toString__java_lang_String@java.lang.Object)
+  (ref.func $m_getClass__java_lang_Class@jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.InnerClass)
+ )
+)
+
+;;; Code for jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.InnerClass [itable.init]
+(global $jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.InnerClass.itable (ref $jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.InnerClass.itable) (struct.new $jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.InnerClass.itable 
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+ ))
+
+;;; Code for jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace [CLASS]
+(type $jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace (struct_subtype 
+ (field $vtable (ref $jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.vtable)) 
+ (field $itable (ref $jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+  $java.lang.Object)
+)
+(type $jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+  $java.lang.Object.vtable)
+)
+(type $jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.itable (struct_subtype 
+(field $slot0 (ref null struct))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $java.lang.Object.itable))
+
+;;; JsTypeInnerClassWithNamespace JsTypeInnerClassWithNamespace.$create()
+(func $$create__@jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace
+ (result (ref null $jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace))
+ ;;@ jstypeinnerclasswithnamespace/JsTypeInnerClassWithNamespace.java:20:13
+ (local $$instance (ref null $jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace))
+ (block
+  ;; JsTypeInnerClassWithNamespace $instance = new JsTypeInnerClassWithNamespace.<init>(0);
+  ;;@ jstypeinnerclasswithnamespace/JsTypeInnerClassWithNamespace.java:20:13
+  (local.set $$instance (struct.new $jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace (ref.as_non_null (global.get $jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.vtable)) (ref.as_non_null (global.get $jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.itable)) (i32.const 0)))
+  ;; $instance.$ctor();
+  ;;@ jstypeinnerclasswithnamespace/JsTypeInnerClassWithNamespace.java:20:13
+  (call $$ctor__void_$p_jstypeinnerclasswithnamespace_JsTypeInnerClassWithNamespace@jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace (ref.as_non_null (local.get $$instance)))
+  ;; return $instance;
+  ;;@ jstypeinnerclasswithnamespace/JsTypeInnerClassWithNamespace.java:20:13
+  (return (local.get $$instance))
+ )
+)
+
+;;; void JsTypeInnerClassWithNamespace.$ctor()
+(func $$ctor__void_$p_jstypeinnerclasswithnamespace_JsTypeInnerClassWithNamespace@jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace
+ (param $this (ref null $jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace))
+ ;;@ jstypeinnerclasswithnamespace/JsTypeInnerClassWithNamespace.java:20:13
+ (block
+  ;; jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.$clinit();
+  ;;@ jstypeinnerclasswithnamespace/JsTypeInnerClassWithNamespace.java:20:13
+  (call $$clinit__void@jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace )
+  ;; Object.this.$ctor();
+  ;;@ jstypeinnerclasswithnamespace/JsTypeInnerClassWithNamespace.java:20:13
+  (call $$ctor__void_$p_java_lang_Object@java.lang.Object (ref.as_non_null (local.get $this)))
+ )
+)
+
+;;; void JsTypeInnerClassWithNamespace.$clinit()
+(func $$clinit__void@jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace
+ ;;@ jstypeinnerclasswithnamespace/JsTypeInnerClassWithNamespace.java:20:13
+ (block
+  ;; if (jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.$initialized) return;
+  ;;@ jstypeinnerclasswithnamespace/JsTypeInnerClassWithNamespace.java:20:13
+  (if (global.get $f_$initialized__jstypeinnerclasswithnamespace_JsTypeInnerClassWithNamespace)
+   (then
+    ;; return;
+    ;;@ jstypeinnerclasswithnamespace/JsTypeInnerClassWithNamespace.java:20:13
+    (return )
+   )
+  )
+  ;; (jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.$initialized = true);
+  ;;@ jstypeinnerclasswithnamespace/JsTypeInnerClassWithNamespace.java:20:13
+  (global.set $f_$initialized__jstypeinnerclasswithnamespace_JsTypeInnerClassWithNamespace (i32.const 1))
+  ;; java.lang.Object.$clinit();
+  ;;@ jstypeinnerclasswithnamespace/JsTypeInnerClassWithNamespace.java:20:13
+  (call $$clinit__void@java.lang.Object )
+ )
+)
+
+;;; Class<?> JsTypeInnerClassWithNamespace.getClass()
+(func $m_getClass__java_lang_Class@jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace
+ (type $function.m_getClass__java_lang_Class)
+ (param $this.untyped (ref $java.lang.Object))
+ (result (ref null $java.lang.Class))
+ (local $this (ref null $jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace))
+ (local.set $this (ref.cast_static $jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace (local.get $this.untyped)))
+ (block
+  ;; return javaemul.internal.ClassLiteralPool.$getJstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace();
+  (return (call $function.no.side.effects.$getJstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace__java_lang_Class (ref.func $$getJstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace__java_lang_Class@javaemul.internal.ClassLiteralPool) ))
+ )
+)
+(elem declare func $m_getClass__java_lang_Class@jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace)
+
+;;; Code for jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.InnerClass [CLASS]
+(type $jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.InnerClass (struct_subtype 
+ (field $vtable (ref $jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.InnerClass.vtable)) 
+ (field $itable (ref $jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.InnerClass.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+  $java.lang.Object)
+)
+(type $jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.InnerClass.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+  $java.lang.Object.vtable)
+)
+(type $jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.InnerClass.itable (struct_subtype 
+(field $slot0 (ref null struct))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $java.lang.Object.itable))
+
+;;; InnerClass InnerClass.$create()
+(func $$create__@jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.InnerClass
+ (result (ref null $jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.InnerClass))
+ ;;@ jstypeinnerclasswithnamespace/JsTypeInnerClassWithNamespace.java:23:15
+ (local $$instance (ref null $jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.InnerClass))
+ (block
+  ;; InnerClass $instance = new InnerClass.<init>(0);
+  ;;@ jstypeinnerclasswithnamespace/JsTypeInnerClassWithNamespace.java:23:15
+  (local.set $$instance (struct.new $jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.InnerClass (ref.as_non_null (global.get $jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.InnerClass.vtable)) (ref.as_non_null (global.get $jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.InnerClass.itable)) (i32.const 0)))
+  ;; $instance.$ctor();
+  ;;@ jstypeinnerclasswithnamespace/JsTypeInnerClassWithNamespace.java:23:15
+  (call $$ctor__void_$p_jstypeinnerclasswithnamespace_JsTypeInnerClassWithNamespace_InnerClass@jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.InnerClass (ref.as_non_null (local.get $$instance)))
+  ;; return $instance;
+  ;;@ jstypeinnerclasswithnamespace/JsTypeInnerClassWithNamespace.java:23:15
+  (return (local.get $$instance))
+ )
+)
+
+;;; void InnerClass.$ctor()
+(func $$ctor__void_$p_jstypeinnerclasswithnamespace_JsTypeInnerClassWithNamespace_InnerClass@jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.InnerClass
+ (param $this (ref null $jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.InnerClass))
+ ;;@ jstypeinnerclasswithnamespace/JsTypeInnerClassWithNamespace.java:23:15
+ (block
+  ;; jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.InnerClass.$clinit();
+  ;;@ jstypeinnerclasswithnamespace/JsTypeInnerClassWithNamespace.java:23:15
+  (call $$clinit__void@jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.InnerClass )
+  ;; Object.this.$ctor();
+  ;;@ jstypeinnerclasswithnamespace/JsTypeInnerClassWithNamespace.java:23:15
+  (call $$ctor__void_$p_java_lang_Object@java.lang.Object (ref.as_non_null (local.get $this)))
+ )
+)
+
+;;; void InnerClass.$clinit()
+(func $$clinit__void@jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.InnerClass
+ ;;@ jstypeinnerclasswithnamespace/JsTypeInnerClassWithNamespace.java:23:15
+ (block
+  ;; if (jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.InnerClass.$initialized) return;
+  ;;@ jstypeinnerclasswithnamespace/JsTypeInnerClassWithNamespace.java:23:15
+  (if (global.get $f_$initialized__jstypeinnerclasswithnamespace_JsTypeInnerClassWithNamespace_InnerClass)
+   (then
+    ;; return;
+    ;;@ jstypeinnerclasswithnamespace/JsTypeInnerClassWithNamespace.java:23:15
+    (return )
+   )
+  )
+  ;; (jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.InnerClass.$initialized = true);
+  ;;@ jstypeinnerclasswithnamespace/JsTypeInnerClassWithNamespace.java:23:15
+  (global.set $f_$initialized__jstypeinnerclasswithnamespace_JsTypeInnerClassWithNamespace_InnerClass (i32.const 1))
+  ;; java.lang.Object.$clinit();
+  ;;@ jstypeinnerclasswithnamespace/JsTypeInnerClassWithNamespace.java:23:15
+  (call $$clinit__void@java.lang.Object )
+ )
+)
+
+;;; Class<?> InnerClass.getClass()
+(func $m_getClass__java_lang_Class@jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.InnerClass
+ (type $function.m_getClass__java_lang_Class)
+ (param $this.untyped (ref $java.lang.Object))
+ (result (ref null $java.lang.Class))
+ (local $this (ref null $jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.InnerClass))
+ (local.set $this (ref.cast_static $jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.InnerClass (local.get $this.untyped)))
+ (block
+  ;; return javaemul.internal.ClassLiteralPool.$getJstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.InnerClass();
+  (return (call $function.no.side.effects.$getJstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.InnerClass__java_lang_Class (ref.func $$getJstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.InnerClass__java_lang_Class@javaemul.internal.ClassLiteralPool) ))
+ )
+)
+(elem declare func $m_getClass__java_lang_Class@jstypeinnerclasswithnamespace.JsTypeInnerClassWithNamespace.InnerClass)

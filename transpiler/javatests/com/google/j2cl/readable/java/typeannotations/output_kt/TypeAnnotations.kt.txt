@@ -1,0 +1,50 @@
+// Generated from "typeannotations/TypeAnnotations.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package typeannotations
+
+import javaemul.lang.*
+import kotlin.OptIn
+import kotlin.String
+import kotlin.collections.ArrayList
+import kotlin.collections.MutableList
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.jvm.JvmStatic
+import kotlin.native.ObjCName
+import typeannotations.AbstractType
+import typeannotations.ParametricType
+import typeannotations.Parent
+
+abstract class AbstractType: ParametricType<AbstractType?> {}
+
+abstract class AbstractTypeNonNull: ParametricType<AbstractType> {}
+
+open class Parent {
+ open fun m(
+  @ObjCName("withNSString", exact = false) s: String,
+  @ObjCName("withTypeannotationsParent", exact = false) c: Parent?
+ ): Parent? {
+  return c
+ }
+
+ open fun m(
+  @ObjCName("withJavaUtilList", exact = false) l: MutableList<String>?,
+  @ObjCName("withTypeannotationsParent", exact = false) c: Parent?
+ ): MutableList<Parent>? {
+  return ArrayList<Parent>()
+ }
+}
+
+open class ChildWithNullableParent: Parent(), ParametricType<Parent?> {}
+
+open class ChildWithNonNullableParent: Parent(), ParametricType<Parent> {}
+
+@ObjCName("TypeannotationsTypeAnnotations", exact = true)
+open class TypeAnnotations {
+ companion object {
+  @JvmStatic
+  fun main() {
+   val list: MutableList<String>? = ArrayList<String>()
+  }
+ }
+}

@@ -1,0 +1,175 @@
+// Generated from "jsenum/Main.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package jsenum
+
+import javaemul.lang.*
+import java.util.Arrays
+import java.util.Optional
+import java.util.function.Consumer
+import java.util.function.Supplier
+import jsenum.Main
+import kotlin.Any
+import kotlin.Array
+import kotlin.Boolean
+import kotlin.Comparable
+import kotlin.Int
+import kotlin.OptIn
+import kotlin.String
+import kotlin.arrayOf
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.jvm.JvmField
+import kotlin.jvm.JvmStatic
+import kotlin.native.ObjCName
+
+@ObjCName("JsenumMain", exact = true)
+open class Main {
+ companion object {
+  @JvmStatic
+  fun testJsEnumSwitch() {
+   var comparableJsEnum: Main.ComparableJsEnum? = if (Main.ComparableJsEnum.ONE.getValue() == 1) Main.ComparableJsEnum.TWO else null
+   SWITCH@ do {
+    when (comparableJsEnum!!) {
+     Main.ComparableJsEnum.TWO -> {
+      break@SWITCH
+     }
+     else -> {}
+    }
+   } while (false)
+   val comparable: Comparable<Any>? = comparableJsEnum as Comparable<Any>?
+   comparableJsEnum = comparable as Main.ComparableJsEnum?
+   var intJsEnum: Main.IntJsEnum? = if (Main.IntJsEnum.ELEVEN.getValue() == 10) Main.IntJsEnum.ELEVEN else null
+   SWITCH_1@ do {
+    when (intJsEnum!!) {
+     Main.IntJsEnum.TWENTY -> {
+      break@SWITCH_1
+     }
+     else -> {}
+    }
+   } while (false)
+   val o: Any? = intJsEnum
+   intJsEnum = o as Main.IntJsEnum?
+   val equal: Boolean = intJsEnum === Main.IntJsEnum.TWENTY
+   var isInstance: Boolean = intJsEnum is Main.IntJsEnum
+   isInstance = intJsEnum is Comparable<*>
+   val stringJsEnum: Main.StringJsEnum? = if (Main.StringJsEnum.ONE.getValue() === "10") Main.StringJsEnum.THREE else null
+   SWITCH_2@ do {
+    when (stringJsEnum!!) {
+     Main.StringJsEnum.ONE -> {
+      break@SWITCH_2
+     }
+     else -> {}
+    }
+   } while (false)
+   Main.NativeStringEnum.ONE.compareTo(Main.NativeStringEnum.THREE)
+   Main.NativeStringEnum.ONE.equals(Main.NativeStringEnum.THREE)
+   Main.ComparableJsEnum.ONE.compareTo(Main.ComparableJsEnum.ZERO)
+   Main.ComparableJsEnum.ONE.equals(Main.ComparableJsEnum.ZERO)
+   val supplier: Supplier<Main.ComparableJsEnum?>? = Supplier<Main.ComparableJsEnum?> {
+    return@Supplier Main.ComparableJsEnum.ONE
+   }
+   val consummer: Consumer<Main.ComparableJsEnum?>? = Consumer<Main.ComparableJsEnum?> { e: Main.ComparableJsEnum? ->
+    e!!.ordinal
+   }
+  }
+
+  @JvmStatic
+  fun testBoxUnboxWithTypeInference_private_2() {
+   val templatedField: Main.TemplatedField<Main.ComparableJsEnum?>? = Main.TemplatedField<Main.ComparableJsEnum?>(Main.ComparableJsEnum.ONE)
+   var unboxed: Main.ComparableJsEnum? = templatedField!!.getValue_pp_jsenum()
+   unboxed = templatedField!!.value_pp_jsenum
+   templatedField!!.value_pp_jsenum = Main.ComparableJsEnum.ONE
+   Arrays.asList<Main.ComparableJsEnum>(*(arrayOf<Any?>(Main.ComparableJsEnum.ONE) as Array<Main.ComparableJsEnum>))
+   templatedField!!.getValue_pp_jsenum()!!.ordinal
+   val b: Boolean = Main.ComparableJsEnum.ONE === Main.boxingPassthrough_private_2<Main.ComparableJsEnum?>(Main.ComparableJsEnum.ONE)
+  }
+
+  @JvmStatic
+  fun <T> boxingPassthrough_private_2(t: T): T {
+   return t
+  }
+
+  @JvmStatic
+  fun boxingWithGenerics_pp_jsenum() {
+   Main.Foo<Any?>(Optional.of<Main.IntJsEnum>(Main.IntJsEnum.MINUSONE) as Optional<Main.IntJsEnum>?)
+  }
+ }
+
+ enum class ComparableJsEnum {
+  ZERO,
+  ONE,
+  TWO;
+
+  open fun getValue(): Int {
+   return this.ordinal
+  }
+ }
+
+ enum class IntJsEnum {
+  MINUSONE(-1),
+  TWENTY(20),
+  ELEVEN(11);
+
+  @JvmField var value_private_2: Int = 0
+
+  open fun getValue(): Int {
+   return this.value_private_2
+  }
+
+  constructor(value: Int) {
+   this.value_private_2 = value
+  }
+ }
+
+ enum class StringJsEnum {
+  ONE("ONE"),
+  THREE("THREE");
+
+  @JvmField var value_private_2: String? = null
+
+  open fun getValue(): String? {
+   return this.value_private_2
+  }
+
+  constructor(value: String?) {
+   this.value_private_2 = value
+  }
+ }
+
+ enum class NonNullableStringJsEnum {
+  ONE("ONE"),
+  THREE("THREE");
+
+  @JvmField var value_private_2: String
+
+  open fun getValue(): String? {
+   return this.value_private_2
+  }
+
+  constructor(value: String?) {
+   this.value_private_2 = value!!
+  }
+ }
+
+ enum class NativeStringEnum {
+  ONE,
+  THREE;
+
+ }
+
+ open class TemplatedField<T> {
+  @JvmField var value_pp_jsenum: T = null as T
+
+  constructor(value: T) {
+   this.value_pp_jsenum = value
+  }
+
+  open fun getValue_pp_jsenum(): T {
+   return this.value_pp_jsenum
+  }
+ }
+
+ open class Foo<T> {
+  constructor(c: Optional<Main.IntJsEnum>?)
+ }
+}

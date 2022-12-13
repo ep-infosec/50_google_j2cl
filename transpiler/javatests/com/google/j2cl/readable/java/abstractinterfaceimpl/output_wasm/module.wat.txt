@@ -1,0 +1,90 @@
+;;; Code for abstractinterfaceimpl.MyInterface [static fields]
+(global $f_$initialized__abstractinterfaceimpl_MyInterface (mut i32) (i32.const 0))
+
+;;; Code for abstractinterfaceimpl.AbstractInterfaceImpl [static fields]
+(global $f_$initialized__abstractinterfaceimpl_AbstractInterfaceImpl (mut i32) (i32.const 0))
+
+;;; Code for abstractinterfaceimpl.MyInterface [INTERFACE]
+(type $abstractinterfaceimpl.MyInterface.vtable (struct 
+ (field $m_foo__int (ref $function.m_foo__int))
+ )
+)
+
+;;; void MyInterface.$clinit()
+(func $$clinit__void@abstractinterfaceimpl.MyInterface
+ ;;@ abstractinterfaceimpl/AbstractInterfaceImpl.java:18:10
+ (block
+  ;; if (abstractinterfaceimpl.MyInterface.$initialized) return;
+  ;;@ abstractinterfaceimpl/AbstractInterfaceImpl.java:18:10
+  (if (global.get $f_$initialized__abstractinterfaceimpl_MyInterface)
+   (then
+    ;; return;
+    ;;@ abstractinterfaceimpl/AbstractInterfaceImpl.java:18:10
+    (return )
+   )
+  )
+  ;; (abstractinterfaceimpl.MyInterface.$initialized = true);
+  ;;@ abstractinterfaceimpl/AbstractInterfaceImpl.java:18:10
+  (global.set $f_$initialized__abstractinterfaceimpl_MyInterface (i32.const 1))
+ )
+)
+
+;;; Code for abstractinterfaceimpl.AbstractInterfaceImpl [CLASS]
+(type $abstractinterfaceimpl.AbstractInterfaceImpl (struct_subtype 
+ (field $vtable (ref $abstractinterfaceimpl.AbstractInterfaceImpl.vtable)) 
+ (field $itable (ref $abstractinterfaceimpl.AbstractInterfaceImpl.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+  $java.lang.Object)
+)
+(type $abstractinterfaceimpl.AbstractInterfaceImpl.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+  $java.lang.Object.vtable)
+)
+(type $abstractinterfaceimpl.AbstractInterfaceImpl.itable (struct_subtype 
+(field $slot0 (ref $abstractinterfaceimpl.MyInterface.vtable))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $java.lang.Object.itable))
+
+;;; void AbstractInterfaceImpl.$ctor()
+(func $$ctor__void_$p_abstractinterfaceimpl_AbstractInterfaceImpl@abstractinterfaceimpl.AbstractInterfaceImpl
+ (param $this (ref null $abstractinterfaceimpl.AbstractInterfaceImpl))
+ ;;@ abstractinterfaceimpl/AbstractInterfaceImpl.java:22:22
+ (block
+  ;; abstractinterfaceimpl.AbstractInterfaceImpl.$clinit();
+  ;;@ abstractinterfaceimpl/AbstractInterfaceImpl.java:22:22
+  (call $$clinit__void@abstractinterfaceimpl.AbstractInterfaceImpl )
+  ;; Object.this.$ctor();
+  ;;@ abstractinterfaceimpl/AbstractInterfaceImpl.java:22:22
+  (call $$ctor__void_$p_java_lang_Object@java.lang.Object (ref.as_non_null (local.get $this)))
+ )
+)
+
+;;; void AbstractInterfaceImpl.$clinit()
+(func $$clinit__void@abstractinterfaceimpl.AbstractInterfaceImpl
+ ;;@ abstractinterfaceimpl/AbstractInterfaceImpl.java:22:22
+ (block
+  ;; if (abstractinterfaceimpl.AbstractInterfaceImpl.$initialized) return;
+  ;;@ abstractinterfaceimpl/AbstractInterfaceImpl.java:22:22
+  (if (global.get $f_$initialized__abstractinterfaceimpl_AbstractInterfaceImpl)
+   (then
+    ;; return;
+    ;;@ abstractinterfaceimpl/AbstractInterfaceImpl.java:22:22
+    (return )
+   )
+  )
+  ;; (abstractinterfaceimpl.AbstractInterfaceImpl.$initialized = true);
+  ;;@ abstractinterfaceimpl/AbstractInterfaceImpl.java:22:22
+  (global.set $f_$initialized__abstractinterfaceimpl_AbstractInterfaceImpl (i32.const 1))
+  ;; java.lang.Object.$clinit();
+  ;;@ abstractinterfaceimpl/AbstractInterfaceImpl.java:22:22
+  (call $$clinit__void@java.lang.Object )
+ )
+)

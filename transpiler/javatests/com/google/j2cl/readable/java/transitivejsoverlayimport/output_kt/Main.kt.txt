@@ -1,0 +1,69 @@
+// Generated from "transitivejsoverlayimport/Main.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package transitivejsoverlayimport
+
+import javaemul.lang.*
+import kotlin.Array
+import kotlin.Int
+import kotlin.OptIn
+import kotlin.String
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.jvm.JvmStatic
+import kotlin.native.ObjCName
+import transitivejsoverlayimport.Immediate
+import transitivejsoverlayimport.NonNativeLower
+import transitivejsoverlayimport.NonNativeUpper
+import transitivejsoverlayimport.Transitive
+
+open class Immediate: Transitive() {
+ fun doImmediateInstanceMethod_pp_transitivejsoverlayimport() {}
+}
+
+open class NonNativeUpper: Immediate {
+ constructor()
+
+ open fun doNonNativeUpperInstanceMethod_pp_transitivejsoverlayimport() {}
+}
+
+open class NonNativeLower: NonNativeUpper {
+ constructor()
+
+ open fun doNonNativeLowerInstanceMethod_pp_transitivejsoverlayimport() {}
+}
+
+open class Transitive {
+ external fun getJsProperty_pp_transitivejsoverlayimport(): Int
+
+ fun doTransitiveInstanceMethod_pp_transitivejsoverlayimport(arg1: String?) {}
+}
+
+@ObjCName("TransitivejsoverlayimportMain", exact = true)
+open class Main {
+ companion object {
+  @JvmStatic
+  fun main(
+   vararg @ObjCName("withNSStringArray", exact = false) args: String?
+  ) {
+   val args_1: Array<String?>? = args as Array<String?>?
+   val transitive: Transitive? = null
+   transitive!!.doTransitiveInstanceMethod_pp_transitivejsoverlayimport("arg1")
+   transitive!!.getJsProperty_pp_transitivejsoverlayimport()
+   val immediate: Immediate? = null
+   immediate!!.doTransitiveInstanceMethod_pp_transitivejsoverlayimport("arg1")
+   immediate!!.getJsProperty_pp_transitivejsoverlayimport()
+   immediate!!.doImmediateInstanceMethod_pp_transitivejsoverlayimport()
+   val nonNativeUpper: NonNativeUpper? = null
+   nonNativeUpper!!.doTransitiveInstanceMethod_pp_transitivejsoverlayimport("arg1")
+   nonNativeUpper!!.getJsProperty_pp_transitivejsoverlayimport()
+   nonNativeUpper!!.doImmediateInstanceMethod_pp_transitivejsoverlayimport()
+   nonNativeUpper!!.doNonNativeUpperInstanceMethod_pp_transitivejsoverlayimport()
+   val nonNativeLower: NonNativeLower? = null
+   nonNativeLower!!.doTransitiveInstanceMethod_pp_transitivejsoverlayimport("arg1")
+   nonNativeLower!!.getJsProperty_pp_transitivejsoverlayimport()
+   nonNativeLower!!.doImmediateInstanceMethod_pp_transitivejsoverlayimport()
+   nonNativeLower!!.doNonNativeUpperInstanceMethod_pp_transitivejsoverlayimport()
+   nonNativeLower!!.doNonNativeLowerInstanceMethod_pp_transitivejsoverlayimport()
+  }
+ }
+}

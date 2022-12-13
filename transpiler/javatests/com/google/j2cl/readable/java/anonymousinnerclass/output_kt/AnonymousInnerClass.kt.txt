@@ -1,0 +1,35 @@
+// Generated from "anonymousinnerclass/AnonymousInnerClass.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package anonymousinnerclass
+
+import javaemul.lang.*
+import anonymousinnerclass.A
+import anonymousinnerclass.AnonymousInnerClass
+import kotlin.Int
+import kotlin.OptIn
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.jvm.JvmField
+import kotlin.native.ObjCName
+
+open class A {
+ open inner class B {}
+}
+
+@ObjCName("AnonymousinnerclassAnonymousInnerClass", exact = true)
+open class AnonymousInnerClass {
+ open fun test(
+  @ObjCName("withInt", exact = false) arg: Int
+ ) {
+  val ic: AnonymousInnerClass.InnerClass? = object : InnerClass() {}
+  val a: A? = A()
+  val b: A.B? = object : B() {}
+  open class ___1C {
+   @JvmField var fInC: Int = arg
+  }
+  val c: ___1C? = object : ___1C() {}
+ }
+
+ @ObjCName("AnonymousinnerclassAnonymousInnerClass_InnerClass", exact = true)
+ open inner class InnerClass {}
+}

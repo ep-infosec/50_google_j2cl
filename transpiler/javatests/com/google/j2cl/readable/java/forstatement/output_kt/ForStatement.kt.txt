@@ -1,0 +1,91 @@
+// Generated from "forstatement/ForStatement.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package forstatement
+
+import javaemul.lang.*
+import forstatement.ForStatement
+import kotlin.Boolean
+import kotlin.Int
+import kotlin.Long
+import kotlin.OptIn
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.jvm.JvmStatic
+import kotlin.native.ObjCName
+import kotlin.run
+
+@ObjCName("ForstatementForStatement", exact = true)
+open class ForStatement {
+ open fun test() {
+  var i: Int = 0
+  var count: Int = 0
+  while (i < 100) {
+   count = count + 1
+   i = i + 1
+  }
+  var l: Long = 0L
+  var count_1: Long = 0L
+  while (l < 100L) {
+   count_1 = count_1 + 1L
+   l = l + 1L
+   l = l + 1L
+  }
+  var a: Boolean = false
+  while (run {
+   a = a.or(true)
+   a
+  }) {}
+  var b: Boolean = false
+  while (run {
+   b = a
+   b
+  }) {}
+  ForStatement.returnsValue_private_2()
+  while (true) {
+   ForStatement.returnsValue_private_2()
+  }
+ }
+
+ open fun testContinue() {
+  var i: Int = 0
+  var j: Int = 0
+  while (i < 10) {
+   LABEL_CONTINUE@ do {
+    if (i == 5) {
+     break@LABEL_CONTINUE
+    }
+    var k: Int = 0
+    var l: Int = 0
+    while (k < 10) {
+     if (j == 5) {
+      break@LABEL_CONTINUE
+     }
+     k = k + 1
+     l = l + 1
+    }
+   } while (false)
+   i = i + 1
+   j = j + 1
+  }
+ }
+
+ open fun testInitializeInForCondition() {
+  var i: Int = 0
+  var x: Int = 0
+  while (i < 1 && run {
+   x = 3
+   x
+  } != 0) {
+   var y: Int = 0
+   y = i + x
+   i = i + 1
+  }
+ }
+
+ companion object {
+  @JvmStatic
+  fun returnsValue_private_2(): Int {
+   return 1
+  }
+ }
+}

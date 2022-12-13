@@ -1,0 +1,174 @@
+;;; Code for jstypewithdefault.SomeJsType [static fields]
+(global $f_$initialized__jstypewithdefault_SomeJsType (mut i32) (i32.const 0))
+
+;;; Code for jstypewithdefault.Interface [static fields]
+(global $f_$initialized__jstypewithdefault_Interface (mut i32) (i32.const 0))
+
+;;; Code for jstypewithdefault.SomeJsType [vtable.init]
+(global $jstypewithdefault.SomeJsType.vtable (ref $jstypewithdefault.SomeJsType.vtable) 
+ (struct.new $jstypewithdefault.SomeJsType.vtable
+  (ref.func $m_equals__java_lang_Object__boolean@java.lang.Object)
+  (ref.func $m_hashCode__int@java.lang.Object)
+  (ref.func $m_toString__java_lang_String@java.lang.Object)
+  (ref.func $m_getClass__java_lang_Class@jstypewithdefault.SomeJsType)
+  (ref.func $m_defaultMethod__void@jstypewithdefault.SomeJsType)
+ )
+)
+
+;;; Code for jstypewithdefault.SomeJsType [itable.init]
+(global $jstypewithdefault.SomeJsType.itable (ref $jstypewithdefault.SomeJsType.itable) (struct.new $jstypewithdefault.SomeJsType.itable 
+ (struct.new $jstypewithdefault.Interface.vtable
+  (ref.func $m_defaultMethod__void@jstypewithdefault.SomeJsType)
+ )
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+ ))
+
+;;; Code for jstypewithdefault.SomeJsType [CLASS]
+(type $jstypewithdefault.SomeJsType (struct_subtype 
+ (field $vtable (ref $jstypewithdefault.SomeJsType.vtable)) 
+ (field $itable (ref $jstypewithdefault.SomeJsType.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+  $java.lang.Object)
+)
+(type $jstypewithdefault.SomeJsType.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+ (field $m_defaultMethod__void (ref $function.m_defaultMethod__void))
+  $java.lang.Object.vtable)
+)
+(type $jstypewithdefault.SomeJsType.itable (struct_subtype 
+(field $slot0 (ref $jstypewithdefault.Interface.vtable))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $java.lang.Object.itable))
+
+;;; SomeJsType SomeJsType.$create()
+(func $$create__@jstypewithdefault.SomeJsType
+ (result (ref null $jstypewithdefault.SomeJsType))
+ ;;@ jstypewithdefault/SomeJsType.java:20:13
+ (local $$instance (ref null $jstypewithdefault.SomeJsType))
+ (block
+  ;; SomeJsType $instance = new SomeJsType.<init>(0);
+  ;;@ jstypewithdefault/SomeJsType.java:20:13
+  (local.set $$instance (struct.new $jstypewithdefault.SomeJsType (ref.as_non_null (global.get $jstypewithdefault.SomeJsType.vtable)) (ref.as_non_null (global.get $jstypewithdefault.SomeJsType.itable)) (i32.const 0)))
+  ;; $instance.$ctor();
+  ;;@ jstypewithdefault/SomeJsType.java:20:13
+  (call $$ctor__void_$p_jstypewithdefault_SomeJsType@jstypewithdefault.SomeJsType (ref.as_non_null (local.get $$instance)))
+  ;; return $instance;
+  ;;@ jstypewithdefault/SomeJsType.java:20:13
+  (return (local.get $$instance))
+ )
+)
+
+;;; void SomeJsType.$ctor()
+(func $$ctor__void_$p_jstypewithdefault_SomeJsType@jstypewithdefault.SomeJsType
+ (param $this (ref null $jstypewithdefault.SomeJsType))
+ ;;@ jstypewithdefault/SomeJsType.java:20:13
+ (block
+  ;; jstypewithdefault.SomeJsType.$clinit();
+  ;;@ jstypewithdefault/SomeJsType.java:20:13
+  (call $$clinit__void@jstypewithdefault.SomeJsType )
+  ;; Object.this.$ctor();
+  ;;@ jstypewithdefault/SomeJsType.java:20:13
+  (call $$ctor__void_$p_java_lang_Object@java.lang.Object (ref.as_non_null (local.get $this)))
+ )
+)
+
+;;; void SomeJsType.defaultMethod()
+(func $m_defaultMethod__void@jstypewithdefault.SomeJsType
+ (type $function.m_defaultMethod__void)
+ (param $this.untyped (ref $java.lang.Object))
+ ;;@ jstypewithdefault/SomeJsType.java:20:13
+ (local $this (ref null $jstypewithdefault.SomeJsType))
+ (local.set $this (ref.cast_static $jstypewithdefault.SomeJsType (local.get $this.untyped)))
+ (block
+  ;; SomeJsType.this.defaultMethod();
+  ;;@ jstypewithdefault/SomeJsType.java:20:13
+  (call $m_defaultMethod__void@jstypewithdefault.Interface (ref.as_non_null (local.get $this)))
+ )
+)
+(elem declare func $m_defaultMethod__void@jstypewithdefault.SomeJsType)
+
+;;; void SomeJsType.$clinit()
+(func $$clinit__void@jstypewithdefault.SomeJsType
+ ;;@ jstypewithdefault/SomeJsType.java:20:13
+ (block
+  ;; if (jstypewithdefault.SomeJsType.$initialized) return;
+  ;;@ jstypewithdefault/SomeJsType.java:20:13
+  (if (global.get $f_$initialized__jstypewithdefault_SomeJsType)
+   (then
+    ;; return;
+    ;;@ jstypewithdefault/SomeJsType.java:20:13
+    (return )
+   )
+  )
+  ;; (jstypewithdefault.SomeJsType.$initialized = true);
+  ;;@ jstypewithdefault/SomeJsType.java:20:13
+  (global.set $f_$initialized__jstypewithdefault_SomeJsType (i32.const 1))
+  ;; java.lang.Object.$clinit();
+  ;;@ jstypewithdefault/SomeJsType.java:20:13
+  (call $$clinit__void@java.lang.Object )
+  ;; jstypewithdefault.Interface.$clinit();
+  ;;@ jstypewithdefault/SomeJsType.java:20:13
+  (call $$clinit__void@jstypewithdefault.Interface )
+ )
+)
+
+;;; Class<?> SomeJsType.getClass()
+(func $m_getClass__java_lang_Class@jstypewithdefault.SomeJsType
+ (type $function.m_getClass__java_lang_Class)
+ (param $this.untyped (ref $java.lang.Object))
+ (result (ref null $java.lang.Class))
+ (local $this (ref null $jstypewithdefault.SomeJsType))
+ (local.set $this (ref.cast_static $jstypewithdefault.SomeJsType (local.get $this.untyped)))
+ (block
+  ;; return javaemul.internal.ClassLiteralPool.$getJstypewithdefault.SomeJsType();
+  (return (call $function.no.side.effects.$getJstypewithdefault.SomeJsType__java_lang_Class (ref.func $$getJstypewithdefault.SomeJsType__java_lang_Class@javaemul.internal.ClassLiteralPool) ))
+ )
+)
+(elem declare func $m_getClass__java_lang_Class@jstypewithdefault.SomeJsType)
+
+;;; Code for jstypewithdefault.Interface [INTERFACE]
+(type $jstypewithdefault.Interface.vtable (struct 
+ (field $m_defaultMethod__void (ref $function.m_defaultMethod__void))
+ )
+)
+
+;;; void Interface.defaultMethod()
+(func $m_defaultMethod__void@jstypewithdefault.Interface
+ (param $this (ref null $java.lang.Object))
+ ;;@ jstypewithdefault/SomeJsType.java:24:15
+ (block
+ )
+)
+(elem declare func $m_defaultMethod__void@jstypewithdefault.Interface)
+
+;;; void Interface.$clinit()
+(func $$clinit__void@jstypewithdefault.Interface
+ ;;@ jstypewithdefault/SomeJsType.java:23:10
+ (block
+  ;; if (jstypewithdefault.Interface.$initialized) return;
+  ;;@ jstypewithdefault/SomeJsType.java:23:10
+  (if (global.get $f_$initialized__jstypewithdefault_Interface)
+   (then
+    ;; return;
+    ;;@ jstypewithdefault/SomeJsType.java:23:10
+    (return )
+   )
+  )
+  ;; (jstypewithdefault.Interface.$initialized = true);
+  ;;@ jstypewithdefault/SomeJsType.java:23:10
+  (global.set $f_$initialized__jstypewithdefault_Interface (i32.const 1))
+ )
+)

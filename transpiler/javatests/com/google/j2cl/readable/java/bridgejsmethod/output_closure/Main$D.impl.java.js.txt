@@ -1,0 +1,52 @@
+goog.module('bridgejsmethod.Main.D$impl');
+
+const A = goog.require('bridgejsmethod.Main.A$impl');
+const I = goog.require('bridgejsmethod.Main.I$impl');
+const $Util = goog.require('nativebootstrap.Util$impl');
+
+let Integer = goog.forwardDeclare('java.lang.Integer$impl');
+
+/**
+ * @extends {A<Integer>}
+ * @implements {I<Integer>}
+ */
+class D extends A {
+ /** @protected @nodts */
+ constructor() {
+  super();
+ }
+ /** @nodts @return {!D} */
+ static $create__() {
+  D.$clinit();
+  let $instance = new D();
+  $instance.$ctor__bridgejsmethod_Main_D__void();
+  return $instance;
+ }
+ /** @nodts */
+ $ctor__bridgejsmethod_Main_D__void() {
+  this.$ctor__bridgejsmethod_Main_A__void();
+ }
+ /** @override @return {Integer} */
+ fun(/** Integer */ i) {
+  return i;
+ }
+ /** @nodts */
+ static $clinit() {
+  D.$clinit = () =>{};
+  D.$loadModules();
+  A.$clinit();
+ }
+ /** @nodts @return {boolean} */
+ static $isInstance(/** ? */ instance) {
+  return instance instanceof D;
+ }
+ 
+ /** @nodts */
+ static $loadModules() {}
+}
+I.$markImplementor(D);
+$Util.$setClassMetadata(D, 'bridgejsmethod.Main$D');
+
+exports = D;
+
+//# sourceMappingURL=Main$D.js.map

@@ -1,0 +1,163 @@
+// Generated from "jsconstructor/JsConstructorClass.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package jsconstructor
+
+import javaemul.lang.*
+import jsconstructor.JsConstructorClass
+import kotlin.Any
+import kotlin.Int
+import kotlin.OptIn
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.jvm.JvmField
+import kotlin.jvm.JvmStatic
+import kotlin.native.ObjCName
+
+@ObjCName("JsconstructorJsConstructorClass", exact = true)
+open class JsConstructorClass {
+ @ObjCName("JsconstructorJsConstructorClass_A", exact = true)
+ open class A {
+  @JvmField var fA: Int = 1
+
+  constructor(
+   @ObjCName("Int", exact = false) x: Int
+  ) {
+   this.fA = x
+  }
+
+  constructor()
+ }
+
+ @ObjCName("JsconstructorJsConstructorClass_B", exact = true)
+ open class B: JsConstructorClass.A {
+  @JvmField var fB: Int = 2
+
+  constructor(
+   @ObjCName("Int", exact = false) x: Int
+  ): super(x + 1) {
+   this.fB = 3
+  }
+
+  constructor(): this(10) {
+   this.fB = 4
+  }
+
+  constructor(
+   @ObjCName("Int", exact = false) x: Int,
+   @ObjCName("withInt", exact = false) y: Int
+  ): this(x + y) {
+   this.fB = x * y
+  }
+ }
+
+ @ObjCName("JsconstructorJsConstructorClass_C", exact = true)
+ open class C: JsConstructorClass.B {
+  @JvmField var fC: Int = 1
+
+  constructor(
+   @ObjCName("Int", exact = false) x: Int
+  ): super(x * 2) {
+   this.fC = 6
+  }
+
+  constructor(
+   @ObjCName("Int", exact = false) x: Int,
+   @ObjCName("withInt", exact = false) y: Int
+  ): this(x + y) {
+   this.fC = 7
+  }
+ }
+
+ @ObjCName("JsconstructorJsConstructorClass_D", exact = true)
+ open class D: JsConstructorClass.B {
+  @JvmField var fD: Int = 8
+
+  constructor(): super(9) {
+   this.fD = 10
+  }
+
+  constructor(
+   @ObjCName("Int", exact = false) x: Int
+  ): this() {
+   this.fD = x
+  }
+ }
+
+ @ObjCName("JsconstructorJsConstructorClass_E", exact = true)
+ open class E: JsConstructorClass.C {
+  @JvmField var fE: Int = 11
+
+  constructor(): super(10) {
+   this.fE = 12
+  }
+ }
+
+ @ObjCName("JsconstructorJsConstructorClass_F", exact = true)
+ open class F: JsConstructorClass.C {
+  @JvmField var fF: Int = 13
+
+  constructor(
+   @ObjCName("Int", exact = false) x: Int
+  ): super(x + 2) {
+   this.fF = x + 3
+  }
+ }
+
+ @ObjCName("JsconstructorJsConstructorClass_G", exact = true)
+ open class G {}
+
+ @ObjCName("JsconstructorJsConstructorClass_H", exact = true)
+ open class H: JsConstructorClass.G {
+  constructor()
+ }
+
+ @ObjCName("JsconstructorJsConstructorClass_Varargs", exact = true)
+ open class Varargs: JsConstructorClass.A {
+  constructor(
+   vararg @ObjCName("IntArray", exact = false) args: Int
+  ): super(args!![1])
+ }
+
+ @ObjCName("JsconstructorJsConstructorClass_SubVarargs", exact = true)
+ open class SubVarargs: JsConstructorClass.Varargs {
+  constructor(
+   @ObjCName("Id", exact = false) i: Any?,
+   vararg @ObjCName("withIntArray", exact = false) args: Int
+  ): super(*(args)!!)
+
+  constructor(
+   @ObjCName("Int", exact = false) j: Int
+  ): this(Any(), j)
+
+  companion object {
+   @JvmStatic
+   fun subNativeInvocation_pp_jsconstructor() {
+    val unusedS1: JsConstructorClass.SubVarargs? = JsConstructorClass.SubVarargs(2)
+    val unusedS2: JsConstructorClass.SubVarargs? = JsConstructorClass.SubVarargs(Any(), 1, 2, 3)
+   }
+  }
+ }
+
+ @ObjCName("JsconstructorJsConstructorClass_InstanceVarargs", exact = true)
+ open inner class InstanceVarargs: JsConstructorClass.A {
+  constructor(
+   vararg @ObjCName("IntArray", exact = false) args: Int
+  ): super(args!![1])
+ }
+
+ @ObjCName("JsconstructorJsConstructorClass_RegularType", exact = true)
+ open class RegularType {
+  constructor(
+   @ObjCName("Id", exact = false) b: Any?
+  )
+ }
+
+ @ObjCName("JsconstructorJsConstructorClass_JsConstructorSubtypeOfRegularType", exact = true)
+ open class JsConstructorSubtypeOfRegularType: JsConstructorClass.RegularType {
+  constructor(
+   @ObjCName("Id", exact = false) `object`: Any?
+  ): super(`object`)
+
+  constructor(): this(Any())
+ }
+}

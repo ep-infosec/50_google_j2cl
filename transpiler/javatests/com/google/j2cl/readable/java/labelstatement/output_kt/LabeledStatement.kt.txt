@@ -1,0 +1,63 @@
+// Generated from "labelstatement/LabeledStatement.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package labelstatement
+
+import javaemul.lang.*
+import kotlin.OptIn
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.native.ObjCName
+
+@ObjCName("LabelstatementLabeledStatement", exact = true)
+open class LabeledStatement {
+ open fun loopStatements() {
+  LABEL@ while (true) {
+   break@LABEL
+  }
+ }
+
+ open fun simpleStatement() {
+  this.foo_private_2()
+  LOOP@ do {
+   continue@LOOP
+  } while (false)
+  return
+ }
+
+ open fun block() {
+  LABEL@ do {
+   break@LABEL
+  } while (false)
+ }
+
+ open fun ifStatement() {
+  LABEL@ do {
+   if (true) {
+    break@LABEL
+   }
+  } while (false)
+ }
+
+ open fun switchStatement() {
+  LABEL@ do {
+   CASE@ do {
+    CASE_1@ do {
+     when (0) {
+      0 -> {
+       break@CASE_1
+      }
+      else -> {
+       break@CASE
+      }
+     }
+     break@LABEL
+    } while (false)
+    if (true) {
+     break@LABEL
+    }
+   } while (false)
+  } while (false)
+ }
+
+ fun foo_private_2() {}
+}

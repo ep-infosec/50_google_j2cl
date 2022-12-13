@@ -1,0 +1,36 @@
+// Generated from "interfacejsbridge/InterfaceImpl.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package interfacejsbridge
+
+import javaemul.lang.*
+import interfacejsbridge.MyInterface
+import interfacejsbridge.MyJsInterface
+import interfacejsbridge.SubInterface
+import kotlin.Int
+import kotlin.OptIn
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.native.ObjCName
+
+fun interface MyJsInterface {
+ fun foo(
+  @ObjCName("withInt", exact = false) a: Int
+ ): Int
+}
+
+fun interface MyInterface {
+ fun foo(
+  @ObjCName("withInt", exact = false) a: Int
+ ): Int
+}
+
+fun interface SubInterface: MyJsInterface, MyInterface {
+ override fun foo(a: Int): Int
+}
+
+@ObjCName("InterfacejsbridgeInterfaceImpl", exact = true)
+open class InterfaceImpl: SubInterface {
+ open override fun foo(a: Int): Int {
+  return 0
+ }
+}

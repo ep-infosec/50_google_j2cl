@@ -1,0 +1,27 @@
+// Generated from "blockscoping/BlockScoping.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package blockscoping
+
+import javaemul.lang.*
+import kotlin.Int
+import kotlin.OptIn
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.native.ObjCName
+
+@ObjCName("BlockscopingBlockScoping", exact = true)
+open class BlockScoping {
+ open fun localScopes() {
+  val i: Int = 0
+  val i_1: Int = 1
+ }
+
+ open fun nestedScopes() {
+  var x: Int = 0
+  var y: Int = 0
+  x = 1
+  y = 1
+  y = y + 1
+  x = x + 1
+ }
+}

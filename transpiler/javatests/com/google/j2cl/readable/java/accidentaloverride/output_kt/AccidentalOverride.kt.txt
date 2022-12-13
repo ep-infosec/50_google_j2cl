@@ -1,0 +1,30 @@
+// Generated from "accidentaloverride/AccidentalOverride.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package accidentaloverride
+
+import javaemul.lang.*
+import accidentaloverride.Parent
+import accidentaloverride.SuperInterface
+import kotlin.AssertionError
+import kotlin.Error
+import kotlin.OptIn
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.native.ObjCName
+
+open class Parent<T: Error?> {
+ open fun foo(
+  @ObjCName("withJavaLangError", exact = false) e: T
+ ) {}
+}
+
+fun interface SuperInterface<T> {
+ fun foo(
+  @ObjCName("withId", exact = false) t: T
+ )
+}
+
+open class AnotherAccidentalOverride: Parent<AssertionError?>(), SuperInterface<AssertionError?> {}
+
+@ObjCName("AccidentaloverrideAccidentalOverride", exact = true)
+open class AccidentalOverride: Parent<Error?>(), SuperInterface<Error?> {}

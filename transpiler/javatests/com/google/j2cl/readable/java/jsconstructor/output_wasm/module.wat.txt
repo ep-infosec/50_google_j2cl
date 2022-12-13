@@ -1,0 +1,2037 @@
+;;; Code for jsconstructor.JsConstructorClass [static fields]
+(global $f_$initialized__jsconstructor_JsConstructorClass (mut i32) (i32.const 0))
+
+;;; Code for jsconstructor.JsConstructorClass.A [static fields]
+(global $f_$initialized__jsconstructor_JsConstructorClass_A (mut i32) (i32.const 0))
+
+;;; Code for jsconstructor.JsConstructorClass.B [static fields]
+(global $f_$initialized__jsconstructor_JsConstructorClass_B (mut i32) (i32.const 0))
+
+;;; Code for jsconstructor.JsConstructorClass.C [static fields]
+(global $f_$initialized__jsconstructor_JsConstructorClass_C (mut i32) (i32.const 0))
+
+;;; Code for jsconstructor.JsConstructorClass.D [static fields]
+(global $f_$initialized__jsconstructor_JsConstructorClass_D (mut i32) (i32.const 0))
+
+;;; Code for jsconstructor.JsConstructorClass.E [static fields]
+(global $f_$initialized__jsconstructor_JsConstructorClass_E (mut i32) (i32.const 0))
+
+;;; Code for jsconstructor.JsConstructorClass.F [static fields]
+(global $f_$initialized__jsconstructor_JsConstructorClass_F (mut i32) (i32.const 0))
+
+;;; Code for jsconstructor.JsConstructorClass.G [static fields]
+(global $f_$initialized__jsconstructor_JsConstructorClass_G (mut i32) (i32.const 0))
+
+;;; Code for jsconstructor.JsConstructorClass.H [static fields]
+(global $f_$initialized__jsconstructor_JsConstructorClass_H (mut i32) (i32.const 0))
+
+;;; Code for jsconstructor.JsConstructorClass.Varargs [static fields]
+(global $f_$initialized__jsconstructor_JsConstructorClass_Varargs (mut i32) (i32.const 0))
+
+;;; Code for jsconstructor.JsConstructorClass.SubVarargs [static fields]
+(global $f_$initialized__jsconstructor_JsConstructorClass_SubVarargs (mut i32) (i32.const 0))
+
+;;; Code for jsconstructor.JsConstructorClass.InstanceVarargs [static fields]
+(global $f_$initialized__jsconstructor_JsConstructorClass_InstanceVarargs (mut i32) (i32.const 0))
+
+;;; Code for jsconstructor.JsConstructorClass.RegularType [static fields]
+(global $f_$initialized__jsconstructor_JsConstructorClass_RegularType (mut i32) (i32.const 0))
+
+;;; Code for jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType [static fields]
+(global $f_$initialized__jsconstructor_JsConstructorClass_JsConstructorSubtypeOfRegularType (mut i32) (i32.const 0))
+
+;;; Code for jsconstructor.JsConstructorClass [vtable.init]
+(global $jsconstructor.JsConstructorClass.vtable (ref $jsconstructor.JsConstructorClass.vtable) 
+ (struct.new $jsconstructor.JsConstructorClass.vtable
+  (ref.func $m_equals__java_lang_Object__boolean@java.lang.Object)
+  (ref.func $m_hashCode__int@java.lang.Object)
+  (ref.func $m_toString__java_lang_String@java.lang.Object)
+  (ref.func $m_getClass__java_lang_Class@jsconstructor.JsConstructorClass)
+ )
+)
+
+;;; Code for jsconstructor.JsConstructorClass [itable.init]
+(global $jsconstructor.JsConstructorClass.itable (ref $jsconstructor.JsConstructorClass.itable) (struct.new $jsconstructor.JsConstructorClass.itable 
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+ ))
+
+;;; Code for jsconstructor.JsConstructorClass.A [vtable.init]
+(global $jsconstructor.JsConstructorClass.A.vtable (ref $jsconstructor.JsConstructorClass.A.vtable) 
+ (struct.new $jsconstructor.JsConstructorClass.A.vtable
+  (ref.func $m_equals__java_lang_Object__boolean@java.lang.Object)
+  (ref.func $m_hashCode__int@java.lang.Object)
+  (ref.func $m_toString__java_lang_String@java.lang.Object)
+  (ref.func $m_getClass__java_lang_Class@jsconstructor.JsConstructorClass.A)
+ )
+)
+
+;;; Code for jsconstructor.JsConstructorClass.A [itable.init]
+(global $jsconstructor.JsConstructorClass.A.itable (ref $jsconstructor.JsConstructorClass.A.itable) (struct.new $jsconstructor.JsConstructorClass.A.itable 
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+ ))
+
+;;; Code for jsconstructor.JsConstructorClass.B [vtable.init]
+(global $jsconstructor.JsConstructorClass.B.vtable (ref $jsconstructor.JsConstructorClass.B.vtable) 
+ (struct.new $jsconstructor.JsConstructorClass.B.vtable
+  (ref.func $m_equals__java_lang_Object__boolean@java.lang.Object)
+  (ref.func $m_hashCode__int@java.lang.Object)
+  (ref.func $m_toString__java_lang_String@java.lang.Object)
+  (ref.func $m_getClass__java_lang_Class@jsconstructor.JsConstructorClass.B)
+ )
+)
+
+;;; Code for jsconstructor.JsConstructorClass.B [itable.init]
+(global $jsconstructor.JsConstructorClass.B.itable (ref $jsconstructor.JsConstructorClass.B.itable) (struct.new $jsconstructor.JsConstructorClass.B.itable 
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+ ))
+
+;;; Code for jsconstructor.JsConstructorClass.C [vtable.init]
+(global $jsconstructor.JsConstructorClass.C.vtable (ref $jsconstructor.JsConstructorClass.C.vtable) 
+ (struct.new $jsconstructor.JsConstructorClass.C.vtable
+  (ref.func $m_equals__java_lang_Object__boolean@java.lang.Object)
+  (ref.func $m_hashCode__int@java.lang.Object)
+  (ref.func $m_toString__java_lang_String@java.lang.Object)
+  (ref.func $m_getClass__java_lang_Class@jsconstructor.JsConstructorClass.C)
+ )
+)
+
+;;; Code for jsconstructor.JsConstructorClass.C [itable.init]
+(global $jsconstructor.JsConstructorClass.C.itable (ref $jsconstructor.JsConstructorClass.C.itable) (struct.new $jsconstructor.JsConstructorClass.C.itable 
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+ ))
+
+;;; Code for jsconstructor.JsConstructorClass.D [vtable.init]
+(global $jsconstructor.JsConstructorClass.D.vtable (ref $jsconstructor.JsConstructorClass.D.vtable) 
+ (struct.new $jsconstructor.JsConstructorClass.D.vtable
+  (ref.func $m_equals__java_lang_Object__boolean@java.lang.Object)
+  (ref.func $m_hashCode__int@java.lang.Object)
+  (ref.func $m_toString__java_lang_String@java.lang.Object)
+  (ref.func $m_getClass__java_lang_Class@jsconstructor.JsConstructorClass.D)
+ )
+)
+
+;;; Code for jsconstructor.JsConstructorClass.D [itable.init]
+(global $jsconstructor.JsConstructorClass.D.itable (ref $jsconstructor.JsConstructorClass.D.itable) (struct.new $jsconstructor.JsConstructorClass.D.itable 
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+ ))
+
+;;; Code for jsconstructor.JsConstructorClass.E [vtable.init]
+(global $jsconstructor.JsConstructorClass.E.vtable (ref $jsconstructor.JsConstructorClass.E.vtable) 
+ (struct.new $jsconstructor.JsConstructorClass.E.vtable
+  (ref.func $m_equals__java_lang_Object__boolean@java.lang.Object)
+  (ref.func $m_hashCode__int@java.lang.Object)
+  (ref.func $m_toString__java_lang_String@java.lang.Object)
+  (ref.func $m_getClass__java_lang_Class@jsconstructor.JsConstructorClass.E)
+ )
+)
+
+;;; Code for jsconstructor.JsConstructorClass.E [itable.init]
+(global $jsconstructor.JsConstructorClass.E.itable (ref $jsconstructor.JsConstructorClass.E.itable) (struct.new $jsconstructor.JsConstructorClass.E.itable 
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+ ))
+
+;;; Code for jsconstructor.JsConstructorClass.F [vtable.init]
+(global $jsconstructor.JsConstructorClass.F.vtable (ref $jsconstructor.JsConstructorClass.F.vtable) 
+ (struct.new $jsconstructor.JsConstructorClass.F.vtable
+  (ref.func $m_equals__java_lang_Object__boolean@java.lang.Object)
+  (ref.func $m_hashCode__int@java.lang.Object)
+  (ref.func $m_toString__java_lang_String@java.lang.Object)
+  (ref.func $m_getClass__java_lang_Class@jsconstructor.JsConstructorClass.F)
+ )
+)
+
+;;; Code for jsconstructor.JsConstructorClass.F [itable.init]
+(global $jsconstructor.JsConstructorClass.F.itable (ref $jsconstructor.JsConstructorClass.F.itable) (struct.new $jsconstructor.JsConstructorClass.F.itable 
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+ ))
+
+;;; Code for jsconstructor.JsConstructorClass.G [vtable.init]
+(global $jsconstructor.JsConstructorClass.G.vtable (ref $jsconstructor.JsConstructorClass.G.vtable) 
+ (struct.new $jsconstructor.JsConstructorClass.G.vtable
+  (ref.func $m_equals__java_lang_Object__boolean@java.lang.Object)
+  (ref.func $m_hashCode__int@java.lang.Object)
+  (ref.func $m_toString__java_lang_String@java.lang.Object)
+  (ref.func $m_getClass__java_lang_Class@jsconstructor.JsConstructorClass.G)
+ )
+)
+
+;;; Code for jsconstructor.JsConstructorClass.G [itable.init]
+(global $jsconstructor.JsConstructorClass.G.itable (ref $jsconstructor.JsConstructorClass.G.itable) (struct.new $jsconstructor.JsConstructorClass.G.itable 
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+ ))
+
+;;; Code for jsconstructor.JsConstructorClass.H [vtable.init]
+(global $jsconstructor.JsConstructorClass.H.vtable (ref $jsconstructor.JsConstructorClass.H.vtable) 
+ (struct.new $jsconstructor.JsConstructorClass.H.vtable
+  (ref.func $m_equals__java_lang_Object__boolean@java.lang.Object)
+  (ref.func $m_hashCode__int@java.lang.Object)
+  (ref.func $m_toString__java_lang_String@java.lang.Object)
+  (ref.func $m_getClass__java_lang_Class@jsconstructor.JsConstructorClass.H)
+ )
+)
+
+;;; Code for jsconstructor.JsConstructorClass.H [itable.init]
+(global $jsconstructor.JsConstructorClass.H.itable (ref $jsconstructor.JsConstructorClass.H.itable) (struct.new $jsconstructor.JsConstructorClass.H.itable 
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+ ))
+
+;;; Code for jsconstructor.JsConstructorClass.Varargs [vtable.init]
+(global $jsconstructor.JsConstructorClass.Varargs.vtable (ref $jsconstructor.JsConstructorClass.Varargs.vtable) 
+ (struct.new $jsconstructor.JsConstructorClass.Varargs.vtable
+  (ref.func $m_equals__java_lang_Object__boolean@java.lang.Object)
+  (ref.func $m_hashCode__int@java.lang.Object)
+  (ref.func $m_toString__java_lang_String@java.lang.Object)
+  (ref.func $m_getClass__java_lang_Class@jsconstructor.JsConstructorClass.Varargs)
+ )
+)
+
+;;; Code for jsconstructor.JsConstructorClass.Varargs [itable.init]
+(global $jsconstructor.JsConstructorClass.Varargs.itable (ref $jsconstructor.JsConstructorClass.Varargs.itable) (struct.new $jsconstructor.JsConstructorClass.Varargs.itable 
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+ ))
+
+;;; Code for jsconstructor.JsConstructorClass.SubVarargs [vtable.init]
+(global $jsconstructor.JsConstructorClass.SubVarargs.vtable (ref $jsconstructor.JsConstructorClass.SubVarargs.vtable) 
+ (struct.new $jsconstructor.JsConstructorClass.SubVarargs.vtable
+  (ref.func $m_equals__java_lang_Object__boolean@java.lang.Object)
+  (ref.func $m_hashCode__int@java.lang.Object)
+  (ref.func $m_toString__java_lang_String@java.lang.Object)
+  (ref.func $m_getClass__java_lang_Class@jsconstructor.JsConstructorClass.SubVarargs)
+ )
+)
+
+;;; Code for jsconstructor.JsConstructorClass.SubVarargs [itable.init]
+(global $jsconstructor.JsConstructorClass.SubVarargs.itable (ref $jsconstructor.JsConstructorClass.SubVarargs.itable) (struct.new $jsconstructor.JsConstructorClass.SubVarargs.itable 
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+ ))
+
+;;; Code for jsconstructor.JsConstructorClass.InstanceVarargs [vtable.init]
+(global $jsconstructor.JsConstructorClass.InstanceVarargs.vtable (ref $jsconstructor.JsConstructorClass.InstanceVarargs.vtable) 
+ (struct.new $jsconstructor.JsConstructorClass.InstanceVarargs.vtable
+  (ref.func $m_equals__java_lang_Object__boolean@java.lang.Object)
+  (ref.func $m_hashCode__int@java.lang.Object)
+  (ref.func $m_toString__java_lang_String@java.lang.Object)
+  (ref.func $m_getClass__java_lang_Class@jsconstructor.JsConstructorClass.InstanceVarargs)
+ )
+)
+
+;;; Code for jsconstructor.JsConstructorClass.InstanceVarargs [itable.init]
+(global $jsconstructor.JsConstructorClass.InstanceVarargs.itable (ref $jsconstructor.JsConstructorClass.InstanceVarargs.itable) (struct.new $jsconstructor.JsConstructorClass.InstanceVarargs.itable 
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+ ))
+
+;;; Code for jsconstructor.JsConstructorClass.RegularType [vtable.init]
+(global $jsconstructor.JsConstructorClass.RegularType.vtable (ref $jsconstructor.JsConstructorClass.RegularType.vtable) 
+ (struct.new $jsconstructor.JsConstructorClass.RegularType.vtable
+  (ref.func $m_equals__java_lang_Object__boolean@java.lang.Object)
+  (ref.func $m_hashCode__int@java.lang.Object)
+  (ref.func $m_toString__java_lang_String@java.lang.Object)
+  (ref.func $m_getClass__java_lang_Class@jsconstructor.JsConstructorClass.RegularType)
+ )
+)
+
+;;; Code for jsconstructor.JsConstructorClass.RegularType [itable.init]
+(global $jsconstructor.JsConstructorClass.RegularType.itable (ref $jsconstructor.JsConstructorClass.RegularType.itable) (struct.new $jsconstructor.JsConstructorClass.RegularType.itable 
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+ ))
+
+;;; Code for jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType [vtable.init]
+(global $jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType.vtable (ref $jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType.vtable) 
+ (struct.new $jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType.vtable
+  (ref.func $m_equals__java_lang_Object__boolean@java.lang.Object)
+  (ref.func $m_hashCode__int@java.lang.Object)
+  (ref.func $m_toString__java_lang_String@java.lang.Object)
+  (ref.func $m_getClass__java_lang_Class@jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType)
+ )
+)
+
+;;; Code for jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType [itable.init]
+(global $jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType.itable (ref $jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType.itable) (struct.new $jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType.itable 
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+ ))
+
+;;; Code for jsconstructor.JsConstructorClass [CLASS]
+(type $jsconstructor.JsConstructorClass (struct_subtype 
+ (field $vtable (ref $jsconstructor.JsConstructorClass.vtable)) 
+ (field $itable (ref $jsconstructor.JsConstructorClass.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+  $java.lang.Object)
+)
+(type $jsconstructor.JsConstructorClass.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+  $java.lang.Object.vtable)
+)
+(type $jsconstructor.JsConstructorClass.itable (struct_subtype 
+(field $slot0 (ref null struct))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $java.lang.Object.itable))
+
+;;; JsConstructorClass JsConstructorClass.$create()
+(func $$create__@jsconstructor.JsConstructorClass
+ (result (ref null $jsconstructor.JsConstructorClass))
+ ;;@ jsconstructor/JsConstructorClass.java:41:13
+ (local $$instance (ref null $jsconstructor.JsConstructorClass))
+ (block
+  ;; JsConstructorClass $instance = new JsConstructorClass.<init>(0);
+  ;;@ jsconstructor/JsConstructorClass.java:41:13
+  (local.set $$instance (struct.new $jsconstructor.JsConstructorClass (ref.as_non_null (global.get $jsconstructor.JsConstructorClass.vtable)) (ref.as_non_null (global.get $jsconstructor.JsConstructorClass.itable)) (i32.const 0)))
+  ;; $instance.$ctor();
+  ;;@ jsconstructor/JsConstructorClass.java:41:13
+  (call $$ctor__void_$p_jsconstructor_JsConstructorClass@jsconstructor.JsConstructorClass (ref.as_non_null (local.get $$instance)))
+  ;; return $instance;
+  ;;@ jsconstructor/JsConstructorClass.java:41:13
+  (return (local.get $$instance))
+ )
+)
+
+;;; void JsConstructorClass.$ctor()
+(func $$ctor__void_$p_jsconstructor_JsConstructorClass@jsconstructor.JsConstructorClass
+ (param $this (ref null $jsconstructor.JsConstructorClass))
+ ;;@ jsconstructor/JsConstructorClass.java:41:13
+ (block
+  ;; jsconstructor.JsConstructorClass.$clinit();
+  ;;@ jsconstructor/JsConstructorClass.java:41:13
+  (call $$clinit__void@jsconstructor.JsConstructorClass )
+  ;; Object.this.$ctor();
+  ;;@ jsconstructor/JsConstructorClass.java:41:13
+  (call $$ctor__void_$p_java_lang_Object@java.lang.Object (ref.as_non_null (local.get $this)))
+ )
+)
+
+;;; void JsConstructorClass.$clinit()
+(func $$clinit__void@jsconstructor.JsConstructorClass
+ ;;@ jsconstructor/JsConstructorClass.java:41:13
+ (block
+  ;; if (jsconstructor.JsConstructorClass.$initialized) return;
+  ;;@ jsconstructor/JsConstructorClass.java:41:13
+  (if (global.get $f_$initialized__jsconstructor_JsConstructorClass)
+   (then
+    ;; return;
+    ;;@ jsconstructor/JsConstructorClass.java:41:13
+    (return )
+   )
+  )
+  ;; (jsconstructor.JsConstructorClass.$initialized = true);
+  ;;@ jsconstructor/JsConstructorClass.java:41:13
+  (global.set $f_$initialized__jsconstructor_JsConstructorClass (i32.const 1))
+  ;; java.lang.Object.$clinit();
+  ;;@ jsconstructor/JsConstructorClass.java:41:13
+  (call $$clinit__void@java.lang.Object )
+ )
+)
+
+;;; Class<?> JsConstructorClass.getClass()
+(func $m_getClass__java_lang_Class@jsconstructor.JsConstructorClass
+ (type $function.m_getClass__java_lang_Class)
+ (param $this.untyped (ref $java.lang.Object))
+ (result (ref null $java.lang.Class))
+ (local $this (ref null $jsconstructor.JsConstructorClass))
+ (local.set $this (ref.cast_static $jsconstructor.JsConstructorClass (local.get $this.untyped)))
+ (block
+  ;; return javaemul.internal.ClassLiteralPool.$getJsconstructor.JsConstructorClass();
+  (return (call $function.no.side.effects.$getJsconstructor.JsConstructorClass__java_lang_Class (ref.func $$getJsconstructor.JsConstructorClass__java_lang_Class@javaemul.internal.ClassLiteralPool) ))
+ )
+)
+(elem declare func $m_getClass__java_lang_Class@jsconstructor.JsConstructorClass)
+
+;;; Code for jsconstructor.JsConstructorClass.A [CLASS]
+(type $jsconstructor.JsConstructorClass.A (struct_subtype 
+ (field $vtable (ref $jsconstructor.JsConstructorClass.A.vtable)) 
+ (field $itable (ref $jsconstructor.JsConstructorClass.A.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+ (field $f_fA__jsconstructor_JsConstructorClass_A (mut i32))
+  $java.lang.Object)
+)
+(type $jsconstructor.JsConstructorClass.A.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+  $java.lang.Object.vtable)
+)
+(type $jsconstructor.JsConstructorClass.A.itable (struct_subtype 
+(field $slot0 (ref null struct))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $java.lang.Object.itable))
+
+;;; A A.$create(int x)
+(func $$create__int@jsconstructor.JsConstructorClass.A
+ (param $x i32)
+ (result (ref null $jsconstructor.JsConstructorClass.A))
+ ;;@ jsconstructor/JsConstructorClass.java:48:11
+ (local $$instance (ref null $jsconstructor.JsConstructorClass.A))
+ (block
+  ;; A $instance = new A.<init>(0,0);
+  ;;@ jsconstructor/JsConstructorClass.java:48:11
+  (local.set $$instance (struct.new $jsconstructor.JsConstructorClass.A (ref.as_non_null (global.get $jsconstructor.JsConstructorClass.A.vtable)) (ref.as_non_null (global.get $jsconstructor.JsConstructorClass.A.itable)) (i32.const 0) (i32.const 0)))
+  ;; $instance.$ctor(x);
+  ;;@ jsconstructor/JsConstructorClass.java:48:11
+  (call $$ctor__int__void_$p_jsconstructor_JsConstructorClass_A@jsconstructor.JsConstructorClass.A (ref.as_non_null (local.get $$instance))(local.get $x))
+  ;; return $instance;
+  ;;@ jsconstructor/JsConstructorClass.java:48:11
+  (return (local.get $$instance))
+ )
+)
+
+;;; void A.$ctor(int x)
+(func $$ctor__int__void_$p_jsconstructor_JsConstructorClass_A@jsconstructor.JsConstructorClass.A
+ (param $this (ref null $jsconstructor.JsConstructorClass.A))
+ (param $x i32)
+ ;;@ jsconstructor/JsConstructorClass.java:48:11
+ (block
+  ;; jsconstructor.JsConstructorClass.A.$clinit();
+  ;;@ jsconstructor/JsConstructorClass.java:48:20
+  (call $$clinit__void@jsconstructor.JsConstructorClass.A )
+  ;; Object.this.$ctor();
+  ;;@ jsconstructor/JsConstructorClass.java:48:20
+  (call $$ctor__void_$p_java_lang_Object@java.lang.Object (ref.as_non_null (local.get $this)))
+  ;; A.this.$init();
+  ;;@ jsconstructor/JsConstructorClass.java:48:20
+  (call $$init__void_$p_jsconstructor_JsConstructorClass_A@jsconstructor.JsConstructorClass.A (ref.as_non_null (local.get $this)))
+  ;; (A.this.fA = x);
+  ;;@ jsconstructor/JsConstructorClass.java:49:6
+  (struct.set $jsconstructor.JsConstructorClass.A $f_fA__jsconstructor_JsConstructorClass_A(local.get $this) (local.get $x))
+ )
+)
+
+;;; A A.$create()
+(func $$create__@jsconstructor.JsConstructorClass.A
+ (result (ref null $jsconstructor.JsConstructorClass.A))
+ ;;@ jsconstructor/JsConstructorClass.java:52:11
+ (local $$instance (ref null $jsconstructor.JsConstructorClass.A))
+ (block
+  ;; A $instance = new A.<init>(0,0);
+  ;;@ jsconstructor/JsConstructorClass.java:52:11
+  (local.set $$instance (struct.new $jsconstructor.JsConstructorClass.A (ref.as_non_null (global.get $jsconstructor.JsConstructorClass.A.vtable)) (ref.as_non_null (global.get $jsconstructor.JsConstructorClass.A.itable)) (i32.const 0) (i32.const 0)))
+  ;; $instance.$ctor();
+  ;;@ jsconstructor/JsConstructorClass.java:52:11
+  (call $$ctor__void_$p_jsconstructor_JsConstructorClass_A@jsconstructor.JsConstructorClass.A (ref.as_non_null (local.get $$instance)))
+  ;; return $instance;
+  ;;@ jsconstructor/JsConstructorClass.java:52:11
+  (return (local.get $$instance))
+ )
+)
+
+;;; void A.$ctor()
+(func $$ctor__void_$p_jsconstructor_JsConstructorClass_A@jsconstructor.JsConstructorClass.A
+ (param $this (ref null $jsconstructor.JsConstructorClass.A))
+ ;;@ jsconstructor/JsConstructorClass.java:52:11
+ (block
+  ;; jsconstructor.JsConstructorClass.A.$clinit();
+  ;;@ jsconstructor/JsConstructorClass.java:52:15
+  (call $$clinit__void@jsconstructor.JsConstructorClass.A )
+  ;; Object.this.$ctor();
+  ;;@ jsconstructor/JsConstructorClass.java:52:15
+  (call $$ctor__void_$p_java_lang_Object@java.lang.Object (ref.as_non_null (local.get $this)))
+  ;; A.this.$init();
+  ;;@ jsconstructor/JsConstructorClass.java:52:15
+  (call $$init__void_$p_jsconstructor_JsConstructorClass_A@jsconstructor.JsConstructorClass.A (ref.as_non_null (local.get $this)))
+ )
+)
+
+;;; void A.$init()
+(func $$init__void_$p_jsconstructor_JsConstructorClass_A@jsconstructor.JsConstructorClass.A
+ (param $this (ref null $jsconstructor.JsConstructorClass.A))
+ ;;@ jsconstructor/JsConstructorClass.java:45:22
+ (block
+  ;; (A.this.fA = 1);
+  ;;@ jsconstructor/JsConstructorClass.java:46:4
+  (struct.set $jsconstructor.JsConstructorClass.A $f_fA__jsconstructor_JsConstructorClass_A(local.get $this) (i32.const 1))
+ )
+)
+
+;;; void A.$clinit()
+(func $$clinit__void@jsconstructor.JsConstructorClass.A
+ ;;@ jsconstructor/JsConstructorClass.java:45:22
+ (block
+  ;; if (jsconstructor.JsConstructorClass.A.$initialized) return;
+  ;;@ jsconstructor/JsConstructorClass.java:45:22
+  (if (global.get $f_$initialized__jsconstructor_JsConstructorClass_A)
+   (then
+    ;; return;
+    ;;@ jsconstructor/JsConstructorClass.java:45:22
+    (return )
+   )
+  )
+  ;; (jsconstructor.JsConstructorClass.A.$initialized = true);
+  ;;@ jsconstructor/JsConstructorClass.java:45:22
+  (global.set $f_$initialized__jsconstructor_JsConstructorClass_A (i32.const 1))
+  ;; java.lang.Object.$clinit();
+  ;;@ jsconstructor/JsConstructorClass.java:45:22
+  (call $$clinit__void@java.lang.Object )
+ )
+)
+
+;;; Class<?> A.getClass()
+(func $m_getClass__java_lang_Class@jsconstructor.JsConstructorClass.A
+ (type $function.m_getClass__java_lang_Class)
+ (param $this.untyped (ref $java.lang.Object))
+ (result (ref null $java.lang.Class))
+ (local $this (ref null $jsconstructor.JsConstructorClass.A))
+ (local.set $this (ref.cast_static $jsconstructor.JsConstructorClass.A (local.get $this.untyped)))
+ (block
+  ;; return javaemul.internal.ClassLiteralPool.$getJsconstructor.JsConstructorClass.A();
+  (return (call $function.no.side.effects.$getJsconstructor.JsConstructorClass.A__java_lang_Class (ref.func $$getJsconstructor.JsConstructorClass.A__java_lang_Class@javaemul.internal.ClassLiteralPool) ))
+ )
+)
+(elem declare func $m_getClass__java_lang_Class@jsconstructor.JsConstructorClass.A)
+
+;;; Code for jsconstructor.JsConstructorClass.B [CLASS]
+(type $jsconstructor.JsConstructorClass.B (struct_subtype 
+ (field $vtable (ref $jsconstructor.JsConstructorClass.B.vtable)) 
+ (field $itable (ref $jsconstructor.JsConstructorClass.B.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+ (field $f_fA__jsconstructor_JsConstructorClass_A (mut i32))
+ (field $f_fB__jsconstructor_JsConstructorClass_B (mut i32))
+  $jsconstructor.JsConstructorClass.A)
+)
+(type $jsconstructor.JsConstructorClass.B.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+  $jsconstructor.JsConstructorClass.A.vtable)
+)
+(type $jsconstructor.JsConstructorClass.B.itable (struct_subtype 
+(field $slot0 (ref null struct))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $jsconstructor.JsConstructorClass.A.itable))
+
+;;; B B.$create(int x)
+(func $$create__int@jsconstructor.JsConstructorClass.B
+ (param $x i32)
+ (result (ref null $jsconstructor.JsConstructorClass.B))
+ ;;@ jsconstructor/JsConstructorClass.java:62:11
+ (local $$instance (ref null $jsconstructor.JsConstructorClass.B))
+ (block
+  ;; B $instance = new B.<init>(0,0,0);
+  ;;@ jsconstructor/JsConstructorClass.java:62:11
+  (local.set $$instance (struct.new $jsconstructor.JsConstructorClass.B (ref.as_non_null (global.get $jsconstructor.JsConstructorClass.B.vtable)) (ref.as_non_null (global.get $jsconstructor.JsConstructorClass.B.itable)) (i32.const 0) (i32.const 0) (i32.const 0)))
+  ;; $instance.$ctor(x);
+  ;;@ jsconstructor/JsConstructorClass.java:62:11
+  (call $$ctor__int__void_$p_jsconstructor_JsConstructorClass_B@jsconstructor.JsConstructorClass.B (ref.as_non_null (local.get $$instance))(local.get $x))
+  ;; return $instance;
+  ;;@ jsconstructor/JsConstructorClass.java:62:11
+  (return (local.get $$instance))
+ )
+)
+
+;;; void B.$ctor(int x)
+(func $$ctor__int__void_$p_jsconstructor_JsConstructorClass_B@jsconstructor.JsConstructorClass.B
+ (param $this (ref null $jsconstructor.JsConstructorClass.B))
+ (param $x i32)
+ ;;@ jsconstructor/JsConstructorClass.java:62:11
+ (block
+  ;; jsconstructor.JsConstructorClass.B.$clinit();
+  ;;@ jsconstructor/JsConstructorClass.java:62:20
+  (call $$clinit__void@jsconstructor.JsConstructorClass.B )
+  ;; A.this.$ctor((x + 1));
+  ;;@ jsconstructor/JsConstructorClass.java:63:6
+  (call $$ctor__int__void_$p_jsconstructor_JsConstructorClass_A@jsconstructor.JsConstructorClass.A (ref.as_non_null (local.get $this))(i32.add (local.get $x) (i32.const 1)))
+  ;; B.this.$init();
+  ;;@ jsconstructor/JsConstructorClass.java:62:20
+  (call $$init__void_$p_jsconstructor_JsConstructorClass_B@jsconstructor.JsConstructorClass.B (ref.as_non_null (local.get $this)))
+  ;; (B.this.fB = 3);
+  ;;@ jsconstructor/JsConstructorClass.java:64:6
+  (struct.set $jsconstructor.JsConstructorClass.B $f_fB__jsconstructor_JsConstructorClass_B(local.get $this) (i32.const 3))
+ )
+)
+
+;;; B B.$create()
+(func $$create__@jsconstructor.JsConstructorClass.B
+ (result (ref null $jsconstructor.JsConstructorClass.B))
+ ;;@ jsconstructor/JsConstructorClass.java:67:11
+ (local $$instance (ref null $jsconstructor.JsConstructorClass.B))
+ (block
+  ;; B $instance = new B.<init>(0,0,0);
+  ;;@ jsconstructor/JsConstructorClass.java:67:11
+  (local.set $$instance (struct.new $jsconstructor.JsConstructorClass.B (ref.as_non_null (global.get $jsconstructor.JsConstructorClass.B.vtable)) (ref.as_non_null (global.get $jsconstructor.JsConstructorClass.B.itable)) (i32.const 0) (i32.const 0) (i32.const 0)))
+  ;; $instance.$ctor();
+  ;;@ jsconstructor/JsConstructorClass.java:67:11
+  (call $$ctor__void_$p_jsconstructor_JsConstructorClass_B@jsconstructor.JsConstructorClass.B (ref.as_non_null (local.get $$instance)))
+  ;; return $instance;
+  ;;@ jsconstructor/JsConstructorClass.java:67:11
+  (return (local.get $$instance))
+ )
+)
+
+;;; void B.$ctor()
+(func $$ctor__void_$p_jsconstructor_JsConstructorClass_B@jsconstructor.JsConstructorClass.B
+ (param $this (ref null $jsconstructor.JsConstructorClass.B))
+ ;;@ jsconstructor/JsConstructorClass.java:67:11
+ (block
+  ;; jsconstructor.JsConstructorClass.B.$clinit();
+  ;;@ jsconstructor/JsConstructorClass.java:67:15
+  (call $$clinit__void@jsconstructor.JsConstructorClass.B )
+  ;; B.this.$ctor(10);
+  ;;@ jsconstructor/JsConstructorClass.java:68:6
+  (call $$ctor__int__void_$p_jsconstructor_JsConstructorClass_B@jsconstructor.JsConstructorClass.B (ref.as_non_null (local.get $this))(i32.const 10))
+  ;; (B.this.fB = 4);
+  ;;@ jsconstructor/JsConstructorClass.java:69:6
+  (struct.set $jsconstructor.JsConstructorClass.B $f_fB__jsconstructor_JsConstructorClass_B(local.get $this) (i32.const 4))
+ )
+)
+
+;;; B B.$create(int x, int y)
+(func $$create__int__int@jsconstructor.JsConstructorClass.B
+ (param $x i32)
+ (param $y i32)
+ (result (ref null $jsconstructor.JsConstructorClass.B))
+ ;;@ jsconstructor/JsConstructorClass.java:72:11
+ (local $$instance (ref null $jsconstructor.JsConstructorClass.B))
+ (block
+  ;; B $instance = new B.<init>(0,0,0);
+  ;;@ jsconstructor/JsConstructorClass.java:72:11
+  (local.set $$instance (struct.new $jsconstructor.JsConstructorClass.B (ref.as_non_null (global.get $jsconstructor.JsConstructorClass.B.vtable)) (ref.as_non_null (global.get $jsconstructor.JsConstructorClass.B.itable)) (i32.const 0) (i32.const 0) (i32.const 0)))
+  ;; $instance.$ctor(x,y);
+  ;;@ jsconstructor/JsConstructorClass.java:72:11
+  (call $$ctor__int__int__void_$p_jsconstructor_JsConstructorClass_B@jsconstructor.JsConstructorClass.B (ref.as_non_null (local.get $$instance))(local.get $x)(local.get $y))
+  ;; return $instance;
+  ;;@ jsconstructor/JsConstructorClass.java:72:11
+  (return (local.get $$instance))
+ )
+)
+
+;;; void B.$ctor(int x, int y)
+(func $$ctor__int__int__void_$p_jsconstructor_JsConstructorClass_B@jsconstructor.JsConstructorClass.B
+ (param $this (ref null $jsconstructor.JsConstructorClass.B))
+ (param $x i32)
+ (param $y i32)
+ ;;@ jsconstructor/JsConstructorClass.java:72:11
+ (block
+  ;; jsconstructor.JsConstructorClass.B.$clinit();
+  ;;@ jsconstructor/JsConstructorClass.java:72:27
+  (call $$clinit__void@jsconstructor.JsConstructorClass.B )
+  ;; B.this.$ctor((x + y));
+  ;;@ jsconstructor/JsConstructorClass.java:73:6
+  (call $$ctor__int__void_$p_jsconstructor_JsConstructorClass_B@jsconstructor.JsConstructorClass.B (ref.as_non_null (local.get $this))(i32.add (local.get $x) (local.get $y)))
+  ;; (B.this.fB = (x * y));
+  ;;@ jsconstructor/JsConstructorClass.java:74:6
+  (struct.set $jsconstructor.JsConstructorClass.B $f_fB__jsconstructor_JsConstructorClass_B(local.get $this) (i32.mul (local.get $x) (local.get $y)))
+ )
+)
+
+;;; void B.$init()
+(func $$init__void_$p_jsconstructor_JsConstructorClass_B@jsconstructor.JsConstructorClass.B
+ (param $this (ref null $jsconstructor.JsConstructorClass.B))
+ ;;@ jsconstructor/JsConstructorClass.java:58:22
+ (block
+  ;; (B.this.fB = 2);
+  ;;@ jsconstructor/JsConstructorClass.java:59:4
+  (struct.set $jsconstructor.JsConstructorClass.B $f_fB__jsconstructor_JsConstructorClass_B(local.get $this) (i32.const 2))
+ )
+)
+
+;;; void B.$clinit()
+(func $$clinit__void@jsconstructor.JsConstructorClass.B
+ ;;@ jsconstructor/JsConstructorClass.java:58:22
+ (block
+  ;; if (jsconstructor.JsConstructorClass.B.$initialized) return;
+  ;;@ jsconstructor/JsConstructorClass.java:58:22
+  (if (global.get $f_$initialized__jsconstructor_JsConstructorClass_B)
+   (then
+    ;; return;
+    ;;@ jsconstructor/JsConstructorClass.java:58:22
+    (return )
+   )
+  )
+  ;; (jsconstructor.JsConstructorClass.B.$initialized = true);
+  ;;@ jsconstructor/JsConstructorClass.java:58:22
+  (global.set $f_$initialized__jsconstructor_JsConstructorClass_B (i32.const 1))
+  ;; jsconstructor.JsConstructorClass.A.$clinit();
+  ;;@ jsconstructor/JsConstructorClass.java:58:22
+  (call $$clinit__void@jsconstructor.JsConstructorClass.A )
+ )
+)
+
+;;; Class<?> B.getClass()
+(func $m_getClass__java_lang_Class@jsconstructor.JsConstructorClass.B
+ (type $function.m_getClass__java_lang_Class)
+ (param $this.untyped (ref $java.lang.Object))
+ (result (ref null $java.lang.Class))
+ (local $this (ref null $jsconstructor.JsConstructorClass.B))
+ (local.set $this (ref.cast_static $jsconstructor.JsConstructorClass.B (local.get $this.untyped)))
+ (block
+  ;; return javaemul.internal.ClassLiteralPool.$getJsconstructor.JsConstructorClass.B();
+  (return (call $function.no.side.effects.$getJsconstructor.JsConstructorClass.B__java_lang_Class (ref.func $$getJsconstructor.JsConstructorClass.B__java_lang_Class@javaemul.internal.ClassLiteralPool) ))
+ )
+)
+(elem declare func $m_getClass__java_lang_Class@jsconstructor.JsConstructorClass.B)
+
+;;; Code for jsconstructor.JsConstructorClass.C [CLASS]
+(type $jsconstructor.JsConstructorClass.C (struct_subtype 
+ (field $vtable (ref $jsconstructor.JsConstructorClass.C.vtable)) 
+ (field $itable (ref $jsconstructor.JsConstructorClass.C.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+ (field $f_fA__jsconstructor_JsConstructorClass_A (mut i32))
+ (field $f_fB__jsconstructor_JsConstructorClass_B (mut i32))
+ (field $f_fC__jsconstructor_JsConstructorClass_C (mut i32))
+  $jsconstructor.JsConstructorClass.B)
+)
+(type $jsconstructor.JsConstructorClass.C.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+  $jsconstructor.JsConstructorClass.B.vtable)
+)
+(type $jsconstructor.JsConstructorClass.C.itable (struct_subtype 
+(field $slot0 (ref null struct))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $jsconstructor.JsConstructorClass.B.itable))
+
+;;; C C.$create(int x)
+(func $$create__int@jsconstructor.JsConstructorClass.C
+ (param $x i32)
+ (result (ref null $jsconstructor.JsConstructorClass.C))
+ ;;@ jsconstructor/JsConstructorClass.java:85:11
+ (local $$instance (ref null $jsconstructor.JsConstructorClass.C))
+ (block
+  ;; C $instance = new C.<init>(0,0,0,0);
+  ;;@ jsconstructor/JsConstructorClass.java:85:11
+  (local.set $$instance (struct.new $jsconstructor.JsConstructorClass.C (ref.as_non_null (global.get $jsconstructor.JsConstructorClass.C.vtable)) (ref.as_non_null (global.get $jsconstructor.JsConstructorClass.C.itable)) (i32.const 0) (i32.const 0) (i32.const 0) (i32.const 0)))
+  ;; $instance.$ctor(x);
+  ;;@ jsconstructor/JsConstructorClass.java:85:11
+  (call $$ctor__int__void_$p_jsconstructor_JsConstructorClass_C@jsconstructor.JsConstructorClass.C (ref.as_non_null (local.get $$instance))(local.get $x))
+  ;; return $instance;
+  ;;@ jsconstructor/JsConstructorClass.java:85:11
+  (return (local.get $$instance))
+ )
+)
+
+;;; void C.$ctor(int x)
+(func $$ctor__int__void_$p_jsconstructor_JsConstructorClass_C@jsconstructor.JsConstructorClass.C
+ (param $this (ref null $jsconstructor.JsConstructorClass.C))
+ (param $x i32)
+ ;;@ jsconstructor/JsConstructorClass.java:85:11
+ (block
+  ;; jsconstructor.JsConstructorClass.C.$clinit();
+  ;;@ jsconstructor/JsConstructorClass.java:85:20
+  (call $$clinit__void@jsconstructor.JsConstructorClass.C )
+  ;; B.this.$ctor((x * 2));
+  ;;@ jsconstructor/JsConstructorClass.java:86:6
+  (call $$ctor__int__void_$p_jsconstructor_JsConstructorClass_B@jsconstructor.JsConstructorClass.B (ref.as_non_null (local.get $this))(i32.mul (local.get $x) (i32.const 2)))
+  ;; C.this.$init();
+  ;;@ jsconstructor/JsConstructorClass.java:85:20
+  (call $$init__void_$p_jsconstructor_JsConstructorClass_C@jsconstructor.JsConstructorClass.C (ref.as_non_null (local.get $this)))
+  ;; (C.this.fC = 6);
+  ;;@ jsconstructor/JsConstructorClass.java:87:6
+  (struct.set $jsconstructor.JsConstructorClass.C $f_fC__jsconstructor_JsConstructorClass_C(local.get $this) (i32.const 6))
+ )
+)
+
+;;; C C.$create(int x, int y)
+(func $$create__int__int@jsconstructor.JsConstructorClass.C
+ (param $x i32)
+ (param $y i32)
+ (result (ref null $jsconstructor.JsConstructorClass.C))
+ ;;@ jsconstructor/JsConstructorClass.java:90:11
+ (local $$instance (ref null $jsconstructor.JsConstructorClass.C))
+ (block
+  ;; C $instance = new C.<init>(0,0,0,0);
+  ;;@ jsconstructor/JsConstructorClass.java:90:11
+  (local.set $$instance (struct.new $jsconstructor.JsConstructorClass.C (ref.as_non_null (global.get $jsconstructor.JsConstructorClass.C.vtable)) (ref.as_non_null (global.get $jsconstructor.JsConstructorClass.C.itable)) (i32.const 0) (i32.const 0) (i32.const 0) (i32.const 0)))
+  ;; $instance.$ctor(x,y);
+  ;;@ jsconstructor/JsConstructorClass.java:90:11
+  (call $$ctor__int__int__void_$p_jsconstructor_JsConstructorClass_C@jsconstructor.JsConstructorClass.C (ref.as_non_null (local.get $$instance))(local.get $x)(local.get $y))
+  ;; return $instance;
+  ;;@ jsconstructor/JsConstructorClass.java:90:11
+  (return (local.get $$instance))
+ )
+)
+
+;;; void C.$ctor(int x, int y)
+(func $$ctor__int__int__void_$p_jsconstructor_JsConstructorClass_C@jsconstructor.JsConstructorClass.C
+ (param $this (ref null $jsconstructor.JsConstructorClass.C))
+ (param $x i32)
+ (param $y i32)
+ ;;@ jsconstructor/JsConstructorClass.java:90:11
+ (block
+  ;; jsconstructor.JsConstructorClass.C.$clinit();
+  ;;@ jsconstructor/JsConstructorClass.java:90:27
+  (call $$clinit__void@jsconstructor.JsConstructorClass.C )
+  ;; C.this.$ctor((x + y));
+  ;;@ jsconstructor/JsConstructorClass.java:91:6
+  (call $$ctor__int__void_$p_jsconstructor_JsConstructorClass_C@jsconstructor.JsConstructorClass.C (ref.as_non_null (local.get $this))(i32.add (local.get $x) (local.get $y)))
+  ;; (C.this.fC = 7);
+  ;;@ jsconstructor/JsConstructorClass.java:92:6
+  (struct.set $jsconstructor.JsConstructorClass.C $f_fC__jsconstructor_JsConstructorClass_C(local.get $this) (i32.const 7))
+ )
+)
+
+;;; void C.$init()
+(func $$init__void_$p_jsconstructor_JsConstructorClass_C@jsconstructor.JsConstructorClass.C
+ (param $this (ref null $jsconstructor.JsConstructorClass.C))
+ ;;@ jsconstructor/JsConstructorClass.java:81:22
+ (block
+  ;; (C.this.fC = 1);
+  ;;@ jsconstructor/JsConstructorClass.java:82:4
+  (struct.set $jsconstructor.JsConstructorClass.C $f_fC__jsconstructor_JsConstructorClass_C(local.get $this) (i32.const 1))
+ )
+)
+
+;;; void C.$clinit()
+(func $$clinit__void@jsconstructor.JsConstructorClass.C
+ ;;@ jsconstructor/JsConstructorClass.java:81:22
+ (block
+  ;; if (jsconstructor.JsConstructorClass.C.$initialized) return;
+  ;;@ jsconstructor/JsConstructorClass.java:81:22
+  (if (global.get $f_$initialized__jsconstructor_JsConstructorClass_C)
+   (then
+    ;; return;
+    ;;@ jsconstructor/JsConstructorClass.java:81:22
+    (return )
+   )
+  )
+  ;; (jsconstructor.JsConstructorClass.C.$initialized = true);
+  ;;@ jsconstructor/JsConstructorClass.java:81:22
+  (global.set $f_$initialized__jsconstructor_JsConstructorClass_C (i32.const 1))
+  ;; jsconstructor.JsConstructorClass.B.$clinit();
+  ;;@ jsconstructor/JsConstructorClass.java:81:22
+  (call $$clinit__void@jsconstructor.JsConstructorClass.B )
+ )
+)
+
+;;; Class<?> C.getClass()
+(func $m_getClass__java_lang_Class@jsconstructor.JsConstructorClass.C
+ (type $function.m_getClass__java_lang_Class)
+ (param $this.untyped (ref $java.lang.Object))
+ (result (ref null $java.lang.Class))
+ (local $this (ref null $jsconstructor.JsConstructorClass.C))
+ (local.set $this (ref.cast_static $jsconstructor.JsConstructorClass.C (local.get $this.untyped)))
+ (block
+  ;; return javaemul.internal.ClassLiteralPool.$getJsconstructor.JsConstructorClass.C();
+  (return (call $function.no.side.effects.$getJsconstructor.JsConstructorClass.C__java_lang_Class (ref.func $$getJsconstructor.JsConstructorClass.C__java_lang_Class@javaemul.internal.ClassLiteralPool) ))
+ )
+)
+(elem declare func $m_getClass__java_lang_Class@jsconstructor.JsConstructorClass.C)
+
+;;; Code for jsconstructor.JsConstructorClass.D [CLASS]
+(type $jsconstructor.JsConstructorClass.D (struct_subtype 
+ (field $vtable (ref $jsconstructor.JsConstructorClass.D.vtable)) 
+ (field $itable (ref $jsconstructor.JsConstructorClass.D.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+ (field $f_fA__jsconstructor_JsConstructorClass_A (mut i32))
+ (field $f_fB__jsconstructor_JsConstructorClass_B (mut i32))
+ (field $f_fD__jsconstructor_JsConstructorClass_D (mut i32))
+  $jsconstructor.JsConstructorClass.B)
+)
+(type $jsconstructor.JsConstructorClass.D.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+  $jsconstructor.JsConstructorClass.B.vtable)
+)
+(type $jsconstructor.JsConstructorClass.D.itable (struct_subtype 
+(field $slot0 (ref null struct))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $jsconstructor.JsConstructorClass.B.itable))
+
+;;; D D.$create()
+(func $$create__@jsconstructor.JsConstructorClass.D
+ (result (ref null $jsconstructor.JsConstructorClass.D))
+ ;;@ jsconstructor/JsConstructorClass.java:103:11
+ (local $$instance (ref null $jsconstructor.JsConstructorClass.D))
+ (block
+  ;; D $instance = new D.<init>(0,0,0,0);
+  ;;@ jsconstructor/JsConstructorClass.java:103:11
+  (local.set $$instance (struct.new $jsconstructor.JsConstructorClass.D (ref.as_non_null (global.get $jsconstructor.JsConstructorClass.D.vtable)) (ref.as_non_null (global.get $jsconstructor.JsConstructorClass.D.itable)) (i32.const 0) (i32.const 0) (i32.const 0) (i32.const 0)))
+  ;; $instance.$ctor();
+  ;;@ jsconstructor/JsConstructorClass.java:103:11
+  (call $$ctor__void_$p_jsconstructor_JsConstructorClass_D@jsconstructor.JsConstructorClass.D (ref.as_non_null (local.get $$instance)))
+  ;; return $instance;
+  ;;@ jsconstructor/JsConstructorClass.java:103:11
+  (return (local.get $$instance))
+ )
+)
+
+;;; void D.$ctor()
+(func $$ctor__void_$p_jsconstructor_JsConstructorClass_D@jsconstructor.JsConstructorClass.D
+ (param $this (ref null $jsconstructor.JsConstructorClass.D))
+ ;;@ jsconstructor/JsConstructorClass.java:103:11
+ (block
+  ;; jsconstructor.JsConstructorClass.D.$clinit();
+  ;;@ jsconstructor/JsConstructorClass.java:103:15
+  (call $$clinit__void@jsconstructor.JsConstructorClass.D )
+  ;; B.this.$ctor(9);
+  ;;@ jsconstructor/JsConstructorClass.java:104:6
+  (call $$ctor__int__void_$p_jsconstructor_JsConstructorClass_B@jsconstructor.JsConstructorClass.B (ref.as_non_null (local.get $this))(i32.const 9))
+  ;; D.this.$init();
+  ;;@ jsconstructor/JsConstructorClass.java:103:15
+  (call $$init__void_$p_jsconstructor_JsConstructorClass_D@jsconstructor.JsConstructorClass.D (ref.as_non_null (local.get $this)))
+  ;; (D.this.fD = 10);
+  ;;@ jsconstructor/JsConstructorClass.java:105:6
+  (struct.set $jsconstructor.JsConstructorClass.D $f_fD__jsconstructor_JsConstructorClass_D(local.get $this) (i32.const 10))
+ )
+)
+
+;;; D D.$create(int x)
+(func $$create__int@jsconstructor.JsConstructorClass.D
+ (param $x i32)
+ (result (ref null $jsconstructor.JsConstructorClass.D))
+ ;;@ jsconstructor/JsConstructorClass.java:108:11
+ (local $$instance (ref null $jsconstructor.JsConstructorClass.D))
+ (block
+  ;; D $instance = new D.<init>(0,0,0,0);
+  ;;@ jsconstructor/JsConstructorClass.java:108:11
+  (local.set $$instance (struct.new $jsconstructor.JsConstructorClass.D (ref.as_non_null (global.get $jsconstructor.JsConstructorClass.D.vtable)) (ref.as_non_null (global.get $jsconstructor.JsConstructorClass.D.itable)) (i32.const 0) (i32.const 0) (i32.const 0) (i32.const 0)))
+  ;; $instance.$ctor(x);
+  ;;@ jsconstructor/JsConstructorClass.java:108:11
+  (call $$ctor__int__void_$p_jsconstructor_JsConstructorClass_D@jsconstructor.JsConstructorClass.D (ref.as_non_null (local.get $$instance))(local.get $x))
+  ;; return $instance;
+  ;;@ jsconstructor/JsConstructorClass.java:108:11
+  (return (local.get $$instance))
+ )
+)
+
+;;; void D.$ctor(int x)
+(func $$ctor__int__void_$p_jsconstructor_JsConstructorClass_D@jsconstructor.JsConstructorClass.D
+ (param $this (ref null $jsconstructor.JsConstructorClass.D))
+ (param $x i32)
+ ;;@ jsconstructor/JsConstructorClass.java:108:11
+ (block
+  ;; jsconstructor.JsConstructorClass.D.$clinit();
+  ;;@ jsconstructor/JsConstructorClass.java:108:20
+  (call $$clinit__void@jsconstructor.JsConstructorClass.D )
+  ;; D.this.$ctor();
+  ;;@ jsconstructor/JsConstructorClass.java:109:6
+  (call $$ctor__void_$p_jsconstructor_JsConstructorClass_D@jsconstructor.JsConstructorClass.D (ref.as_non_null (local.get $this)))
+  ;; (D.this.fD = x);
+  ;;@ jsconstructor/JsConstructorClass.java:110:6
+  (struct.set $jsconstructor.JsConstructorClass.D $f_fD__jsconstructor_JsConstructorClass_D(local.get $this) (local.get $x))
+ )
+)
+
+;;; void D.$init()
+(func $$init__void_$p_jsconstructor_JsConstructorClass_D@jsconstructor.JsConstructorClass.D
+ (param $this (ref null $jsconstructor.JsConstructorClass.D))
+ ;;@ jsconstructor/JsConstructorClass.java:99:22
+ (block
+  ;; (D.this.fD = 8);
+  ;;@ jsconstructor/JsConstructorClass.java:100:4
+  (struct.set $jsconstructor.JsConstructorClass.D $f_fD__jsconstructor_JsConstructorClass_D(local.get $this) (i32.const 8))
+ )
+)
+
+;;; void D.$clinit()
+(func $$clinit__void@jsconstructor.JsConstructorClass.D
+ ;;@ jsconstructor/JsConstructorClass.java:99:22
+ (block
+  ;; if (jsconstructor.JsConstructorClass.D.$initialized) return;
+  ;;@ jsconstructor/JsConstructorClass.java:99:22
+  (if (global.get $f_$initialized__jsconstructor_JsConstructorClass_D)
+   (then
+    ;; return;
+    ;;@ jsconstructor/JsConstructorClass.java:99:22
+    (return )
+   )
+  )
+  ;; (jsconstructor.JsConstructorClass.D.$initialized = true);
+  ;;@ jsconstructor/JsConstructorClass.java:99:22
+  (global.set $f_$initialized__jsconstructor_JsConstructorClass_D (i32.const 1))
+  ;; jsconstructor.JsConstructorClass.B.$clinit();
+  ;;@ jsconstructor/JsConstructorClass.java:99:22
+  (call $$clinit__void@jsconstructor.JsConstructorClass.B )
+ )
+)
+
+;;; Class<?> D.getClass()
+(func $m_getClass__java_lang_Class@jsconstructor.JsConstructorClass.D
+ (type $function.m_getClass__java_lang_Class)
+ (param $this.untyped (ref $java.lang.Object))
+ (result (ref null $java.lang.Class))
+ (local $this (ref null $jsconstructor.JsConstructorClass.D))
+ (local.set $this (ref.cast_static $jsconstructor.JsConstructorClass.D (local.get $this.untyped)))
+ (block
+  ;; return javaemul.internal.ClassLiteralPool.$getJsconstructor.JsConstructorClass.D();
+  (return (call $function.no.side.effects.$getJsconstructor.JsConstructorClass.D__java_lang_Class (ref.func $$getJsconstructor.JsConstructorClass.D__java_lang_Class@javaemul.internal.ClassLiteralPool) ))
+ )
+)
+(elem declare func $m_getClass__java_lang_Class@jsconstructor.JsConstructorClass.D)
+
+;;; Code for jsconstructor.JsConstructorClass.E [CLASS]
+(type $jsconstructor.JsConstructorClass.E (struct_subtype 
+ (field $vtable (ref $jsconstructor.JsConstructorClass.E.vtable)) 
+ (field $itable (ref $jsconstructor.JsConstructorClass.E.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+ (field $f_fA__jsconstructor_JsConstructorClass_A (mut i32))
+ (field $f_fB__jsconstructor_JsConstructorClass_B (mut i32))
+ (field $f_fC__jsconstructor_JsConstructorClass_C (mut i32))
+ (field $f_fE__jsconstructor_JsConstructorClass_E (mut i32))
+  $jsconstructor.JsConstructorClass.C)
+)
+(type $jsconstructor.JsConstructorClass.E.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+  $jsconstructor.JsConstructorClass.C.vtable)
+)
+(type $jsconstructor.JsConstructorClass.E.itable (struct_subtype 
+(field $slot0 (ref null struct))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $jsconstructor.JsConstructorClass.C.itable))
+
+;;; E E.$create()
+(func $$create__@jsconstructor.JsConstructorClass.E
+ (result (ref null $jsconstructor.JsConstructorClass.E))
+ ;;@ jsconstructor/JsConstructorClass.java:121:11
+ (local $$instance (ref null $jsconstructor.JsConstructorClass.E))
+ (block
+  ;; E $instance = new E.<init>(0,0,0,0,0);
+  ;;@ jsconstructor/JsConstructorClass.java:121:11
+  (local.set $$instance (struct.new $jsconstructor.JsConstructorClass.E (ref.as_non_null (global.get $jsconstructor.JsConstructorClass.E.vtable)) (ref.as_non_null (global.get $jsconstructor.JsConstructorClass.E.itable)) (i32.const 0) (i32.const 0) (i32.const 0) (i32.const 0) (i32.const 0)))
+  ;; $instance.$ctor();
+  ;;@ jsconstructor/JsConstructorClass.java:121:11
+  (call $$ctor__void_$p_jsconstructor_JsConstructorClass_E@jsconstructor.JsConstructorClass.E (ref.as_non_null (local.get $$instance)))
+  ;; return $instance;
+  ;;@ jsconstructor/JsConstructorClass.java:121:11
+  (return (local.get $$instance))
+ )
+)
+
+;;; void E.$ctor()
+(func $$ctor__void_$p_jsconstructor_JsConstructorClass_E@jsconstructor.JsConstructorClass.E
+ (param $this (ref null $jsconstructor.JsConstructorClass.E))
+ ;;@ jsconstructor/JsConstructorClass.java:121:11
+ (block
+  ;; jsconstructor.JsConstructorClass.E.$clinit();
+  ;;@ jsconstructor/JsConstructorClass.java:121:15
+  (call $$clinit__void@jsconstructor.JsConstructorClass.E )
+  ;; C.this.$ctor(10);
+  ;;@ jsconstructor/JsConstructorClass.java:122:6
+  (call $$ctor__int__void_$p_jsconstructor_JsConstructorClass_C@jsconstructor.JsConstructorClass.C (ref.as_non_null (local.get $this))(i32.const 10))
+  ;; E.this.$init();
+  ;;@ jsconstructor/JsConstructorClass.java:121:15
+  (call $$init__void_$p_jsconstructor_JsConstructorClass_E@jsconstructor.JsConstructorClass.E (ref.as_non_null (local.get $this)))
+  ;; (E.this.fE = 12);
+  ;;@ jsconstructor/JsConstructorClass.java:123:6
+  (struct.set $jsconstructor.JsConstructorClass.E $f_fE__jsconstructor_JsConstructorClass_E(local.get $this) (i32.const 12))
+ )
+)
+
+;;; void E.$init()
+(func $$init__void_$p_jsconstructor_JsConstructorClass_E@jsconstructor.JsConstructorClass.E
+ (param $this (ref null $jsconstructor.JsConstructorClass.E))
+ ;;@ jsconstructor/JsConstructorClass.java:117:22
+ (block
+  ;; (E.this.fE = 11);
+  ;;@ jsconstructor/JsConstructorClass.java:118:4
+  (struct.set $jsconstructor.JsConstructorClass.E $f_fE__jsconstructor_JsConstructorClass_E(local.get $this) (i32.const 11))
+ )
+)
+
+;;; void E.$clinit()
+(func $$clinit__void@jsconstructor.JsConstructorClass.E
+ ;;@ jsconstructor/JsConstructorClass.java:117:22
+ (block
+  ;; if (jsconstructor.JsConstructorClass.E.$initialized) return;
+  ;;@ jsconstructor/JsConstructorClass.java:117:22
+  (if (global.get $f_$initialized__jsconstructor_JsConstructorClass_E)
+   (then
+    ;; return;
+    ;;@ jsconstructor/JsConstructorClass.java:117:22
+    (return )
+   )
+  )
+  ;; (jsconstructor.JsConstructorClass.E.$initialized = true);
+  ;;@ jsconstructor/JsConstructorClass.java:117:22
+  (global.set $f_$initialized__jsconstructor_JsConstructorClass_E (i32.const 1))
+  ;; jsconstructor.JsConstructorClass.C.$clinit();
+  ;;@ jsconstructor/JsConstructorClass.java:117:22
+  (call $$clinit__void@jsconstructor.JsConstructorClass.C )
+ )
+)
+
+;;; Class<?> E.getClass()
+(func $m_getClass__java_lang_Class@jsconstructor.JsConstructorClass.E
+ (type $function.m_getClass__java_lang_Class)
+ (param $this.untyped (ref $java.lang.Object))
+ (result (ref null $java.lang.Class))
+ (local $this (ref null $jsconstructor.JsConstructorClass.E))
+ (local.set $this (ref.cast_static $jsconstructor.JsConstructorClass.E (local.get $this.untyped)))
+ (block
+  ;; return javaemul.internal.ClassLiteralPool.$getJsconstructor.JsConstructorClass.E();
+  (return (call $function.no.side.effects.$getJsconstructor.JsConstructorClass.E__java_lang_Class (ref.func $$getJsconstructor.JsConstructorClass.E__java_lang_Class@javaemul.internal.ClassLiteralPool) ))
+ )
+)
+(elem declare func $m_getClass__java_lang_Class@jsconstructor.JsConstructorClass.E)
+
+;;; Code for jsconstructor.JsConstructorClass.F [CLASS]
+(type $jsconstructor.JsConstructorClass.F (struct_subtype 
+ (field $vtable (ref $jsconstructor.JsConstructorClass.F.vtable)) 
+ (field $itable (ref $jsconstructor.JsConstructorClass.F.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+ (field $f_fA__jsconstructor_JsConstructorClass_A (mut i32))
+ (field $f_fB__jsconstructor_JsConstructorClass_B (mut i32))
+ (field $f_fC__jsconstructor_JsConstructorClass_C (mut i32))
+ (field $f_fF__jsconstructor_JsConstructorClass_F (mut i32))
+  $jsconstructor.JsConstructorClass.C)
+)
+(type $jsconstructor.JsConstructorClass.F.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+  $jsconstructor.JsConstructorClass.C.vtable)
+)
+(type $jsconstructor.JsConstructorClass.F.itable (struct_subtype 
+(field $slot0 (ref null struct))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $jsconstructor.JsConstructorClass.C.itable))
+
+;;; F F.$create(int x)
+(func $$create__int@jsconstructor.JsConstructorClass.F
+ (param $x i32)
+ (result (ref null $jsconstructor.JsConstructorClass.F))
+ ;;@ jsconstructor/JsConstructorClass.java:134:11
+ (local $$instance (ref null $jsconstructor.JsConstructorClass.F))
+ (block
+  ;; F $instance = new F.<init>(0,0,0,0,0);
+  ;;@ jsconstructor/JsConstructorClass.java:134:11
+  (local.set $$instance (struct.new $jsconstructor.JsConstructorClass.F (ref.as_non_null (global.get $jsconstructor.JsConstructorClass.F.vtable)) (ref.as_non_null (global.get $jsconstructor.JsConstructorClass.F.itable)) (i32.const 0) (i32.const 0) (i32.const 0) (i32.const 0) (i32.const 0)))
+  ;; $instance.$ctor(x);
+  ;;@ jsconstructor/JsConstructorClass.java:134:11
+  (call $$ctor__int__void_$p_jsconstructor_JsConstructorClass_F@jsconstructor.JsConstructorClass.F (ref.as_non_null (local.get $$instance))(local.get $x))
+  ;; return $instance;
+  ;;@ jsconstructor/JsConstructorClass.java:134:11
+  (return (local.get $$instance))
+ )
+)
+
+;;; void F.$ctor(int x)
+(func $$ctor__int__void_$p_jsconstructor_JsConstructorClass_F@jsconstructor.JsConstructorClass.F
+ (param $this (ref null $jsconstructor.JsConstructorClass.F))
+ (param $x i32)
+ ;;@ jsconstructor/JsConstructorClass.java:134:11
+ (block
+  ;; jsconstructor.JsConstructorClass.F.$clinit();
+  ;;@ jsconstructor/JsConstructorClass.java:134:20
+  (call $$clinit__void@jsconstructor.JsConstructorClass.F )
+  ;; C.this.$ctor((x + 2));
+  ;;@ jsconstructor/JsConstructorClass.java:135:6
+  (call $$ctor__int__void_$p_jsconstructor_JsConstructorClass_C@jsconstructor.JsConstructorClass.C (ref.as_non_null (local.get $this))(i32.add (local.get $x) (i32.const 2)))
+  ;; F.this.$init();
+  ;;@ jsconstructor/JsConstructorClass.java:134:20
+  (call $$init__void_$p_jsconstructor_JsConstructorClass_F@jsconstructor.JsConstructorClass.F (ref.as_non_null (local.get $this)))
+  ;; (F.this.fF = (x + 3));
+  ;;@ jsconstructor/JsConstructorClass.java:136:6
+  (struct.set $jsconstructor.JsConstructorClass.F $f_fF__jsconstructor_JsConstructorClass_F(local.get $this) (i32.add (local.get $x) (i32.const 3)))
+ )
+)
+
+;;; void F.$init()
+(func $$init__void_$p_jsconstructor_JsConstructorClass_F@jsconstructor.JsConstructorClass.F
+ (param $this (ref null $jsconstructor.JsConstructorClass.F))
+ ;;@ jsconstructor/JsConstructorClass.java:130:22
+ (block
+  ;; (F.this.fF = 13);
+  ;;@ jsconstructor/JsConstructorClass.java:131:4
+  (struct.set $jsconstructor.JsConstructorClass.F $f_fF__jsconstructor_JsConstructorClass_F(local.get $this) (i32.const 13))
+ )
+)
+
+;;; void F.$clinit()
+(func $$clinit__void@jsconstructor.JsConstructorClass.F
+ ;;@ jsconstructor/JsConstructorClass.java:130:22
+ (block
+  ;; if (jsconstructor.JsConstructorClass.F.$initialized) return;
+  ;;@ jsconstructor/JsConstructorClass.java:130:22
+  (if (global.get $f_$initialized__jsconstructor_JsConstructorClass_F)
+   (then
+    ;; return;
+    ;;@ jsconstructor/JsConstructorClass.java:130:22
+    (return )
+   )
+  )
+  ;; (jsconstructor.JsConstructorClass.F.$initialized = true);
+  ;;@ jsconstructor/JsConstructorClass.java:130:22
+  (global.set $f_$initialized__jsconstructor_JsConstructorClass_F (i32.const 1))
+  ;; jsconstructor.JsConstructorClass.C.$clinit();
+  ;;@ jsconstructor/JsConstructorClass.java:130:22
+  (call $$clinit__void@jsconstructor.JsConstructorClass.C )
+ )
+)
+
+;;; Class<?> F.getClass()
+(func $m_getClass__java_lang_Class@jsconstructor.JsConstructorClass.F
+ (type $function.m_getClass__java_lang_Class)
+ (param $this.untyped (ref $java.lang.Object))
+ (result (ref null $java.lang.Class))
+ (local $this (ref null $jsconstructor.JsConstructorClass.F))
+ (local.set $this (ref.cast_static $jsconstructor.JsConstructorClass.F (local.get $this.untyped)))
+ (block
+  ;; return javaemul.internal.ClassLiteralPool.$getJsconstructor.JsConstructorClass.F();
+  (return (call $function.no.side.effects.$getJsconstructor.JsConstructorClass.F__java_lang_Class (ref.func $$getJsconstructor.JsConstructorClass.F__java_lang_Class@javaemul.internal.ClassLiteralPool) ))
+ )
+)
+(elem declare func $m_getClass__java_lang_Class@jsconstructor.JsConstructorClass.F)
+
+;;; Code for jsconstructor.JsConstructorClass.G [CLASS]
+(type $jsconstructor.JsConstructorClass.G (struct_subtype 
+ (field $vtable (ref $jsconstructor.JsConstructorClass.G.vtable)) 
+ (field $itable (ref $jsconstructor.JsConstructorClass.G.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+  $java.lang.Object)
+)
+(type $jsconstructor.JsConstructorClass.G.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+  $java.lang.Object.vtable)
+)
+(type $jsconstructor.JsConstructorClass.G.itable (struct_subtype 
+(field $slot0 (ref null struct))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $java.lang.Object.itable))
+
+;;; G G.$create()
+(func $$create__@jsconstructor.JsConstructorClass.G
+ (result (ref null $jsconstructor.JsConstructorClass.G))
+ ;;@ jsconstructor/JsConstructorClass.java:144:22
+ (local $$instance (ref null $jsconstructor.JsConstructorClass.G))
+ (block
+  ;; G $instance = new G.<init>(0);
+  ;;@ jsconstructor/JsConstructorClass.java:144:22
+  (local.set $$instance (struct.new $jsconstructor.JsConstructorClass.G (ref.as_non_null (global.get $jsconstructor.JsConstructorClass.G.vtable)) (ref.as_non_null (global.get $jsconstructor.JsConstructorClass.G.itable)) (i32.const 0)))
+  ;; $instance.$ctor();
+  ;;@ jsconstructor/JsConstructorClass.java:144:22
+  (call $$ctor__void_$p_jsconstructor_JsConstructorClass_G@jsconstructor.JsConstructorClass.G (ref.as_non_null (local.get $$instance)))
+  ;; return $instance;
+  ;;@ jsconstructor/JsConstructorClass.java:144:22
+  (return (local.get $$instance))
+ )
+)
+
+;;; void G.$ctor()
+(func $$ctor__void_$p_jsconstructor_JsConstructorClass_G@jsconstructor.JsConstructorClass.G
+ (param $this (ref null $jsconstructor.JsConstructorClass.G))
+ ;;@ jsconstructor/JsConstructorClass.java:144:22
+ (block
+  ;; jsconstructor.JsConstructorClass.G.$clinit();
+  ;;@ jsconstructor/JsConstructorClass.java:144:22
+  (call $$clinit__void@jsconstructor.JsConstructorClass.G )
+  ;; Object.this.$ctor();
+  ;;@ jsconstructor/JsConstructorClass.java:144:22
+  (call $$ctor__void_$p_java_lang_Object@java.lang.Object (ref.as_non_null (local.get $this)))
+ )
+)
+
+;;; void G.$clinit()
+(func $$clinit__void@jsconstructor.JsConstructorClass.G
+ ;;@ jsconstructor/JsConstructorClass.java:144:22
+ (block
+  ;; if (jsconstructor.JsConstructorClass.G.$initialized) return;
+  ;;@ jsconstructor/JsConstructorClass.java:144:22
+  (if (global.get $f_$initialized__jsconstructor_JsConstructorClass_G)
+   (then
+    ;; return;
+    ;;@ jsconstructor/JsConstructorClass.java:144:22
+    (return )
+   )
+  )
+  ;; (jsconstructor.JsConstructorClass.G.$initialized = true);
+  ;;@ jsconstructor/JsConstructorClass.java:144:22
+  (global.set $f_$initialized__jsconstructor_JsConstructorClass_G (i32.const 1))
+  ;; java.lang.Object.$clinit();
+  ;;@ jsconstructor/JsConstructorClass.java:144:22
+  (call $$clinit__void@java.lang.Object )
+ )
+)
+
+;;; Class<?> G.getClass()
+(func $m_getClass__java_lang_Class@jsconstructor.JsConstructorClass.G
+ (type $function.m_getClass__java_lang_Class)
+ (param $this.untyped (ref $java.lang.Object))
+ (result (ref null $java.lang.Class))
+ (local $this (ref null $jsconstructor.JsConstructorClass.G))
+ (local.set $this (ref.cast_static $jsconstructor.JsConstructorClass.G (local.get $this.untyped)))
+ (block
+  ;; return javaemul.internal.ClassLiteralPool.$getJsconstructor.JsConstructorClass.G();
+  (return (call $function.no.side.effects.$getJsconstructor.JsConstructorClass.G__java_lang_Class (ref.func $$getJsconstructor.JsConstructorClass.G__java_lang_Class@javaemul.internal.ClassLiteralPool) ))
+ )
+)
+(elem declare func $m_getClass__java_lang_Class@jsconstructor.JsConstructorClass.G)
+
+;;; Code for jsconstructor.JsConstructorClass.H [CLASS]
+(type $jsconstructor.JsConstructorClass.H (struct_subtype 
+ (field $vtable (ref $jsconstructor.JsConstructorClass.H.vtable)) 
+ (field $itable (ref $jsconstructor.JsConstructorClass.H.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+  $jsconstructor.JsConstructorClass.G)
+)
+(type $jsconstructor.JsConstructorClass.H.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+  $jsconstructor.JsConstructorClass.G.vtable)
+)
+(type $jsconstructor.JsConstructorClass.H.itable (struct_subtype 
+(field $slot0 (ref null struct))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $jsconstructor.JsConstructorClass.G.itable))
+
+;;; H H.$create()
+(func $$create__@jsconstructor.JsConstructorClass.H
+ (result (ref null $jsconstructor.JsConstructorClass.H))
+ ;;@ jsconstructor/JsConstructorClass.java:149:11
+ (local $$instance (ref null $jsconstructor.JsConstructorClass.H))
+ (block
+  ;; H $instance = new H.<init>(0);
+  ;;@ jsconstructor/JsConstructorClass.java:149:11
+  (local.set $$instance (struct.new $jsconstructor.JsConstructorClass.H (ref.as_non_null (global.get $jsconstructor.JsConstructorClass.H.vtable)) (ref.as_non_null (global.get $jsconstructor.JsConstructorClass.H.itable)) (i32.const 0)))
+  ;; $instance.$ctor();
+  ;;@ jsconstructor/JsConstructorClass.java:149:11
+  (call $$ctor__void_$p_jsconstructor_JsConstructorClass_H@jsconstructor.JsConstructorClass.H (ref.as_non_null (local.get $$instance)))
+  ;; return $instance;
+  ;;@ jsconstructor/JsConstructorClass.java:149:11
+  (return (local.get $$instance))
+ )
+)
+
+;;; void H.$ctor()
+(func $$ctor__void_$p_jsconstructor_JsConstructorClass_H@jsconstructor.JsConstructorClass.H
+ (param $this (ref null $jsconstructor.JsConstructorClass.H))
+ ;;@ jsconstructor/JsConstructorClass.java:149:11
+ (block
+  ;; jsconstructor.JsConstructorClass.H.$clinit();
+  ;;@ jsconstructor/JsConstructorClass.java:149:15
+  (call $$clinit__void@jsconstructor.JsConstructorClass.H )
+  ;; G.this.$ctor();
+  ;;@ jsconstructor/JsConstructorClass.java:149:15
+  (call $$ctor__void_$p_jsconstructor_JsConstructorClass_G@jsconstructor.JsConstructorClass.G (ref.as_non_null (local.get $this)))
+ )
+)
+
+;;; void H.$clinit()
+(func $$clinit__void@jsconstructor.JsConstructorClass.H
+ ;;@ jsconstructor/JsConstructorClass.java:147:22
+ (block
+  ;; if (jsconstructor.JsConstructorClass.H.$initialized) return;
+  ;;@ jsconstructor/JsConstructorClass.java:147:22
+  (if (global.get $f_$initialized__jsconstructor_JsConstructorClass_H)
+   (then
+    ;; return;
+    ;;@ jsconstructor/JsConstructorClass.java:147:22
+    (return )
+   )
+  )
+  ;; (jsconstructor.JsConstructorClass.H.$initialized = true);
+  ;;@ jsconstructor/JsConstructorClass.java:147:22
+  (global.set $f_$initialized__jsconstructor_JsConstructorClass_H (i32.const 1))
+  ;; jsconstructor.JsConstructorClass.G.$clinit();
+  ;;@ jsconstructor/JsConstructorClass.java:147:22
+  (call $$clinit__void@jsconstructor.JsConstructorClass.G )
+ )
+)
+
+;;; Class<?> H.getClass()
+(func $m_getClass__java_lang_Class@jsconstructor.JsConstructorClass.H
+ (type $function.m_getClass__java_lang_Class)
+ (param $this.untyped (ref $java.lang.Object))
+ (result (ref null $java.lang.Class))
+ (local $this (ref null $jsconstructor.JsConstructorClass.H))
+ (local.set $this (ref.cast_static $jsconstructor.JsConstructorClass.H (local.get $this.untyped)))
+ (block
+  ;; return javaemul.internal.ClassLiteralPool.$getJsconstructor.JsConstructorClass.H();
+  (return (call $function.no.side.effects.$getJsconstructor.JsConstructorClass.H__java_lang_Class (ref.func $$getJsconstructor.JsConstructorClass.H__java_lang_Class@javaemul.internal.ClassLiteralPool) ))
+ )
+)
+(elem declare func $m_getClass__java_lang_Class@jsconstructor.JsConstructorClass.H)
+
+;;; Code for jsconstructor.JsConstructorClass.Varargs [CLASS]
+(type $jsconstructor.JsConstructorClass.Varargs (struct_subtype 
+ (field $vtable (ref $jsconstructor.JsConstructorClass.Varargs.vtable)) 
+ (field $itable (ref $jsconstructor.JsConstructorClass.Varargs.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+ (field $f_fA__jsconstructor_JsConstructorClass_A (mut i32))
+  $jsconstructor.JsConstructorClass.A)
+)
+(type $jsconstructor.JsConstructorClass.Varargs.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+  $jsconstructor.JsConstructorClass.A.vtable)
+)
+(type $jsconstructor.JsConstructorClass.Varargs.itable (struct_subtype 
+(field $slot0 (ref null struct))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $jsconstructor.JsConstructorClass.A.itable))
+
+;;; Varargs Varargs.$create(int... args)
+(func $$create__arrayOf_int@jsconstructor.JsConstructorClass.Varargs
+ (param $args (ref null $javaemul.internal.WasmArray.OfInt))
+ (result (ref null $jsconstructor.JsConstructorClass.Varargs))
+ ;;@ jsconstructor/JsConstructorClass.java:154:11
+ (local $$instance (ref null $jsconstructor.JsConstructorClass.Varargs))
+ (block
+  ;; Varargs $instance = new Varargs.<init>(0,0);
+  ;;@ jsconstructor/JsConstructorClass.java:154:11
+  (local.set $$instance (struct.new $jsconstructor.JsConstructorClass.Varargs (ref.as_non_null (global.get $jsconstructor.JsConstructorClass.Varargs.vtable)) (ref.as_non_null (global.get $jsconstructor.JsConstructorClass.Varargs.itable)) (i32.const 0) (i32.const 0)))
+  ;; $instance.$ctor(args);
+  ;;@ jsconstructor/JsConstructorClass.java:154:11
+  (call $$ctor__arrayOf_int__void_$p_jsconstructor_JsConstructorClass_Varargs@jsconstructor.JsConstructorClass.Varargs (ref.as_non_null (local.get $$instance))(local.get $args))
+  ;; return $instance;
+  ;;@ jsconstructor/JsConstructorClass.java:154:11
+  (return (local.get $$instance))
+ )
+)
+
+;;; void Varargs.$ctor(int... args)
+(func $$ctor__arrayOf_int__void_$p_jsconstructor_JsConstructorClass_Varargs@jsconstructor.JsConstructorClass.Varargs
+ (param $this (ref null $jsconstructor.JsConstructorClass.Varargs))
+ (param $args (ref null $javaemul.internal.WasmArray.OfInt))
+ ;;@ jsconstructor/JsConstructorClass.java:154:11
+ (block
+  ;; jsconstructor.JsConstructorClass.Varargs.$clinit();
+  ;;@ jsconstructor/JsConstructorClass.java:154:32
+  (call $$clinit__void@jsconstructor.JsConstructorClass.Varargs )
+  ;; A.this.$ctor(args.elements[1]);
+  ;;@ jsconstructor/JsConstructorClass.java:155:6
+  (call $$ctor__int__void_$p_jsconstructor_JsConstructorClass_A@jsconstructor.JsConstructorClass.A (ref.as_non_null (local.get $this))(array.get $int.array (struct.get $javaemul.internal.WasmArray.OfInt $f_elements__javaemul_internal_WasmArray_OfInt_(local.get $args)) (i32.const 1)))
+ )
+)
+
+;;; void Varargs.$clinit()
+(func $$clinit__void@jsconstructor.JsConstructorClass.Varargs
+ ;;@ jsconstructor/JsConstructorClass.java:152:22
+ (block
+  ;; if (jsconstructor.JsConstructorClass.Varargs.$initialized) return;
+  ;;@ jsconstructor/JsConstructorClass.java:152:22
+  (if (global.get $f_$initialized__jsconstructor_JsConstructorClass_Varargs)
+   (then
+    ;; return;
+    ;;@ jsconstructor/JsConstructorClass.java:152:22
+    (return )
+   )
+  )
+  ;; (jsconstructor.JsConstructorClass.Varargs.$initialized = true);
+  ;;@ jsconstructor/JsConstructorClass.java:152:22
+  (global.set $f_$initialized__jsconstructor_JsConstructorClass_Varargs (i32.const 1))
+  ;; jsconstructor.JsConstructorClass.A.$clinit();
+  ;;@ jsconstructor/JsConstructorClass.java:152:22
+  (call $$clinit__void@jsconstructor.JsConstructorClass.A )
+ )
+)
+
+;;; Class<?> Varargs.getClass()
+(func $m_getClass__java_lang_Class@jsconstructor.JsConstructorClass.Varargs
+ (type $function.m_getClass__java_lang_Class)
+ (param $this.untyped (ref $java.lang.Object))
+ (result (ref null $java.lang.Class))
+ (local $this (ref null $jsconstructor.JsConstructorClass.Varargs))
+ (local.set $this (ref.cast_static $jsconstructor.JsConstructorClass.Varargs (local.get $this.untyped)))
+ (block
+  ;; return javaemul.internal.ClassLiteralPool.$getJsconstructor.JsConstructorClass.Varargs();
+  (return (call $function.no.side.effects.$getJsconstructor.JsConstructorClass.Varargs__java_lang_Class (ref.func $$getJsconstructor.JsConstructorClass.Varargs__java_lang_Class@javaemul.internal.ClassLiteralPool) ))
+ )
+)
+(elem declare func $m_getClass__java_lang_Class@jsconstructor.JsConstructorClass.Varargs)
+
+;;; Code for jsconstructor.JsConstructorClass.SubVarargs [CLASS]
+(type $jsconstructor.JsConstructorClass.SubVarargs (struct_subtype 
+ (field $vtable (ref $jsconstructor.JsConstructorClass.SubVarargs.vtable)) 
+ (field $itable (ref $jsconstructor.JsConstructorClass.SubVarargs.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+ (field $f_fA__jsconstructor_JsConstructorClass_A (mut i32))
+  $jsconstructor.JsConstructorClass.Varargs)
+)
+(type $jsconstructor.JsConstructorClass.SubVarargs.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+  $jsconstructor.JsConstructorClass.Varargs.vtable)
+)
+(type $jsconstructor.JsConstructorClass.SubVarargs.itable (struct_subtype 
+(field $slot0 (ref null struct))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $jsconstructor.JsConstructorClass.Varargs.itable))
+
+;;; SubVarargs SubVarargs.$create(Object i, int... args)
+(func $$create__java_lang_Object__arrayOf_int@jsconstructor.JsConstructorClass.SubVarargs
+ (param $i (ref null $java.lang.Object))
+ (param $args (ref null $javaemul.internal.WasmArray.OfInt))
+ (result (ref null $jsconstructor.JsConstructorClass.SubVarargs))
+ ;;@ jsconstructor/JsConstructorClass.java:161:11
+ (local $$instance (ref null $jsconstructor.JsConstructorClass.SubVarargs))
+ (block
+  ;; SubVarargs $instance = new SubVarargs.<init>(0,0);
+  ;;@ jsconstructor/JsConstructorClass.java:161:11
+  (local.set $$instance (struct.new $jsconstructor.JsConstructorClass.SubVarargs (ref.as_non_null (global.get $jsconstructor.JsConstructorClass.SubVarargs.vtable)) (ref.as_non_null (global.get $jsconstructor.JsConstructorClass.SubVarargs.itable)) (i32.const 0) (i32.const 0)))
+  ;; $instance.$ctor(i,args);
+  ;;@ jsconstructor/JsConstructorClass.java:161:11
+  (call $$ctor__java_lang_Object__arrayOf_int__void_$p_jsconstructor_JsConstructorClass_SubVarargs@jsconstructor.JsConstructorClass.SubVarargs (ref.as_non_null (local.get $$instance))(local.get $i)(local.get $args))
+  ;; return $instance;
+  ;;@ jsconstructor/JsConstructorClass.java:161:11
+  (return (local.get $$instance))
+ )
+)
+
+;;; void SubVarargs.$ctor(Object i, int... args)
+(func $$ctor__java_lang_Object__arrayOf_int__void_$p_jsconstructor_JsConstructorClass_SubVarargs@jsconstructor.JsConstructorClass.SubVarargs
+ (param $this (ref null $jsconstructor.JsConstructorClass.SubVarargs))
+ (param $i (ref null $java.lang.Object))
+ (param $args (ref null $javaemul.internal.WasmArray.OfInt))
+ ;;@ jsconstructor/JsConstructorClass.java:161:11
+ (block
+  ;; jsconstructor.JsConstructorClass.SubVarargs.$clinit();
+  ;;@ jsconstructor/JsConstructorClass.java:161:45
+  (call $$clinit__void@jsconstructor.JsConstructorClass.SubVarargs )
+  ;; Varargs.this.$ctor(args);
+  ;;@ jsconstructor/JsConstructorClass.java:162:6
+  (call $$ctor__arrayOf_int__void_$p_jsconstructor_JsConstructorClass_Varargs@jsconstructor.JsConstructorClass.Varargs (ref.as_non_null (local.get $this))(local.get $args))
+ )
+)
+
+;;; SubVarargs SubVarargs.$create(int j)
+(func $$create__int@jsconstructor.JsConstructorClass.SubVarargs
+ (param $j i32)
+ (result (ref null $jsconstructor.JsConstructorClass.SubVarargs))
+ ;;@ jsconstructor/JsConstructorClass.java:165:11
+ (local $$instance (ref null $jsconstructor.JsConstructorClass.SubVarargs))
+ (block
+  ;; SubVarargs $instance = new SubVarargs.<init>(0,0);
+  ;;@ jsconstructor/JsConstructorClass.java:165:11
+  (local.set $$instance (struct.new $jsconstructor.JsConstructorClass.SubVarargs (ref.as_non_null (global.get $jsconstructor.JsConstructorClass.SubVarargs.vtable)) (ref.as_non_null (global.get $jsconstructor.JsConstructorClass.SubVarargs.itable)) (i32.const 0) (i32.const 0)))
+  ;; $instance.$ctor(j);
+  ;;@ jsconstructor/JsConstructorClass.java:165:11
+  (call $$ctor__int__void_$p_jsconstructor_JsConstructorClass_SubVarargs@jsconstructor.JsConstructorClass.SubVarargs (ref.as_non_null (local.get $$instance))(local.get $j))
+  ;; return $instance;
+  ;;@ jsconstructor/JsConstructorClass.java:165:11
+  (return (local.get $$instance))
+ )
+)
+
+;;; void SubVarargs.$ctor(int j)
+(func $$ctor__int__void_$p_jsconstructor_JsConstructorClass_SubVarargs@jsconstructor.JsConstructorClass.SubVarargs
+ (param $this (ref null $jsconstructor.JsConstructorClass.SubVarargs))
+ (param $j i32)
+ ;;@ jsconstructor/JsConstructorClass.java:165:11
+ (block
+  ;; jsconstructor.JsConstructorClass.SubVarargs.$clinit();
+  ;;@ jsconstructor/JsConstructorClass.java:165:29
+  (call $$clinit__void@jsconstructor.JsConstructorClass.SubVarargs )
+  ;; SubVarargs.this.$ctor(java.lang.Object.$create(),javaemul.internal.WasmArray.OfInt.$create([j]));
+  ;;@ jsconstructor/JsConstructorClass.java:166:6
+  (call $$ctor__java_lang_Object__arrayOf_int__void_$p_jsconstructor_JsConstructorClass_SubVarargs@jsconstructor.JsConstructorClass.SubVarargs (ref.as_non_null (local.get $this))(call $$create__@java.lang.Object )(call $$create__arrayOf_int@javaemul.internal.WasmArray.OfInt (array.init_static $int.array (local.get $j))))
+ )
+)
+
+;;; void SubVarargs.subNativeInvocation()
+(func $m_subNativeInvocation__void@jsconstructor.JsConstructorClass.SubVarargs
+ ;;@ jsconstructor/JsConstructorClass.java:169:16
+ (local $unusedS1 (ref null $jsconstructor.JsConstructorClass.SubVarargs))
+ (local $unusedS2 (ref null $jsconstructor.JsConstructorClass.SubVarargs))
+ (block
+  ;; jsconstructor.JsConstructorClass.SubVarargs.$clinit();
+  ;;@ jsconstructor/JsConstructorClass.java:169:38
+  (call $$clinit__void@jsconstructor.JsConstructorClass.SubVarargs )
+  ;; SubVarargs unusedS1 = jsconstructor.JsConstructorClass.SubVarargs.$create(2);
+  ;;@ jsconstructor/JsConstructorClass.java:170:6
+  (local.set $unusedS1 (call $$create__int@jsconstructor.JsConstructorClass.SubVarargs (i32.const 2)))
+  ;; SubVarargs unusedS2 = jsconstructor.JsConstructorClass.SubVarargs.$create(java.lang.Object.$create(),javaemul.internal.WasmArray.OfInt.$create([1,2,3]));
+  ;;@ jsconstructor/JsConstructorClass.java:171:6
+  (local.set $unusedS2 (call $$create__java_lang_Object__arrayOf_int@jsconstructor.JsConstructorClass.SubVarargs (call $$create__@java.lang.Object )(call $$create__arrayOf_int@javaemul.internal.WasmArray.OfInt (array.init_static $int.array (i32.const 1)(i32.const 2)(i32.const 3)))))
+ )
+)
+
+;;; void SubVarargs.$clinit()
+(func $$clinit__void@jsconstructor.JsConstructorClass.SubVarargs
+ ;;@ jsconstructor/JsConstructorClass.java:159:22
+ (block
+  ;; if (jsconstructor.JsConstructorClass.SubVarargs.$initialized) return;
+  ;;@ jsconstructor/JsConstructorClass.java:159:22
+  (if (global.get $f_$initialized__jsconstructor_JsConstructorClass_SubVarargs)
+   (then
+    ;; return;
+    ;;@ jsconstructor/JsConstructorClass.java:159:22
+    (return )
+   )
+  )
+  ;; (jsconstructor.JsConstructorClass.SubVarargs.$initialized = true);
+  ;;@ jsconstructor/JsConstructorClass.java:159:22
+  (global.set $f_$initialized__jsconstructor_JsConstructorClass_SubVarargs (i32.const 1))
+  ;; jsconstructor.JsConstructorClass.Varargs.$clinit();
+  ;;@ jsconstructor/JsConstructorClass.java:159:22
+  (call $$clinit__void@jsconstructor.JsConstructorClass.Varargs )
+ )
+)
+
+;;; Class<?> SubVarargs.getClass()
+(func $m_getClass__java_lang_Class@jsconstructor.JsConstructorClass.SubVarargs
+ (type $function.m_getClass__java_lang_Class)
+ (param $this.untyped (ref $java.lang.Object))
+ (result (ref null $java.lang.Class))
+ (local $this (ref null $jsconstructor.JsConstructorClass.SubVarargs))
+ (local.set $this (ref.cast_static $jsconstructor.JsConstructorClass.SubVarargs (local.get $this.untyped)))
+ (block
+  ;; return javaemul.internal.ClassLiteralPool.$getJsconstructor.JsConstructorClass.SubVarargs();
+  (return (call $function.no.side.effects.$getJsconstructor.JsConstructorClass.SubVarargs__java_lang_Class (ref.func $$getJsconstructor.JsConstructorClass.SubVarargs__java_lang_Class@javaemul.internal.ClassLiteralPool) ))
+ )
+)
+(elem declare func $m_getClass__java_lang_Class@jsconstructor.JsConstructorClass.SubVarargs)
+
+;;; Code for jsconstructor.JsConstructorClass.InstanceVarargs [CLASS]
+(type $jsconstructor.JsConstructorClass.InstanceVarargs (struct_subtype 
+ (field $vtable (ref $jsconstructor.JsConstructorClass.InstanceVarargs.vtable)) 
+ (field $itable (ref $jsconstructor.JsConstructorClass.InstanceVarargs.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+ (field $f_fA__jsconstructor_JsConstructorClass_A (mut i32))
+ (field $$outer_this__jsconstructor_JsConstructorClass_InstanceVarargs (ref null $jsconstructor.JsConstructorClass))
+  $jsconstructor.JsConstructorClass.A)
+)
+(type $jsconstructor.JsConstructorClass.InstanceVarargs.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+  $jsconstructor.JsConstructorClass.A.vtable)
+)
+(type $jsconstructor.JsConstructorClass.InstanceVarargs.itable (struct_subtype 
+(field $slot0 (ref null struct))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $jsconstructor.JsConstructorClass.A.itable))
+
+;;; InstanceVarargs InstanceVarargs.$create(JsConstructorClass $outer_this, int... args)
+(func $$create__jsconstructor_JsConstructorClass__arrayOf_int@jsconstructor.JsConstructorClass.InstanceVarargs
+ (param $$outer_this (ref null $jsconstructor.JsConstructorClass))
+ (param $args (ref null $javaemul.internal.WasmArray.OfInt))
+ (result (ref null $jsconstructor.JsConstructorClass.InstanceVarargs))
+ ;;@ jsconstructor/JsConstructorClass.java:178:11
+ (local $$instance (ref null $jsconstructor.JsConstructorClass.InstanceVarargs))
+ (block
+  ;; InstanceVarargs $instance = new InstanceVarargs.<init>(0,0,$outer_this);
+  ;;@ jsconstructor/JsConstructorClass.java:178:11
+  (local.set $$instance (struct.new $jsconstructor.JsConstructorClass.InstanceVarargs (ref.as_non_null (global.get $jsconstructor.JsConstructorClass.InstanceVarargs.vtable)) (ref.as_non_null (global.get $jsconstructor.JsConstructorClass.InstanceVarargs.itable)) (i32.const 0) (i32.const 0) (local.get $$outer_this)))
+  ;; $instance.$ctor($outer_this,args);
+  ;;@ jsconstructor/JsConstructorClass.java:178:11
+  (call $$ctor__jsconstructor_JsConstructorClass__arrayOf_int__void_$p_jsconstructor_JsConstructorClass_InstanceVarargs@jsconstructor.JsConstructorClass.InstanceVarargs (ref.as_non_null (local.get $$instance))(local.get $$outer_this)(local.get $args))
+  ;; return $instance;
+  ;;@ jsconstructor/JsConstructorClass.java:178:11
+  (return (local.get $$instance))
+ )
+)
+
+;;; void InstanceVarargs.$ctor(JsConstructorClass $outer_this, int... args)
+(func $$ctor__jsconstructor_JsConstructorClass__arrayOf_int__void_$p_jsconstructor_JsConstructorClass_InstanceVarargs@jsconstructor.JsConstructorClass.InstanceVarargs
+ (param $this (ref null $jsconstructor.JsConstructorClass.InstanceVarargs))
+ (param $$outer_this (ref null $jsconstructor.JsConstructorClass))
+ (param $args (ref null $javaemul.internal.WasmArray.OfInt))
+ ;;@ jsconstructor/JsConstructorClass.java:178:11
+ (block
+  ;; jsconstructor.JsConstructorClass.InstanceVarargs.$clinit();
+  ;;@ jsconstructor/JsConstructorClass.java:178:40
+  (call $$clinit__void@jsconstructor.JsConstructorClass.InstanceVarargs )
+  ;; A.this.$ctor(args.elements[1]);
+  ;;@ jsconstructor/JsConstructorClass.java:179:6
+  (call $$ctor__int__void_$p_jsconstructor_JsConstructorClass_A@jsconstructor.JsConstructorClass.A (ref.as_non_null (local.get $this))(array.get $int.array (struct.get $javaemul.internal.WasmArray.OfInt $f_elements__javaemul_internal_WasmArray_OfInt_(local.get $args)) (i32.const 1)))
+ )
+)
+
+;;; void InstanceVarargs.$clinit()
+(func $$clinit__void@jsconstructor.JsConstructorClass.InstanceVarargs
+ ;;@ jsconstructor/JsConstructorClass.java:176:15
+ (block
+  ;; if (jsconstructor.JsConstructorClass.InstanceVarargs.$initialized) return;
+  ;;@ jsconstructor/JsConstructorClass.java:176:15
+  (if (global.get $f_$initialized__jsconstructor_JsConstructorClass_InstanceVarargs)
+   (then
+    ;; return;
+    ;;@ jsconstructor/JsConstructorClass.java:176:15
+    (return )
+   )
+  )
+  ;; (jsconstructor.JsConstructorClass.InstanceVarargs.$initialized = true);
+  ;;@ jsconstructor/JsConstructorClass.java:176:15
+  (global.set $f_$initialized__jsconstructor_JsConstructorClass_InstanceVarargs (i32.const 1))
+  ;; jsconstructor.JsConstructorClass.A.$clinit();
+  ;;@ jsconstructor/JsConstructorClass.java:176:15
+  (call $$clinit__void@jsconstructor.JsConstructorClass.A )
+ )
+)
+
+;;; Class<?> InstanceVarargs.getClass()
+(func $m_getClass__java_lang_Class@jsconstructor.JsConstructorClass.InstanceVarargs
+ (type $function.m_getClass__java_lang_Class)
+ (param $this.untyped (ref $java.lang.Object))
+ (result (ref null $java.lang.Class))
+ (local $this (ref null $jsconstructor.JsConstructorClass.InstanceVarargs))
+ (local.set $this (ref.cast_static $jsconstructor.JsConstructorClass.InstanceVarargs (local.get $this.untyped)))
+ (block
+  ;; return javaemul.internal.ClassLiteralPool.$getJsconstructor.JsConstructorClass.InstanceVarargs();
+  (return (call $function.no.side.effects.$getJsconstructor.JsConstructorClass.InstanceVarargs__java_lang_Class (ref.func $$getJsconstructor.JsConstructorClass.InstanceVarargs__java_lang_Class@javaemul.internal.ClassLiteralPool) ))
+ )
+)
+(elem declare func $m_getClass__java_lang_Class@jsconstructor.JsConstructorClass.InstanceVarargs)
+
+;;; Code for jsconstructor.JsConstructorClass.RegularType [CLASS]
+(type $jsconstructor.JsConstructorClass.RegularType (struct_subtype 
+ (field $vtable (ref $jsconstructor.JsConstructorClass.RegularType.vtable)) 
+ (field $itable (ref $jsconstructor.JsConstructorClass.RegularType.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+  $java.lang.Object)
+)
+(type $jsconstructor.JsConstructorClass.RegularType.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+  $java.lang.Object.vtable)
+)
+(type $jsconstructor.JsConstructorClass.RegularType.itable (struct_subtype 
+(field $slot0 (ref null struct))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $java.lang.Object.itable))
+
+;;; RegularType RegularType.$create(Object b)
+(func $$create__java_lang_Object@jsconstructor.JsConstructorClass.RegularType
+ (param $b (ref null $java.lang.Object))
+ (result (ref null $jsconstructor.JsConstructorClass.RegularType))
+ ;;@ jsconstructor/JsConstructorClass.java:184:11
+ (local $$instance (ref null $jsconstructor.JsConstructorClass.RegularType))
+ (block
+  ;; RegularType $instance = new RegularType.<init>(0);
+  ;;@ jsconstructor/JsConstructorClass.java:184:11
+  (local.set $$instance (struct.new $jsconstructor.JsConstructorClass.RegularType (ref.as_non_null (global.get $jsconstructor.JsConstructorClass.RegularType.vtable)) (ref.as_non_null (global.get $jsconstructor.JsConstructorClass.RegularType.itable)) (i32.const 0)))
+  ;; $instance.$ctor(b);
+  ;;@ jsconstructor/JsConstructorClass.java:184:11
+  (call $$ctor__java_lang_Object__void_$p_jsconstructor_JsConstructorClass_RegularType@jsconstructor.JsConstructorClass.RegularType (ref.as_non_null (local.get $$instance))(local.get $b))
+  ;; return $instance;
+  ;;@ jsconstructor/JsConstructorClass.java:184:11
+  (return (local.get $$instance))
+ )
+)
+
+;;; void RegularType.$ctor(Object b)
+(func $$ctor__java_lang_Object__void_$p_jsconstructor_JsConstructorClass_RegularType@jsconstructor.JsConstructorClass.RegularType
+ (param $this (ref null $jsconstructor.JsConstructorClass.RegularType))
+ (param $b (ref null $java.lang.Object))
+ ;;@ jsconstructor/JsConstructorClass.java:184:11
+ (block
+  ;; jsconstructor.JsConstructorClass.RegularType.$clinit();
+  ;;@ jsconstructor/JsConstructorClass.java:184:33
+  (call $$clinit__void@jsconstructor.JsConstructorClass.RegularType )
+  ;; Object.this.$ctor();
+  ;;@ jsconstructor/JsConstructorClass.java:184:33
+  (call $$ctor__void_$p_java_lang_Object@java.lang.Object (ref.as_non_null (local.get $this)))
+ )
+)
+
+;;; void RegularType.$clinit()
+(func $$clinit__void@jsconstructor.JsConstructorClass.RegularType
+ ;;@ jsconstructor/JsConstructorClass.java:183:22
+ (block
+  ;; if (jsconstructor.JsConstructorClass.RegularType.$initialized) return;
+  ;;@ jsconstructor/JsConstructorClass.java:183:22
+  (if (global.get $f_$initialized__jsconstructor_JsConstructorClass_RegularType)
+   (then
+    ;; return;
+    ;;@ jsconstructor/JsConstructorClass.java:183:22
+    (return )
+   )
+  )
+  ;; (jsconstructor.JsConstructorClass.RegularType.$initialized = true);
+  ;;@ jsconstructor/JsConstructorClass.java:183:22
+  (global.set $f_$initialized__jsconstructor_JsConstructorClass_RegularType (i32.const 1))
+  ;; java.lang.Object.$clinit();
+  ;;@ jsconstructor/JsConstructorClass.java:183:22
+  (call $$clinit__void@java.lang.Object )
+ )
+)
+
+;;; Class<?> RegularType.getClass()
+(func $m_getClass__java_lang_Class@jsconstructor.JsConstructorClass.RegularType
+ (type $function.m_getClass__java_lang_Class)
+ (param $this.untyped (ref $java.lang.Object))
+ (result (ref null $java.lang.Class))
+ (local $this (ref null $jsconstructor.JsConstructorClass.RegularType))
+ (local.set $this (ref.cast_static $jsconstructor.JsConstructorClass.RegularType (local.get $this.untyped)))
+ (block
+  ;; return javaemul.internal.ClassLiteralPool.$getJsconstructor.JsConstructorClass.RegularType();
+  (return (call $function.no.side.effects.$getJsconstructor.JsConstructorClass.RegularType__java_lang_Class (ref.func $$getJsconstructor.JsConstructorClass.RegularType__java_lang_Class@javaemul.internal.ClassLiteralPool) ))
+ )
+)
+(elem declare func $m_getClass__java_lang_Class@jsconstructor.JsConstructorClass.RegularType)
+
+;;; Code for jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType [CLASS]
+(type $jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType (struct_subtype 
+ (field $vtable (ref $jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType.vtable)) 
+ (field $itable (ref $jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+  $jsconstructor.JsConstructorClass.RegularType)
+)
+(type $jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+  $jsconstructor.JsConstructorClass.RegularType.vtable)
+)
+(type $jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType.itable (struct_subtype 
+(field $slot0 (ref null struct))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $jsconstructor.JsConstructorClass.RegularType.itable))
+
+;;; JsConstructorSubtypeOfRegularType JsConstructorSubtypeOfRegularType.$create(Object object)
+(func $$create__java_lang_Object@jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType
+ (param $object (ref null $java.lang.Object))
+ (result (ref null $jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType))
+ ;;@ jsconstructor/JsConstructorClass.java:189:11
+ (local $$instance (ref null $jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType))
+ (block
+  ;; JsConstructorSubtypeOfRegularType $instance = new JsConstructorSubtypeOfRegularType.<init>(0);
+  ;;@ jsconstructor/JsConstructorClass.java:189:11
+  (local.set $$instance (struct.new $jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType (ref.as_non_null (global.get $jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType.vtable)) (ref.as_non_null (global.get $jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType.itable)) (i32.const 0)))
+  ;; $instance.$ctor(object);
+  ;;@ jsconstructor/JsConstructorClass.java:189:11
+  (call $$ctor__java_lang_Object__void_$p_jsconstructor_JsConstructorClass_JsConstructorSubtypeOfRegularType@jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType (ref.as_non_null (local.get $$instance))(local.get $object))
+  ;; return $instance;
+  ;;@ jsconstructor/JsConstructorClass.java:189:11
+  (return (local.get $$instance))
+ )
+)
+
+;;; void JsConstructorSubtypeOfRegularType.$ctor(Object object)
+(func $$ctor__java_lang_Object__void_$p_jsconstructor_JsConstructorClass_JsConstructorSubtypeOfRegularType@jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType
+ (param $this (ref null $jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType))
+ (param $object (ref null $java.lang.Object))
+ ;;@ jsconstructor/JsConstructorClass.java:189:11
+ (block
+  ;; jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType.$clinit();
+  ;;@ jsconstructor/JsConstructorClass.java:189:60
+  (call $$clinit__void@jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType )
+  ;; RegularType.this.$ctor(object);
+  ;;@ jsconstructor/JsConstructorClass.java:190:6
+  (call $$ctor__java_lang_Object__void_$p_jsconstructor_JsConstructorClass_RegularType@jsconstructor.JsConstructorClass.RegularType (ref.as_non_null (local.get $this))(local.get $object))
+ )
+)
+
+;;; JsConstructorSubtypeOfRegularType JsConstructorSubtypeOfRegularType.$create()
+(func $$create__@jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType
+ (result (ref null $jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType))
+ ;;@ jsconstructor/JsConstructorClass.java:193:11
+ (local $$instance (ref null $jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType))
+ (block
+  ;; JsConstructorSubtypeOfRegularType $instance = new JsConstructorSubtypeOfRegularType.<init>(0);
+  ;;@ jsconstructor/JsConstructorClass.java:193:11
+  (local.set $$instance (struct.new $jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType (ref.as_non_null (global.get $jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType.vtable)) (ref.as_non_null (global.get $jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType.itable)) (i32.const 0)))
+  ;; $instance.$ctor();
+  ;;@ jsconstructor/JsConstructorClass.java:193:11
+  (call $$ctor__void_$p_jsconstructor_JsConstructorClass_JsConstructorSubtypeOfRegularType@jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType (ref.as_non_null (local.get $$instance)))
+  ;; return $instance;
+  ;;@ jsconstructor/JsConstructorClass.java:193:11
+  (return (local.get $$instance))
+ )
+)
+
+;;; void JsConstructorSubtypeOfRegularType.$ctor()
+(func $$ctor__void_$p_jsconstructor_JsConstructorClass_JsConstructorSubtypeOfRegularType@jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType
+ (param $this (ref null $jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType))
+ ;;@ jsconstructor/JsConstructorClass.java:193:11
+ (block
+  ;; jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType.$clinit();
+  ;;@ jsconstructor/JsConstructorClass.java:193:47
+  (call $$clinit__void@jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType )
+  ;; JsConstructorSubtypeOfRegularType.this.$ctor(java.lang.Object.$create());
+  ;;@ jsconstructor/JsConstructorClass.java:194:6
+  (call $$ctor__java_lang_Object__void_$p_jsconstructor_JsConstructorClass_JsConstructorSubtypeOfRegularType@jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType (ref.as_non_null (local.get $this))(call $$create__@java.lang.Object ))
+ )
+)
+
+;;; void JsConstructorSubtypeOfRegularType.$clinit()
+(func $$clinit__void@jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType
+ ;;@ jsconstructor/JsConstructorClass.java:187:22
+ (block
+  ;; if (jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType.$initialized) return;
+  ;;@ jsconstructor/JsConstructorClass.java:187:22
+  (if (global.get $f_$initialized__jsconstructor_JsConstructorClass_JsConstructorSubtypeOfRegularType)
+   (then
+    ;; return;
+    ;;@ jsconstructor/JsConstructorClass.java:187:22
+    (return )
+   )
+  )
+  ;; (jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType.$initialized = true);
+  ;;@ jsconstructor/JsConstructorClass.java:187:22
+  (global.set $f_$initialized__jsconstructor_JsConstructorClass_JsConstructorSubtypeOfRegularType (i32.const 1))
+  ;; jsconstructor.JsConstructorClass.RegularType.$clinit();
+  ;;@ jsconstructor/JsConstructorClass.java:187:22
+  (call $$clinit__void@jsconstructor.JsConstructorClass.RegularType )
+ )
+)
+
+;;; Class<?> JsConstructorSubtypeOfRegularType.getClass()
+(func $m_getClass__java_lang_Class@jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType
+ (type $function.m_getClass__java_lang_Class)
+ (param $this.untyped (ref $java.lang.Object))
+ (result (ref null $java.lang.Class))
+ (local $this (ref null $jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType))
+ (local.set $this (ref.cast_static $jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType (local.get $this.untyped)))
+ (block
+  ;; return javaemul.internal.ClassLiteralPool.$getJsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType();
+  (return (call $function.no.side.effects.$getJsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType__java_lang_Class (ref.func $$getJsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType__java_lang_Class@javaemul.internal.ClassLiteralPool) ))
+ )
+)
+(elem declare func $m_getClass__java_lang_Class@jsconstructor.JsConstructorClass.JsConstructorSubtypeOfRegularType)

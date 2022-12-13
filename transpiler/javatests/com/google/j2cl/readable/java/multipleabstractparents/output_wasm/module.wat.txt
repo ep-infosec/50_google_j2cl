@@ -1,0 +1,1093 @@
+;;; Code for multipleabstractparents.MultipleAbstractParents [static fields]
+(global $f_$initialized__multipleabstractparents_MultipleAbstractParents (mut i32) (i32.const 0))
+
+;;; Code for multipleabstractparents.MultipleAbstractParents.List [static fields]
+(global $f_$initialized__multipleabstractparents_MultipleAbstractParents_List (mut i32) (i32.const 0))
+
+;;; Code for multipleabstractparents.MultipleAbstractParents.Collection [static fields]
+(global $f_$initialized__multipleabstractparents_MultipleAbstractParents_Collection (mut i32) (i32.const 0))
+
+;;; Code for multipleabstractparents.MultipleAbstractParents.AbstractListCollection [static fields]
+(global $f_$initialized__multipleabstractparents_MultipleAbstractParents_AbstractListCollection (mut i32) (i32.const 0))
+
+;;; Code for multipleabstractparents.MultipleAbstractParents.AbstractCollection [static fields]
+(global $f_$initialized__multipleabstractparents_MultipleAbstractParents_AbstractCollection (mut i32) (i32.const 0))
+
+;;; Code for multipleabstractparents.MultipleAbstractParents.AbstractList [static fields]
+(global $f_$initialized__multipleabstractparents_MultipleAbstractParents_AbstractList (mut i32) (i32.const 0))
+
+;;; Code for multipleabstractparents.MultipleAbstractParents.AbstractList2 [static fields]
+(global $f_$initialized__multipleabstractparents_MultipleAbstractParents_AbstractList2 (mut i32) (i32.const 0))
+
+;;; Code for multipleabstractparents.MultipleAbstractParents.ArrayList [static fields]
+(global $f_$initialized__multipleabstractparents_MultipleAbstractParents_ArrayList (mut i32) (i32.const 0))
+
+;;; Code for multipleabstractparents.MultipleAbstractParents.IStringList [static fields]
+(global $f_$initialized__multipleabstractparents_MultipleAbstractParents_IStringList (mut i32) (i32.const 0))
+
+;;; Code for multipleabstractparents.MultipleAbstractParents.AbstractStringList [static fields]
+(global $f_$initialized__multipleabstractparents_MultipleAbstractParents_AbstractStringList (mut i32) (i32.const 0))
+
+;;; Code for multipleabstractparents.MultipleAbstractParents.AbstractStringList2 [static fields]
+(global $f_$initialized__multipleabstractparents_MultipleAbstractParents_AbstractStringList2 (mut i32) (i32.const 0))
+
+;;; Code for multipleabstractparents.MultipleAbstractParents.AbstractStringList3 [static fields]
+(global $f_$initialized__multipleabstractparents_MultipleAbstractParents_AbstractStringList3 (mut i32) (i32.const 0))
+
+;;; Code for multipleabstractparents.MultipleAbstractParents.StringList [static fields]
+(global $f_$initialized__multipleabstractparents_MultipleAbstractParents_StringList (mut i32) (i32.const 0))
+
+;;; Code for multipleabstractparents.MultipleAbstractParents.StringListChild [static fields]
+(global $f_$initialized__multipleabstractparents_MultipleAbstractParents_StringListChild (mut i32) (i32.const 0))
+
+;;; Code for multipleabstractparents.MultipleAbstractParents [vtable.init]
+(global $multipleabstractparents.MultipleAbstractParents.vtable (ref $multipleabstractparents.MultipleAbstractParents.vtable) 
+ (struct.new $multipleabstractparents.MultipleAbstractParents.vtable
+  (ref.func $m_equals__java_lang_Object__boolean@java.lang.Object)
+  (ref.func $m_hashCode__int@java.lang.Object)
+  (ref.func $m_toString__java_lang_String@java.lang.Object)
+  (ref.func $m_getClass__java_lang_Class@multipleabstractparents.MultipleAbstractParents)
+ )
+)
+
+;;; Code for multipleabstractparents.MultipleAbstractParents [itable.init]
+(global $multipleabstractparents.MultipleAbstractParents.itable (ref $multipleabstractparents.MultipleAbstractParents.itable) (struct.new $multipleabstractparents.MultipleAbstractParents.itable 
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+ ))
+
+;;; Code for multipleabstractparents.MultipleAbstractParents.ArrayList [vtable.init]
+(global $multipleabstractparents.MultipleAbstractParents.ArrayList.vtable (ref $multipleabstractparents.MultipleAbstractParents.ArrayList.vtable) 
+ (struct.new $multipleabstractparents.MultipleAbstractParents.ArrayList.vtable
+  (ref.func $m_equals__java_lang_Object__boolean@java.lang.Object)
+  (ref.func $m_hashCode__int@java.lang.Object)
+  (ref.func $m_toString__java_lang_String@java.lang.Object)
+  (ref.func $m_getClass__java_lang_Class@multipleabstractparents.MultipleAbstractParents.ArrayList)
+  (ref.func $m_getFoo__java_lang_Object__java_lang_String@multipleabstractparents.MultipleAbstractParents.AbstractCollection)
+ )
+)
+
+;;; Code for multipleabstractparents.MultipleAbstractParents.ArrayList [itable.init]
+(global $multipleabstractparents.MultipleAbstractParents.ArrayList.itable (ref $multipleabstractparents.MultipleAbstractParents.ArrayList.itable) (struct.new $multipleabstractparents.MultipleAbstractParents.ArrayList.itable 
+ (struct.new $multipleabstractparents.MultipleAbstractParents.List.vtable
+  (ref.func $m_getFoo__java_lang_Object__java_lang_String@multipleabstractparents.MultipleAbstractParents.AbstractCollection)
+ )
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+ ))
+
+;;; Code for multipleabstractparents.MultipleAbstractParents.StringList [vtable.init]
+(global $multipleabstractparents.MultipleAbstractParents.StringList.vtable (ref $multipleabstractparents.MultipleAbstractParents.StringList.vtable) 
+ (struct.new $multipleabstractparents.MultipleAbstractParents.StringList.vtable
+  (ref.func $m_equals__java_lang_Object__boolean@java.lang.Object)
+  (ref.func $m_hashCode__int@java.lang.Object)
+  (ref.func $m_toString__java_lang_String@java.lang.Object)
+  (ref.func $m_getClass__java_lang_Class@multipleabstractparents.MultipleAbstractParents.StringList)
+  (ref.func $m_getFoo__java_lang_Object__java_lang_String@multipleabstractparents.MultipleAbstractParents.AbstractStringList)
+  (ref.func $m_getFoo__java_lang_String__java_lang_String@multipleabstractparents.MultipleAbstractParents.AbstractStringList)
+ )
+)
+
+;;; Code for multipleabstractparents.MultipleAbstractParents.StringList [itable.init]
+(global $multipleabstractparents.MultipleAbstractParents.StringList.itable (ref $multipleabstractparents.MultipleAbstractParents.StringList.itable) (struct.new $multipleabstractparents.MultipleAbstractParents.StringList.itable 
+ (struct.new $multipleabstractparents.MultipleAbstractParents.List.vtable
+  (ref.func $m_getFoo__java_lang_Object__java_lang_String@multipleabstractparents.MultipleAbstractParents.AbstractStringList)
+ )
+ (struct.new $multipleabstractparents.MultipleAbstractParents.IStringList.vtable
+  (ref.func $m_getFoo__java_lang_String__java_lang_String@multipleabstractparents.MultipleAbstractParents.AbstractStringList)
+ )
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+ ))
+
+;;; Code for multipleabstractparents.MultipleAbstractParents.StringListChild [vtable.init]
+(global $multipleabstractparents.MultipleAbstractParents.StringListChild.vtable (ref $multipleabstractparents.MultipleAbstractParents.StringListChild.vtable) 
+ (struct.new $multipleabstractparents.MultipleAbstractParents.StringListChild.vtable
+  (ref.func $m_equals__java_lang_Object__boolean@java.lang.Object)
+  (ref.func $m_hashCode__int@java.lang.Object)
+  (ref.func $m_toString__java_lang_String@java.lang.Object)
+  (ref.func $m_getClass__java_lang_Class@multipleabstractparents.MultipleAbstractParents.StringListChild)
+  (ref.func $m_getFoo__java_lang_Object__java_lang_String@multipleabstractparents.MultipleAbstractParents.AbstractStringList)
+  (ref.func $m_getFoo__java_lang_String__java_lang_String@multipleabstractparents.MultipleAbstractParents.AbstractStringList)
+ )
+)
+
+;;; Code for multipleabstractparents.MultipleAbstractParents.StringListChild [itable.init]
+(global $multipleabstractparents.MultipleAbstractParents.StringListChild.itable (ref $multipleabstractparents.MultipleAbstractParents.StringListChild.itable) (struct.new $multipleabstractparents.MultipleAbstractParents.StringListChild.itable 
+ (struct.new $multipleabstractparents.MultipleAbstractParents.List.vtable
+  (ref.func $m_getFoo__java_lang_Object__java_lang_String@multipleabstractparents.MultipleAbstractParents.AbstractStringList)
+ )
+ (struct.new $multipleabstractparents.MultipleAbstractParents.IStringList.vtable
+  (ref.func $m_getFoo__java_lang_String__java_lang_String@multipleabstractparents.MultipleAbstractParents.AbstractStringList)
+ )
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+ ))
+
+;;; Code for multipleabstractparents.MultipleAbstractParents [CLASS]
+(type $multipleabstractparents.MultipleAbstractParents (struct_subtype 
+ (field $vtable (ref $multipleabstractparents.MultipleAbstractParents.vtable)) 
+ (field $itable (ref $multipleabstractparents.MultipleAbstractParents.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+  $java.lang.Object)
+)
+(type $multipleabstractparents.MultipleAbstractParents.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+  $java.lang.Object.vtable)
+)
+(type $multipleabstractparents.MultipleAbstractParents.itable (struct_subtype 
+(field $slot0 (ref null struct))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $java.lang.Object.itable))
+
+;;; MultipleAbstractParents MultipleAbstractParents.$create()
+(func $$create__@multipleabstractparents.MultipleAbstractParents
+ (result (ref null $multipleabstractparents.MultipleAbstractParents))
+ ;;@ multipleabstractparents/MultipleAbstractParents.java:18:13
+ (local $$instance (ref null $multipleabstractparents.MultipleAbstractParents))
+ (block
+  ;; MultipleAbstractParents $instance = new MultipleAbstractParents.<init>(0);
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:18:13
+  (local.set $$instance (struct.new $multipleabstractparents.MultipleAbstractParents (ref.as_non_null (global.get $multipleabstractparents.MultipleAbstractParents.vtable)) (ref.as_non_null (global.get $multipleabstractparents.MultipleAbstractParents.itable)) (i32.const 0)))
+  ;; $instance.$ctor();
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:18:13
+  (call $$ctor__void_$p_multipleabstractparents_MultipleAbstractParents@multipleabstractparents.MultipleAbstractParents (ref.as_non_null (local.get $$instance)))
+  ;; return $instance;
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:18:13
+  (return (local.get $$instance))
+ )
+)
+
+;;; void MultipleAbstractParents.$ctor()
+(func $$ctor__void_$p_multipleabstractparents_MultipleAbstractParents@multipleabstractparents.MultipleAbstractParents
+ (param $this (ref null $multipleabstractparents.MultipleAbstractParents))
+ ;;@ multipleabstractparents/MultipleAbstractParents.java:18:13
+ (block
+  ;; multipleabstractparents.MultipleAbstractParents.$clinit();
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:18:13
+  (call $$clinit__void@multipleabstractparents.MultipleAbstractParents )
+  ;; Object.this.$ctor();
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:18:13
+  (call $$ctor__void_$p_java_lang_Object@java.lang.Object (ref.as_non_null (local.get $this)))
+ )
+)
+
+;;; void MultipleAbstractParents.main(String... args)
+(func $m_main__arrayOf_java_lang_String__void@multipleabstractparents.MultipleAbstractParents
+ (param $args (ref null $javaemul.internal.WasmArray.OfObject))
+ ;;@ multipleabstractparents/MultipleAbstractParents.java:59:21
+ (block
+  ;; multipleabstractparents.MultipleAbstractParents.$clinit();
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:59:42
+  (call $$clinit__void@multipleabstractparents.MultipleAbstractParents )
+ )
+)
+
+;;; void MultipleAbstractParents.$clinit()
+(func $$clinit__void@multipleabstractparents.MultipleAbstractParents
+ ;;@ multipleabstractparents/MultipleAbstractParents.java:18:13
+ (block
+  ;; if (multipleabstractparents.MultipleAbstractParents.$initialized) return;
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:18:13
+  (if (global.get $f_$initialized__multipleabstractparents_MultipleAbstractParents)
+   (then
+    ;; return;
+    ;;@ multipleabstractparents/MultipleAbstractParents.java:18:13
+    (return )
+   )
+  )
+  ;; (multipleabstractparents.MultipleAbstractParents.$initialized = true);
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:18:13
+  (global.set $f_$initialized__multipleabstractparents_MultipleAbstractParents (i32.const 1))
+  ;; java.lang.Object.$clinit();
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:18:13
+  (call $$clinit__void@java.lang.Object )
+ )
+)
+
+;;; Class<?> MultipleAbstractParents.getClass()
+(func $m_getClass__java_lang_Class@multipleabstractparents.MultipleAbstractParents
+ (type $function.m_getClass__java_lang_Class)
+ (param $this.untyped (ref $java.lang.Object))
+ (result (ref null $java.lang.Class))
+ (local $this (ref null $multipleabstractparents.MultipleAbstractParents))
+ (local.set $this (ref.cast_static $multipleabstractparents.MultipleAbstractParents (local.get $this.untyped)))
+ (block
+  ;; return javaemul.internal.ClassLiteralPool.$getMultipleabstractparents.MultipleAbstractParents();
+  (return (call $function.no.side.effects.$getMultipleabstractparents.MultipleAbstractParents__java_lang_Class (ref.func $$getMultipleabstractparents.MultipleAbstractParents__java_lang_Class@javaemul.internal.ClassLiteralPool) ))
+ )
+)
+(elem declare func $m_getClass__java_lang_Class@multipleabstractparents.MultipleAbstractParents)
+
+;;; Code for multipleabstractparents.MultipleAbstractParents.List [INTERFACE]
+(type $multipleabstractparents.MultipleAbstractParents.List.vtable (struct 
+ (field $m_getFoo__java_lang_Object__java_lang_String (ref $function.m_getFoo__java_lang_Object__java_lang_String))
+ )
+)
+
+;;; void List.$clinit()
+(func $$clinit__void@multipleabstractparents.MultipleAbstractParents.List
+ ;;@ multipleabstractparents/MultipleAbstractParents.java:19:19
+ (block
+  ;; if (multipleabstractparents.MultipleAbstractParents.List.$initialized) return;
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:19:19
+  (if (global.get $f_$initialized__multipleabstractparents_MultipleAbstractParents_List)
+   (then
+    ;; return;
+    ;;@ multipleabstractparents/MultipleAbstractParents.java:19:19
+    (return )
+   )
+  )
+  ;; (multipleabstractparents.MultipleAbstractParents.List.$initialized = true);
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:19:19
+  (global.set $f_$initialized__multipleabstractparents_MultipleAbstractParents_List (i32.const 1))
+ )
+)
+
+;;; Code for multipleabstractparents.MultipleAbstractParents.Collection [INTERFACE]
+(type $multipleabstractparents.MultipleAbstractParents.Collection.vtable (struct 
+ (field $m_getFoo__java_lang_Object__java_lang_String (ref $function.m_getFoo__java_lang_Object__java_lang_String))
+ )
+)
+
+;;; void Collection.$clinit()
+(func $$clinit__void@multipleabstractparents.MultipleAbstractParents.Collection
+ ;;@ multipleabstractparents/MultipleAbstractParents.java:23:19
+ (block
+  ;; if (multipleabstractparents.MultipleAbstractParents.Collection.$initialized) return;
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:23:19
+  (if (global.get $f_$initialized__multipleabstractparents_MultipleAbstractParents_Collection)
+   (then
+    ;; return;
+    ;;@ multipleabstractparents/MultipleAbstractParents.java:23:19
+    (return )
+   )
+  )
+  ;; (multipleabstractparents.MultipleAbstractParents.Collection.$initialized = true);
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:23:19
+  (global.set $f_$initialized__multipleabstractparents_MultipleAbstractParents_Collection (i32.const 1))
+ )
+)
+
+;;; Code for multipleabstractparents.MultipleAbstractParents.AbstractListCollection [CLASS]
+(type $multipleabstractparents.MultipleAbstractParents.AbstractListCollection (struct_subtype 
+ (field $vtable (ref $multipleabstractparents.MultipleAbstractParents.AbstractListCollection.vtable)) 
+ (field $itable (ref $multipleabstractparents.MultipleAbstractParents.AbstractListCollection.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+  $java.lang.Object)
+)
+(type $multipleabstractparents.MultipleAbstractParents.AbstractListCollection.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+  $java.lang.Object.vtable)
+)
+(type $multipleabstractparents.MultipleAbstractParents.AbstractListCollection.itable (struct_subtype 
+(field $slot0 (ref $multipleabstractparents.MultipleAbstractParents.List.vtable))
+(field $slot1 (ref $multipleabstractparents.MultipleAbstractParents.Collection.vtable))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $java.lang.Object.itable))
+
+;;; void AbstractListCollection.$ctor()
+(func $$ctor__void_$p_multipleabstractparents_MultipleAbstractParents_AbstractListCollection@multipleabstractparents.MultipleAbstractParents.AbstractListCollection
+ (param $this (ref null $multipleabstractparents.MultipleAbstractParents.AbstractListCollection))
+ ;;@ multipleabstractparents/MultipleAbstractParents.java:27:31
+ (block
+  ;; multipleabstractparents.MultipleAbstractParents.AbstractListCollection.$clinit();
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:27:31
+  (call $$clinit__void@multipleabstractparents.MultipleAbstractParents.AbstractListCollection )
+  ;; Object.this.$ctor();
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:27:31
+  (call $$ctor__void_$p_java_lang_Object@java.lang.Object (ref.as_non_null (local.get $this)))
+ )
+)
+
+;;; void AbstractListCollection.$clinit()
+(func $$clinit__void@multipleabstractparents.MultipleAbstractParents.AbstractListCollection
+ ;;@ multipleabstractparents/MultipleAbstractParents.java:27:31
+ (block
+  ;; if (multipleabstractparents.MultipleAbstractParents.AbstractListCollection.$initialized) return;
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:27:31
+  (if (global.get $f_$initialized__multipleabstractparents_MultipleAbstractParents_AbstractListCollection)
+   (then
+    ;; return;
+    ;;@ multipleabstractparents/MultipleAbstractParents.java:27:31
+    (return )
+   )
+  )
+  ;; (multipleabstractparents.MultipleAbstractParents.AbstractListCollection.$initialized = true);
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:27:31
+  (global.set $f_$initialized__multipleabstractparents_MultipleAbstractParents_AbstractListCollection (i32.const 1))
+  ;; java.lang.Object.$clinit();
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:27:31
+  (call $$clinit__void@java.lang.Object )
+ )
+)
+
+;;; Code for multipleabstractparents.MultipleAbstractParents.AbstractCollection [CLASS]
+(type $multipleabstractparents.MultipleAbstractParents.AbstractCollection (struct_subtype 
+ (field $vtable (ref $multipleabstractparents.MultipleAbstractParents.AbstractCollection.vtable)) 
+ (field $itable (ref $multipleabstractparents.MultipleAbstractParents.AbstractCollection.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+  $java.lang.Object)
+)
+(type $multipleabstractparents.MultipleAbstractParents.AbstractCollection.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+ (field $m_getFoo__java_lang_Object__java_lang_String (ref $function.m_getFoo__java_lang_Object__java_lang_String))
+  $java.lang.Object.vtable)
+)
+(type $multipleabstractparents.MultipleAbstractParents.AbstractCollection.itable (struct_subtype 
+(field $slot0 (ref null struct))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $java.lang.Object.itable))
+
+;;; void AbstractCollection.$ctor()
+(func $$ctor__void_$p_multipleabstractparents_MultipleAbstractParents_AbstractCollection@multipleabstractparents.MultipleAbstractParents.AbstractCollection
+ (param $this (ref null $multipleabstractparents.MultipleAbstractParents.AbstractCollection))
+ ;;@ multipleabstractparents/MultipleAbstractParents.java:29:31
+ (block
+  ;; multipleabstractparents.MultipleAbstractParents.AbstractCollection.$clinit();
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:29:31
+  (call $$clinit__void@multipleabstractparents.MultipleAbstractParents.AbstractCollection )
+  ;; Object.this.$ctor();
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:29:31
+  (call $$ctor__void_$p_java_lang_Object@java.lang.Object (ref.as_non_null (local.get $this)))
+ )
+)
+
+;;; String AbstractCollection.getFoo(T t)
+(func $m_getFoo__java_lang_Object__java_lang_String@multipleabstractparents.MultipleAbstractParents.AbstractCollection
+ (type $function.m_getFoo__java_lang_Object__java_lang_String)
+ (param $this.untyped (ref $java.lang.Object))
+ (param $t (ref null $java.lang.Object))
+ (result (ref null $java.lang.String))
+ ;;@ multipleabstractparents/MultipleAbstractParents.java:31:18
+ (local $this (ref null $multipleabstractparents.MultipleAbstractParents.AbstractCollection))
+ (local.set $this (ref.cast_static $multipleabstractparents.MultipleAbstractParents.AbstractCollection (local.get $this.untyped)))
+ (block
+  ;; return javaemul.internal.StringPool.$getString_|AbstractColl...|();
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:32:6
+  (return (call $function.no.side.effects.$getString_|AbstractColl...|__java_lang_String (ref.func $$getString_|AbstractColl...|__java_lang_String@javaemul.internal.StringPool) ))
+ )
+)
+(elem declare func $m_getFoo__java_lang_Object__java_lang_String@multipleabstractparents.MultipleAbstractParents.AbstractCollection)
+
+;;; void AbstractCollection.$clinit()
+(func $$clinit__void@multipleabstractparents.MultipleAbstractParents.AbstractCollection
+ ;;@ multipleabstractparents/MultipleAbstractParents.java:29:31
+ (block
+  ;; if (multipleabstractparents.MultipleAbstractParents.AbstractCollection.$initialized) return;
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:29:31
+  (if (global.get $f_$initialized__multipleabstractparents_MultipleAbstractParents_AbstractCollection)
+   (then
+    ;; return;
+    ;;@ multipleabstractparents/MultipleAbstractParents.java:29:31
+    (return )
+   )
+  )
+  ;; (multipleabstractparents.MultipleAbstractParents.AbstractCollection.$initialized = true);
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:29:31
+  (global.set $f_$initialized__multipleabstractparents_MultipleAbstractParents_AbstractCollection (i32.const 1))
+  ;; java.lang.Object.$clinit();
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:29:31
+  (call $$clinit__void@java.lang.Object )
+ )
+)
+
+;;; Code for multipleabstractparents.MultipleAbstractParents.AbstractList [CLASS]
+(type $multipleabstractparents.MultipleAbstractParents.AbstractList (struct_subtype 
+ (field $vtable (ref $multipleabstractparents.MultipleAbstractParents.AbstractList.vtable)) 
+ (field $itable (ref $multipleabstractparents.MultipleAbstractParents.AbstractList.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+  $multipleabstractparents.MultipleAbstractParents.AbstractCollection)
+)
+(type $multipleabstractparents.MultipleAbstractParents.AbstractList.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+ (field $m_getFoo__java_lang_Object__java_lang_String (ref $function.m_getFoo__java_lang_Object__java_lang_String))
+  $multipleabstractparents.MultipleAbstractParents.AbstractCollection.vtable)
+)
+(type $multipleabstractparents.MultipleAbstractParents.AbstractList.itable (struct_subtype 
+(field $slot0 (ref $multipleabstractparents.MultipleAbstractParents.List.vtable))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $multipleabstractparents.MultipleAbstractParents.AbstractCollection.itable))
+
+;;; void AbstractList.$ctor()
+(func $$ctor__void_$p_multipleabstractparents_MultipleAbstractParents_AbstractList@multipleabstractparents.MultipleAbstractParents.AbstractList
+ (param $this (ref null $multipleabstractparents.MultipleAbstractParents.AbstractList))
+ ;;@ multipleabstractparents/MultipleAbstractParents.java:36:31
+ (block
+  ;; multipleabstractparents.MultipleAbstractParents.AbstractList.$clinit();
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:36:31
+  (call $$clinit__void@multipleabstractparents.MultipleAbstractParents.AbstractList )
+  ;; AbstractCollection.this.$ctor();
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:36:31
+  (call $$ctor__void_$p_multipleabstractparents_MultipleAbstractParents_AbstractCollection@multipleabstractparents.MultipleAbstractParents.AbstractCollection (ref.as_non_null (local.get $this)))
+ )
+)
+
+;;; void AbstractList.$clinit()
+(func $$clinit__void@multipleabstractparents.MultipleAbstractParents.AbstractList
+ ;;@ multipleabstractparents/MultipleAbstractParents.java:36:31
+ (block
+  ;; if (multipleabstractparents.MultipleAbstractParents.AbstractList.$initialized) return;
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:36:31
+  (if (global.get $f_$initialized__multipleabstractparents_MultipleAbstractParents_AbstractList)
+   (then
+    ;; return;
+    ;;@ multipleabstractparents/MultipleAbstractParents.java:36:31
+    (return )
+   )
+  )
+  ;; (multipleabstractparents.MultipleAbstractParents.AbstractList.$initialized = true);
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:36:31
+  (global.set $f_$initialized__multipleabstractparents_MultipleAbstractParents_AbstractList (i32.const 1))
+  ;; multipleabstractparents.MultipleAbstractParents.AbstractCollection.$clinit();
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:36:31
+  (call $$clinit__void@multipleabstractparents.MultipleAbstractParents.AbstractCollection )
+ )
+)
+
+;;; Code for multipleabstractparents.MultipleAbstractParents.AbstractList2 [CLASS]
+(type $multipleabstractparents.MultipleAbstractParents.AbstractList2 (struct_subtype 
+ (field $vtable (ref $multipleabstractparents.MultipleAbstractParents.AbstractList2.vtable)) 
+ (field $itable (ref $multipleabstractparents.MultipleAbstractParents.AbstractList2.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+  $java.lang.Object)
+)
+(type $multipleabstractparents.MultipleAbstractParents.AbstractList2.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+  $java.lang.Object.vtable)
+)
+(type $multipleabstractparents.MultipleAbstractParents.AbstractList2.itable (struct_subtype 
+(field $slot0 (ref $multipleabstractparents.MultipleAbstractParents.List.vtable))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $java.lang.Object.itable))
+
+;;; void AbstractList2.$ctor()
+(func $$ctor__void_$p_multipleabstractparents_MultipleAbstractParents_AbstractList2@multipleabstractparents.MultipleAbstractParents.AbstractList2
+ (param $this (ref null $multipleabstractparents.MultipleAbstractParents.AbstractList2))
+ ;;@ multipleabstractparents/MultipleAbstractParents.java:38:31
+ (block
+  ;; multipleabstractparents.MultipleAbstractParents.AbstractList2.$clinit();
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:38:31
+  (call $$clinit__void@multipleabstractparents.MultipleAbstractParents.AbstractList2 )
+  ;; Object.this.$ctor();
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:38:31
+  (call $$ctor__void_$p_java_lang_Object@java.lang.Object (ref.as_non_null (local.get $this)))
+ )
+)
+
+;;; void AbstractList2.$clinit()
+(func $$clinit__void@multipleabstractparents.MultipleAbstractParents.AbstractList2
+ ;;@ multipleabstractparents/MultipleAbstractParents.java:38:31
+ (block
+  ;; if (multipleabstractparents.MultipleAbstractParents.AbstractList2.$initialized) return;
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:38:31
+  (if (global.get $f_$initialized__multipleabstractparents_MultipleAbstractParents_AbstractList2)
+   (then
+    ;; return;
+    ;;@ multipleabstractparents/MultipleAbstractParents.java:38:31
+    (return )
+   )
+  )
+  ;; (multipleabstractparents.MultipleAbstractParents.AbstractList2.$initialized = true);
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:38:31
+  (global.set $f_$initialized__multipleabstractparents_MultipleAbstractParents_AbstractList2 (i32.const 1))
+  ;; java.lang.Object.$clinit();
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:38:31
+  (call $$clinit__void@java.lang.Object )
+ )
+)
+
+;;; Code for multipleabstractparents.MultipleAbstractParents.ArrayList [CLASS]
+(type $multipleabstractparents.MultipleAbstractParents.ArrayList (struct_subtype 
+ (field $vtable (ref $multipleabstractparents.MultipleAbstractParents.ArrayList.vtable)) 
+ (field $itable (ref $multipleabstractparents.MultipleAbstractParents.ArrayList.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+  $multipleabstractparents.MultipleAbstractParents.AbstractList)
+)
+(type $multipleabstractparents.MultipleAbstractParents.ArrayList.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+ (field $m_getFoo__java_lang_Object__java_lang_String (ref $function.m_getFoo__java_lang_Object__java_lang_String))
+  $multipleabstractparents.MultipleAbstractParents.AbstractList.vtable)
+)
+(type $multipleabstractparents.MultipleAbstractParents.ArrayList.itable (struct_subtype 
+(field $slot0 (ref $multipleabstractparents.MultipleAbstractParents.List.vtable))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $multipleabstractparents.MultipleAbstractParents.AbstractList.itable))
+
+;;; ArrayList<T> ArrayList.$create()
+(func $$create__@multipleabstractparents.MultipleAbstractParents.ArrayList
+ (result (ref null $multipleabstractparents.MultipleAbstractParents.ArrayList))
+ ;;@ multipleabstractparents/MultipleAbstractParents.java:40:22
+ (local $$instance (ref null $multipleabstractparents.MultipleAbstractParents.ArrayList))
+ (block
+  ;; ArrayList<T> $instance = new ArrayList.<init>(0);
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:40:22
+  (local.set $$instance (struct.new $multipleabstractparents.MultipleAbstractParents.ArrayList (ref.as_non_null (global.get $multipleabstractparents.MultipleAbstractParents.ArrayList.vtable)) (ref.as_non_null (global.get $multipleabstractparents.MultipleAbstractParents.ArrayList.itable)) (i32.const 0)))
+  ;; $instance.$ctor();
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:40:22
+  (call $$ctor__void_$p_multipleabstractparents_MultipleAbstractParents_ArrayList@multipleabstractparents.MultipleAbstractParents.ArrayList (ref.as_non_null (local.get $$instance)))
+  ;; return $instance;
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:40:22
+  (return (local.get $$instance))
+ )
+)
+
+;;; void ArrayList.$ctor()
+(func $$ctor__void_$p_multipleabstractparents_MultipleAbstractParents_ArrayList@multipleabstractparents.MultipleAbstractParents.ArrayList
+ (param $this (ref null $multipleabstractparents.MultipleAbstractParents.ArrayList))
+ ;;@ multipleabstractparents/MultipleAbstractParents.java:40:22
+ (block
+  ;; multipleabstractparents.MultipleAbstractParents.ArrayList.$clinit();
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:40:22
+  (call $$clinit__void@multipleabstractparents.MultipleAbstractParents.ArrayList )
+  ;; AbstractList.this.$ctor();
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:40:22
+  (call $$ctor__void_$p_multipleabstractparents_MultipleAbstractParents_AbstractList@multipleabstractparents.MultipleAbstractParents.AbstractList (ref.as_non_null (local.get $this)))
+ )
+)
+
+;;; void ArrayList.$clinit()
+(func $$clinit__void@multipleabstractparents.MultipleAbstractParents.ArrayList
+ ;;@ multipleabstractparents/MultipleAbstractParents.java:40:22
+ (block
+  ;; if (multipleabstractparents.MultipleAbstractParents.ArrayList.$initialized) return;
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:40:22
+  (if (global.get $f_$initialized__multipleabstractparents_MultipleAbstractParents_ArrayList)
+   (then
+    ;; return;
+    ;;@ multipleabstractparents/MultipleAbstractParents.java:40:22
+    (return )
+   )
+  )
+  ;; (multipleabstractparents.MultipleAbstractParents.ArrayList.$initialized = true);
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:40:22
+  (global.set $f_$initialized__multipleabstractparents_MultipleAbstractParents_ArrayList (i32.const 1))
+  ;; multipleabstractparents.MultipleAbstractParents.AbstractList.$clinit();
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:40:22
+  (call $$clinit__void@multipleabstractparents.MultipleAbstractParents.AbstractList )
+ )
+)
+
+;;; Class<?> ArrayList.getClass()
+(func $m_getClass__java_lang_Class@multipleabstractparents.MultipleAbstractParents.ArrayList
+ (type $function.m_getClass__java_lang_Class)
+ (param $this.untyped (ref $java.lang.Object))
+ (result (ref null $java.lang.Class))
+ (local $this (ref null $multipleabstractparents.MultipleAbstractParents.ArrayList))
+ (local.set $this (ref.cast_static $multipleabstractparents.MultipleAbstractParents.ArrayList (local.get $this.untyped)))
+ (block
+  ;; return javaemul.internal.ClassLiteralPool.$getMultipleabstractparents.MultipleAbstractParents.ArrayList();
+  (return (call $function.no.side.effects.$getMultipleabstractparents.MultipleAbstractParents.ArrayList__java_lang_Class (ref.func $$getMultipleabstractparents.MultipleAbstractParents.ArrayList__java_lang_Class@javaemul.internal.ClassLiteralPool) ))
+ )
+)
+(elem declare func $m_getClass__java_lang_Class@multipleabstractparents.MultipleAbstractParents.ArrayList)
+
+;;; Code for multipleabstractparents.MultipleAbstractParents.IStringList [INTERFACE]
+(type $multipleabstractparents.MultipleAbstractParents.IStringList.vtable (struct 
+ (field $m_getFoo__java_lang_String__java_lang_String (ref $function.m_getFoo__java_lang_String__java_lang_String))
+ )
+)
+
+;;; void IStringList.$clinit()
+(func $$clinit__void@multipleabstractparents.MultipleAbstractParents.IStringList
+ ;;@ multipleabstractparents/MultipleAbstractParents.java:42:19
+ (block
+  ;; if (multipleabstractparents.MultipleAbstractParents.IStringList.$initialized) return;
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:42:19
+  (if (global.get $f_$initialized__multipleabstractparents_MultipleAbstractParents_IStringList)
+   (then
+    ;; return;
+    ;;@ multipleabstractparents/MultipleAbstractParents.java:42:19
+    (return )
+   )
+  )
+  ;; (multipleabstractparents.MultipleAbstractParents.IStringList.$initialized = true);
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:42:19
+  (global.set $f_$initialized__multipleabstractparents_MultipleAbstractParents_IStringList (i32.const 1))
+ )
+)
+
+;;; Code for multipleabstractparents.MultipleAbstractParents.AbstractStringList [CLASS]
+(type $multipleabstractparents.MultipleAbstractParents.AbstractStringList (struct_subtype 
+ (field $vtable (ref $multipleabstractparents.MultipleAbstractParents.AbstractStringList.vtable)) 
+ (field $itable (ref $multipleabstractparents.MultipleAbstractParents.AbstractStringList.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+  $multipleabstractparents.MultipleAbstractParents.AbstractList)
+)
+(type $multipleabstractparents.MultipleAbstractParents.AbstractStringList.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+ (field $m_getFoo__java_lang_Object__java_lang_String (ref $function.m_getFoo__java_lang_Object__java_lang_String))
+ (field $m_getFoo__java_lang_String__java_lang_String (ref $function.m_getFoo__java_lang_String__java_lang_String))
+  $multipleabstractparents.MultipleAbstractParents.AbstractList.vtable)
+)
+(type $multipleabstractparents.MultipleAbstractParents.AbstractStringList.itable (struct_subtype 
+(field $slot0 (ref $multipleabstractparents.MultipleAbstractParents.List.vtable))
+(field $slot1 (ref $multipleabstractparents.MultipleAbstractParents.IStringList.vtable))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $multipleabstractparents.MultipleAbstractParents.AbstractList.itable))
+
+;;; void AbstractStringList.$ctor()
+(func $$ctor__void_$p_multipleabstractparents_MultipleAbstractParents_AbstractStringList@multipleabstractparents.MultipleAbstractParents.AbstractStringList
+ (param $this (ref null $multipleabstractparents.MultipleAbstractParents.AbstractStringList))
+ ;;@ multipleabstractparents/MultipleAbstractParents.java:47:31
+ (block
+  ;; multipleabstractparents.MultipleAbstractParents.AbstractStringList.$clinit();
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:47:31
+  (call $$clinit__void@multipleabstractparents.MultipleAbstractParents.AbstractStringList )
+  ;; AbstractList.this.$ctor();
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:47:31
+  (call $$ctor__void_$p_multipleabstractparents_MultipleAbstractParents_AbstractList@multipleabstractparents.MultipleAbstractParents.AbstractList (ref.as_non_null (local.get $this)))
+ )
+)
+
+;;; String AbstractStringList.getFoo(Object arg0)
+(func $m_getFoo__java_lang_Object__java_lang_String@multipleabstractparents.MultipleAbstractParents.AbstractStringList
+ (type $function.m_getFoo__java_lang_Object__java_lang_String)
+ (param $this.untyped (ref $java.lang.Object))
+ (param $arg0 (ref null $java.lang.Object))
+ (result (ref null $java.lang.String))
+ ;;@ multipleabstractparents/MultipleAbstractParents.java:47:31
+ (local $this (ref null $multipleabstractparents.MultipleAbstractParents.AbstractStringList))
+ (local.set $this (ref.cast_static $multipleabstractparents.MultipleAbstractParents.AbstractStringList (local.get $this.untyped)))
+ (block
+  ;; return AbstractStringList.this.getFoo(((String) arg0));
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:47:31
+  (return (call_ref $function.m_getFoo__java_lang_String__java_lang_String (ref.as_non_null (local.get $this))(ref.cast_static $java.lang.String (local.get $arg0))(struct.get $multipleabstractparents.MultipleAbstractParents.AbstractStringList.vtable $m_getFoo__java_lang_String__java_lang_String (struct.get $multipleabstractparents.MultipleAbstractParents.AbstractStringList $vtable(local.get $this)))))
+ )
+)
+(elem declare func $m_getFoo__java_lang_Object__java_lang_String@multipleabstractparents.MultipleAbstractParents.AbstractStringList)
+
+;;; String AbstractStringList.getFoo(String arg0)
+(func $m_getFoo__java_lang_String__java_lang_String@multipleabstractparents.MultipleAbstractParents.AbstractStringList
+ (type $function.m_getFoo__java_lang_String__java_lang_String)
+ (param $this.untyped (ref $java.lang.Object))
+ (param $arg0 (ref null $java.lang.String))
+ (result (ref null $java.lang.String))
+ ;;@ multipleabstractparents/MultipleAbstractParents.java:47:31
+ (local $this (ref null $multipleabstractparents.MultipleAbstractParents.AbstractStringList))
+ (local.set $this (ref.cast_static $multipleabstractparents.MultipleAbstractParents.AbstractStringList (local.get $this.untyped)))
+ (block
+  ;; return super.getFoo(arg0);
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:47:31
+  (return (call $m_getFoo__java_lang_Object__java_lang_String@multipleabstractparents.MultipleAbstractParents.AbstractCollection (ref.as_non_null (local.get $this))(local.get $arg0)))
+ )
+)
+(elem declare func $m_getFoo__java_lang_String__java_lang_String@multipleabstractparents.MultipleAbstractParents.AbstractStringList)
+
+;;; void AbstractStringList.$clinit()
+(func $$clinit__void@multipleabstractparents.MultipleAbstractParents.AbstractStringList
+ ;;@ multipleabstractparents/MultipleAbstractParents.java:47:31
+ (block
+  ;; if (multipleabstractparents.MultipleAbstractParents.AbstractStringList.$initialized) return;
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:47:31
+  (if (global.get $f_$initialized__multipleabstractparents_MultipleAbstractParents_AbstractStringList)
+   (then
+    ;; return;
+    ;;@ multipleabstractparents/MultipleAbstractParents.java:47:31
+    (return )
+   )
+  )
+  ;; (multipleabstractparents.MultipleAbstractParents.AbstractStringList.$initialized = true);
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:47:31
+  (global.set $f_$initialized__multipleabstractparents_MultipleAbstractParents_AbstractStringList (i32.const 1))
+  ;; multipleabstractparents.MultipleAbstractParents.AbstractList.$clinit();
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:47:31
+  (call $$clinit__void@multipleabstractparents.MultipleAbstractParents.AbstractList )
+ )
+)
+
+;;; Code for multipleabstractparents.MultipleAbstractParents.AbstractStringList2 [CLASS]
+(type $multipleabstractparents.MultipleAbstractParents.AbstractStringList2 (struct_subtype 
+ (field $vtable (ref $multipleabstractparents.MultipleAbstractParents.AbstractStringList2.vtable)) 
+ (field $itable (ref $multipleabstractparents.MultipleAbstractParents.AbstractStringList2.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+  $multipleabstractparents.MultipleAbstractParents.AbstractList2)
+)
+(type $multipleabstractparents.MultipleAbstractParents.AbstractStringList2.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+ (field $m_getFoo__java_lang_String__java_lang_String (ref $function.m_getFoo__java_lang_String__java_lang_String))
+ (field $m_getFoo__java_lang_Object__java_lang_String (ref $function.m_getFoo__java_lang_Object__java_lang_String))
+  $multipleabstractparents.MultipleAbstractParents.AbstractList2.vtable)
+)
+(type $multipleabstractparents.MultipleAbstractParents.AbstractStringList2.itable (struct_subtype 
+(field $slot0 (ref $multipleabstractparents.MultipleAbstractParents.List.vtable))
+(field $slot1 (ref $multipleabstractparents.MultipleAbstractParents.IStringList.vtable))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $multipleabstractparents.MultipleAbstractParents.AbstractList2.itable))
+
+;;; void AbstractStringList2.$ctor()
+(func $$ctor__void_$p_multipleabstractparents_MultipleAbstractParents_AbstractStringList2@multipleabstractparents.MultipleAbstractParents.AbstractStringList2
+ (param $this (ref null $multipleabstractparents.MultipleAbstractParents.AbstractStringList2))
+ ;;@ multipleabstractparents/MultipleAbstractParents.java:50:31
+ (block
+  ;; multipleabstractparents.MultipleAbstractParents.AbstractStringList2.$clinit();
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:50:31
+  (call $$clinit__void@multipleabstractparents.MultipleAbstractParents.AbstractStringList2 )
+  ;; AbstractList2.this.$ctor();
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:50:31
+  (call $$ctor__void_$p_multipleabstractparents_MultipleAbstractParents_AbstractList2@multipleabstractparents.MultipleAbstractParents.AbstractList2 (ref.as_non_null (local.get $this)))
+ )
+)
+
+;;; String AbstractStringList2.getFoo(String arg0)
+(func $m_getFoo__java_lang_String__java_lang_String@multipleabstractparents.MultipleAbstractParents.AbstractStringList2
+ (type $function.m_getFoo__java_lang_String__java_lang_String)
+ (param $this.untyped (ref $java.lang.Object))
+ (param $arg0 (ref null $java.lang.String))
+ (result (ref null $java.lang.String))
+ ;;@ multipleabstractparents/MultipleAbstractParents.java:50:31
+ (local $this (ref null $multipleabstractparents.MultipleAbstractParents.AbstractStringList2))
+ (local.set $this (ref.cast_static $multipleabstractparents.MultipleAbstractParents.AbstractStringList2 (local.get $this.untyped)))
+ (block
+  ;; return AbstractStringList2.this.getFoo(arg0);
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:50:31
+  (return (call_ref $function.m_getFoo__java_lang_Object__java_lang_String (ref.as_non_null (local.get $this))(local.get $arg0)(struct.get $multipleabstractparents.MultipleAbstractParents.AbstractStringList2.vtable $m_getFoo__java_lang_Object__java_lang_String (struct.get $multipleabstractparents.MultipleAbstractParents.AbstractStringList2 $vtable(local.get $this)))))
+ )
+)
+(elem declare func $m_getFoo__java_lang_String__java_lang_String@multipleabstractparents.MultipleAbstractParents.AbstractStringList2)
+
+;;; void AbstractStringList2.$clinit()
+(func $$clinit__void@multipleabstractparents.MultipleAbstractParents.AbstractStringList2
+ ;;@ multipleabstractparents/MultipleAbstractParents.java:50:31
+ (block
+  ;; if (multipleabstractparents.MultipleAbstractParents.AbstractStringList2.$initialized) return;
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:50:31
+  (if (global.get $f_$initialized__multipleabstractparents_MultipleAbstractParents_AbstractStringList2)
+   (then
+    ;; return;
+    ;;@ multipleabstractparents/MultipleAbstractParents.java:50:31
+    (return )
+   )
+  )
+  ;; (multipleabstractparents.MultipleAbstractParents.AbstractStringList2.$initialized = true);
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:50:31
+  (global.set $f_$initialized__multipleabstractparents_MultipleAbstractParents_AbstractStringList2 (i32.const 1))
+  ;; multipleabstractparents.MultipleAbstractParents.AbstractList2.$clinit();
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:50:31
+  (call $$clinit__void@multipleabstractparents.MultipleAbstractParents.AbstractList2 )
+ )
+)
+
+;;; Code for multipleabstractparents.MultipleAbstractParents.AbstractStringList3 [CLASS]
+(type $multipleabstractparents.MultipleAbstractParents.AbstractStringList3 (struct_subtype 
+ (field $vtable (ref $multipleabstractparents.MultipleAbstractParents.AbstractStringList3.vtable)) 
+ (field $itable (ref $multipleabstractparents.MultipleAbstractParents.AbstractStringList3.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+  $multipleabstractparents.MultipleAbstractParents.AbstractList2)
+)
+(type $multipleabstractparents.MultipleAbstractParents.AbstractStringList3.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+  $multipleabstractparents.MultipleAbstractParents.AbstractList2.vtable)
+)
+(type $multipleabstractparents.MultipleAbstractParents.AbstractStringList3.itable (struct_subtype 
+(field $slot0 (ref $multipleabstractparents.MultipleAbstractParents.List.vtable))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $multipleabstractparents.MultipleAbstractParents.AbstractList2.itable))
+
+;;; void AbstractStringList3.$ctor()
+(func $$ctor__void_$p_multipleabstractparents_MultipleAbstractParents_AbstractStringList3@multipleabstractparents.MultipleAbstractParents.AbstractStringList3
+ (param $this (ref null $multipleabstractparents.MultipleAbstractParents.AbstractStringList3))
+ ;;@ multipleabstractparents/MultipleAbstractParents.java:53:31
+ (block
+  ;; multipleabstractparents.MultipleAbstractParents.AbstractStringList3.$clinit();
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:53:31
+  (call $$clinit__void@multipleabstractparents.MultipleAbstractParents.AbstractStringList3 )
+  ;; AbstractList2.this.$ctor();
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:53:31
+  (call $$ctor__void_$p_multipleabstractparents_MultipleAbstractParents_AbstractList2@multipleabstractparents.MultipleAbstractParents.AbstractList2 (ref.as_non_null (local.get $this)))
+ )
+)
+
+;;; void AbstractStringList3.$clinit()
+(func $$clinit__void@multipleabstractparents.MultipleAbstractParents.AbstractStringList3
+ ;;@ multipleabstractparents/MultipleAbstractParents.java:53:31
+ (block
+  ;; if (multipleabstractparents.MultipleAbstractParents.AbstractStringList3.$initialized) return;
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:53:31
+  (if (global.get $f_$initialized__multipleabstractparents_MultipleAbstractParents_AbstractStringList3)
+   (then
+    ;; return;
+    ;;@ multipleabstractparents/MultipleAbstractParents.java:53:31
+    (return )
+   )
+  )
+  ;; (multipleabstractparents.MultipleAbstractParents.AbstractStringList3.$initialized = true);
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:53:31
+  (global.set $f_$initialized__multipleabstractparents_MultipleAbstractParents_AbstractStringList3 (i32.const 1))
+  ;; multipleabstractparents.MultipleAbstractParents.AbstractList2.$clinit();
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:53:31
+  (call $$clinit__void@multipleabstractparents.MultipleAbstractParents.AbstractList2 )
+ )
+)
+
+;;; Code for multipleabstractparents.MultipleAbstractParents.StringList [CLASS]
+(type $multipleabstractparents.MultipleAbstractParents.StringList (struct_subtype 
+ (field $vtable (ref $multipleabstractparents.MultipleAbstractParents.StringList.vtable)) 
+ (field $itable (ref $multipleabstractparents.MultipleAbstractParents.StringList.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+  $multipleabstractparents.MultipleAbstractParents.AbstractStringList)
+)
+(type $multipleabstractparents.MultipleAbstractParents.StringList.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+ (field $m_getFoo__java_lang_Object__java_lang_String (ref $function.m_getFoo__java_lang_Object__java_lang_String))
+ (field $m_getFoo__java_lang_String__java_lang_String (ref $function.m_getFoo__java_lang_String__java_lang_String))
+  $multipleabstractparents.MultipleAbstractParents.AbstractStringList.vtable)
+)
+(type $multipleabstractparents.MultipleAbstractParents.StringList.itable (struct_subtype 
+(field $slot0 (ref $multipleabstractparents.MultipleAbstractParents.List.vtable))
+(field $slot1 (ref $multipleabstractparents.MultipleAbstractParents.IStringList.vtable))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $multipleabstractparents.MultipleAbstractParents.AbstractStringList.itable))
+
+;;; StringList StringList.$create()
+(func $$create__@multipleabstractparents.MultipleAbstractParents.StringList
+ (result (ref null $multipleabstractparents.MultipleAbstractParents.StringList))
+ ;;@ multipleabstractparents/MultipleAbstractParents.java:55:22
+ (local $$instance (ref null $multipleabstractparents.MultipleAbstractParents.StringList))
+ (block
+  ;; StringList $instance = new StringList.<init>(0);
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:55:22
+  (local.set $$instance (struct.new $multipleabstractparents.MultipleAbstractParents.StringList (ref.as_non_null (global.get $multipleabstractparents.MultipleAbstractParents.StringList.vtable)) (ref.as_non_null (global.get $multipleabstractparents.MultipleAbstractParents.StringList.itable)) (i32.const 0)))
+  ;; $instance.$ctor();
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:55:22
+  (call $$ctor__void_$p_multipleabstractparents_MultipleAbstractParents_StringList@multipleabstractparents.MultipleAbstractParents.StringList (ref.as_non_null (local.get $$instance)))
+  ;; return $instance;
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:55:22
+  (return (local.get $$instance))
+ )
+)
+
+;;; void StringList.$ctor()
+(func $$ctor__void_$p_multipleabstractparents_MultipleAbstractParents_StringList@multipleabstractparents.MultipleAbstractParents.StringList
+ (param $this (ref null $multipleabstractparents.MultipleAbstractParents.StringList))
+ ;;@ multipleabstractparents/MultipleAbstractParents.java:55:22
+ (block
+  ;; multipleabstractparents.MultipleAbstractParents.StringList.$clinit();
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:55:22
+  (call $$clinit__void@multipleabstractparents.MultipleAbstractParents.StringList )
+  ;; AbstractStringList.this.$ctor();
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:55:22
+  (call $$ctor__void_$p_multipleabstractparents_MultipleAbstractParents_AbstractStringList@multipleabstractparents.MultipleAbstractParents.AbstractStringList (ref.as_non_null (local.get $this)))
+ )
+)
+
+;;; void StringList.$clinit()
+(func $$clinit__void@multipleabstractparents.MultipleAbstractParents.StringList
+ ;;@ multipleabstractparents/MultipleAbstractParents.java:55:22
+ (block
+  ;; if (multipleabstractparents.MultipleAbstractParents.StringList.$initialized) return;
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:55:22
+  (if (global.get $f_$initialized__multipleabstractparents_MultipleAbstractParents_StringList)
+   (then
+    ;; return;
+    ;;@ multipleabstractparents/MultipleAbstractParents.java:55:22
+    (return )
+   )
+  )
+  ;; (multipleabstractparents.MultipleAbstractParents.StringList.$initialized = true);
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:55:22
+  (global.set $f_$initialized__multipleabstractparents_MultipleAbstractParents_StringList (i32.const 1))
+  ;; multipleabstractparents.MultipleAbstractParents.AbstractStringList.$clinit();
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:55:22
+  (call $$clinit__void@multipleabstractparents.MultipleAbstractParents.AbstractStringList )
+ )
+)
+
+;;; Class<?> StringList.getClass()
+(func $m_getClass__java_lang_Class@multipleabstractparents.MultipleAbstractParents.StringList
+ (type $function.m_getClass__java_lang_Class)
+ (param $this.untyped (ref $java.lang.Object))
+ (result (ref null $java.lang.Class))
+ (local $this (ref null $multipleabstractparents.MultipleAbstractParents.StringList))
+ (local.set $this (ref.cast_static $multipleabstractparents.MultipleAbstractParents.StringList (local.get $this.untyped)))
+ (block
+  ;; return javaemul.internal.ClassLiteralPool.$getMultipleabstractparents.MultipleAbstractParents.StringList();
+  (return (call $function.no.side.effects.$getMultipleabstractparents.MultipleAbstractParents.StringList__java_lang_Class (ref.func $$getMultipleabstractparents.MultipleAbstractParents.StringList__java_lang_Class@javaemul.internal.ClassLiteralPool) ))
+ )
+)
+(elem declare func $m_getClass__java_lang_Class@multipleabstractparents.MultipleAbstractParents.StringList)
+
+;;; Code for multipleabstractparents.MultipleAbstractParents.StringListChild [CLASS]
+(type $multipleabstractparents.MultipleAbstractParents.StringListChild (struct_subtype 
+ (field $vtable (ref $multipleabstractparents.MultipleAbstractParents.StringListChild.vtable)) 
+ (field $itable (ref $multipleabstractparents.MultipleAbstractParents.StringListChild.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+  $multipleabstractparents.MultipleAbstractParents.StringList)
+)
+(type $multipleabstractparents.MultipleAbstractParents.StringListChild.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+ (field $m_getFoo__java_lang_Object__java_lang_String (ref $function.m_getFoo__java_lang_Object__java_lang_String))
+ (field $m_getFoo__java_lang_String__java_lang_String (ref $function.m_getFoo__java_lang_String__java_lang_String))
+  $multipleabstractparents.MultipleAbstractParents.StringList.vtable)
+)
+(type $multipleabstractparents.MultipleAbstractParents.StringListChild.itable (struct_subtype 
+(field $slot0 (ref $multipleabstractparents.MultipleAbstractParents.List.vtable))
+(field $slot1 (ref $multipleabstractparents.MultipleAbstractParents.IStringList.vtable))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $multipleabstractparents.MultipleAbstractParents.StringList.itable))
+
+;;; StringListChild StringListChild.$create()
+(func $$create__@multipleabstractparents.MultipleAbstractParents.StringListChild
+ (result (ref null $multipleabstractparents.MultipleAbstractParents.StringListChild))
+ ;;@ multipleabstractparents/MultipleAbstractParents.java:57:22
+ (local $$instance (ref null $multipleabstractparents.MultipleAbstractParents.StringListChild))
+ (block
+  ;; StringListChild $instance = new StringListChild.<init>(0);
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:57:22
+  (local.set $$instance (struct.new $multipleabstractparents.MultipleAbstractParents.StringListChild (ref.as_non_null (global.get $multipleabstractparents.MultipleAbstractParents.StringListChild.vtable)) (ref.as_non_null (global.get $multipleabstractparents.MultipleAbstractParents.StringListChild.itable)) (i32.const 0)))
+  ;; $instance.$ctor();
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:57:22
+  (call $$ctor__void_$p_multipleabstractparents_MultipleAbstractParents_StringListChild@multipleabstractparents.MultipleAbstractParents.StringListChild (ref.as_non_null (local.get $$instance)))
+  ;; return $instance;
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:57:22
+  (return (local.get $$instance))
+ )
+)
+
+;;; void StringListChild.$ctor()
+(func $$ctor__void_$p_multipleabstractparents_MultipleAbstractParents_StringListChild@multipleabstractparents.MultipleAbstractParents.StringListChild
+ (param $this (ref null $multipleabstractparents.MultipleAbstractParents.StringListChild))
+ ;;@ multipleabstractparents/MultipleAbstractParents.java:57:22
+ (block
+  ;; multipleabstractparents.MultipleAbstractParents.StringListChild.$clinit();
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:57:22
+  (call $$clinit__void@multipleabstractparents.MultipleAbstractParents.StringListChild )
+  ;; StringList.this.$ctor();
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:57:22
+  (call $$ctor__void_$p_multipleabstractparents_MultipleAbstractParents_StringList@multipleabstractparents.MultipleAbstractParents.StringList (ref.as_non_null (local.get $this)))
+ )
+)
+
+;;; void StringListChild.$clinit()
+(func $$clinit__void@multipleabstractparents.MultipleAbstractParents.StringListChild
+ ;;@ multipleabstractparents/MultipleAbstractParents.java:57:22
+ (block
+  ;; if (multipleabstractparents.MultipleAbstractParents.StringListChild.$initialized) return;
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:57:22
+  (if (global.get $f_$initialized__multipleabstractparents_MultipleAbstractParents_StringListChild)
+   (then
+    ;; return;
+    ;;@ multipleabstractparents/MultipleAbstractParents.java:57:22
+    (return )
+   )
+  )
+  ;; (multipleabstractparents.MultipleAbstractParents.StringListChild.$initialized = true);
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:57:22
+  (global.set $f_$initialized__multipleabstractparents_MultipleAbstractParents_StringListChild (i32.const 1))
+  ;; multipleabstractparents.MultipleAbstractParents.StringList.$clinit();
+  ;;@ multipleabstractparents/MultipleAbstractParents.java:57:22
+  (call $$clinit__void@multipleabstractparents.MultipleAbstractParents.StringList )
+ )
+)
+
+;;; Class<?> StringListChild.getClass()
+(func $m_getClass__java_lang_Class@multipleabstractparents.MultipleAbstractParents.StringListChild
+ (type $function.m_getClass__java_lang_Class)
+ (param $this.untyped (ref $java.lang.Object))
+ (result (ref null $java.lang.Class))
+ (local $this (ref null $multipleabstractparents.MultipleAbstractParents.StringListChild))
+ (local.set $this (ref.cast_static $multipleabstractparents.MultipleAbstractParents.StringListChild (local.get $this.untyped)))
+ (block
+  ;; return javaemul.internal.ClassLiteralPool.$getMultipleabstractparents.MultipleAbstractParents.StringListChild();
+  (return (call $function.no.side.effects.$getMultipleabstractparents.MultipleAbstractParents.StringListChild__java_lang_Class (ref.func $$getMultipleabstractparents.MultipleAbstractParents.StringListChild__java_lang_Class@javaemul.internal.ClassLiteralPool) ))
+ )
+)
+(elem declare func $m_getClass__java_lang_Class@multipleabstractparents.MultipleAbstractParents.StringListChild)

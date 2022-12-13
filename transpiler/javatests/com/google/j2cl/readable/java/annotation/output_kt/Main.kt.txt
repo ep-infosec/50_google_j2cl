@@ -1,0 +1,33 @@
+// Generated from "annotation/Main.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package annotation
+
+import javaemul.lang.*
+import annotation.Main
+import kotlin.Annotation
+import kotlin.Int
+import kotlin.OptIn
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.native.ObjCName
+
+@ObjCName("AnnotationMain", exact = true)
+open class Main {
+ interface Foo: Annotation {
+  fun bar(): Int
+
+  companion object {
+   const val CONSTANT: Int = 123
+  }
+ }
+
+ interface Zoo: Annotation {}
+
+ open inner class Bar {
+  open fun baz_pp_annotation(): Int {
+   val foo: Main.Foo? = null
+   foo!!.bar()
+   return Main.Foo.CONSTANT
+  }
+ }
+}

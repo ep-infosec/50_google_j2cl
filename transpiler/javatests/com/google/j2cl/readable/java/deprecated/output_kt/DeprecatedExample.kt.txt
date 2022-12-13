@@ -1,0 +1,56 @@
+// Generated from "deprecated/DeprecatedExample.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package deprecated
+
+import javaemul.lang.*
+import kotlin.Any
+import kotlin.Int
+import kotlin.OptIn
+import kotlin.String
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.jvm.JvmField
+import kotlin.jvm.JvmStatic
+import kotlin.native.ObjCName
+
+@ObjCName("DeprecatedDeprecatedExample", exact = true)
+open class DeprecatedExample {
+ @JvmField var deprecatedInstanceField: String? = "deprecated field"
+
+ open fun deprecatedInstanceMethod(
+  @ObjCName("withNSString", exact = false) someArg: String?
+ ) {}
+
+ constructor()
+
+ companion object {
+  const val DEPRECATED_STATIC_FIELD: String = "deprecated field"
+
+  @JvmStatic
+  fun deprecatedStaticMethod(
+   @ObjCName("withId", exact = false) someObject: Any?
+  ) {}
+ }
+
+ fun interface DeprecatedInterface {
+  fun doAThing(
+   @ObjCName("withInt", exact = false) anInt: Int
+  )
+ }
+
+ fun interface DeprecatedJsFunction {
+  fun doAThing(
+   @ObjCName("withId", exact = false) aThing: Any?
+  )
+ }
+
+ enum class DeprecatedEnum {
+  A_VALUE;
+
+ }
+
+ enum class DeprecatedJsEnum {
+  A_VALUE;
+
+ }
+}

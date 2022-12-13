@@ -1,0 +1,17 @@
+// Generated from "circularimportuse/Right.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package circularimportuse
+
+import javaemul.lang.*
+import circularimportuse.Left
+import kotlin.OptIn
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.native.ObjCName
+
+@ObjCName("CircularimportuseRight", exact = true)
+open class Right {
+ open fun createLeft_pp_circularimportuse(): Left? {
+  return Left()
+ }
+}

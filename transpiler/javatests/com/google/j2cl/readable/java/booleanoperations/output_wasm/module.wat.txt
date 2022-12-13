@@ -1,0 +1,594 @@
+;;; Code for booleanoperations.BooleanOperations [static fields]
+(global $f_$initialized__booleanoperations_BooleanOperations (mut i32) (i32.const 0))
+
+;;; Code for booleanoperations.BooleanOperations.1Outer.Inner [static fields]
+(global $f_$initialized__booleanoperations_BooleanOperations_1Outer_Inner (mut i32) (i32.const 0))
+
+;;; Code for booleanoperations.BooleanOperations.1Outer [static fields]
+(global $f_$initialized__booleanoperations_BooleanOperations_1Outer (mut i32) (i32.const 0))
+
+;;; Code for booleanoperations.BooleanOperations [vtable.init]
+(global $booleanoperations.BooleanOperations.vtable (ref $booleanoperations.BooleanOperations.vtable) 
+ (struct.new $booleanoperations.BooleanOperations.vtable
+  (ref.func $m_equals__java_lang_Object__boolean@java.lang.Object)
+  (ref.func $m_hashCode__int@java.lang.Object)
+  (ref.func $m_toString__java_lang_String@java.lang.Object)
+  (ref.func $m_getClass__java_lang_Class@booleanoperations.BooleanOperations)
+  (ref.func $m_test__void@booleanoperations.BooleanOperations)
+ )
+)
+
+;;; Code for booleanoperations.BooleanOperations [itable.init]
+(global $booleanoperations.BooleanOperations.itable (ref $booleanoperations.BooleanOperations.itable) (struct.new $booleanoperations.BooleanOperations.itable 
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+ ))
+
+;;; Code for booleanoperations.BooleanOperations.1Outer.Inner [vtable.init]
+(global $booleanoperations.BooleanOperations.1Outer.Inner.vtable (ref $booleanoperations.BooleanOperations.1Outer.Inner.vtable) 
+ (struct.new $booleanoperations.BooleanOperations.1Outer.Inner.vtable
+  (ref.func $m_equals__java_lang_Object__boolean@java.lang.Object)
+  (ref.func $m_hashCode__int@java.lang.Object)
+  (ref.func $m_toString__java_lang_String@java.lang.Object)
+  (ref.func $m_getClass__java_lang_Class@booleanoperations.BooleanOperations.1Outer.Inner)
+ )
+)
+
+;;; Code for booleanoperations.BooleanOperations.1Outer.Inner [itable.init]
+(global $booleanoperations.BooleanOperations.1Outer.Inner.itable (ref $booleanoperations.BooleanOperations.1Outer.Inner.itable) (struct.new $booleanoperations.BooleanOperations.1Outer.Inner.itable 
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+ ))
+
+;;; Code for booleanoperations.BooleanOperations.1Outer [vtable.init]
+(global $booleanoperations.BooleanOperations.1Outer.vtable (ref $booleanoperations.BooleanOperations.1Outer.vtable) 
+ (struct.new $booleanoperations.BooleanOperations.1Outer.vtable
+  (ref.func $m_equals__java_lang_Object__boolean@java.lang.Object)
+  (ref.func $m_hashCode__int@java.lang.Object)
+  (ref.func $m_toString__java_lang_String@java.lang.Object)
+  (ref.func $m_getClass__java_lang_Class@booleanoperations.BooleanOperations.1Outer)
+ )
+)
+
+;;; Code for booleanoperations.BooleanOperations.1Outer [itable.init]
+(global $booleanoperations.BooleanOperations.1Outer.itable (ref $booleanoperations.BooleanOperations.1Outer.itable) (struct.new $booleanoperations.BooleanOperations.1Outer.itable 
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+ ))
+
+;;; Code for booleanoperations.BooleanOperations [CLASS]
+(type $booleanoperations.BooleanOperations (struct_subtype 
+ (field $vtable (ref $booleanoperations.BooleanOperations.vtable)) 
+ (field $itable (ref $booleanoperations.BooleanOperations.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+  $java.lang.Object)
+)
+(type $booleanoperations.BooleanOperations.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+ (field $m_test__void (ref $function.m_test__void))
+  $java.lang.Object.vtable)
+)
+(type $booleanoperations.BooleanOperations.itable (struct_subtype 
+(field $slot0 (ref null struct))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $java.lang.Object.itable))
+
+;;; BooleanOperations BooleanOperations.$create()
+(func $$create__@booleanoperations.BooleanOperations
+ (result (ref null $booleanoperations.BooleanOperations))
+ ;;@ booleanoperations/BooleanOperations.java:18:13
+ (local $$instance (ref null $booleanoperations.BooleanOperations))
+ (block
+  ;; BooleanOperations $instance = new BooleanOperations.<init>(0);
+  ;;@ booleanoperations/BooleanOperations.java:18:13
+  (local.set $$instance (struct.new $booleanoperations.BooleanOperations (ref.as_non_null (global.get $booleanoperations.BooleanOperations.vtable)) (ref.as_non_null (global.get $booleanoperations.BooleanOperations.itable)) (i32.const 0)))
+  ;; $instance.$ctor();
+  ;;@ booleanoperations/BooleanOperations.java:18:13
+  (call $$ctor__void_$p_booleanoperations_BooleanOperations@booleanoperations.BooleanOperations (ref.as_non_null (local.get $$instance)))
+  ;; return $instance;
+  ;;@ booleanoperations/BooleanOperations.java:18:13
+  (return (local.get $$instance))
+ )
+)
+
+;;; void BooleanOperations.$ctor()
+(func $$ctor__void_$p_booleanoperations_BooleanOperations@booleanoperations.BooleanOperations
+ (param $this (ref null $booleanoperations.BooleanOperations))
+ ;;@ booleanoperations/BooleanOperations.java:18:13
+ (block
+  ;; booleanoperations.BooleanOperations.$clinit();
+  ;;@ booleanoperations/BooleanOperations.java:18:13
+  (call $$clinit__void@booleanoperations.BooleanOperations )
+  ;; Object.this.$ctor();
+  ;;@ booleanoperations/BooleanOperations.java:18:13
+  (call $$ctor__void_$p_java_lang_Object@java.lang.Object (ref.as_non_null (local.get $this)))
+ )
+)
+
+;;; void BooleanOperations.acceptBoolean(boolean b)
+(func $m_acceptBoolean__boolean__void@booleanoperations.BooleanOperations
+ (param $b i32)
+ ;;@ booleanoperations/BooleanOperations.java:20:22
+ (block
+ )
+)
+
+;;; void BooleanOperations.test()
+(func $m_test__void@booleanoperations.BooleanOperations
+ (type $function.m_test__void)
+ (param $this.untyped (ref $java.lang.Object))
+ ;;@ booleanoperations/BooleanOperations.java:25:14
+ (local $ls i32)
+ (local $rs i32)
+ (local $r i32)
+ (local $t i32)
+ (local $br (ref null $java.lang.Boolean))
+ (local $finalOuter (ref null $booleanoperations.BooleanOperations.1Outer))
+ (local $outer (ref null $booleanoperations.BooleanOperations.1Outer))
+ (local $this (ref null $booleanoperations.BooleanOperations))
+ (local.set $this (ref.cast_static $booleanoperations.BooleanOperations (local.get $this.untyped)))
+ (block
+  ;; boolean ls = true;
+  ;;@ booleanoperations/BooleanOperations.java:26:4
+  (local.set $ls (i32.const 1))
+  ;; boolean rs = true;
+  ;;@ booleanoperations/BooleanOperations.java:27:4
+  (local.set $rs (i32.const 1))
+  ;; boolean r = true;
+  ;;@ booleanoperations/BooleanOperations.java:28:4
+  (local.set $r (i32.const 1))
+  ;; boolean t = !!!true;
+  ;;@ booleanoperations/BooleanOperations.java:29:4
+  (local.set $t (i32.eqz (i32.eqz (i32.eqz (i32.const 1)))))
+  ;; (r = (ls == rs));
+  ;;@ booleanoperations/BooleanOperations.java:32:4
+  (local.set $r (i32.eq (local.get $ls) (local.get $rs)))
+  ;; (r = (ls != rs));
+  ;;@ booleanoperations/BooleanOperations.java:33:4
+  (local.set $r (i32.ne (local.get $ls) (local.get $rs)))
+  ;; (r = (ls ^ rs));
+  ;;@ booleanoperations/BooleanOperations.java:34:4
+  (local.set $r (i32.xor (local.get $ls) (local.get $rs)))
+  ;; (r = (ls & rs));
+  ;;@ booleanoperations/BooleanOperations.java:35:4
+  (local.set $r (i32.and (local.get $ls) (local.get $rs)))
+  ;; (r = (ls | rs));
+  ;;@ booleanoperations/BooleanOperations.java:36:4
+  (local.set $r (i32.or (local.get $ls) (local.get $rs)))
+  ;; (r = (ls) ? (rs) : (false));
+  ;;@ booleanoperations/BooleanOperations.java:37:4
+  (local.set $r (if (result i32) (local.get $ls) (then (local.get $rs)) (else (i32.const 0))))
+  ;; (r = (ls) ? (true) : (rs));
+  ;;@ booleanoperations/BooleanOperations.java:38:4
+  (local.set $r (if (result i32) (local.get $ls) (then (i32.const 1)) (else (local.get $rs))))
+  ;; (r = ((ls = rs),ls));
+  ;;@ booleanoperations/BooleanOperations.java:39:4
+  (local.set $r (block (result i32)
+   (local.set $ls (local.get $rs))
+   (local.get $ls)
+  ))
+  ;; (r = (r ^ rs));
+  ;;@ booleanoperations/BooleanOperations.java:42:4
+  (local.set $r (i32.xor (local.get $r) (local.get $rs)))
+  ;; (r = (r & rs));
+  ;;@ booleanoperations/BooleanOperations.java:43:4
+  (local.set $r (i32.and (local.get $r) (local.get $rs)))
+  ;; (r = (r | rs));
+  ;;@ booleanoperations/BooleanOperations.java:44:4
+  (local.set $r (i32.or (local.get $r) (local.get $rs)))
+  ;; booleanoperations.BooleanOperations.acceptBoolean((ls == rs));
+  ;;@ booleanoperations/BooleanOperations.java:47:4
+  (call $m_acceptBoolean__boolean__void@booleanoperations.BooleanOperations (i32.eq (local.get $ls) (local.get $rs)))
+  ;; booleanoperations.BooleanOperations.acceptBoolean((ls != rs));
+  ;;@ booleanoperations/BooleanOperations.java:48:4
+  (call $m_acceptBoolean__boolean__void@booleanoperations.BooleanOperations (i32.ne (local.get $ls) (local.get $rs)))
+  ;; booleanoperations.BooleanOperations.acceptBoolean((ls ^ rs));
+  ;;@ booleanoperations/BooleanOperations.java:49:4
+  (call $m_acceptBoolean__boolean__void@booleanoperations.BooleanOperations (i32.xor (local.get $ls) (local.get $rs)))
+  ;; booleanoperations.BooleanOperations.acceptBoolean((ls & rs));
+  ;;@ booleanoperations/BooleanOperations.java:50:4
+  (call $m_acceptBoolean__boolean__void@booleanoperations.BooleanOperations (i32.and (local.get $ls) (local.get $rs)))
+  ;; booleanoperations.BooleanOperations.acceptBoolean((ls | rs));
+  ;;@ booleanoperations/BooleanOperations.java:51:4
+  (call $m_acceptBoolean__boolean__void@booleanoperations.BooleanOperations (i32.or (local.get $ls) (local.get $rs)))
+  ;; booleanoperations.BooleanOperations.acceptBoolean((ls) ? (rs) : (false));
+  ;;@ booleanoperations/BooleanOperations.java:52:4
+  (call $m_acceptBoolean__boolean__void@booleanoperations.BooleanOperations (if (result i32) (local.get $ls) (then (local.get $rs)) (else (i32.const 0))))
+  ;; booleanoperations.BooleanOperations.acceptBoolean((ls) ? (true) : (rs));
+  ;;@ booleanoperations/BooleanOperations.java:53:4
+  (call $m_acceptBoolean__boolean__void@booleanoperations.BooleanOperations (if (result i32) (local.get $ls) (then (i32.const 1)) (else (local.get $rs))))
+  ;; booleanoperations.BooleanOperations.acceptBoolean(((ls = rs),ls));
+  ;;@ booleanoperations/BooleanOperations.java:54:4
+  (call $m_acceptBoolean__boolean__void@booleanoperations.BooleanOperations (block (result i32)
+   (local.set $ls (local.get $rs))
+   (local.get $ls)
+  ))
+  ;; Boolean br;
+  ;;@ booleanoperations/BooleanOperations.java:57:4
+  
+  ;; (br = java.lang.Boolean.valueOf((ls == rs)));
+  ;;@ booleanoperations/BooleanOperations.java:58:4
+  (local.set $br (call $m_valueOf__boolean__java_lang_Boolean@java.lang.Boolean (i32.eq (local.get $ls) (local.get $rs))))
+  ;; (br = java.lang.Boolean.valueOf((ls != rs)));
+  ;;@ booleanoperations/BooleanOperations.java:59:4
+  (local.set $br (call $m_valueOf__boolean__java_lang_Boolean@java.lang.Boolean (i32.ne (local.get $ls) (local.get $rs))))
+  ;; (br = java.lang.Boolean.valueOf((ls ^ rs)));
+  ;;@ booleanoperations/BooleanOperations.java:60:4
+  (local.set $br (call $m_valueOf__boolean__java_lang_Boolean@java.lang.Boolean (i32.xor (local.get $ls) (local.get $rs))))
+  ;; (br = java.lang.Boolean.valueOf((ls & rs)));
+  ;;@ booleanoperations/BooleanOperations.java:61:4
+  (local.set $br (call $m_valueOf__boolean__java_lang_Boolean@java.lang.Boolean (i32.and (local.get $ls) (local.get $rs))))
+  ;; (br = java.lang.Boolean.valueOf((ls | rs)));
+  ;;@ booleanoperations/BooleanOperations.java:62:4
+  (local.set $br (call $m_valueOf__boolean__java_lang_Boolean@java.lang.Boolean (i32.or (local.get $ls) (local.get $rs))))
+  ;; (br = java.lang.Boolean.valueOf((ls) ? (rs) : (false)));
+  ;;@ booleanoperations/BooleanOperations.java:63:4
+  (local.set $br (call $m_valueOf__boolean__java_lang_Boolean@java.lang.Boolean (if (result i32) (local.get $ls) (then (local.get $rs)) (else (i32.const 0)))))
+  ;; (br = java.lang.Boolean.valueOf((ls) ? (true) : (rs)));
+  ;;@ booleanoperations/BooleanOperations.java:64:4
+  (local.set $br (call $m_valueOf__boolean__java_lang_Boolean@java.lang.Boolean (if (result i32) (local.get $ls) (then (i32.const 1)) (else (local.get $rs)))))
+  ;; (br = java.lang.Boolean.valueOf(((ls = rs),ls)));
+  ;;@ booleanoperations/BooleanOperations.java:65:4
+  (local.set $br (call $m_valueOf__boolean__java_lang_Boolean@java.lang.Boolean (block (result i32)
+   (local.set $ls (local.get $rs))
+   (local.get $ls)
+  )))
+  ;; if ((ls == rs)) {
+  ;;@ booleanoperations/BooleanOperations.java:68:4
+  (if (i32.eq (local.get $ls) (local.get $rs))
+   (then
+    (block
+     ;; (r = true);
+     ;;@ booleanoperations/BooleanOperations.java:69:6
+     (local.set $r (i32.const 1))
+    )
+   )
+  )
+  ;; if ((ls != rs)) {
+  ;;@ booleanoperations/BooleanOperations.java:71:4
+  (if (i32.ne (local.get $ls) (local.get $rs))
+   (then
+    (block
+     ;; (r = true);
+     ;;@ booleanoperations/BooleanOperations.java:72:6
+     (local.set $r (i32.const 1))
+    )
+   )
+  )
+  ;; if ((ls ^ rs)) {
+  ;;@ booleanoperations/BooleanOperations.java:74:4
+  (if (i32.xor (local.get $ls) (local.get $rs))
+   (then
+    (block
+     ;; (r = true);
+     ;;@ booleanoperations/BooleanOperations.java:75:6
+     (local.set $r (i32.const 1))
+    )
+   )
+  )
+  ;; if ((ls & rs)) {
+  ;;@ booleanoperations/BooleanOperations.java:77:4
+  (if (i32.and (local.get $ls) (local.get $rs))
+   (then
+    (block
+     ;; (r = true);
+     ;;@ booleanoperations/BooleanOperations.java:78:6
+     (local.set $r (i32.const 1))
+    )
+   )
+  )
+  ;; if ((ls | rs)) {
+  ;;@ booleanoperations/BooleanOperations.java:80:4
+  (if (i32.or (local.get $ls) (local.get $rs))
+   (then
+    (block
+     ;; (r = true);
+     ;;@ booleanoperations/BooleanOperations.java:81:6
+     (local.set $r (i32.const 1))
+    )
+   )
+  )
+  ;; if ((ls) ? (rs) : (false)) {
+  ;;@ booleanoperations/BooleanOperations.java:83:4
+  (if (if (result i32) (local.get $ls) (then (local.get $rs)) (else (i32.const 0)))
+   (then
+    (block
+     ;; (r = true);
+     ;;@ booleanoperations/BooleanOperations.java:84:6
+     (local.set $r (i32.const 1))
+    )
+   )
+  )
+  ;; if ((ls) ? (true) : (rs)) {
+  ;;@ booleanoperations/BooleanOperations.java:86:4
+  (if (if (result i32) (local.get $ls) (then (i32.const 1)) (else (local.get $rs)))
+   (then
+    (block
+     ;; (r = true);
+     ;;@ booleanoperations/BooleanOperations.java:87:6
+     (local.set $r (i32.const 1))
+    )
+   )
+  )
+  ;; Outer finalOuter = booleanoperations.BooleanOperations.1Outer.$create(BooleanOperations.this);
+  ;;@ booleanoperations/BooleanOperations.java:100:4
+  (local.set $finalOuter (call $$create__booleanoperations_BooleanOperations@booleanoperations.BooleanOperations.1Outer (local.get $this)))
+  ;; (finalOuter.b = (finalOuter.b | true));
+  ;;@ booleanoperations/BooleanOperations.java:101:4
+  (struct.set $booleanoperations.BooleanOperations.1Outer $f_b__booleanoperations_BooleanOperations_1Outer(local.get $finalOuter) (i32.or (struct.get_s $booleanoperations.BooleanOperations.1Outer $f_b__booleanoperations_BooleanOperations_1Outer(local.get $finalOuter)) (i32.const 1)))
+  ;; Outer outer = booleanoperations.BooleanOperations.1Outer.$create(BooleanOperations.this);
+  ;;@ booleanoperations/BooleanOperations.java:103:4
+  (local.set $outer (call $$create__booleanoperations_BooleanOperations@booleanoperations.BooleanOperations.1Outer (local.get $this)))
+  ;; (outer.b = (outer.b | javaemul.internal.Platform.isNull(((outer = null),outer))));
+  ;;@ booleanoperations/BooleanOperations.java:104:4
+  (struct.set $booleanoperations.BooleanOperations.1Outer $f_b__booleanoperations_BooleanOperations_1Outer(local.get $outer) (i32.or (struct.get_s $booleanoperations.BooleanOperations.1Outer $f_b__booleanoperations_BooleanOperations_1Outer(local.get $outer)) (ref.is_null (block (result (ref null $booleanoperations.BooleanOperations.1Outer))
+   (local.set $outer (ref.null $booleanoperations.BooleanOperations.1Outer))
+   (local.get $outer)
+  ))))
+ )
+)
+(elem declare func $m_test__void@booleanoperations.BooleanOperations)
+
+;;; void BooleanOperations.$clinit()
+(func $$clinit__void@booleanoperations.BooleanOperations
+ ;;@ booleanoperations/BooleanOperations.java:18:13
+ (block
+  ;; if (booleanoperations.BooleanOperations.$initialized) return;
+  ;;@ booleanoperations/BooleanOperations.java:18:13
+  (if (global.get $f_$initialized__booleanoperations_BooleanOperations)
+   (then
+    ;; return;
+    ;;@ booleanoperations/BooleanOperations.java:18:13
+    (return )
+   )
+  )
+  ;; (booleanoperations.BooleanOperations.$initialized = true);
+  ;;@ booleanoperations/BooleanOperations.java:18:13
+  (global.set $f_$initialized__booleanoperations_BooleanOperations (i32.const 1))
+  ;; java.lang.Object.$clinit();
+  ;;@ booleanoperations/BooleanOperations.java:18:13
+  (call $$clinit__void@java.lang.Object )
+ )
+)
+
+;;; Class<?> BooleanOperations.getClass()
+(func $m_getClass__java_lang_Class@booleanoperations.BooleanOperations
+ (type $function.m_getClass__java_lang_Class)
+ (param $this.untyped (ref $java.lang.Object))
+ (result (ref null $java.lang.Class))
+ (local $this (ref null $booleanoperations.BooleanOperations))
+ (local.set $this (ref.cast_static $booleanoperations.BooleanOperations (local.get $this.untyped)))
+ (block
+  ;; return javaemul.internal.ClassLiteralPool.$getBooleanoperations.BooleanOperations();
+  (return (call $function.no.side.effects.$getBooleanoperations.BooleanOperations__java_lang_Class (ref.func $$getBooleanoperations.BooleanOperations__java_lang_Class@javaemul.internal.ClassLiteralPool) ))
+ )
+)
+(elem declare func $m_getClass__java_lang_Class@booleanoperations.BooleanOperations)
+
+;;; Code for booleanoperations.BooleanOperations.1Outer.Inner [CLASS]
+(type $booleanoperations.BooleanOperations.1Outer.Inner (struct_subtype 
+ (field $vtable (ref $booleanoperations.BooleanOperations.1Outer.Inner.vtable)) 
+ (field $itable (ref $booleanoperations.BooleanOperations.1Outer.Inner.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+ (field $$outer_this__booleanoperations_BooleanOperations_1Outer_Inner (ref null $booleanoperations.BooleanOperations.1Outer))
+  $java.lang.Object)
+)
+(type $booleanoperations.BooleanOperations.1Outer.Inner.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+  $java.lang.Object.vtable)
+)
+(type $booleanoperations.BooleanOperations.1Outer.Inner.itable (struct_subtype 
+(field $slot0 (ref null struct))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $java.lang.Object.itable))
+
+;;; Inner Inner.$create(Outer $outer_this)
+(func $$create__booleanoperations_BooleanOperations_1Outer@booleanoperations.BooleanOperations.1Outer.Inner
+ (param $$outer_this (ref null $booleanoperations.BooleanOperations.1Outer))
+ (result (ref null $booleanoperations.BooleanOperations.1Outer.Inner))
+ ;;@ booleanoperations/BooleanOperations.java:94:12
+ (local $$instance (ref null $booleanoperations.BooleanOperations.1Outer.Inner))
+ (block
+  ;; Inner $instance = new Inner.<init>(0,$outer_this);
+  ;;@ booleanoperations/BooleanOperations.java:94:12
+  (local.set $$instance (struct.new $booleanoperations.BooleanOperations.1Outer.Inner (ref.as_non_null (global.get $booleanoperations.BooleanOperations.1Outer.Inner.vtable)) (ref.as_non_null (global.get $booleanoperations.BooleanOperations.1Outer.Inner.itable)) (i32.const 0) (local.get $$outer_this)))
+  ;; $instance.$ctor($outer_this);
+  ;;@ booleanoperations/BooleanOperations.java:94:12
+  (call $$ctor__booleanoperations_BooleanOperations_1Outer__void_$p_booleanoperations_BooleanOperations_1Outer_Inner@booleanoperations.BooleanOperations.1Outer.Inner (ref.as_non_null (local.get $$instance))(local.get $$outer_this))
+  ;; return $instance;
+  ;;@ booleanoperations/BooleanOperations.java:94:12
+  (return (local.get $$instance))
+ )
+)
+
+;;; void Inner.$ctor(Outer $outer_this)
+(func $$ctor__booleanoperations_BooleanOperations_1Outer__void_$p_booleanoperations_BooleanOperations_1Outer_Inner@booleanoperations.BooleanOperations.1Outer.Inner
+ (param $this (ref null $booleanoperations.BooleanOperations.1Outer.Inner))
+ (param $$outer_this (ref null $booleanoperations.BooleanOperations.1Outer))
+ ;;@ booleanoperations/BooleanOperations.java:94:12
+ (block
+  ;; booleanoperations.BooleanOperations.1Outer.Inner.$clinit();
+  ;;@ booleanoperations/BooleanOperations.java:94:12
+  (call $$clinit__void@booleanoperations.BooleanOperations.1Outer.Inner )
+  ;; Object.this.$ctor();
+  ;;@ booleanoperations/BooleanOperations.java:94:12
+  (call $$ctor__void_$p_java_lang_Object@java.lang.Object (ref.as_non_null (local.get $this)))
+  ;; Inner.this.$init();
+  ;;@ booleanoperations/BooleanOperations.java:94:12
+  (call $$init__void_$p_booleanoperations_BooleanOperations_1Outer_Inner@booleanoperations.BooleanOperations.1Outer.Inner (ref.as_non_null (local.get $this)))
+ )
+)
+
+;;; void Inner.$init()
+(func $$init__void_$p_booleanoperations_BooleanOperations_1Outer_Inner@booleanoperations.BooleanOperations.1Outer.Inner
+ (param $this (ref null $booleanoperations.BooleanOperations.1Outer.Inner))
+ ;;@ booleanoperations/BooleanOperations.java:94:12
+ (block
+  ;; (Inner.this.this.b = (Inner.this.this.b | true));
+  ;;@ booleanoperations/BooleanOperations.java:96:10
+  (struct.set $booleanoperations.BooleanOperations.1Outer $f_b__booleanoperations_BooleanOperations_1Outer(struct.get $booleanoperations.BooleanOperations.1Outer.Inner $$outer_this__booleanoperations_BooleanOperations_1Outer_Inner(local.get $this)) (i32.or (struct.get_s $booleanoperations.BooleanOperations.1Outer $f_b__booleanoperations_BooleanOperations_1Outer(struct.get $booleanoperations.BooleanOperations.1Outer.Inner $$outer_this__booleanoperations_BooleanOperations_1Outer_Inner(local.get $this))) (i32.const 1)))
+ )
+)
+
+;;; void Inner.$clinit()
+(func $$clinit__void@booleanoperations.BooleanOperations.1Outer.Inner
+ ;;@ booleanoperations/BooleanOperations.java:94:12
+ (block
+  ;; if (booleanoperations.BooleanOperations.1Outer.Inner.$initialized) return;
+  ;;@ booleanoperations/BooleanOperations.java:94:12
+  (if (global.get $f_$initialized__booleanoperations_BooleanOperations_1Outer_Inner)
+   (then
+    ;; return;
+    ;;@ booleanoperations/BooleanOperations.java:94:12
+    (return )
+   )
+  )
+  ;; (booleanoperations.BooleanOperations.1Outer.Inner.$initialized = true);
+  ;;@ booleanoperations/BooleanOperations.java:94:12
+  (global.set $f_$initialized__booleanoperations_BooleanOperations_1Outer_Inner (i32.const 1))
+  ;; java.lang.Object.$clinit();
+  ;;@ booleanoperations/BooleanOperations.java:94:12
+  (call $$clinit__void@java.lang.Object )
+ )
+)
+
+;;; Class<?> Inner.getClass()
+(func $m_getClass__java_lang_Class@booleanoperations.BooleanOperations.1Outer.Inner
+ (type $function.m_getClass__java_lang_Class)
+ (param $this.untyped (ref $java.lang.Object))
+ (result (ref null $java.lang.Class))
+ (local $this (ref null $booleanoperations.BooleanOperations.1Outer.Inner))
+ (local.set $this (ref.cast_static $booleanoperations.BooleanOperations.1Outer.Inner (local.get $this.untyped)))
+ (block
+  ;; return javaemul.internal.ClassLiteralPool.$getBooleanoperations.BooleanOperations.1Outer.Inner();
+  (return (call $function.no.side.effects.$getBooleanoperations.BooleanOperations.1Outer.Inner__java_lang_Class (ref.func $$getBooleanoperations.BooleanOperations.1Outer.Inner__java_lang_Class@javaemul.internal.ClassLiteralPool) ))
+ )
+)
+(elem declare func $m_getClass__java_lang_Class@booleanoperations.BooleanOperations.1Outer.Inner)
+
+;;; Code for booleanoperations.BooleanOperations.1Outer [CLASS]
+(type $booleanoperations.BooleanOperations.1Outer (struct_subtype 
+ (field $vtable (ref $booleanoperations.BooleanOperations.1Outer.vtable)) 
+ (field $itable (ref $booleanoperations.BooleanOperations.1Outer.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+ (field $$outer_this__booleanoperations_BooleanOperations_1Outer (ref null $booleanoperations.BooleanOperations))
+ (field $f_b__booleanoperations_BooleanOperations_1Outer (mut i8))
+  $java.lang.Object)
+)
+(type $booleanoperations.BooleanOperations.1Outer.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+  $java.lang.Object.vtable)
+)
+(type $booleanoperations.BooleanOperations.1Outer.itable (struct_subtype 
+(field $slot0 (ref null struct))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $java.lang.Object.itable))
+
+;;; Outer Outer.$create(BooleanOperations $outer_this)
+(func $$create__booleanoperations_BooleanOperations@booleanoperations.BooleanOperations.1Outer
+ (param $$outer_this (ref null $booleanoperations.BooleanOperations))
+ (result (ref null $booleanoperations.BooleanOperations.1Outer))
+ ;;@ booleanoperations/BooleanOperations.java:91:10
+ (local $$instance (ref null $booleanoperations.BooleanOperations.1Outer))
+ (block
+  ;; Outer $instance = new $1Outer.<init>(0,$outer_this,false);
+  ;;@ booleanoperations/BooleanOperations.java:91:10
+  (local.set $$instance (struct.new $booleanoperations.BooleanOperations.1Outer (ref.as_non_null (global.get $booleanoperations.BooleanOperations.1Outer.vtable)) (ref.as_non_null (global.get $booleanoperations.BooleanOperations.1Outer.itable)) (i32.const 0) (local.get $$outer_this) (i32.const 0)))
+  ;; $instance.$ctor($outer_this);
+  ;;@ booleanoperations/BooleanOperations.java:91:10
+  (call $$ctor__booleanoperations_BooleanOperations__void_$p_booleanoperations_BooleanOperations_1Outer@booleanoperations.BooleanOperations.1Outer (ref.as_non_null (local.get $$instance))(local.get $$outer_this))
+  ;; return $instance;
+  ;;@ booleanoperations/BooleanOperations.java:91:10
+  (return (local.get $$instance))
+ )
+)
+
+;;; void Outer.$ctor(BooleanOperations $outer_this)
+(func $$ctor__booleanoperations_BooleanOperations__void_$p_booleanoperations_BooleanOperations_1Outer@booleanoperations.BooleanOperations.1Outer
+ (param $this (ref null $booleanoperations.BooleanOperations.1Outer))
+ (param $$outer_this (ref null $booleanoperations.BooleanOperations))
+ ;;@ booleanoperations/BooleanOperations.java:91:10
+ (block
+  ;; booleanoperations.BooleanOperations.1Outer.$clinit();
+  ;;@ booleanoperations/BooleanOperations.java:91:10
+  (call $$clinit__void@booleanoperations.BooleanOperations.1Outer )
+  ;; Object.this.$ctor();
+  ;;@ booleanoperations/BooleanOperations.java:91:10
+  (call $$ctor__void_$p_java_lang_Object@java.lang.Object (ref.as_non_null (local.get $this)))
+ )
+)
+
+;;; void Outer.$clinit()
+(func $$clinit__void@booleanoperations.BooleanOperations.1Outer
+ ;;@ booleanoperations/BooleanOperations.java:91:10
+ (block
+  ;; if (booleanoperations.BooleanOperations.1Outer.$initialized) return;
+  ;;@ booleanoperations/BooleanOperations.java:91:10
+  (if (global.get $f_$initialized__booleanoperations_BooleanOperations_1Outer)
+   (then
+    ;; return;
+    ;;@ booleanoperations/BooleanOperations.java:91:10
+    (return )
+   )
+  )
+  ;; (booleanoperations.BooleanOperations.1Outer.$initialized = true);
+  ;;@ booleanoperations/BooleanOperations.java:91:10
+  (global.set $f_$initialized__booleanoperations_BooleanOperations_1Outer (i32.const 1))
+  ;; java.lang.Object.$clinit();
+  ;;@ booleanoperations/BooleanOperations.java:91:10
+  (call $$clinit__void@java.lang.Object )
+ )
+)
+
+;;; Class<?> Outer.getClass()
+(func $m_getClass__java_lang_Class@booleanoperations.BooleanOperations.1Outer
+ (type $function.m_getClass__java_lang_Class)
+ (param $this.untyped (ref $java.lang.Object))
+ (result (ref null $java.lang.Class))
+ (local $this (ref null $booleanoperations.BooleanOperations.1Outer))
+ (local.set $this (ref.cast_static $booleanoperations.BooleanOperations.1Outer (local.get $this.untyped)))
+ (block
+  ;; return javaemul.internal.ClassLiteralPool.$getBooleanoperations.BooleanOperations.1Outer();
+  (return (call $function.no.side.effects.$getBooleanoperations.BooleanOperations.1Outer__java_lang_Class (ref.func $$getBooleanoperations.BooleanOperations.1Outer__java_lang_Class@javaemul.internal.ClassLiteralPool) ))
+ )
+)
+(elem declare func $m_getClass__java_lang_Class@booleanoperations.BooleanOperations.1Outer)

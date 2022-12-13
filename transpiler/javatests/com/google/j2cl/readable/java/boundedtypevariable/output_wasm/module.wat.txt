@@ -1,0 +1,115 @@
+;;; Code for boundedtypevariable.BoundedTypeVariable [static fields]
+(global $f_$initialized__boundedtypevariable_BoundedTypeVariable (mut i32) (i32.const 0))
+
+;;; Code for boundedtypevariable.BoundedTypeVariable [vtable.init]
+(global $boundedtypevariable.BoundedTypeVariable.vtable (ref $boundedtypevariable.BoundedTypeVariable.vtable) 
+ (struct.new $boundedtypevariable.BoundedTypeVariable.vtable
+  (ref.func $m_equals__java_lang_Object__boolean@java.lang.Object)
+  (ref.func $m_hashCode__int@java.lang.Object)
+  (ref.func $m_toString__java_lang_String@java.lang.Object)
+  (ref.func $m_getClass__java_lang_Class@boundedtypevariable.BoundedTypeVariable)
+ )
+)
+
+;;; Code for boundedtypevariable.BoundedTypeVariable [itable.init]
+(global $boundedtypevariable.BoundedTypeVariable.itable (ref $boundedtypevariable.BoundedTypeVariable.itable) (struct.new $boundedtypevariable.BoundedTypeVariable.itable 
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+ ))
+
+;;; Code for boundedtypevariable.BoundedTypeVariable [CLASS]
+(type $boundedtypevariable.BoundedTypeVariable (struct_subtype 
+ (field $vtable (ref $boundedtypevariable.BoundedTypeVariable.vtable)) 
+ (field $itable (ref $boundedtypevariable.BoundedTypeVariable.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+  $java.lang.Object)
+)
+(type $boundedtypevariable.BoundedTypeVariable.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+  $java.lang.Object.vtable)
+)
+(type $boundedtypevariable.BoundedTypeVariable.itable (struct_subtype 
+(field $slot0 (ref null struct))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $java.lang.Object.itable))
+
+;;; BoundedTypeVariable<T> BoundedTypeVariable.$create()
+(func $$create__@boundedtypevariable.BoundedTypeVariable
+ (result (ref null $boundedtypevariable.BoundedTypeVariable))
+ ;;@ boundedtypevariable/BoundedTypeVariable.java:18:13
+ (local $$instance (ref null $boundedtypevariable.BoundedTypeVariable))
+ (block
+  ;; BoundedTypeVariable<T> $instance = new BoundedTypeVariable.<init>(0);
+  ;;@ boundedtypevariable/BoundedTypeVariable.java:18:13
+  (local.set $$instance (struct.new $boundedtypevariable.BoundedTypeVariable (ref.as_non_null (global.get $boundedtypevariable.BoundedTypeVariable.vtable)) (ref.as_non_null (global.get $boundedtypevariable.BoundedTypeVariable.itable)) (i32.const 0)))
+  ;; $instance.$ctor();
+  ;;@ boundedtypevariable/BoundedTypeVariable.java:18:13
+  (call $$ctor__void_$p_boundedtypevariable_BoundedTypeVariable@boundedtypevariable.BoundedTypeVariable (ref.as_non_null (local.get $$instance)))
+  ;; return $instance;
+  ;;@ boundedtypevariable/BoundedTypeVariable.java:18:13
+  (return (local.get $$instance))
+ )
+)
+
+;;; void BoundedTypeVariable.$ctor()
+(func $$ctor__void_$p_boundedtypevariable_BoundedTypeVariable@boundedtypevariable.BoundedTypeVariable
+ (param $this (ref null $boundedtypevariable.BoundedTypeVariable))
+ ;;@ boundedtypevariable/BoundedTypeVariable.java:18:13
+ (block
+  ;; boundedtypevariable.BoundedTypeVariable.$clinit();
+  ;;@ boundedtypevariable/BoundedTypeVariable.java:18:13
+  (call $$clinit__void@boundedtypevariable.BoundedTypeVariable )
+  ;; Object.this.$ctor();
+  ;;@ boundedtypevariable/BoundedTypeVariable.java:18:13
+  (call $$ctor__void_$p_java_lang_Object@java.lang.Object (ref.as_non_null (local.get $this)))
+ )
+)
+
+;;; void BoundedTypeVariable.$clinit()
+(func $$clinit__void@boundedtypevariable.BoundedTypeVariable
+ ;;@ boundedtypevariable/BoundedTypeVariable.java:18:13
+ (block
+  ;; if (boundedtypevariable.BoundedTypeVariable.$initialized) return;
+  ;;@ boundedtypevariable/BoundedTypeVariable.java:18:13
+  (if (global.get $f_$initialized__boundedtypevariable_BoundedTypeVariable)
+   (then
+    ;; return;
+    ;;@ boundedtypevariable/BoundedTypeVariable.java:18:13
+    (return )
+   )
+  )
+  ;; (boundedtypevariable.BoundedTypeVariable.$initialized = true);
+  ;;@ boundedtypevariable/BoundedTypeVariable.java:18:13
+  (global.set $f_$initialized__boundedtypevariable_BoundedTypeVariable (i32.const 1))
+  ;; java.lang.Object.$clinit();
+  ;;@ boundedtypevariable/BoundedTypeVariable.java:18:13
+  (call $$clinit__void@java.lang.Object )
+ )
+)
+
+;;; Class<?> BoundedTypeVariable.getClass()
+(func $m_getClass__java_lang_Class@boundedtypevariable.BoundedTypeVariable
+ (type $function.m_getClass__java_lang_Class)
+ (param $this.untyped (ref $java.lang.Object))
+ (result (ref null $java.lang.Class))
+ (local $this (ref null $boundedtypevariable.BoundedTypeVariable))
+ (local.set $this (ref.cast_static $boundedtypevariable.BoundedTypeVariable (local.get $this.untyped)))
+ (block
+  ;; return javaemul.internal.ClassLiteralPool.$getBoundedtypevariable.BoundedTypeVariable();
+  (return (call $function.no.side.effects.$getBoundedtypevariable.BoundedTypeVariable__java_lang_Class (ref.func $$getBoundedtypevariable.BoundedTypeVariable__java_lang_Class@javaemul.internal.ClassLiteralPool) ))
+ )
+)
+(elem declare func $m_getClass__java_lang_Class@boundedtypevariable.BoundedTypeVariable)

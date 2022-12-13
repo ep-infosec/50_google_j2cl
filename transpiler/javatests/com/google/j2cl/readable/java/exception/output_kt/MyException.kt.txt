@@ -1,0 +1,16 @@
+// Generated from "exception/MyException.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package exception
+
+import javaemul.lang.*
+import java.lang.Exception
+import kotlin.OptIn
+import kotlin.Throwable
+import kotlin.experimental.ExperimentalObjCName
+
+class MyException: Exception {
+ constructor()
+
+ constructor(cause: Throwable?): super(cause)
+}

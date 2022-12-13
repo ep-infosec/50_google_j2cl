@@ -1,0 +1,36 @@
+// Generated from "j2ktnotpassing/DefaultNullable.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package j2ktnotpassing
+
+import javaemul.lang.*
+import j2ktnotpassing.DefaultNullable
+import j2ktnotpassing.NotNullable
+import kotlin.OptIn
+import kotlin.String
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.jvm.JvmStatic
+import kotlin.native.ObjCName
+
+@ObjCName("J2ktnotpassingDefaultNullable", exact = true)
+open class DefaultNullable {
+ companion object {
+  @JvmStatic
+  fun testNonNullableLambdas_pp_j2ktnotpassing() {
+   val methodReference: NotNullable.Consumer<String?>? = NotNullable.Consumer<String?> { arg0: String ->
+    DefaultNullable.accept_pp_j2ktnotpassing(arg0)
+   }
+  }
+
+  @JvmStatic
+  fun accept_pp_j2ktnotpassing(s: String?) {}
+ }
+}
+
+open class NotNullable {
+ fun interface Consumer<T> {
+  fun accept(
+   @ObjCName("withId", exact = false) t: T
+  )
+ }
+}

@@ -1,0 +1,148 @@
+;;; Code for dowhilestatement.DoWhileStatement [static fields]
+(global $f_$initialized__dowhilestatement_DoWhileStatement (mut i32) (i32.const 0))
+
+;;; Code for dowhilestatement.DoWhileStatement [vtable.init]
+(global $dowhilestatement.DoWhileStatement.vtable (ref $dowhilestatement.DoWhileStatement.vtable) 
+ (struct.new $dowhilestatement.DoWhileStatement.vtable
+  (ref.func $m_equals__java_lang_Object__boolean@java.lang.Object)
+  (ref.func $m_hashCode__int@java.lang.Object)
+  (ref.func $m_toString__java_lang_String@java.lang.Object)
+  (ref.func $m_getClass__java_lang_Class@dowhilestatement.DoWhileStatement)
+  (ref.func $m_test__void@dowhilestatement.DoWhileStatement)
+ )
+)
+
+;;; Code for dowhilestatement.DoWhileStatement [itable.init]
+(global $dowhilestatement.DoWhileStatement.itable (ref $dowhilestatement.DoWhileStatement.itable) (struct.new $dowhilestatement.DoWhileStatement.itable 
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+ ))
+
+;;; Code for dowhilestatement.DoWhileStatement [CLASS]
+(type $dowhilestatement.DoWhileStatement (struct_subtype 
+ (field $vtable (ref $dowhilestatement.DoWhileStatement.vtable)) 
+ (field $itable (ref $dowhilestatement.DoWhileStatement.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+  $java.lang.Object)
+)
+(type $dowhilestatement.DoWhileStatement.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+ (field $m_test__void (ref $function.m_test__void))
+  $java.lang.Object.vtable)
+)
+(type $dowhilestatement.DoWhileStatement.itable (struct_subtype 
+(field $slot0 (ref null struct))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $java.lang.Object.itable))
+
+;;; DoWhileStatement DoWhileStatement.$create()
+(func $$create__@dowhilestatement.DoWhileStatement
+ (result (ref null $dowhilestatement.DoWhileStatement))
+ ;;@ dowhilestatement/DoWhileStatement.java:18:13
+ (local $$instance (ref null $dowhilestatement.DoWhileStatement))
+ (block
+  ;; DoWhileStatement $instance = new DoWhileStatement.<init>(0);
+  ;;@ dowhilestatement/DoWhileStatement.java:18:13
+  (local.set $$instance (struct.new $dowhilestatement.DoWhileStatement (ref.as_non_null (global.get $dowhilestatement.DoWhileStatement.vtable)) (ref.as_non_null (global.get $dowhilestatement.DoWhileStatement.itable)) (i32.const 0)))
+  ;; $instance.$ctor();
+  ;;@ dowhilestatement/DoWhileStatement.java:18:13
+  (call $$ctor__void_$p_dowhilestatement_DoWhileStatement@dowhilestatement.DoWhileStatement (ref.as_non_null (local.get $$instance)))
+  ;; return $instance;
+  ;;@ dowhilestatement/DoWhileStatement.java:18:13
+  (return (local.get $$instance))
+ )
+)
+
+;;; void DoWhileStatement.$ctor()
+(func $$ctor__void_$p_dowhilestatement_DoWhileStatement@dowhilestatement.DoWhileStatement
+ (param $this (ref null $dowhilestatement.DoWhileStatement))
+ ;;@ dowhilestatement/DoWhileStatement.java:18:13
+ (block
+  ;; dowhilestatement.DoWhileStatement.$clinit();
+  ;;@ dowhilestatement/DoWhileStatement.java:18:13
+  (call $$clinit__void@dowhilestatement.DoWhileStatement )
+  ;; Object.this.$ctor();
+  ;;@ dowhilestatement/DoWhileStatement.java:18:13
+  (call $$ctor__void_$p_java_lang_Object@java.lang.Object (ref.as_non_null (local.get $this)))
+ )
+)
+
+;;; void DoWhileStatement.test()
+(func $m_test__void@dowhilestatement.DoWhileStatement
+ (type $function.m_test__void)
+ (param $this.untyped (ref $java.lang.Object))
+ ;;@ dowhilestatement/DoWhileStatement.java:19:14
+ (local $count i32)
+ (local $this (ref null $dowhilestatement.DoWhileStatement))
+ (local.set $this (ref.cast_static $dowhilestatement.DoWhileStatement (local.get $this.untyped)))
+ (block
+  ;; int count = 0;
+  ;;@ dowhilestatement/DoWhileStatement.java:20:4
+  (local.set $count (i32.const 0))
+  ;; LOOP: do {
+  ;;@ dowhilestatement/DoWhileStatement.java:21:4
+  (block $LOOP.BREAK
+   (loop
+    (block $LOOP.CONTINUE
+     (block
+      ;; (count = (count + 1));
+      ;;@ dowhilestatement/DoWhileStatement.java:22:6
+      (local.set $count (i32.add (local.get $count) (i32.const 1)))
+     )
+    )
+    (br_if 0 (i32.lt_s (local.get $count) (i32.const 5)))
+    
+   )
+  )
+ )
+)
+(elem declare func $m_test__void@dowhilestatement.DoWhileStatement)
+
+;;; void DoWhileStatement.$clinit()
+(func $$clinit__void@dowhilestatement.DoWhileStatement
+ ;;@ dowhilestatement/DoWhileStatement.java:18:13
+ (block
+  ;; if (dowhilestatement.DoWhileStatement.$initialized) return;
+  ;;@ dowhilestatement/DoWhileStatement.java:18:13
+  (if (global.get $f_$initialized__dowhilestatement_DoWhileStatement)
+   (then
+    ;; return;
+    ;;@ dowhilestatement/DoWhileStatement.java:18:13
+    (return )
+   )
+  )
+  ;; (dowhilestatement.DoWhileStatement.$initialized = true);
+  ;;@ dowhilestatement/DoWhileStatement.java:18:13
+  (global.set $f_$initialized__dowhilestatement_DoWhileStatement (i32.const 1))
+  ;; java.lang.Object.$clinit();
+  ;;@ dowhilestatement/DoWhileStatement.java:18:13
+  (call $$clinit__void@java.lang.Object )
+ )
+)
+
+;;; Class<?> DoWhileStatement.getClass()
+(func $m_getClass__java_lang_Class@dowhilestatement.DoWhileStatement
+ (type $function.m_getClass__java_lang_Class)
+ (param $this.untyped (ref $java.lang.Object))
+ (result (ref null $java.lang.Class))
+ (local $this (ref null $dowhilestatement.DoWhileStatement))
+ (local.set $this (ref.cast_static $dowhilestatement.DoWhileStatement (local.get $this.untyped)))
+ (block
+  ;; return javaemul.internal.ClassLiteralPool.$getDowhilestatement.DoWhileStatement();
+  (return (call $function.no.side.effects.$getDowhilestatement.DoWhileStatement__java_lang_Class (ref.func $$getDowhilestatement.DoWhileStatement__java_lang_Class@javaemul.internal.ClassLiteralPool) ))
+ )
+)
+(elem declare func $m_getClass__java_lang_Class@dowhilestatement.DoWhileStatement)

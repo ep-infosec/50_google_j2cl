@@ -1,0 +1,44 @@
+// Generated from "simpleliterals/SimpleLiterals.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package simpleliterals
+
+import javaemul.lang.*
+import java.lang.Class
+import kotlin.Any
+import kotlin.Boolean
+import kotlin.Byte
+import kotlin.Char
+import kotlin.Double
+import kotlin.Float
+import kotlin.Int
+import kotlin.Long
+import kotlin.OptIn
+import kotlin.Short
+import kotlin.String
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.jvm.javaObjectType
+import kotlin.native.ObjCName
+import simpleliterals.SimpleLiterals
+
+@ObjCName("SimpleliteralsSimpleLiterals", exact = true)
+open class SimpleLiterals {
+ open fun main() {
+  val bool: Boolean = false
+  val ch: Char = 'a'
+  val b: Byte = (101).toByte()
+  val s: Short = (101).toShort()
+  val i: Int = 101
+  val l: Long = 101L
+  val f: Float = 101.0f
+  val d: Double = 101.0
+  val o: Any? = null
+  val str: String? = "foo"
+  val c: Class<*>? = SimpleLiterals::class.javaObjectType
+  val zeroF: Float = - 0.0f
+  val minusZeroF: Float = - 0.0f
+  val zeroD: Double = 0.0
+  val minusZeroD: Double = - 0.0
+  val minusMinusZeroD: Double = - - 0.0
+ }
+}

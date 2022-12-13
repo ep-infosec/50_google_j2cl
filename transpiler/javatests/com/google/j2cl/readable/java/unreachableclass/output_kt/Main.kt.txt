@@ -1,0 +1,28 @@
+// Generated from "unreachableclass/Main.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package unreachableclass
+
+import javaemul.lang.*
+import kotlin.Any
+import kotlin.OptIn
+import kotlin.RuntimeException
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.native.ObjCName
+
+@ObjCName("UnreachableclassMain", exact = true)
+open class Main {
+ init {
+  try {} catch (e: RuntimeException) {
+   open class ___1A {
+    open fun m_pp_unreachableclass() {
+     open class ___1B {
+      fun n_private_2() {}
+     }
+    }
+   }
+   ___1A().m_pp_unreachableclass()
+   object : Any() {}
+  }
+ }
+}

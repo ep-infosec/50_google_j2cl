@@ -1,0 +1,138 @@
+;;; Code for javascriptkeywords.JSKeyWords [static fields]
+(global $f_$initialized__javascriptkeywords_JSKeyWords (mut i32) (i32.const 0))
+
+;;; Code for javascriptkeywords.JSKeyWords [vtable.init]
+(global $javascriptkeywords.JSKeyWords.vtable (ref $javascriptkeywords.JSKeyWords.vtable) 
+ (struct.new $javascriptkeywords.JSKeyWords.vtable
+  (ref.func $m_equals__java_lang_Object__boolean@java.lang.Object)
+  (ref.func $m_hashCode__int@java.lang.Object)
+  (ref.func $m_toString__java_lang_String@java.lang.Object)
+  (ref.func $m_getClass__java_lang_Class@javascriptkeywords.JSKeyWords)
+  (ref.func $m_test__int__int@javascriptkeywords.JSKeyWords)
+ )
+)
+
+;;; Code for javascriptkeywords.JSKeyWords [itable.init]
+(global $javascriptkeywords.JSKeyWords.itable (ref $javascriptkeywords.JSKeyWords.itable) (struct.new $javascriptkeywords.JSKeyWords.itable 
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+ ))
+
+;;; Code for javascriptkeywords.JSKeyWords [CLASS]
+(type $javascriptkeywords.JSKeyWords (struct_subtype 
+ (field $vtable (ref $javascriptkeywords.JSKeyWords.vtable)) 
+ (field $itable (ref $javascriptkeywords.JSKeyWords.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+  $java.lang.Object)
+)
+(type $javascriptkeywords.JSKeyWords.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+ (field $m_test__int__int (ref $function.m_test__int__int))
+  $java.lang.Object.vtable)
+)
+(type $javascriptkeywords.JSKeyWords.itable (struct_subtype 
+(field $slot0 (ref null struct))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $java.lang.Object.itable))
+
+;;; JSKeyWords JSKeyWords.$create()
+(func $$create__@javascriptkeywords.JSKeyWords
+ (result (ref null $javascriptkeywords.JSKeyWords))
+ ;;@ javascriptkeywords/JSKeyWords.java:18:13
+ (local $$instance (ref null $javascriptkeywords.JSKeyWords))
+ (block
+  ;; JSKeyWords $instance = new JSKeyWords.<init>(0);
+  ;;@ javascriptkeywords/JSKeyWords.java:18:13
+  (local.set $$instance (struct.new $javascriptkeywords.JSKeyWords (ref.as_non_null (global.get $javascriptkeywords.JSKeyWords.vtable)) (ref.as_non_null (global.get $javascriptkeywords.JSKeyWords.itable)) (i32.const 0)))
+  ;; $instance.$ctor();
+  ;;@ javascriptkeywords/JSKeyWords.java:18:13
+  (call $$ctor__void_$p_javascriptkeywords_JSKeyWords@javascriptkeywords.JSKeyWords (ref.as_non_null (local.get $$instance)))
+  ;; return $instance;
+  ;;@ javascriptkeywords/JSKeyWords.java:18:13
+  (return (local.get $$instance))
+ )
+)
+
+;;; void JSKeyWords.$ctor()
+(func $$ctor__void_$p_javascriptkeywords_JSKeyWords@javascriptkeywords.JSKeyWords
+ (param $this (ref null $javascriptkeywords.JSKeyWords))
+ ;;@ javascriptkeywords/JSKeyWords.java:18:13
+ (block
+  ;; javascriptkeywords.JSKeyWords.$clinit();
+  ;;@ javascriptkeywords/JSKeyWords.java:18:13
+  (call $$clinit__void@javascriptkeywords.JSKeyWords )
+  ;; Object.this.$ctor();
+  ;;@ javascriptkeywords/JSKeyWords.java:18:13
+  (call $$ctor__void_$p_java_lang_Object@java.lang.Object (ref.as_non_null (local.get $this)))
+ )
+)
+
+;;; int JSKeyWords.test(int in)
+(func $m_test__int__int@javascriptkeywords.JSKeyWords
+ (type $function.m_test__int__int)
+ (param $this.untyped (ref $java.lang.Object))
+ (param $in i32)
+ (result i32)
+ ;;@ javascriptkeywords/JSKeyWords.java:19:13
+ (local $let i32)
+ (local $this (ref null $javascriptkeywords.JSKeyWords))
+ (local.set $this (ref.cast_static $javascriptkeywords.JSKeyWords (local.get $this.untyped)))
+ (block
+  ;; int let = 0;
+  ;;@ javascriptkeywords/JSKeyWords.java:20:4
+  (local.set $let (i32.const 0))
+  ;; return (let + in);
+  ;;@ javascriptkeywords/JSKeyWords.java:21:4
+  (return (i32.add (local.get $let) (local.get $in)))
+ )
+)
+(elem declare func $m_test__int__int@javascriptkeywords.JSKeyWords)
+
+;;; void JSKeyWords.$clinit()
+(func $$clinit__void@javascriptkeywords.JSKeyWords
+ ;;@ javascriptkeywords/JSKeyWords.java:18:13
+ (block
+  ;; if (javascriptkeywords.JSKeyWords.$initialized) return;
+  ;;@ javascriptkeywords/JSKeyWords.java:18:13
+  (if (global.get $f_$initialized__javascriptkeywords_JSKeyWords)
+   (then
+    ;; return;
+    ;;@ javascriptkeywords/JSKeyWords.java:18:13
+    (return )
+   )
+  )
+  ;; (javascriptkeywords.JSKeyWords.$initialized = true);
+  ;;@ javascriptkeywords/JSKeyWords.java:18:13
+  (global.set $f_$initialized__javascriptkeywords_JSKeyWords (i32.const 1))
+  ;; java.lang.Object.$clinit();
+  ;;@ javascriptkeywords/JSKeyWords.java:18:13
+  (call $$clinit__void@java.lang.Object )
+ )
+)
+
+;;; Class<?> JSKeyWords.getClass()
+(func $m_getClass__java_lang_Class@javascriptkeywords.JSKeyWords
+ (type $function.m_getClass__java_lang_Class)
+ (param $this.untyped (ref $java.lang.Object))
+ (result (ref null $java.lang.Class))
+ (local $this (ref null $javascriptkeywords.JSKeyWords))
+ (local.set $this (ref.cast_static $javascriptkeywords.JSKeyWords (local.get $this.untyped)))
+ (block
+  ;; return javaemul.internal.ClassLiteralPool.$getJavascriptkeywords.JSKeyWords();
+  (return (call $function.no.side.effects.$getJavascriptkeywords.JSKeyWords__java_lang_Class (ref.func $$getJavascriptkeywords.JSKeyWords__java_lang_Class@javaemul.internal.ClassLiteralPool) ))
+ )
+)
+(elem declare func $m_getClass__java_lang_Class@javascriptkeywords.JSKeyWords)

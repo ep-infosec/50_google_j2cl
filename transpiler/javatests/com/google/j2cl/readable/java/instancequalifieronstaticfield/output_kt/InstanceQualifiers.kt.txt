@@ -1,0 +1,64 @@
+// Generated from "instancequalifieronstaticfield/InstanceQualifiers.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package instancequalifieronstaticfield
+
+import javaemul.lang.*
+import instancequalifieronstaticfield.InstanceQualifiers
+import kotlin.Array
+import kotlin.Int
+import kotlin.OptIn
+import kotlin.String
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.jvm.JvmField
+import kotlin.jvm.JvmStatic
+import kotlin.native.ObjCName
+import kotlin.run
+
+@ObjCName("InstancequalifieronstaticfieldInstanceQualifiers", exact = true)
+open class InstanceQualifiers {
+ companion object {
+  @JvmField var staticField: Int = 100
+
+  @JvmField var sideEffectCount: Int = 0
+
+  @JvmStatic
+  fun getStaticValue(): Int {
+   return InstanceQualifiers.staticField
+  }
+
+  @JvmStatic
+  fun getStaticInstanceQualifiers(): InstanceQualifiers? {
+   return null
+  }
+
+  @JvmStatic
+  fun main(
+   vararg @ObjCName("withNSStringArray", exact = false) args: String?
+  ) {
+   val args_1: Array<String?>? = args as Array<String?>?
+   val main: InstanceQualifiers? = InstanceQualifiers()
+   var i: Int = 0
+   InstanceQualifiers.staticField = 100
+   InstanceQualifiers.staticField = 100
+   InstanceQualifiers.getStaticInstanceQualifiers()
+   InstanceQualifiers.staticField = 300
+   i = InstanceQualifiers.staticField
+   i = InstanceQualifiers.getStaticValue()
+   i = run {
+    InstanceQualifiers.getStaticInstanceQualifiers()
+    InstanceQualifiers.staticField
+   }
+   InstanceQualifiers.staticField = InstanceQualifiers.staticField + 100
+   InstanceQualifiers.getStaticInstanceQualifiers()
+   InstanceQualifiers.staticField = InstanceQualifiers.staticField + 100
+   InstanceQualifiers.getStaticInstanceQualifiers()
+   InstanceQualifiers.getStaticInstanceQualifiers()
+   InstanceQualifiers.staticField = InstanceQualifiers.staticField + run {
+    InstanceQualifiers.getStaticInstanceQualifiers()
+    InstanceQualifiers.getStaticInstanceQualifiers()
+    InstanceQualifiers.getStaticValue()
+   }
+  }
+ }
+}

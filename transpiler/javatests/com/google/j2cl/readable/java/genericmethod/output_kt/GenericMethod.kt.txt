@@ -1,0 +1,181 @@
+// Generated from "genericmethod/GenericMethod.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package genericmethod
+
+import javaemul.lang.*
+import genericmethod.GenericMethod
+import kotlin.Any
+import kotlin.Array
+import kotlin.Error
+import kotlin.Exception
+import kotlin.Number
+import kotlin.OptIn
+import kotlin.String
+import kotlin.arrayOf
+import kotlin.collections.MutableList
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.jvm.JvmStatic
+import kotlin.native.ObjCName
+
+@ObjCName("GenericmethodGenericMethod", exact = true)
+open class GenericMethod<T> {
+ open fun <T_1, S> foo(
+  @ObjCName("withId", exact = false) f: T_1,
+  @ObjCName("withId", exact = false) s: S
+ ) {}
+
+ open fun `fun`(
+  @ObjCName("withId", exact = false) o: Any?
+ ) {}
+
+ open fun <T_1: Exception?> `fun`(
+  @ObjCName("withJavaLangException", exact = false) t: T_1
+ ) {}
+
+ open fun <T_1: Error?> `fun`(
+  @ObjCName("withJavaLangError", exact = false) t: T_1
+ ) {
+  object : GenericMethod<T_1>() {
+   open fun fun2(
+    @ObjCName("withJavaLangError", exact = false) t: T_1
+   ) {}
+
+   open fun <T_1> fun2(
+    @ObjCName("withId", exact = false) t: T_1
+   ) {}
+  }
+  open class ___1LocalClass<T>: GenericMethod<T>() {
+   open fun fun2(
+    @ObjCName("withId", exact = false) t: T
+   ) {}
+
+   open fun <T_1: Number?> fun2(
+    @ObjCName("withNSNumber", exact = false) t: T_1
+   ) {}
+  }
+  ___1LocalClass<T_1>()
+ }
+
+ open fun <T_1> bar(): GenericMethod<T_1>? {
+  return null
+ }
+
+ open fun <T_1> `fun`(
+  @ObjCName("withNSObjectArray", exact = false) array: Array<T_1>?
+ ): Array<T_1>? {
+  return array
+ }
+
+ open fun <T_1> checked(): T_1 {
+  return null as T_1
+ }
+
+ open fun <T_1> unchecked(): T_1 {
+  return null as T_1
+ }
+
+ open fun test() {
+  val g: GenericMethod<Number?>? = GenericMethod<Number?>()
+  g!!.foo<GenericMethod<Number?>?, GenericMethod<Number?>?>(g, g)
+  g!!.foo<Error?, Exception?>(java.lang.Error(), java.lang.Exception())
+  g!!.`fun`(Any())
+  g!!.`fun`<Exception?>(java.lang.Exception())
+  g!!.`fun`<Error?>(java.lang.Error())
+  g!!.`fun`<String?>(arrayOf<String?>("asdf"))
+  var s: String? = this.checked<String?>()
+  s = this.unchecked<String?>()
+  this.checked<GenericMethod.Content?>()!!.getProp_pp_genericmethod()
+  this.unchecked<GenericMethod.Content?>()!!.getProp_pp_genericmethod()
+ }
+
+ companion object {
+  @JvmStatic
+  fun acceptsContent(
+   @ObjCName("withGenericmethodGenericMethod_Content", exact = false) content: GenericMethod.Content?
+  ) {}
+
+  @JvmStatic
+  fun acceptsString(
+   @ObjCName("withNSString", exact = false) string: String?
+  ) {}
+
+  @JvmStatic
+  fun testErasureCast_wildcard() {
+   val list: MutableList<GenericMethod.Container<*>?>? = null
+   val content: GenericMethod.Content? = list!!.get(0)!!.get_pp_genericmethod()
+   GenericMethod.acceptsString(content!!.getProp_pp_genericmethod())
+   GenericMethod.acceptsContent(content)
+   val nestedWildcardList: MutableList<GenericMethod.SuperContainer<out GenericMethod.Container<*>?>?>? = null
+   val nestedContent: GenericMethod.Content? = nestedWildcardList!!.get(0)!!.get_pp_genericmethod()!!.get_pp_genericmethod()
+   GenericMethod.acceptsString(nestedContent!!.getProp_pp_genericmethod())
+   GenericMethod.acceptsContent(nestedContent)
+   val deepWildcardList: MutableList<GenericMethod.SuperContainer<GenericMethod.Container<*>?>?>? = null
+   val deepContent: GenericMethod.Content? = deepWildcardList!!.get(0)!!.get_pp_genericmethod()!!.get_pp_genericmethod()
+   GenericMethod.acceptsString(deepContent!!.getProp_pp_genericmethod())
+   GenericMethod.acceptsContent(deepContent)
+  }
+
+  @JvmStatic
+  fun <CT: GenericMethod.Container<C>?, C: GenericMethod.Content?> testErasureCast_typeVariable() {
+   val list: MutableList<GenericMethod.Container<C>?>? = null
+   val content: GenericMethod.Content? = list!!.get(0)!!.get_pp_genericmethod()
+   GenericMethod.acceptsString(content!!.getProp_pp_genericmethod())
+   GenericMethod.acceptsContent(content)
+   val nestedTypeVariableList: MutableList<GenericMethod.SuperContainer<CT>?>? = null
+   val nestedContent: GenericMethod.Content? = nestedTypeVariableList!!.get(0)!!.get_pp_genericmethod()!!.get_pp_genericmethod()
+   GenericMethod.acceptsString(nestedContent!!.getProp_pp_genericmethod())
+   GenericMethod.acceptsContent(nestedContent)
+   val deepTypeVariableList: MutableList<GenericMethod.SuperContainer<GenericMethod.Container<C>?>?>? = null
+   val deepContent: GenericMethod.Content? = deepTypeVariableList!!.get(0)!!.get_pp_genericmethod()!!.get_pp_genericmethod()
+   GenericMethod.acceptsString(deepContent!!.getProp_pp_genericmethod())
+   GenericMethod.acceptsContent(deepContent)
+  }
+
+  @JvmStatic
+  fun <V> testLowerWildcardBound_pp_genericmethod(consumer: GenericMethod.Consumer<in V>?, v: V) {
+   consumer!!.accept(v)
+  }
+
+  @JvmStatic
+  fun <V> testUpperWildcardBound_pp_genericmethod(supplier: GenericMethod.Supplier<out V>?): V {
+   return supplier!!.get()
+  }
+
+  @JvmStatic
+  fun <T_1: Number?> methodWithBoundTypeVariable_pp_genericmethod() {}
+
+  @JvmStatic
+  fun testMethodCallsWithCaptureTypeArguments_pp_genericmethod() {
+   GenericMethod.methodWithBoundTypeVariable_pp_genericmethod<Number?>()
+  }
+ }
+
+ open class SuperContainer<C: GenericMethod.Container<*>?> {
+  open fun get_pp_genericmethod(): C {
+   return null as C
+  }
+ }
+
+ open class Container<CT: GenericMethod.Content?> {
+  open fun get_pp_genericmethod(): CT {
+   return null as CT
+  }
+ }
+
+ open class Content {
+  open fun getProp_pp_genericmethod(): String? {
+   return null
+  }
+ }
+
+ fun interface Consumer<V> {
+  fun accept(
+   @ObjCName("withId", exact = false) v: V
+  )
+ }
+
+ fun interface Supplier<V> {
+  fun get(): V
+ }
+}

@@ -1,0 +1,179 @@
+;;; Code for blockscoping.BlockScoping [static fields]
+(global $f_$initialized__blockscoping_BlockScoping (mut i32) (i32.const 0))
+
+;;; Code for blockscoping.BlockScoping [vtable.init]
+(global $blockscoping.BlockScoping.vtable (ref $blockscoping.BlockScoping.vtable) 
+ (struct.new $blockscoping.BlockScoping.vtable
+  (ref.func $m_equals__java_lang_Object__boolean@java.lang.Object)
+  (ref.func $m_hashCode__int@java.lang.Object)
+  (ref.func $m_toString__java_lang_String@java.lang.Object)
+  (ref.func $m_getClass__java_lang_Class@blockscoping.BlockScoping)
+  (ref.func $m_localScopes__void@blockscoping.BlockScoping)
+  (ref.func $m_nestedScopes__void@blockscoping.BlockScoping)
+ )
+)
+
+;;; Code for blockscoping.BlockScoping [itable.init]
+(global $blockscoping.BlockScoping.itable (ref $blockscoping.BlockScoping.itable) (struct.new $blockscoping.BlockScoping.itable 
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+ ))
+
+;;; Code for blockscoping.BlockScoping [CLASS]
+(type $blockscoping.BlockScoping (struct_subtype 
+ (field $vtable (ref $blockscoping.BlockScoping.vtable)) 
+ (field $itable (ref $blockscoping.BlockScoping.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+  $java.lang.Object)
+)
+(type $blockscoping.BlockScoping.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+ (field $m_localScopes__void (ref $function.m_localScopes__void))
+ (field $m_nestedScopes__void (ref $function.m_nestedScopes__void))
+  $java.lang.Object.vtable)
+)
+(type $blockscoping.BlockScoping.itable (struct_subtype 
+(field $slot0 (ref null struct))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $java.lang.Object.itable))
+
+;;; BlockScoping BlockScoping.$create()
+(func $$create__@blockscoping.BlockScoping
+ (result (ref null $blockscoping.BlockScoping))
+ ;;@ blockscoping/BlockScoping.java:18:13
+ (local $$instance (ref null $blockscoping.BlockScoping))
+ (block
+  ;; BlockScoping $instance = new BlockScoping.<init>(0);
+  ;;@ blockscoping/BlockScoping.java:18:13
+  (local.set $$instance (struct.new $blockscoping.BlockScoping (ref.as_non_null (global.get $blockscoping.BlockScoping.vtable)) (ref.as_non_null (global.get $blockscoping.BlockScoping.itable)) (i32.const 0)))
+  ;; $instance.$ctor();
+  ;;@ blockscoping/BlockScoping.java:18:13
+  (call $$ctor__void_$p_blockscoping_BlockScoping@blockscoping.BlockScoping (ref.as_non_null (local.get $$instance)))
+  ;; return $instance;
+  ;;@ blockscoping/BlockScoping.java:18:13
+  (return (local.get $$instance))
+ )
+)
+
+;;; void BlockScoping.$ctor()
+(func $$ctor__void_$p_blockscoping_BlockScoping@blockscoping.BlockScoping
+ (param $this (ref null $blockscoping.BlockScoping))
+ ;;@ blockscoping/BlockScoping.java:18:13
+ (block
+  ;; blockscoping.BlockScoping.$clinit();
+  ;;@ blockscoping/BlockScoping.java:18:13
+  (call $$clinit__void@blockscoping.BlockScoping )
+  ;; Object.this.$ctor();
+  ;;@ blockscoping/BlockScoping.java:18:13
+  (call $$ctor__void_$p_java_lang_Object@java.lang.Object (ref.as_non_null (local.get $this)))
+ )
+)
+
+;;; void BlockScoping.localScopes()
+(func $m_localScopes__void@blockscoping.BlockScoping
+ (type $function.m_localScopes__void)
+ (param $this.untyped (ref $java.lang.Object))
+ ;;@ blockscoping/BlockScoping.java:20:14
+ (local $i i32)
+ (local $i_1 i32)
+ (local $this (ref null $blockscoping.BlockScoping))
+ (local.set $this (ref.cast_static $blockscoping.BlockScoping (local.get $this.untyped)))
+ (block
+  (block
+   ;; int i = 0;
+   ;;@ blockscoping/BlockScoping.java:22:6
+   (local.set $i (i32.const 0))
+  )
+  (block
+   ;; int i = 1;
+   ;;@ blockscoping/BlockScoping.java:25:6
+   (local.set $i_1 (i32.const 1))
+  )
+ )
+)
+(elem declare func $m_localScopes__void@blockscoping.BlockScoping)
+
+;;; void BlockScoping.nestedScopes()
+(func $m_nestedScopes__void@blockscoping.BlockScoping
+ (type $function.m_nestedScopes__void)
+ (param $this.untyped (ref $java.lang.Object))
+ ;;@ blockscoping/BlockScoping.java:30:14
+ (local $x i32)
+ (local $y i32)
+ (local $this (ref null $blockscoping.BlockScoping))
+ (local.set $this (ref.cast_static $blockscoping.BlockScoping (local.get $this.untyped)))
+ (block
+  ;; int x;
+  ;;@ blockscoping/BlockScoping.java:31:4
+  
+  ;; int y;
+  ;;@ blockscoping/BlockScoping.java:32:4
+  
+  (block
+   ;; (x = 1);
+   ;;@ blockscoping/BlockScoping.java:34:6
+   (local.set $x (i32.const 1))
+   (block
+    ;; (y = 1);
+    ;;@ blockscoping/BlockScoping.java:36:8
+    (local.set $y (i32.const 1))
+   )
+   ;; (y = (y + 1));
+   ;;@ blockscoping/BlockScoping.java:38:6
+   (local.set $y (i32.add (local.get $y) (i32.const 1)))
+  )
+  ;; (x = (x + 1));
+  ;;@ blockscoping/BlockScoping.java:40:4
+  (local.set $x (i32.add (local.get $x) (i32.const 1)))
+ )
+)
+(elem declare func $m_nestedScopes__void@blockscoping.BlockScoping)
+
+;;; void BlockScoping.$clinit()
+(func $$clinit__void@blockscoping.BlockScoping
+ ;;@ blockscoping/BlockScoping.java:18:13
+ (block
+  ;; if (blockscoping.BlockScoping.$initialized) return;
+  ;;@ blockscoping/BlockScoping.java:18:13
+  (if (global.get $f_$initialized__blockscoping_BlockScoping)
+   (then
+    ;; return;
+    ;;@ blockscoping/BlockScoping.java:18:13
+    (return )
+   )
+  )
+  ;; (blockscoping.BlockScoping.$initialized = true);
+  ;;@ blockscoping/BlockScoping.java:18:13
+  (global.set $f_$initialized__blockscoping_BlockScoping (i32.const 1))
+  ;; java.lang.Object.$clinit();
+  ;;@ blockscoping/BlockScoping.java:18:13
+  (call $$clinit__void@java.lang.Object )
+ )
+)
+
+;;; Class<?> BlockScoping.getClass()
+(func $m_getClass__java_lang_Class@blockscoping.BlockScoping
+ (type $function.m_getClass__java_lang_Class)
+ (param $this.untyped (ref $java.lang.Object))
+ (result (ref null $java.lang.Class))
+ (local $this (ref null $blockscoping.BlockScoping))
+ (local.set $this (ref.cast_static $blockscoping.BlockScoping (local.get $this.untyped)))
+ (block
+  ;; return javaemul.internal.ClassLiteralPool.$getBlockscoping.BlockScoping();
+  (return (call $function.no.side.effects.$getBlockscoping.BlockScoping__java_lang_Class (ref.func $$getBlockscoping.BlockScoping__java_lang_Class@javaemul.internal.ClassLiteralPool) ))
+ )
+)
+(elem declare func $m_getClass__java_lang_Class@blockscoping.BlockScoping)

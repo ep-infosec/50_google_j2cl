@@ -1,0 +1,119 @@
+;;; Code for instancefieldaccesslevels.InstanceFieldAccessLevels [static fields]
+(global $f_$initialized__instancefieldaccesslevels_InstanceFieldAccessLevels (mut i32) (i32.const 0))
+
+;;; Code for instancefieldaccesslevels.InstanceFieldAccessLevels [vtable.init]
+(global $instancefieldaccesslevels.InstanceFieldAccessLevels.vtable (ref $instancefieldaccesslevels.InstanceFieldAccessLevels.vtable) 
+ (struct.new $instancefieldaccesslevels.InstanceFieldAccessLevels.vtable
+  (ref.func $m_equals__java_lang_Object__boolean@java.lang.Object)
+  (ref.func $m_hashCode__int@java.lang.Object)
+  (ref.func $m_toString__java_lang_String@java.lang.Object)
+  (ref.func $m_getClass__java_lang_Class@instancefieldaccesslevels.InstanceFieldAccessLevels)
+ )
+)
+
+;;; Code for instancefieldaccesslevels.InstanceFieldAccessLevels [itable.init]
+(global $instancefieldaccesslevels.InstanceFieldAccessLevels.itable (ref $instancefieldaccesslevels.InstanceFieldAccessLevels.itable) (struct.new $instancefieldaccesslevels.InstanceFieldAccessLevels.itable 
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+ ))
+
+;;; Code for instancefieldaccesslevels.InstanceFieldAccessLevels [CLASS]
+(type $instancefieldaccesslevels.InstanceFieldAccessLevels (struct_subtype 
+ (field $vtable (ref $instancefieldaccesslevels.InstanceFieldAccessLevels.vtable)) 
+ (field $itable (ref $instancefieldaccesslevels.InstanceFieldAccessLevels.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+ (field $f_a__instancefieldaccesslevels_InstanceFieldAccessLevels (mut i32))
+ (field $f_b__instancefieldaccesslevels_InstanceFieldAccessLevels_ (mut i8))
+ (field $f_c__instancefieldaccesslevels_InstanceFieldAccessLevels (mut (ref null $java.lang.Object)))
+ (field $f_d__instancefieldaccesslevels_InstanceFieldAccessLevels (mut i32))
+  $java.lang.Object)
+)
+(type $instancefieldaccesslevels.InstanceFieldAccessLevels.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+  $java.lang.Object.vtable)
+)
+(type $instancefieldaccesslevels.InstanceFieldAccessLevels.itable (struct_subtype 
+(field $slot0 (ref null struct))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $java.lang.Object.itable))
+
+;;; InstanceFieldAccessLevels InstanceFieldAccessLevels.$create()
+(func $$create__@instancefieldaccesslevels.InstanceFieldAccessLevels
+ (result (ref null $instancefieldaccesslevels.InstanceFieldAccessLevels))
+ ;;@ instancefieldaccesslevels/InstanceFieldAccessLevels.java:18:13
+ (local $$instance (ref null $instancefieldaccesslevels.InstanceFieldAccessLevels))
+ (block
+  ;; InstanceFieldAccessLevels $instance = new InstanceFieldAccessLevels.<init>(0,0,false,null,0);
+  ;;@ instancefieldaccesslevels/InstanceFieldAccessLevels.java:18:13
+  (local.set $$instance (struct.new $instancefieldaccesslevels.InstanceFieldAccessLevels (ref.as_non_null (global.get $instancefieldaccesslevels.InstanceFieldAccessLevels.vtable)) (ref.as_non_null (global.get $instancefieldaccesslevels.InstanceFieldAccessLevels.itable)) (i32.const 0) (i32.const 0) (i32.const 0) (ref.null $java.lang.Object) (i32.const 0)))
+  ;; $instance.$ctor();
+  ;;@ instancefieldaccesslevels/InstanceFieldAccessLevels.java:18:13
+  (call $$ctor__void_$p_instancefieldaccesslevels_InstanceFieldAccessLevels@instancefieldaccesslevels.InstanceFieldAccessLevels (ref.as_non_null (local.get $$instance)))
+  ;; return $instance;
+  ;;@ instancefieldaccesslevels/InstanceFieldAccessLevels.java:18:13
+  (return (local.get $$instance))
+ )
+)
+
+;;; void InstanceFieldAccessLevels.$ctor()
+(func $$ctor__void_$p_instancefieldaccesslevels_InstanceFieldAccessLevels@instancefieldaccesslevels.InstanceFieldAccessLevels
+ (param $this (ref null $instancefieldaccesslevels.InstanceFieldAccessLevels))
+ ;;@ instancefieldaccesslevels/InstanceFieldAccessLevels.java:18:13
+ (block
+  ;; instancefieldaccesslevels.InstanceFieldAccessLevels.$clinit();
+  ;;@ instancefieldaccesslevels/InstanceFieldAccessLevels.java:18:13
+  (call $$clinit__void@instancefieldaccesslevels.InstanceFieldAccessLevels )
+  ;; Object.this.$ctor();
+  ;;@ instancefieldaccesslevels/InstanceFieldAccessLevels.java:18:13
+  (call $$ctor__void_$p_java_lang_Object@java.lang.Object (ref.as_non_null (local.get $this)))
+ )
+)
+
+;;; void InstanceFieldAccessLevels.$clinit()
+(func $$clinit__void@instancefieldaccesslevels.InstanceFieldAccessLevels
+ ;;@ instancefieldaccesslevels/InstanceFieldAccessLevels.java:18:13
+ (block
+  ;; if (instancefieldaccesslevels.InstanceFieldAccessLevels.$initialized) return;
+  ;;@ instancefieldaccesslevels/InstanceFieldAccessLevels.java:18:13
+  (if (global.get $f_$initialized__instancefieldaccesslevels_InstanceFieldAccessLevels)
+   (then
+    ;; return;
+    ;;@ instancefieldaccesslevels/InstanceFieldAccessLevels.java:18:13
+    (return )
+   )
+  )
+  ;; (instancefieldaccesslevels.InstanceFieldAccessLevels.$initialized = true);
+  ;;@ instancefieldaccesslevels/InstanceFieldAccessLevels.java:18:13
+  (global.set $f_$initialized__instancefieldaccesslevels_InstanceFieldAccessLevels (i32.const 1))
+  ;; java.lang.Object.$clinit();
+  ;;@ instancefieldaccesslevels/InstanceFieldAccessLevels.java:18:13
+  (call $$clinit__void@java.lang.Object )
+ )
+)
+
+;;; Class<?> InstanceFieldAccessLevels.getClass()
+(func $m_getClass__java_lang_Class@instancefieldaccesslevels.InstanceFieldAccessLevels
+ (type $function.m_getClass__java_lang_Class)
+ (param $this.untyped (ref $java.lang.Object))
+ (result (ref null $java.lang.Class))
+ (local $this (ref null $instancefieldaccesslevels.InstanceFieldAccessLevels))
+ (local.set $this (ref.cast_static $instancefieldaccesslevels.InstanceFieldAccessLevels (local.get $this.untyped)))
+ (block
+  ;; return javaemul.internal.ClassLiteralPool.$getInstancefieldaccesslevels.InstanceFieldAccessLevels();
+  (return (call $function.no.side.effects.$getInstancefieldaccesslevels.InstanceFieldAccessLevels__java_lang_Class (ref.func $$getInstancefieldaccesslevels.InstanceFieldAccessLevels__java_lang_Class@javaemul.internal.ClassLiteralPool) ))
+ )
+)
+(elem declare func $m_getClass__java_lang_Class@instancefieldaccesslevels.InstanceFieldAccessLevels)

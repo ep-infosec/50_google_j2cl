@@ -1,0 +1,54 @@
+// Generated from "jstype/SomeJsType.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package jstype
+
+import javaemul.lang.*
+import jstype.SomeJsType
+import kotlin.Any
+import kotlin.Double
+import kotlin.Int
+import kotlin.OptIn
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.jvm.JvmField
+import kotlin.native.ObjCName
+
+@ObjCName("JstypeSomeJsType", exact = true)
+open class SomeJsType<T> {
+ @JvmField var publicField: Int = 0
+
+ @JvmField var privateField_private_2: Int = 0
+
+ @JvmField var packageField_pp_jstype: Int = 0
+
+ @JvmField var protectedField: Int = 0
+
+ open fun publicMethod() {}
+
+ fun privateMethod_private_2() {}
+
+ open fun packageMethod_pp_jstype() {}
+
+ open fun protectedMethod() {}
+
+ open fun useFieldsAndMethods() {
+  val value: Int = this.publicField + this.privateField_private_2 + this.packageField_pp_jstype + this.protectedField
+  this.publicMethod()
+  this.privateMethod_private_2()
+  this.packageMethod_pp_jstype()
+  this.protectedMethod()
+ }
+
+ open fun testStarAndWildCard(
+  @ObjCName("withJstypeSomeJsType_Star", exact = false) s: SomeJsType.Star?,
+  @ObjCName("withJstypeSomeJsType_Wildcard", exact = false) w: SomeJsType.Wildcard?
+ ): SomeJsType.Wildcard? {
+  val `object`: Any? = Any()
+  val star: SomeJsType.Star? = Double.valueOf(3.0) as SomeJsType.Star?
+  return star as SomeJsType.Wildcard?
+ }
+
+ interface Star {}
+
+ interface Wildcard {}
+}

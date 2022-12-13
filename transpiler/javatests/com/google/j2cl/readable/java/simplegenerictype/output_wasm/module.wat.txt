@@ -1,0 +1,139 @@
+;;; Code for simplegenerictype.SimpleGenericType [static fields]
+(global $f_$initialized__simplegenerictype_SimpleGenericType (mut i32) (i32.const 0))
+
+;;; Code for simplegenerictype.SimpleGenericType [vtable.init]
+(global $simplegenerictype.SimpleGenericType.vtable (ref $simplegenerictype.SimpleGenericType.vtable) 
+ (struct.new $simplegenerictype.SimpleGenericType.vtable
+  (ref.func $m_equals__java_lang_Object__boolean@java.lang.Object)
+  (ref.func $m_hashCode__int@java.lang.Object)
+  (ref.func $m_toString__java_lang_String@java.lang.Object)
+  (ref.func $m_getClass__java_lang_Class@simplegenerictype.SimpleGenericType)
+  (ref.func $m_test__void@simplegenerictype.SimpleGenericType)
+ )
+)
+
+;;; Code for simplegenerictype.SimpleGenericType [itable.init]
+(global $simplegenerictype.SimpleGenericType.itable (ref $simplegenerictype.SimpleGenericType.itable) (struct.new $simplegenerictype.SimpleGenericType.itable 
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+ ))
+
+;;; Code for simplegenerictype.SimpleGenericType [CLASS]
+(type $simplegenerictype.SimpleGenericType (struct_subtype 
+ (field $vtable (ref $simplegenerictype.SimpleGenericType.vtable)) 
+ (field $itable (ref $simplegenerictype.SimpleGenericType.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+ (field $f_first__simplegenerictype_SimpleGenericType (ref null $java.lang.Object))
+ (field $f_second__simplegenerictype_SimpleGenericType (ref null $java.lang.Object))
+  $java.lang.Object)
+)
+(type $simplegenerictype.SimpleGenericType.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+ (field $m_test__void (ref $function.m_test__void))
+  $java.lang.Object.vtable)
+)
+(type $simplegenerictype.SimpleGenericType.itable (struct_subtype 
+(field $slot0 (ref null struct))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $java.lang.Object.itable))
+
+;;; SimpleGenericType<T, S> SimpleGenericType.$create(T t, S s)
+(func $$create__java_lang_Object__java_lang_Object@simplegenerictype.SimpleGenericType
+ (param $t (ref null $java.lang.Object))
+ (param $s (ref null $java.lang.Object))
+ (result (ref null $simplegenerictype.SimpleGenericType))
+ ;;@ simplegenerictype/SimpleGenericType.java:22:9
+ (local $$instance (ref null $simplegenerictype.SimpleGenericType))
+ (block
+  ;; SimpleGenericType<T, S> $instance = new SimpleGenericType.<init>(0,t,s);
+  ;;@ simplegenerictype/SimpleGenericType.java:22:9
+  (local.set $$instance (struct.new $simplegenerictype.SimpleGenericType (ref.as_non_null (global.get $simplegenerictype.SimpleGenericType.vtable)) (ref.as_non_null (global.get $simplegenerictype.SimpleGenericType.itable)) (i32.const 0) (local.get $t) (local.get $s)))
+  ;; $instance.$ctor(t,s);
+  ;;@ simplegenerictype/SimpleGenericType.java:22:9
+  (call $$ctor__java_lang_Object__java_lang_Object__void_$p_simplegenerictype_SimpleGenericType@simplegenerictype.SimpleGenericType (ref.as_non_null (local.get $$instance))(local.get $t)(local.get $s))
+  ;; return $instance;
+  ;;@ simplegenerictype/SimpleGenericType.java:22:9
+  (return (local.get $$instance))
+ )
+)
+
+;;; void SimpleGenericType.$ctor(T t, S s)
+(func $$ctor__java_lang_Object__java_lang_Object__void_$p_simplegenerictype_SimpleGenericType@simplegenerictype.SimpleGenericType
+ (param $this (ref null $simplegenerictype.SimpleGenericType))
+ (param $t (ref null $java.lang.Object))
+ (param $s (ref null $java.lang.Object))
+ ;;@ simplegenerictype/SimpleGenericType.java:22:9
+ (block
+  ;; simplegenerictype.SimpleGenericType.$clinit();
+  ;;@ simplegenerictype/SimpleGenericType.java:22:37
+  (call $$clinit__void@simplegenerictype.SimpleGenericType )
+  ;; Object.this.$ctor();
+  ;;@ simplegenerictype/SimpleGenericType.java:22:37
+  (call $$ctor__void_$p_java_lang_Object@java.lang.Object (ref.as_non_null (local.get $this)))
+ )
+)
+
+;;; void SimpleGenericType.test()
+(func $m_test__void@simplegenerictype.SimpleGenericType
+ (type $function.m_test__void)
+ (param $this.untyped (ref $java.lang.Object))
+ ;;@ simplegenerictype/SimpleGenericType.java:27:14
+ (local $g (ref null $simplegenerictype.SimpleGenericType))
+ (local $this (ref null $simplegenerictype.SimpleGenericType))
+ (local.set $this (ref.cast_static $simplegenerictype.SimpleGenericType (local.get $this.untyped)))
+ (block
+  ;; SimpleGenericType<Object, Error> g = simplegenerictype.SimpleGenericType.$create(java.lang.Object.$create(),java.lang.Error.$create());
+  ;;@ simplegenerictype/SimpleGenericType.java:28:4
+  (local.set $g (call $$create__java_lang_Object__java_lang_Object@simplegenerictype.SimpleGenericType (call $$create__@java.lang.Object )(call $$create__@java.lang.Error )))
+ )
+)
+(elem declare func $m_test__void@simplegenerictype.SimpleGenericType)
+
+;;; void SimpleGenericType.$clinit()
+(func $$clinit__void@simplegenerictype.SimpleGenericType
+ ;;@ simplegenerictype/SimpleGenericType.java:18:13
+ (block
+  ;; if (simplegenerictype.SimpleGenericType.$initialized) return;
+  ;;@ simplegenerictype/SimpleGenericType.java:18:13
+  (if (global.get $f_$initialized__simplegenerictype_SimpleGenericType)
+   (then
+    ;; return;
+    ;;@ simplegenerictype/SimpleGenericType.java:18:13
+    (return )
+   )
+  )
+  ;; (simplegenerictype.SimpleGenericType.$initialized = true);
+  ;;@ simplegenerictype/SimpleGenericType.java:18:13
+  (global.set $f_$initialized__simplegenerictype_SimpleGenericType (i32.const 1))
+  ;; java.lang.Object.$clinit();
+  ;;@ simplegenerictype/SimpleGenericType.java:18:13
+  (call $$clinit__void@java.lang.Object )
+ )
+)
+
+;;; Class<?> SimpleGenericType.getClass()
+(func $m_getClass__java_lang_Class@simplegenerictype.SimpleGenericType
+ (type $function.m_getClass__java_lang_Class)
+ (param $this.untyped (ref $java.lang.Object))
+ (result (ref null $java.lang.Class))
+ (local $this (ref null $simplegenerictype.SimpleGenericType))
+ (local.set $this (ref.cast_static $simplegenerictype.SimpleGenericType (local.get $this.untyped)))
+ (block
+  ;; return javaemul.internal.ClassLiteralPool.$getSimplegenerictype.SimpleGenericType();
+  (return (call $function.no.side.effects.$getSimplegenerictype.SimpleGenericType__java_lang_Class (ref.func $$getSimplegenerictype.SimpleGenericType__java_lang_Class@javaemul.internal.ClassLiteralPool) ))
+ )
+)
+(elem declare func $m_getClass__java_lang_Class@simplegenerictype.SimpleGenericType)

@@ -1,0 +1,15 @@
+// Generated from "staticnestedclass/StaticNestedClassParent.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package staticnestedclass
+
+import javaemul.lang.*
+import kotlin.OptIn
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.native.ObjCName
+
+@ObjCName("StaticnestedclassStaticNestedClassParent", exact = true)
+open class StaticNestedClassParent {
+ @ObjCName("StaticnestedclassStaticNestedClassParent_StaticNestedClass", exact = true)
+ open class StaticNestedClass {}
+}

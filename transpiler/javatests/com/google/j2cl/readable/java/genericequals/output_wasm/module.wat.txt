@@ -1,0 +1,181 @@
+;;; Code for genericequals.GenericEquals [static fields]
+(global $f_$initialized__genericequals_GenericEquals (mut i32) (i32.const 0))
+
+;;; Code for genericequals.GenericEquals [vtable.init]
+(global $genericequals.GenericEquals.vtable (ref $genericequals.GenericEquals.vtable) 
+ (struct.new $genericequals.GenericEquals.vtable
+  (ref.func $m_equals__java_lang_Object__boolean@genericequals.GenericEquals)
+  (ref.func $m_hashCode__int@java.lang.Object)
+  (ref.func $m_toString__java_lang_String@java.lang.Object)
+  (ref.func $m_getClass__java_lang_Class@genericequals.GenericEquals)
+  (ref.func $m_foo__genericequals_GenericEquals__java_lang_Object@genericequals.GenericEquals)
+ )
+)
+
+;;; Code for genericequals.GenericEquals [itable.init]
+(global $genericequals.GenericEquals.itable (ref $genericequals.GenericEquals.itable) (struct.new $genericequals.GenericEquals.itable 
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+ ))
+
+;;; Code for genericequals.GenericEquals [CLASS]
+(type $genericequals.GenericEquals (struct_subtype 
+ (field $vtable (ref $genericequals.GenericEquals.vtable)) 
+ (field $itable (ref $genericequals.GenericEquals.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+ (field $f_value__genericequals_GenericEquals_ (ref null $java.lang.Object))
+ (field $f_value2__genericequals_GenericEquals_ (ref null $genericequals.GenericEquals))
+  $java.lang.Object)
+)
+(type $genericequals.GenericEquals.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+ (field $m_foo__genericequals_GenericEquals__java_lang_Object (ref $function.m_foo__genericequals_GenericEquals__java_lang_Object))
+  $java.lang.Object.vtable)
+)
+(type $genericequals.GenericEquals.itable (struct_subtype 
+(field $slot0 (ref null struct))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $java.lang.Object.itable))
+
+;;; GenericEquals<T> GenericEquals.$create(T value)
+(func $$create__java_lang_Object@genericequals.GenericEquals
+ (param $value (ref null $java.lang.Object))
+ (result (ref null $genericequals.GenericEquals))
+ ;;@ genericequals/GenericEquals.java:23:9
+ (local $$instance (ref null $genericequals.GenericEquals))
+ (block
+  ;; GenericEquals<T> $instance = new GenericEquals.<init>(0,value,null);
+  ;;@ genericequals/GenericEquals.java:23:9
+  (local.set $$instance (struct.new $genericequals.GenericEquals (ref.as_non_null (global.get $genericequals.GenericEquals.vtable)) (ref.as_non_null (global.get $genericequals.GenericEquals.itable)) (i32.const 0) (local.get $value) (ref.null $genericequals.GenericEquals)))
+  ;; $instance.$ctor(value);
+  ;;@ genericequals/GenericEquals.java:23:9
+  (call $$ctor__java_lang_Object__void_$p_genericequals_GenericEquals@genericequals.GenericEquals (ref.as_non_null (local.get $$instance))(local.get $value))
+  ;; return $instance;
+  ;;@ genericequals/GenericEquals.java:23:9
+  (return (local.get $$instance))
+ )
+)
+
+;;; void GenericEquals.$ctor(T value)
+(func $$ctor__java_lang_Object__void_$p_genericequals_GenericEquals@genericequals.GenericEquals
+ (param $this (ref null $genericequals.GenericEquals))
+ (param $value (ref null $java.lang.Object))
+ ;;@ genericequals/GenericEquals.java:23:9
+ (block
+  ;; genericequals.GenericEquals.$clinit();
+  ;;@ genericequals/GenericEquals.java:23:32
+  (call $$clinit__void@genericequals.GenericEquals )
+  ;; Object.this.$ctor();
+  ;;@ genericequals/GenericEquals.java:23:32
+  (call $$ctor__void_$p_java_lang_Object@java.lang.Object (ref.as_non_null (local.get $this)))
+ )
+)
+
+;;; Object GenericEquals.foo(GenericEquals<?> other)
+(func $m_foo__genericequals_GenericEquals__java_lang_Object@genericequals.GenericEquals
+ (type $function.m_foo__genericequals_GenericEquals__java_lang_Object)
+ (param $this.untyped (ref $java.lang.Object))
+ (param $other (ref null $genericequals.GenericEquals))
+ (result (ref null $java.lang.Object))
+ ;;@ genericequals/GenericEquals.java:28:16
+ (local $this (ref null $genericequals.GenericEquals))
+ (local.set $this (ref.cast_static $genericequals.GenericEquals (local.get $this.untyped)))
+ (block
+  ;; return other.value2.value;
+  ;;@ genericequals/GenericEquals.java:29:4
+  (return (struct.get $genericequals.GenericEquals $f_value__genericequals_GenericEquals_(struct.get $genericequals.GenericEquals $f_value2__genericequals_GenericEquals_(local.get $other))))
+ )
+)
+(elem declare func $m_foo__genericequals_GenericEquals__java_lang_Object@genericequals.GenericEquals)
+
+;;; boolean GenericEquals.equals(Object obj)
+(func $m_equals__java_lang_Object__boolean@genericequals.GenericEquals
+ (type $function.m_equals__java_lang_Object__boolean)
+ (param $this.untyped (ref $java.lang.Object))
+ (param $obj (ref null $java.lang.Object))
+ (result i32)
+ ;;@ genericequals/GenericEquals.java:33:17
+ (local $other (ref null $genericequals.GenericEquals))
+ (local $this (ref null $genericequals.GenericEquals))
+ (local.set $this (ref.cast_static $genericequals.GenericEquals (local.get $this.untyped)))
+ (block
+  ;; if ((obj == GenericEquals.this)) {
+  ;;@ genericequals/GenericEquals.java:34:4
+  (if (ref.eq (local.get $obj) (local.get $this))
+   (then
+    (block
+     ;; return true;
+     ;;@ genericequals/GenericEquals.java:35:6
+     (return (i32.const 1))
+    )
+   )
+  )
+  ;; if (!obj instanceof GenericEquals) {
+  ;;@ genericequals/GenericEquals.java:37:4
+  (if (i32.eqz (ref.test_static $genericequals.GenericEquals (local.get $obj)))
+   (then
+    (block
+     ;; return false;
+     ;;@ genericequals/GenericEquals.java:38:6
+     (return (i32.const 0))
+    )
+   )
+  )
+  ;; GenericEquals<?> other = ((GenericEquals<?>) obj);
+  ;;@ genericequals/GenericEquals.java:40:4
+  (local.set $other (ref.cast_static $genericequals.GenericEquals (local.get $obj)))
+  ;; return GenericEquals.this.value.equals(other.value);
+  ;;@ genericequals/GenericEquals.java:41:4
+  (return (call_ref $function.m_equals__java_lang_Object__boolean (ref.as_non_null (struct.get $genericequals.GenericEquals $f_value__genericequals_GenericEquals_(local.get $this)))(struct.get $genericequals.GenericEquals $f_value__genericequals_GenericEquals_(local.get $other))(struct.get $java.lang.Object.vtable $m_equals__java_lang_Object__boolean (struct.get $java.lang.Object $vtable(struct.get $genericequals.GenericEquals $f_value__genericequals_GenericEquals_(local.get $this))))))
+ )
+)
+(elem declare func $m_equals__java_lang_Object__boolean@genericequals.GenericEquals)
+
+;;; void GenericEquals.$clinit()
+(func $$clinit__void@genericequals.GenericEquals
+ ;;@ genericequals/GenericEquals.java:18:13
+ (block
+  ;; if (genericequals.GenericEquals.$initialized) return;
+  ;;@ genericequals/GenericEquals.java:18:13
+  (if (global.get $f_$initialized__genericequals_GenericEquals)
+   (then
+    ;; return;
+    ;;@ genericequals/GenericEquals.java:18:13
+    (return )
+   )
+  )
+  ;; (genericequals.GenericEquals.$initialized = true);
+  ;;@ genericequals/GenericEquals.java:18:13
+  (global.set $f_$initialized__genericequals_GenericEquals (i32.const 1))
+  ;; java.lang.Object.$clinit();
+  ;;@ genericequals/GenericEquals.java:18:13
+  (call $$clinit__void@java.lang.Object )
+ )
+)
+
+;;; Class<?> GenericEquals.getClass()
+(func $m_getClass__java_lang_Class@genericequals.GenericEquals
+ (type $function.m_getClass__java_lang_Class)
+ (param $this.untyped (ref $java.lang.Object))
+ (result (ref null $java.lang.Class))
+ (local $this (ref null $genericequals.GenericEquals))
+ (local.set $this (ref.cast_static $genericequals.GenericEquals (local.get $this.untyped)))
+ (block
+  ;; return javaemul.internal.ClassLiteralPool.$getGenericequals.GenericEquals();
+  (return (call $function.no.side.effects.$getGenericequals.GenericEquals__java_lang_Class (ref.func $$getGenericequals.GenericEquals__java_lang_Class@javaemul.internal.ClassLiteralPool) ))
+ )
+)
+(elem declare func $m_getClass__java_lang_Class@genericequals.GenericEquals)

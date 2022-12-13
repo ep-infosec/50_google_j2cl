@@ -1,0 +1,15 @@
+// Generated from "multipletopclasses/MultipleTopClasses.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package multipletopclasses
+
+import javaemul.lang.*
+import kotlin.OptIn
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.native.ObjCName
+import multipletopclasses.AnotherClass
+
+open class AnotherClass {}
+
+@ObjCName("MultipletopclassesMultipleTopClasses", exact = true)
+open class MultipleTopClasses: AnotherClass() {}

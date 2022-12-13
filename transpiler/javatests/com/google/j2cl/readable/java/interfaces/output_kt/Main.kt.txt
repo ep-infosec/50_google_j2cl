@@ -1,0 +1,61 @@
+// Generated from "interfaces/Main.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package interfaces
+
+import javaemul.lang.*
+import interfaces.Main
+import kotlin.Int
+import kotlin.OptIn
+import kotlin.String
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.jvm.JvmStatic
+import kotlin.native.ObjCName
+import kotlin.run
+
+@ObjCName("InterfacesMain", exact = true)
+open class Main {
+ open fun testInterfaceMembers_pp_interfaces() {
+  val i: Main.Interface<String?>? = Implementor()
+  i!!.interfaceMethod()
+  i!!.defaultMethod(null)
+  Main.Interface.staticInterfaceMethod()
+  val x: Int = run {
+   Implementor()
+   Main.Interface.a
+  } + Main.Interface.b
+ }
+
+ fun interface Interface<T> {
+  fun interfaceMethod()
+
+  fun defaultMethod(
+   @ObjCName("withId", exact = false) t: T
+  ) {
+   this.privateMethod_private_interfaces_Main_Interface(t)
+  }
+
+  fun privateMethod_private_interfaces_Main_Interface(t: T) {}
+
+  companion object {
+   const val a: Int = 1
+
+   const val b: Int = 2
+
+   @JvmStatic
+   fun staticInterfaceMethod() {}
+  }
+ }
+
+ fun interface SubInterface: Main.Interface<String?> {
+  override fun defaultMethod(s: String?) {
+   super<Main.Interface>.defaultMethod(s)
+  }
+ }
+
+ open inner class Implementor: Main.SubInterface, Main.Interface<String?> {
+  open override fun interfaceMethod() {}
+ }
+
+ abstract inner class AbstractImplementor: Main.SubInterface {}
+}

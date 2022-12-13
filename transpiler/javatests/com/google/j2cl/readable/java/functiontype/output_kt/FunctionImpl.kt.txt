@@ -1,0 +1,19 @@
+// Generated from "functiontype/FunctionImpl.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package functiontype
+
+import javaemul.lang.*
+import functiontype.Function
+import kotlin.OptIn
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.native.ObjCName
+
+interface Function {}
+
+@ObjCName("FunctiontypeFunctionImpl", exact = true)
+open class FunctionImpl: Function {
+ open fun test(
+  @ObjCName("withFunctiontypeFunction", exact = false) f: Function?
+ ) {}
+}

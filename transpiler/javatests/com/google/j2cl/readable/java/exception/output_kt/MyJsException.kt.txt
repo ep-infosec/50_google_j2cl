@@ -1,0 +1,19 @@
+// Generated from "exception/MyJsException.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package exception
+
+import javaemul.lang.*
+import java.lang.Exception
+import kotlin.OptIn
+import kotlin.Throwable
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.native.ObjCName
+
+class MyJsException: Exception {
+ constructor()
+
+ constructor(
+  @ObjCName("JavaLangThrowable", exact = false) cause: Throwable?
+ ): this()
+}

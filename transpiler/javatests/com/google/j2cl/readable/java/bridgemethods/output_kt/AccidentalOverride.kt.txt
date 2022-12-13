@@ -1,0 +1,49 @@
+// Generated from "bridgemethods/AccidentalOverride.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package bridgemethods
+
+import javaemul.lang.*
+import bridgemethods.A
+import bridgemethods.I
+import bridgemethods.SpecializedInterface
+import kotlin.Int
+import kotlin.Number
+import kotlin.OptIn
+import kotlin.String
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.native.ObjCName
+
+fun interface I<T, S> {
+ fun `fun`(
+  @ObjCName("withId", exact = false) s: S
+ ): T
+}
+
+open class A<T, S> {
+ open fun `fun`(
+  @ObjCName("withId", exact = false) s: S
+ ): T {
+  return null as T
+ }
+
+ open fun get(): T {
+  return null as T
+ }
+}
+
+open class B: A<Number?, String?>(), I<Int?, String?> {
+ open override fun `fun`(s: String?): Int? {
+  return Int(1)
+ }
+}
+
+interface SpecializedInterface {
+ fun `fun`(
+  @ObjCName("withNSString", exact = false) s: String?
+ ): String?
+
+ fun get(): String?
+}
+
+open class AccidentalOverride: A<String?, String?>(), SpecializedInterface {}

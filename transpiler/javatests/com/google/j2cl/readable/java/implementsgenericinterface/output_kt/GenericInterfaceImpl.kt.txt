@@ -1,0 +1,20 @@
+// Generated from "implementsgenericinterface/GenericInterfaceImpl.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package implementsgenericinterface
+
+import javaemul.lang.*
+import implementsgenericinterface.GenericInterface
+import kotlin.Number
+import kotlin.OptIn
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.native.ObjCName
+
+interface GenericInterface<T> {}
+
+interface GenericSubInterface<T>: GenericInterface<T> {}
+
+open class GenericInterfaceGenericImpl<T>: GenericInterface<T> {}
+
+@ObjCName("ImplementsgenericinterfaceGenericInterfaceImpl", exact = true)
+open class GenericInterfaceImpl: GenericInterface<Number?> {}

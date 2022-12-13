@@ -1,0 +1,33 @@
+// Generated from "staticinitializers/StaticInitializers.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package staticinitializers
+
+import javaemul.lang.*
+import kotlin.Int
+import kotlin.OptIn
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.jvm.JvmField
+import kotlin.native.ObjCName
+import staticinitializers.StaticInitializers
+
+@ObjCName("StaticinitializersStaticInitializers", exact = true)
+open class StaticInitializers {
+ companion object {
+  @JvmField var a: Int = 5
+
+  @JvmField var b: Int = StaticInitializers.a * 2
+
+  @JvmField val c: Int
+
+  init {
+   StaticInitializers.a = 10
+   c = StaticInitializers.a + StaticInitializers.b
+   val duplicated: Int = StaticInitializers.c
+  }
+
+  init {
+   val duplicated_1: Int = 1
+  }
+ }
+}

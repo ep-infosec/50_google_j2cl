@@ -1,0 +1,101 @@
+// Generated from "jsasync/Main.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package jsasync
+
+import javaemul.lang.*
+import jsasync.Main
+import kotlin.Int
+import kotlin.OptIn
+import kotlin.Unit
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.jvm.JvmField
+import kotlin.jvm.JvmStatic
+import kotlin.native.ObjCName
+
+@ObjCName("JsasyncMain", exact = true)
+open class Main {
+ @JvmField val x_private_2: Main.IThenable<Int?>? = Main.Promise.resolve<Int?>(Int.valueOf(10))
+
+ open fun emptyAsyncMethod_pp_jsasync(): Main.IThenable<Unit?>? {
+  return null
+ }
+
+ open fun asyncMethod_pp_jsasync(): Main.IThenable<Int?>? {
+  val result: Int = Main.await_private_2<Int?>(Main.Promise.resolve<Int?>(Int.valueOf(7)))!!.toInt()
+  return this.parametricAsyncMethod_pp_jsasync<Int?>(Int.valueOf(result))
+ }
+
+ open fun <T> parametricAsyncMethod_pp_jsasync(value: T): Main.IThenable<T>? {
+  return Main.Promise.resolve<T>(Main.await_private_2<T>(Main.Promise.resolve<T>(value)))
+ }
+
+ open fun testAsyncLambdas_pp_jsasync() {
+  val i: Main.AsyncInterface? = Main.AsyncInterface {
+   return@AsyncInterface Main.Promise.resolve<Int?>(Main.await_private_2<Int?>(Main.Promise.resolve<Int?>(Int.valueOf(5))))
+  }
+  val o: Main.BaseInterface? = object : Main.BaseInterface {
+   open override fun asyncCall(): Main.IThenable<Int?>? {
+    return Main.Promise.resolve<Int?>(Main.await_private_2<Int?>(this@Main.x_private_2))
+   }
+  }
+  val j: Main.AsyncJsFunctionInterface? = Main.AsyncJsFunctionInterface {
+   return@AsyncJsFunctionInterface Main.Promise.resolve<Int?>(Main.await_private_2<Int?>(Main.Promise.resolve<Int?>(Int.valueOf(5))))
+  }
+  val optimizableJsFunction: Main.JsFunctionInterface? = object : Main.JsFunctionInterface {
+   open override fun doSomething(): Main.IThenable<Int?>? {
+    return Main.Promise.resolve<Int?>(Int.valueOf(5))
+   }
+  }
+  val unoptimizableJsFunction: Main.JsFunctionInterface? = object : Main.JsFunctionInterface {
+   open override fun doSomething(): Main.IThenable<Int?>? {
+    val tmp: Main.JsFunctionInterface? = this
+    return Main.Promise.resolve<Int?>(Main.await_private_2<Int?>(this@Main.x_private_2))
+   }
+  }
+ }
+
+ companion object {
+  @JvmStatic
+  fun staticAsyncMethod_pp_jsasync(): Main.IThenable<Unit?>? {
+   return Main.Promise.resolve<Unit?>(Main.await_private_2<Unit?>(Main.Promise.resolve<Unit?>(null as Unit?)))
+  }
+
+  @JvmStatic
+  external fun <T> await_private_2(thenable: Main.IThenable<T>?): T
+ }
+
+ fun interface BaseInterface {
+  fun asyncCall(): Main.IThenable<Int?>?
+ }
+
+ fun interface AsyncInterface: Main.BaseInterface {
+  override fun asyncCall(): Main.IThenable<Int?>?
+ }
+
+ interface InterfaceWithAsyncDefaultMethod {
+  fun asyncCall(): Main.IThenable<Int?>? {
+   return Main.Promise.resolve<Int?>(Main.await_private_2<Int?>(Main.Promise.resolve<Int?>(Int.valueOf(5))))
+  }
+ }
+
+ fun interface JsFunctionInterface {
+  fun doSomething(): Main.IThenable<Int?>?
+ }
+
+ fun interface AsyncJsFunctionInterface {
+  fun doSomething(): Main.IThenable<Int?>?
+ }
+
+ @ObjCName("JsasyncMain_IThenable", exact = true)
+ interface IThenable<T> {}
+
+ open class Promise<T>: Main.IThenable<T> {
+  companion object {
+   @JvmStatic
+   external fun <T> resolve(
+    @ObjCName("withId", exact = false) value: T
+   ): Main.Promise<T>?
+  }
+ }
+}

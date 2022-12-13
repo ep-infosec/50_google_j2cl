@@ -1,0 +1,138 @@
+;;; Code for valueofnullable.ValueOfNullable [static fields]
+(global $f_$initialized__valueofnullable_ValueOfNullable (mut i32) (i32.const 0))
+
+;;; Code for valueofnullable.ValueOfNullable [vtable.init]
+(global $valueofnullable.ValueOfNullable.vtable (ref $valueofnullable.ValueOfNullable.vtable) 
+ (struct.new $valueofnullable.ValueOfNullable.vtable
+  (ref.func $m_equals__java_lang_Object__boolean@java.lang.Object)
+  (ref.func $m_hashCode__int@java.lang.Object)
+  (ref.func $m_toString__java_lang_String@java.lang.Object)
+  (ref.func $m_getClass__java_lang_Class@valueofnullable.ValueOfNullable)
+ )
+)
+
+;;; Code for valueofnullable.ValueOfNullable [itable.init]
+(global $valueofnullable.ValueOfNullable.itable (ref $valueofnullable.ValueOfNullable.itable) (struct.new $valueofnullable.ValueOfNullable.itable 
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+  (ref.null struct)
+ ))
+
+;;; Code for valueofnullable.ValueOfNullable [CLASS]
+(type $valueofnullable.ValueOfNullable (struct_subtype 
+ (field $vtable (ref $valueofnullable.ValueOfNullable.vtable)) 
+ (field $itable (ref $valueofnullable.ValueOfNullable.itable))
+ (field $f_$systemIdentityHashCode__java_lang_Object (mut i32))
+ (field $f_nullableString__valueofnullable_ValueOfNullable (ref null $java.lang.String))
+ (field $f_someChar__valueofnullable_ValueOfNullable i16)
+ (field $f_result__valueofnullable_ValueOfNullable (mut (ref null $java.lang.String)))
+  $java.lang.Object)
+)
+(type $valueofnullable.ValueOfNullable.vtable (struct_subtype 
+ (field $m_equals__java_lang_Object__boolean (ref $function.m_equals__java_lang_Object__boolean))
+ (field $m_hashCode__int (ref $function.m_hashCode__int))
+ (field $m_toString__java_lang_String (ref $function.m_toString__java_lang_String))
+ (field $m_getClass__java_lang_Class (ref $function.m_getClass__java_lang_Class))
+  $java.lang.Object.vtable)
+)
+(type $valueofnullable.ValueOfNullable.itable (struct_subtype 
+(field $slot0 (ref null struct))
+(field $slot1 (ref null struct))
+(field $slot2 (ref null struct))
+(field $slot3 (ref null struct))
+(field $slot4 (ref null struct))
+(field $slot5 (ref null struct))
+(field $slot6 (ref null struct))
+ $java.lang.Object.itable))
+
+;;; ValueOfNullable ValueOfNullable.$create()
+(func $$create__@valueofnullable.ValueOfNullable
+ (result (ref null $valueofnullable.ValueOfNullable))
+ ;;@ valueofnullable/ValueOfNullable.java:18:13
+ (local $$instance (ref null $valueofnullable.ValueOfNullable))
+ (block
+  ;; ValueOfNullable $instance = new ValueOfNullable.<init>(0,javaemul.internal.StringPool.$getString_|b|(),97,null);
+  ;;@ valueofnullable/ValueOfNullable.java:18:13
+  (local.set $$instance (struct.new $valueofnullable.ValueOfNullable (ref.as_non_null (global.get $valueofnullable.ValueOfNullable.vtable)) (ref.as_non_null (global.get $valueofnullable.ValueOfNullable.itable)) (i32.const 0) (call $function.no.side.effects.$getString_|b|__java_lang_String (ref.func $$getString_|b|__java_lang_String@javaemul.internal.StringPool) ) (i32.const 97) (ref.null $java.lang.String)))
+  ;; $instance.$ctor();
+  ;;@ valueofnullable/ValueOfNullable.java:18:13
+  (call $$ctor__void_$p_valueofnullable_ValueOfNullable@valueofnullable.ValueOfNullable (ref.as_non_null (local.get $$instance)))
+  ;; return $instance;
+  ;;@ valueofnullable/ValueOfNullable.java:18:13
+  (return (local.get $$instance))
+ )
+)
+
+;;; void ValueOfNullable.$ctor()
+(func $$ctor__void_$p_valueofnullable_ValueOfNullable@valueofnullable.ValueOfNullable
+ (param $this (ref null $valueofnullable.ValueOfNullable))
+ ;;@ valueofnullable/ValueOfNullable.java:18:13
+ (block
+  ;; valueofnullable.ValueOfNullable.$clinit();
+  ;;@ valueofnullable/ValueOfNullable.java:18:13
+  (call $$clinit__void@valueofnullable.ValueOfNullable )
+  ;; Object.this.$ctor();
+  ;;@ valueofnullable/ValueOfNullable.java:18:13
+  (call $$ctor__void_$p_java_lang_Object@java.lang.Object (ref.as_non_null (local.get $this)))
+  ;; ValueOfNullable.this.$init();
+  ;;@ valueofnullable/ValueOfNullable.java:18:13
+  (call $$init__void_$p_valueofnullable_ValueOfNullable@valueofnullable.ValueOfNullable (ref.as_non_null (local.get $this)))
+ )
+)
+
+;;; void ValueOfNullable.$init()
+(func $$init__void_$p_valueofnullable_ValueOfNullable@valueofnullable.ValueOfNullable
+ (param $this (ref null $valueofnullable.ValueOfNullable))
+ ;;@ valueofnullable/ValueOfNullable.java:18:13
+ (local $$stringBuilder (ref null $java.lang.StringBuilder))
+ (block
+  ;; (ValueOfNullable.this.result = (StringBuilder $stringBuilder = java.lang.StringBuilder.$create(),$stringBuilder.append(ValueOfNullable.this.someChar),$stringBuilder.append(ValueOfNullable.this.nullableString),$stringBuilder.toString()));
+  ;;@ valueofnullable/ValueOfNullable.java:21:2
+  (struct.set $valueofnullable.ValueOfNullable $f_result__valueofnullable_ValueOfNullable(local.get $this) (block (result (ref null $java.lang.String))
+   (local.set $$stringBuilder (call $$create__@java.lang.StringBuilder ))
+   (drop (call_ref $function.m_append__char__java_lang_StringBuilder (ref.as_non_null (local.get $$stringBuilder))(struct.get_u $valueofnullable.ValueOfNullable $f_someChar__valueofnullable_ValueOfNullable(local.get $this))(struct.get $java.lang.StringBuilder.vtable $m_append__char__java_lang_StringBuilder (struct.get $java.lang.StringBuilder $vtable(local.get $$stringBuilder)))))
+   (drop (call_ref $function.m_append__java_lang_String__java_lang_StringBuilder (ref.as_non_null (local.get $$stringBuilder))(struct.get $valueofnullable.ValueOfNullable $f_nullableString__valueofnullable_ValueOfNullable(local.get $this))(struct.get $java.lang.StringBuilder.vtable $m_append__java_lang_String__java_lang_StringBuilder (struct.get $java.lang.StringBuilder $vtable(local.get $$stringBuilder)))))
+   (call_ref $function.m_toString__java_lang_String (ref.as_non_null (local.get $$stringBuilder))(struct.get $java.lang.AbstractStringBuilder.vtable $m_toString__java_lang_String (struct.get $java.lang.AbstractStringBuilder $vtable(local.get $$stringBuilder))))
+  ))
+ )
+)
+
+;;; void ValueOfNullable.$clinit()
+(func $$clinit__void@valueofnullable.ValueOfNullable
+ ;;@ valueofnullable/ValueOfNullable.java:18:13
+ (block
+  ;; if (valueofnullable.ValueOfNullable.$initialized) return;
+  ;;@ valueofnullable/ValueOfNullable.java:18:13
+  (if (global.get $f_$initialized__valueofnullable_ValueOfNullable)
+   (then
+    ;; return;
+    ;;@ valueofnullable/ValueOfNullable.java:18:13
+    (return )
+   )
+  )
+  ;; (valueofnullable.ValueOfNullable.$initialized = true);
+  ;;@ valueofnullable/ValueOfNullable.java:18:13
+  (global.set $f_$initialized__valueofnullable_ValueOfNullable (i32.const 1))
+  ;; java.lang.Object.$clinit();
+  ;;@ valueofnullable/ValueOfNullable.java:18:13
+  (call $$clinit__void@java.lang.Object )
+ )
+)
+
+;;; Class<?> ValueOfNullable.getClass()
+(func $m_getClass__java_lang_Class@valueofnullable.ValueOfNullable
+ (type $function.m_getClass__java_lang_Class)
+ (param $this.untyped (ref $java.lang.Object))
+ (result (ref null $java.lang.Class))
+ (local $this (ref null $valueofnullable.ValueOfNullable))
+ (local.set $this (ref.cast_static $valueofnullable.ValueOfNullable (local.get $this.untyped)))
+ (block
+  ;; return javaemul.internal.ClassLiteralPool.$getValueofnullable.ValueOfNullable();
+  (return (call $function.no.side.effects.$getValueofnullable.ValueOfNullable__java_lang_Class (ref.func $$getValueofnullable.ValueOfNullable__java_lang_Class@javaemul.internal.ClassLiteralPool) ))
+ )
+)
+(elem declare func $m_getClass__java_lang_Class@valueofnullable.ValueOfNullable)

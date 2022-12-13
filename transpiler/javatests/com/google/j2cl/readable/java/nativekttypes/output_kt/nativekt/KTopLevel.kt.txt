@@ -1,0 +1,109 @@
+// Generated from "nativekttypes/nativekt/KTopLevel.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package nativekttypes.nativekt
+
+import javaemul.lang.*
+import kotlin.Any
+import kotlin.Boolean
+import kotlin.Int
+import kotlin.OptIn
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.jvm.JvmField
+import kotlin.jvm.JvmStatic
+import kotlin.native.ObjCName
+
+@ObjCName("NativekttypesNativektKTopLevel", exact = true)
+open class KTopLevel<O> {
+ @JvmField var instanceField: O = null as O
+
+ @JvmField var renamedField: Int = 0
+
+ open fun renamedMethod(): Int {
+  return 0
+ }
+
+ open val methodAsProperty: Int get() {
+  return 0
+ }
+
+ open val nonGetMethodAsProperty: Int get() {
+  return 0
+ }
+
+ open val renamedMethodAsProperty: Int get() {
+  return 0
+ }
+
+ open val getRenamedMethodAsProperty: Int get() {
+  return 0
+ }
+
+ @JvmField var isRenamedField: Boolean = false
+
+ open val isMethodAsProperty: Boolean get() {
+  return false
+ }
+
+ open val getstartingmethodAsProperty: Int get() {
+  return 0
+ }
+
+ constructor(
+  @ObjCName("Id", exact = false) o: O
+ )
+
+ open fun instanceMethod(
+  @ObjCName("withId", exact = false) o: O
+ ): O {
+  return o
+ }
+
+ companion object {
+  @JvmField var staticField: Any? = null
+
+  @JvmStatic
+  fun <S> staticMethod(
+   @ObjCName("withId", exact = false) s: S
+  ): S {
+   return s
+  }
+ }
+
+ @ObjCName("NativekttypesNativektKTopLevel_KNested", exact = true)
+ open class KNested<N> {
+  @JvmField var instanceField: N = null as N
+
+  constructor(
+   @ObjCName("Id", exact = false) n: N
+  )
+
+  open fun instanceMethod(
+   @ObjCName("withId", exact = false) n: N
+  ): N {
+   return n
+  }
+
+  open fun renamedMethod(): Int {
+   return 0
+  }
+
+  companion object {
+   @JvmField var staticField: Any? = null
+
+   @JvmStatic
+   fun <S> staticMethod(
+    @ObjCName("withId", exact = false) s: S
+   ): S {
+    return s
+   }
+  }
+ }
+
+ @ObjCName("NativekttypesNativektKTopLevel_KInner", exact = true)
+ open inner class KInner<I> {
+  constructor(
+   @ObjCName("Id", exact = false) i: I
+  )
+ }
+}

@@ -1,0 +1,24 @@
+// Generated from "instancefieldaccesslevels/InstanceFieldAccessLevels.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package instancefieldaccesslevels
+
+import javaemul.lang.*
+import kotlin.Any
+import kotlin.Boolean
+import kotlin.Int
+import kotlin.OptIn
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.jvm.JvmField
+import kotlin.native.ObjCName
+
+@ObjCName("InstancefieldaccesslevelsInstanceFieldAccessLevels", exact = true)
+open class InstanceFieldAccessLevels {
+ @JvmField var a: Int = 0
+
+ @JvmField var b_private_2: Boolean = false
+
+ @JvmField var c: Any? = null
+
+ @JvmField var d_pp_instancefieldaccesslevels: Int = 0
+}

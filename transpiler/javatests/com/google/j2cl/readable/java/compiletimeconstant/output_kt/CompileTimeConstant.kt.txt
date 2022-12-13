@@ -1,0 +1,83 @@
+// Generated from "compiletimeconstant/CompileTimeConstant.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package compiletimeconstant
+
+import javaemul.lang.*
+import compiletimeconstant.CompileTimeConstant
+import java.lang.Class
+import kotlin.Any
+import kotlin.Boolean
+import kotlin.Char
+import kotlin.Int
+import kotlin.Long
+import kotlin.OptIn
+import kotlin.String
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.jvm.JvmField
+import kotlin.jvm.javaObjectType
+import kotlin.native.ObjCName
+
+@ObjCName("CompiletimeconstantCompileTimeConstant", exact = true)
+open class CompileTimeConstant<T> {
+ @JvmField val A2: Int = 10
+
+ @JvmField val B2: Int = 20
+
+ @JvmField val C2: Int = 200
+
+ @JvmField val D2: String = "Tur\"tle"
+
+ @JvmField val E2: String = "Do\"ve"
+
+ @JvmField val F2: String = "Tur\"tleDo\"ve"
+
+ @JvmField val G2: Long = 10000L
+
+ @JvmField val H2: Char = 'A'
+
+ @JvmField val I2: Boolean = true
+
+ init {
+  val b: Boolean = this.I2
+  val s: String? = "" + CompileTimeConstant.G + CompileTimeConstant.F
+  val l: String? = CompileTimeConstant.L
+  val m: String? = CompileTimeConstant.M
+  val n: String? = CompileTimeConstant.N
+  val c: Class<*>? = CompileTimeConstant.classLiteral
+ }
+
+ companion object {
+  @JvmField val OBJ: Any? = null
+
+  const val A: Int = 10
+
+  const val B: Int = 20
+
+  const val C: Int = 200
+
+  const val D: String = "Tur\"tle"
+
+  const val E: String = "Do\'ve"
+
+  const val F: String = "Tur\"tleDo\'ve"
+
+  const val J: String = "Tur\"tleDo\'veTur\"tleDo\'ve"
+
+  @JvmField val K: String? = null
+
+  const val L: String = "ThisIsALongString"
+
+  const val M: String = "ThisIsALongStringAlso"
+
+  const val N: String = "ThisIsALongStringAlsoButLonger"
+
+  const val G: Long = 10000L
+
+  const val H: Char = 'A'
+
+  const val I: Boolean = true
+
+  @JvmField val classLiteral: Class<*>? = CompileTimeConstant::class.javaObjectType
+ }
+}

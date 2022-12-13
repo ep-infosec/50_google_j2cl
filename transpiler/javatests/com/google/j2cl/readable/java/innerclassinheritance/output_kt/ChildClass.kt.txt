@@ -1,0 +1,77 @@
+// Generated from "innerclassinheritance/ChildClass.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package innerclassinheritance
+
+import javaemul.lang.*
+import innerclassinheritance.ChildClass
+import innerclassinheritance.ParentInner
+import innerclassinheritance.ParentOuter
+import kotlin.Any
+import kotlin.Int
+import kotlin.OptIn
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.jvm.JvmField
+import kotlin.native.ObjCName
+
+open class ParentOuter {
+ @JvmField var fieldInParentOuter: Int = 0
+
+ open fun funInParentOuter() {}
+}
+
+open class ParentInner {
+ @JvmField var fieldInParentInner: Int = 0
+
+ open fun funInParentInner() {}
+}
+
+@ObjCName("InnerclassinheritanceChildClass", exact = true)
+open class ChildClass: ParentOuter() {
+ @JvmField var fieldInOuter: Int = 0
+
+ open fun funInOuter() {}
+
+ open fun testLocalClass() {
+  open class ___1LocalClass: ChildClass() {
+   @JvmField var object_pp_innerclassinheritance: Any? = this
+
+   open override fun funInParentOuter() {}
+
+   open fun test() {
+    this.funInOuter()
+    this@ChildClass.funInOuter()
+    this.funInParentOuter()
+    this.funInParentOuter()
+    this@ChildClass.funInParentOuter()
+   }
+  }
+  ___1LocalClass().test()
+ }
+
+ open inner class InnerClass: ParentInner() {
+  @JvmField var fieldInInner: Int = 0
+
+  open fun funInInner() {}
+
+  open fun testInnerClass(): Int {
+   this@ChildClass.funInParentOuter()
+   this@ChildClass.funInParentOuter()
+   this@ChildClass.funInOuter()
+   this@ChildClass.funInOuter()
+   this.funInParentInner()
+   this.funInParentInner()
+   this.funInInner()
+   this.funInInner()
+   var a: Int = this@ChildClass.fieldInParentOuter
+   a = this@ChildClass.fieldInParentOuter
+   a = this@ChildClass.fieldInOuter
+   a = this@ChildClass.fieldInOuter
+   a = this.fieldInParentInner
+   a = this.fieldInParentInner
+   a = this.fieldInInner
+   a = this.fieldInInner
+   return a
+  }
+ }
+}

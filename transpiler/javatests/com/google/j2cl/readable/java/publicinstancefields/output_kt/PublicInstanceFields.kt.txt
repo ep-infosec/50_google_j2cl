@@ -1,0 +1,18 @@
+// Generated from "publicinstancefields/PublicInstanceFields.java"
+@file:OptIn(ExperimentalObjCName::class)
+
+package publicinstancefields
+
+import javaemul.lang.*
+import kotlin.Int
+import kotlin.OptIn
+import kotlin.experimental.ExperimentalObjCName
+import kotlin.jvm.JvmField
+import kotlin.native.ObjCName
+
+@ObjCName("PublicinstancefieldsPublicInstanceFields", exact = true)
+open class PublicInstanceFields {
+ @JvmField var a: Int = 1
+
+ @JvmField var b: Int = 0
+}
